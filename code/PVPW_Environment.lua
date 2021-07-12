@@ -28,7 +28,7 @@
 ]]--
 
 RGPVPW_ENVIRONMENT = {
-  ADDON_IDENTIFIER = "com.ragedunicorn.wow.classic.pvpwarn-addon",
+  ADDON_IDENTIFIER = "com.ragedunicorn.wow.bcc.pvpwarn-addon",
   LOG_LEVEL = 4,
   LOG_EVENT = true,
   DEBUG = true,
