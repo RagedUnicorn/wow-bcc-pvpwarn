@@ -1,6 +1,6 @@
 # PVPWarn
 
-![](/docs/pvpw_ragedunicorn_love_classic.png)
+![](/docs/pvpw_ragedunicorn_love_bcc.png)
 
 > PVPWarn aims to help the player to hear and see enemy spells casted on himself and also spells that an enemy player resisted or spells that the player himself resisted
 
@@ -10,6 +10,12 @@
 
 PVPWarn uses both visual and acoustic effects to make the player aware of certain events. The addon aims to be configurable to the players preferences and allows customization on exactly what spells should be brought to the attention of the player and in what form.
 
+**WoW Classic Support**
+
+> This Addon supports WoW Classic see - [classic-PVPWarn](https://github.com/RagedUnicorn/wow-classic-pvpwarn/)
+
+<a href="https://github.com/RagedUnicorn/wow-classic-pvpwarn/"><img src="/docs/vanilla_logo.png" width="40%"></img></a>
+
 ## Installation
 
 WoW-Addons are installed directly in your WoW directory:
@@ -18,7 +24,7 @@ WoW-Addons are installed directly in your WoW directory:
 
 Make sure to get the newest version of the Addon from the releases tab:
 
-[PVPWarn-Releases](https://github.com/RagedUnicorn/wow-classic-pvpwarn/releases)
+[PVPWarn-Releases](https://github.com/RagedUnicorn/wow-bcc-pvpwarn/releases)
 
 > Note: If the Addon is not showing up in your ingame Addonlist make sure that the Addon is named `PVPWarn` in your Addons folder
 
@@ -66,7 +72,7 @@ This is what we call a Lua error and it usually happens because of an oversight 
 
 #### PVPWarn spams my chat with messages. How can I deactivate this?
 
-Those obnoxious messages are intended for the development of this addon and means that you download a development version of the addon instead of a proper release. Releases can be downloaded from here - https://github.com/RagedUnicorn/wow-classic-pvpwarn/releases
+Those obnoxious messages are intended for the development of this addon and means that you download a development version of the addon instead of a proper release. Releases can be downloaded from here - https://github.com/RagedUnicorn/wow-bcc-pvpwarn/releases
 
 #### PVPWarn did not warn me about a certain spell. Why?
 
