@@ -48,7 +48,7 @@ function me.ToggleSpellState(spellList, categoryName, spellName)
       spellList,
       categoryName,
       spellName,
-      not me.IsSpellActive(spellList, categoryName, spellName)
+      not me.IsSpellActive(spellList, categoryName, spellName) -- TODO
     )
 end
 
@@ -58,28 +58,28 @@ end
     * spellList - enemy spell detected
     * spellSelfAvoidList - player avoided spell
     * spellEnemyAvoidList - enemy player avoided spell
-  @param {string} categoryName
-  @param {string} spellName
+  @param {number} category
+  @param {number} spellId
 
   @return {boolean}
     true if the spell is active
     false if the spell is inactive
 ]]--
-function me.IsSpellActive(spellList, categoryName, spellName)
+function me.IsSpellActive(spellList, category, spellId)
   if RGPVPW_ENVIRONMENT.TEST then return true end
 
   assert(type(spellList) == "string", string.format(
     "bad argument #1 to `IsSpellActive` (expected string got %s)", type(spellList)))
 
-  assert(type(categoryName) == "string", string.format(
-    "bad argument #2 to `IsSpellActive` (expected string got %s)", type(categoryName)))
+  assert(type(category) == "number", string.format(
+    "bad argument #2 to `IsSpellActive` (expected number got %s)", type(category)))
 
-  assert(type(spellName) == "string", string.format(
-    "bad argument #3 to `IsSpellActive` (expected string got %s)", type(spellName)))
+  assert(type(spellId) == "number", string.format(
+    "bad argument #3 to `IsSpellActive` (expected number got %s)", type(spellId)))
 
-  if PVPWarnConfiguration[spellList][categoryName] then
-    if PVPWarnConfiguration[spellList][categoryName][spellName] then
-      return PVPWarnConfiguration[spellList][categoryName][spellName].spellActive
+  if PVPWarnConfiguration[spellList][category] then
+    if PVPWarnConfiguration[spellList][category][spellId] then
+      return PVPWarnConfiguration[spellList][category][spellId].spellActive
     end
   end
 
@@ -155,7 +155,7 @@ function me.ToggleSoundWarning(spellList, categoryName, spellName)
     spellList,
     categoryName,
     spellName,
-    not me.IsSoundWarningActive(spellList, categoryName, spellName)
+    not me.IsSoundWarningActive(spellList, categoryName, spellName) -- TODO
   )
 end
 
@@ -165,28 +165,28 @@ end
     * spellList - enemy spell detected
     * spellSelfAvoidList - player avoided spell
     * spellEnemyAvoidList - enemy player avoided spell
-  @param {string} categoryName
-  @param {string} spellName
+  @param {number} category
+  @param {number} spellId
 
   @return {boolean}
     true if the sound warning is active
     false if the sound warning is inactive
 ]]--
-function me.IsSoundWarningActive(spellList, categoryName, spellName)
+function me.IsSoundWarningActive(spellList, category, spellId)
   if RGPVPW_ENVIRONMENT.TEST then return true end
 
   assert(type(spellList) == "string", string.format(
     "bad argument #1 to `IsSoundWarningActive` (expected string got %s)", type(spellList)))
 
-  assert(type(categoryName) == "string", string.format(
-    "bad argument #2 to `IsSoundWarningActive` (expected string got %s)", type(categoryName)))
+  assert(type(category) == "number", string.format(
+    "bad argument #2 to `IsSoundWarningActive` (expected number got %s)", type(category)))
 
-  assert(type(spellName) == "string", string.format(
-    "bad argument #3 to `IsSoundWarningActive` (expected string got %s)", type(spellName)))
+  assert(type(spellId) == "number", string.format(
+    "bad argument #3 to `IsSoundWarningActive` (expected number got %s)", type(spellId)))
 
-  if PVPWarnConfiguration[spellList][categoryName] then
-    if PVPWarnConfiguration[spellList][categoryName][spellName] then
-      return PVPWarnConfiguration[spellList][categoryName][spellName].soundWarningActive
+  if PVPWarnConfiguration[spellList][category] then
+    if PVPWarnConfiguration[spellList][category][spellId] then
+      return PVPWarnConfiguration[spellList][category][spellId].soundWarningActive
     end
   end
 
@@ -260,7 +260,7 @@ function me.ToggleSoundFadeWarning(spellList, categoryName, spellName)
     spellList,
     categoryName,
     spellName,
-    not me.IsSoundFadeWarningActive(spellList, categoryName, spellName)
+    not me.IsSoundFadeWarningActive(spellList, categoryName, spellName) -- TODO
   )
 end
 
@@ -270,28 +270,28 @@ end
     * spellList - enemy spell detected
     * spellSelfAvoidList - player avoided spell
     * spellEnemyAvoidList - enemy player avoided spell
-  @param {string} categoryName
-  @param {string} spellName
+  @param {number} category
+  @param {number} spellId
 
   @return {boolean}
     true if the sound warning is active
     false if the sound warning is inactive
 ]]--
-function me.IsSoundFadeWarningActive(spellList, categoryName, spellName)
+function me.IsSoundFadeWarningActive(spellList, category, spellId)
   if RGPVPW_ENVIRONMENT.TEST then return true end
 
   assert(type(spellList) == "string", string.format(
     "bad argument #1 to `IsSoundFadeWarningActive` (expected string got %s)", type(spellList)))
 
-  assert(type(categoryName) == "string", string.format(
-    "bad argument #2 to `IsSoundFadeWarningActive` (expected string got %s)", type(categoryName)))
+  assert(type(category) == "number", string.format(
+    "bad argument #2 to `IsSoundFadeWarningActive` (expected number got %s)", type(category)))
 
-  assert(type(spellName) == "string", string.format(
-    "bad argument #3 to `IsSoundFadeWarningActive` (expected string got %s)", type(spellName)))
+  assert(type(spellId) == "number", string.format(
+    "bad argument #3 to `IsSoundFadeWarningActive` (expected number got %s)", type(spellId)))
 
-  if PVPWarnConfiguration[spellList][categoryName] then
-    if PVPWarnConfiguration[spellList][categoryName][spellName] then
-      return PVPWarnConfiguration[spellList][categoryName][spellName].soundFadeWarningActive
+  if PVPWarnConfiguration[spellList][category] then
+    if PVPWarnConfiguration[spellList][category][spellId] then
+      return PVPWarnConfiguration[spellList][category][spellId].soundFadeWarningActive
     end
   end
 
@@ -453,25 +453,25 @@ end
     * spellList - enemy spell detected
     * spellSelfAvoidList - player avoided spell
     * spellEnemyAvoidList - enemy player avoided spell
-  @param {string} categoryName
-  @param {string} spellName
+  @param {number} category
+  @param {number} spellId
 
   @return {number}
     A number representing the current color. If none can be found the default color is returned
 ]]--
-function me.GetVisualWarningColor(spellList, categoryName, spellName)
+function me.GetVisualWarningColor(spellList, category, spellId)
   assert(type(spellList) == "string", string.format(
     "bad argument #1 to `GetVisualWarningColor` (expected string got %s)", type(spellList)))
 
-  assert(type(categoryName) == "string", string.format(
-    "bad argument #2 to `GetVisualWarningColor` (expected string got %s)", type(categoryName)))
+  assert(type(category) == "number", string.format(
+    "bad argument #2 to `GetVisualWarningColor` (expected number got %s)", type(category)))
 
-  assert(type(spellName) == "string", string.format(
-    "bad argument #3 to `GetVisualWarningColor` (expected string got %s)", type(spellName)))
+  assert(type(spellId) == "number", string.format(
+    "bad argument #3 to `GetVisualWarningColor` (expected number got %s)", type(spellId)))
 
-  if PVPWarnConfiguration[spellList][categoryName] then
-    if PVPWarnConfiguration[spellList][categoryName][spellName] then
-      return PVPWarnConfiguration[spellList][categoryName][spellName].visualWarningColor
+  if PVPWarnConfiguration[spellList][category] then
+    if PVPWarnConfiguration[spellList][category][spellId] then
+      return PVPWarnConfiguration[spellList][category][spellId].visualWarningColor
     end
   end
 

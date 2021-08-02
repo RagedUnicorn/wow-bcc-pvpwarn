@@ -24,11 +24,11 @@
 
 local mod = rgpvpw
 local me = {}
-mod.testCombatEventsSelfAvoidWarriorEn = me
+mod.testCombatEventsSelfAvoidWarrior = me
 
-me.tag = "TestCombatEventsSelfAvoidWarriorEn"
+me.tag = "TestCombatEventsSelfAvoidWarrior"
 
-local testGroupName = "CombatEventsSelfAvoidWarriorEn"
+local testGroupName = "CombatEventsSelfAvoidWarrior"
 local testCategory = "warrior"
 
 function me.Test()

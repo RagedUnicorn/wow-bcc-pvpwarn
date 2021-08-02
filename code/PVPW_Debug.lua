@@ -39,6 +39,28 @@ _G["__PVPW__DEBUG__SHOWEXAMPLEALERT"] = function()
   mod.visual.ShowVisualAlert()
 end
 
+_G["__PVPW__DEBUG__COMBATEVENT"] = function()
+  local event = {
+    1626123629.151,
+    "SPELL_AURA_APPLIED",
+    false,
+    "SomeplayerId",
+    "Someplayername",
+    1352, -- fullfills COMBATLOG_FILTER_HOSTILE_PLAYERS
+    0,
+    "SomeplayerId",
+    "Someplayername",
+    1352,
+    0,
+    1719,
+    "Recklessness",
+    1,
+    "BUFF"
+  }
+
+  mod.combatLog.ProcessUnfilteredCombatLogEvent(nil, unpack(event))
+end
+
 --[[
   Take an event from CombatLogGetCurrentEventInfo and store it in a savedVariable. This allows to read a textfile with
   all the logs after a reload.

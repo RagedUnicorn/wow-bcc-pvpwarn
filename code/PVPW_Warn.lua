@@ -128,7 +128,7 @@ function me.ProcessQueue()
 end
 
 --[[
-  @param {string} category
+  @param {number} category
   @param {number} spellType
   @param {table} spell
   @param {function} callback

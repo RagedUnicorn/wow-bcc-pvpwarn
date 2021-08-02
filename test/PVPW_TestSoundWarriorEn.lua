@@ -29,7 +29,7 @@ mod.testSoundWarriorEn = me
 me.tag = "TestSoundWarriorEn"
 
 local testGroupName = "SoundWarriorEn"
-local testCategory = "warrior"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.WARRIOR.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,40 +42,64 @@ function me.Test()
 end
 
 function me.CollectTestCases()
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBattleStance)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBerserkerRage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownBerserkerRage)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRecklessness)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRecklessness)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeathWish)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownDeathWish)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBattleStance)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBerserkerStance)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDefensiveStance)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundIntercept)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDisarm)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundConcussionBlow)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBloodrage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownBloodrage)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPummel)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCharge)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDefensiveStance)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDemoralizingShout)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDisarm)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHamstring)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundIntercept)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundIntervene)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundIntimidatingShout)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldBlock)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldBlock)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldSlam)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldWall)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldWall)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLastStand)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLastStand)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundOverpower)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPummel)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRecklessness)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRecklessness)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRetaliation)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRetaliation)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldBlock)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldBlock)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldWall)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldWall)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSpellReflection)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSpellReflection)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSunderArmor)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWhirlwind)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundConcussionBlow)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeathWish)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownDeathWish)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLastStand)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLastStand)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMortalStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPiercingHowl)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRampage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRampage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSecondWind)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSecondWind)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldSlam)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSweepingStrikes)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSweepingStrikes)
+end
+
+function me.TestSoundBattleStance()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundBattleStance",
+    testCategory,
+    "battle_stance"
+  )
 end
 
 function me.TestSoundBerserkerRage()
   mod.testHelper.TestSoundApplied(
     "TestSoundBerserkerRage",
     testCategory,
-    "Berserker Rage"
+    "berserker_rage"
   )
 end
 
@@ -83,47 +107,7 @@ function me.TestSoundDownBerserkerRage()
   mod.testHelper.TestSoundRemoved(
     "TestSoundDownBerserkerRage",
     testCategory,
-    "Berserker Rage"
-  )
-end
-
-function me.TestSoundRecklessness()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundRecklessness",
-    testCategory,
-    "Recklessness"
-  )
-end
-
-function me.TestSoundDownRecklessness()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownRecklessness",
-    testCategory,
-    "Recklessness"
-  )
-end
-
-function me.TestSoundDeathWish()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundDeathWish",
-    testCategory,
-    "Death Wish"
-  )
-end
-
-function me.TestSoundDownDeathWish()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownDeathWish",
-    testCategory,
-    "Death Wish"
-  )
-end
-
-function me.TestSoundBattleStance()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundBattleStance",
-    testCategory,
-    "Battle Stance"
+    "berserker_rage"
   )
 end
 
@@ -131,39 +115,7 @@ function me.TestSoundBerserkerStance()
   mod.testHelper.TestSoundApplied(
     "TestSoundBerserkerStance",
     testCategory,
-    "Berserker Stance"
-  )
-end
-
-function me.TestSoundDefensiveStance()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundDefensiveStance",
-    testCategory,
-    "Defensive Stance"
-  )
-end
-
-function me.TestSoundIntercept()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundIntercept",
-    testCategory,
-    "Intercept"
-  )
-end
-
-function me.TestSoundDisarm()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundDisarm",
-    testCategory,
-    "Disarm"
-  )
-end
-
-function me.TestSoundConcussionBlow()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundConcussionBlow",
-    testCategory,
-    "Concussion Blow"
+    "berserker_stance"
   )
 end
 
@@ -171,7 +123,7 @@ function me.TestSoundBloodrage()
   mod.testHelper.TestSoundApplied(
     "TestSoundBloodrage",
     testCategory,
-    "Bloodrage"
+    "bloodrage"
   )
 end
 
@@ -179,15 +131,7 @@ function me.TestSoundDownBloodrage()
   mod.testHelper.TestSoundRemoved(
     "TestSoundDownBloodrage",
     testCategory,
-    "Bloodrage"
-  )
-end
-
-function me.TestSoundPummel()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundPummel",
-    testCategory,
-    "Pummel"
+    "bloodrage"
   )
 end
 
@@ -195,7 +139,55 @@ function me.TestSoundCharge()
   mod.testHelper.TestSoundSuccess(
     "TestSoundCharge",
     testCategory,
-    "Charge"
+    "charge"
+  )
+end
+
+function me.TestSoundDefensiveStance()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundDefensiveStance",
+    testCategory,
+    "defensive_stance"
+  )
+end
+
+function me.TestSoundDemoralizingShout()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundDemoralizingShout",
+    testCategory,
+    "demoralizing_shout"
+  )
+end
+
+function me.TestSoundDisarm()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundDisarm",
+    testCategory,
+    "disarm"
+  )
+end
+
+function me.TestSoundHamstring()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundHamstring",
+    testCategory,
+    "hamstring"
+  )
+end
+
+function me.TestSoundIntercept()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundIntercept",
+    testCategory,
+    "intercept"
+  )
+end
+
+function me.TestSoundIntervene()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundIntervene",
+    testCategory,
+    "intervene"
   )
 end
 
@@ -203,71 +195,39 @@ function me.TestSoundIntimidatingShout()
   mod.testHelper.TestSoundSuccess(
     "TestSoundIntimidatingShout",
     testCategory,
-    "Intimidating Shout"
+    "intimidating_shout"
   )
 end
 
-function me.TestSoundShieldBlock()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundShieldBlock",
-    testCategory,
-    "Shield Block"
-  )
-end
-
-function me.TestSoundDownShieldBlock()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownShieldBlock",
-    testCategory,
-    "Shield Block"
-  )
-end
-
-function me.TestSoundShieldSlam()
+function me.TestSoundOverpower()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundShieldSlam",
+    "TestSoundOverpower",
     testCategory,
-    "Shield Slam"
+    "overpower"
   )
 end
 
-function me.TestSoundShieldWall()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundShieldWall",
-    testCategory,
-    "Shield Wall"
-  )
-end
-
-function me.TestSoundDownShieldWall()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownShieldWall",
-    testCategory,
-    "Shield Wall"
-  )
-end
-
-function me.TestSoundLastStand()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundLastStand",
-    testCategory,
-    "Last Stand"
-  )
-end
-
-function me.TestSoundDownLastStand()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownLastStand",
-    testCategory,
-    "Last Stand"
-  )
-end
-
-function me.TestSoundShieldBash()
+function me.TestSoundPummel()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundShieldBash",
+    "TestSoundPummel",
     testCategory,
-    "Shield Bash"
+    "pummel"
+  )
+end
+
+function me.TestSoundRecklessness()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundRecklessness",
+    testCategory,
+    "recklessness"
+  )
+end
+
+function me.TestSoundDownRecklessness()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownRecklessness",
+    testCategory,
+    "recklessness"
   )
 end
 
@@ -275,7 +235,7 @@ function me.TestSoundRetaliation()
   mod.testHelper.TestSoundApplied(
     "TestSoundRetaliation",
     testCategory,
-    "Retaliation"
+    "retaliation"
   )
 end
 
@@ -283,6 +243,191 @@ function me.TestSoundDownRetaliation()
   mod.testHelper.TestSoundRemoved(
     "TestSoundDownRetaliation",
     testCategory,
-    "Retaliation"
+    "retaliation"
+  )
+end
+
+function me.TestSoundShieldBash()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundShieldBash",
+    testCategory,
+    "shield_bash"
+  )
+end
+
+function me.TestSoundShieldBlock()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundShieldBlock",
+    testCategory,
+    "shield_block"
+  )
+end
+
+function me.TestSoundDownShieldBlock()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownShieldBlock",
+    testCategory,
+    "shield_block"
+  )
+end
+
+function me.TestSoundShieldWall()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundShieldWall",
+    testCategory,
+    "shield_wall"
+  )
+end
+
+function me.TestSoundDownShieldWall()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownShieldWall",
+    testCategory,
+    "shield_wall"
+  )
+end
+
+function me.TestSoundSpellReflection()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSpellReflection",
+    testCategory,
+    "spell_reflection"
+  )
+end
+
+function me.TestSoundDownSpellReflection()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSpellReflection",
+    testCategory,
+    "spell_reflection"
+  )
+end
+
+function me.TestSoundSunderArmor()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSunderArmor",
+    testCategory,
+    "sunder_armor"
+  )
+end
+
+function me.TestSoundWhirlwind()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWhirlwind",
+    testCategory,
+    "whirlwind"
+  )
+end
+
+
+function me.TestSoundConcussionBlow()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundConcussionBlow",
+    testCategory,
+    "concussion_blow"
+  )
+end
+
+function me.TestSoundDeathWish()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundDeathWish",
+    testCategory,
+    "death_wish"
+  )
+end
+
+function me.TestSoundDownDeathWish()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownDeathWish",
+    testCategory,
+    "death_wish"
+  )
+end
+
+function me.TestSoundLastStand()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundLastStand",
+    testCategory,
+    "last_stand"
+  )
+end
+
+function me.TestSoundDownLastStand()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownLastStand",
+    testCategory,
+    "last_stand"
+  )
+end
+
+function me.TestSoundMortalStrike()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundMortalStrike",
+    testCategory,
+    "mortal_strike"
+  )
+end
+
+function me.TestSoundPiercingHowl()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundPiercingHowl",
+    testCategory,
+    "piercing_howl"
+  )
+end
+
+function me.TestSoundRampage()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundRampage",
+    testCategory,
+    "rampage"
+  )
+end
+
+function me.TestSoundDownRampage()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownRampage",
+    testCategory,
+    "rampage"
+  )
+end
+
+function me.TestSoundSecondWind()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSecondWind",
+    testCategory,
+    "second_wind"
+  )
+end
+
+function me.TestSoundDownSecondWind()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSecondWind",
+    testCategory,
+    "second_wind"
+  )
+end
+
+function me.TestSoundShieldSlam()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundShieldSlam",
+    testCategory,
+    "shield_slam"
+  )
+end
+
+function me.TestSoundSweepingStrikes()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSweepingStrikes",
+    testCategory,
+    "sweeping_strikes"
+  )
+end
+
+function me.TestSoundDownSweepingStrikes()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSweepingStrikes",
+    testCategory,
+    "sweeping_strikes"
   )
 end

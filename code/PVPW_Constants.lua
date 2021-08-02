@@ -147,7 +147,7 @@ RGPVPW_CONSTANTS = {
     ["ENEMY_AVOID"] = 2
   },
   SPELL_AVOID_MAP = "spellAvoidMap",
-  SPELL_MAP = "spellMap",
+  SPELL_MAP = "spellMetaMap",
   TARGET_SELF = 1,
   TARGET_ENEMY = 2,
   --[[
@@ -201,6 +201,7 @@ RGPVPW_CONSTANTS = {
       ["enemyAvoidEnabled"] = -- {boolean} boolean whether this category has enemy resists enabled or not
     },
   ]]--
+  -- TODO OLD
   CATEGORIES = {
     [1] = {
       ["categoryName"] = "druid",
@@ -273,6 +274,52 @@ RGPVPW_CONSTANTS = {
       ["localizationKey"] = "category_misc",
       ["name"] = "PVPW_ItemsOptionsFrame",
       ["enemyAvoidEnabled"] = false
+    }
+  },
+  CATEGORIES_NEW = {
+    WARRIOR = {
+      ["id"] = 1,
+      ["categoryName"] = "warrior"
+    },
+    PRIEST = {
+      ["id"] = 2,
+      ["categoryName"] = "priest"
+    },
+    MAGE = {
+      ["id"] = 3,
+      ["categoryName"] = "mage"
+    },
+    HUNTER = {
+      ["id"] = 4,
+      ["categoryName"] = "hunter"
+    },
+    WARLOCK = {
+      ["id"] = 5,
+      ["categoryName"] = "warlock"
+    },
+    PALADIN = {
+      ["id"] = 6,
+      ["categoryName"] = "paladin"
+    },
+    DRUID = {
+      ["id"] = 7,
+      ["categoryName"] = "druid"
+    },
+    SHAMAN = {
+      ["id"] = 8,
+      ["categoryName"] = "shaman"
+    },
+    RACIALS = {
+      ["id"] = 9,
+      ["categoryName"] = "racials"
+    },
+    ITEMS = {
+      ["id"] = 10,
+      ["categoryName"] = "items"
+    },
+    MISC = {
+      ["id"] = 11,
+      ["categoryName"] = "misc"
     }
   },
   --[[

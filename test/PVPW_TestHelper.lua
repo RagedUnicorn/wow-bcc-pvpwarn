@@ -67,23 +67,6 @@ function me.GetLanguage(language)
 end
 
 --[[
-  A testhelper function to get the spellMap for a specific categoryName
-
-  @param {String} spellMap
-    RGPVPW_CONSTANTS.SPELL_MAP or RGPVPW_CONSTANTS.SPELL_AVOID_MAP
-  @param {string} categoryName
-    A valid categoryName such as "priest", "warrior" etc.
-
-  @return {table}
-    The spellMap for the passed categoryName
-]]--
-function me.GetAllForCategory(spellMap, categoryName)
-  local map = mod[spellMap].GetSpellConfiguration()
-
-  return mod.common.Clone(map[categoryName])
-end
-
---[[
   Mapp a wow event name to a test function name
 
   @param {string} event
@@ -423,7 +406,7 @@ end
   considers that for certain spellTypes a different spellMap needs to be usedw
 
   @param {string} spellName
-  @param {string} testCategory
+  @param {number} testCategory
   @param {string} event
   @param {string} spellType
 
@@ -439,12 +422,11 @@ function me.TestSound(spellName, testCategory, event, spellType)
     return false
   end
 
-  local _, spellData = mod[spellMap].SearchByName(spellName, event)
-
+  local spellMetaData = mod[spellMap].GetSpellMetaDataForSupportedEvent({testCategory, spellName}, event)
   local status = mod.sound.PlaySound(
     testCategory,
     spellType,
-    spellData.soundFileName
+    spellMetaData.soundFileName
   )
 
   return status
@@ -454,15 +436,15 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_AURA_APPLIED event
 
   @param {string} testName
-  @param {string} testCategory
-  @param {string} spellName
+  @param {number} testCategory
+  @param {number} spellId
 ]]--
-function me.TestCombatEventApplied(testName, testCategory, spellName)
+function me.TestCombatEventApplied(testName, testCategory, spellId)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
   local category, spellType, spell = me.TestCombatEvent(
-    spellName,
+    spellId,
     RGPVPW_CONSTANTS.EVENT_SPELL_AURA_APPLIED,
     me.GetEnemyPlayerSourceFlags()
   )
@@ -472,20 +454,12 @@ function me.TestCombatEventApplied(testName, testCategory, spellName)
     return
   end
 
-  if spell.links ~= nil then
-    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategory, category, spell)
+  if testCategory ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+  end
 
-    if linkedSpell == nil then
-      failureReason = string.format("No matching category %s for linked spell found", testCategory)
-    end
-  else
-    if testCategory ~= category then
-      failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
-    end
-
-    if RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED ~= spellType then
-      failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED, spellType)
-    end
+  if RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED ~= spellType then
+    failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED, spellType)
   end
 
   if failureReason ~= nil then
@@ -499,15 +473,15 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_AURA_REMOVED event
 
   @param {string} testName
-  @param {string} testCategory
-  @param {string} spellName
+  @param {number} testCategory
+  @param {number} spellId
 ]]--
-function me.TestCombatEventRemoved(testName, testCategory, spellName)
+function me.TestCombatEventRemoved(testName, testCategory, spellId)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
   local category, spellType, spell = me.TestCombatEvent(
-    spellName,
+    spellId,
     RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED,
     me.GetEnemyPlayerSourceFlags()
   )
@@ -517,20 +491,12 @@ function me.TestCombatEventRemoved(testName, testCategory, spellName)
     return
   end
 
-  if spell.links ~= nil then
-    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategory, category, spell)
+  if testCategory ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+  end
 
-    if linkedSpell == nil then
-      failureReason = string.format("No matching category %s for linked spell found", testCategory)
-    end
-  else
-    if testCategory ~= category then
-      failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
-    end
-
-    if RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED ~= spellType then
-      failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED, spellType)
-    end
+  if RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED ~= spellType then
+    failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED, spellType)
   end
 
   if failureReason ~= nil then
@@ -730,14 +696,14 @@ function me.TestCombatEventSpellMissed(testName, testCategory, spellName, expect
 end
 
 --[[
-  @param {string} spellName
+  @param {number} spellId
   @param {string} event
   @param {number} sourceFlags
     Sourceflags to determine the source of the combatlog event
 
   @return {string}, {string}, {table}
 ]]--
-function me.TestCombatEvent(spellName, event, sourceFlags)
+function me.TestCombatEvent(spellId, event, sourceFlags)
   local target = me.GetGenericEnemyId()
   local targetName = me.GetGenericEnemyName()
   local actualCategory
@@ -746,7 +712,7 @@ function me.TestCombatEvent(spellName, event, sourceFlags)
 
   -- luacheck: ignore _
   local fakeSpellCastCombatEvent = function()
-    return  _, event, _, _, _, sourceFlags, _, target, targetName, _, _, _, spellName
+    return  _, event, _, _, _, sourceFlags, _, target, targetName, _, _, spellId
   end
 
   me.HookCombatLogGetCurrentEventInfo(fakeSpellCastCombatEvent)
@@ -796,35 +762,4 @@ function me.TestCombatEventAvoid(spellName, event, sourceFlags, missType)
   me.RestoreCombatLogGetCurrentEventInfo()
 
   return actualCategory, actualSpellType, actualSpell
-end
-
---[[
-  Search the linked spell from the spellMap that matches the spellCategory. If the passed spell
-  already matches the expected category it will simply be returned
-
-  @param {string} testCategory
-    The category that the test is currently using
-  @param {string} spellCategory
-    The actual catgory of the spell
-  @param {table} spell
-    The spell to search for
-
-  @return {table | nil}
-    table - the linked spell that was found or the same spell that was passed
-    nil - if not matching spell could be found
-]]--
-function me.SearchLinkedSpellWithCategory(testCategory, spellCategory, spell)
-  if testCategory ~= spellCategory then
-    local linkedSpellsData = mod.spellMap.GetLinkedSpells(spell)
-
-    for _, linkedSpell in pairs(linkedSpellsData) do
-      if linkedSpell.category == testCategory then
-        return linkedSpell
-      end
-    end
-
-    return nil
-  else
-    return spell
-  end
 end

@@ -44,8 +44,8 @@ local FILE_TYPE = ".mp3"
 
 --[[
   Play a sound from the assets-folder
-  @param {string} soundCategory
-    e.g rogue, misc, racials etc
+  @param {number} category
+    RGPVPW_CONSTANTS.CATEGORIES
   @param {number} spellType
     see constants SPELL_TYPES
   @param {string} soundFileName
@@ -54,9 +54,9 @@ local FILE_TYPE = ".mp3"
     0 if there was a problem
     1 if sound was played
 ]]--
-function me.PlaySound(soundCategory, spellType, soundFileName)
-  assert(type(soundCategory) == "string",
-    string.format("bad argument #1 to `PlaySound` (expected string got %s)", type(soundCategory)))
+function me.PlaySound(category, spellType, soundFileName)
+  assert(type(category) == "number",
+    string.format("bad argument #1 to `PlaySound` (expected number got %s)", type(category)))
 
   assert(type(spellType) == "number",
     string.format("bad argument #2 to `PlaySound` (expected number got %s)", type(spellType)))
@@ -64,7 +64,8 @@ function me.PlaySound(soundCategory, spellType, soundFileName)
   assert(type(soundFileName) == "string",
     string.format("bad argument #3 to `PlaySound` (expected string got %s)", type(soundFileName)))
 
-  local soundPath = BASE_PATH .. soundCategory .. "\\"
+  local status = 0
+  local soundPath = BASE_PATH .. mod.common.GetCategoryNameById(category) .. "\\"
   local spellTypes = RGPVPW_CONSTANTS.SPELL_TYPES
 
   if spellType == spellTypes.NORMAL or spellType == spellTypes.APPLIED or spellType == spellTypes.REFRESH then
@@ -79,10 +80,11 @@ function me.PlaySound(soundCategory, spellType, soundFileName)
     soundPath = soundPath .. PATH_ENEMY_AVOID .. FILE_NAME_ENEMY_AVOID .. soundFileName.. FILE_TYPE
   else
     mod.logger.LogWarn(me.tag, "Invalid spellType: " .. spellType)
+    return status
   end
 
   mod.logger.LogDebug(me.tag, string.format("Playing: %s", soundPath))
-  local status = PlaySoundFile(soundPath, "Master")
+  status = PlaySoundFile(soundPath, "Master")
 
   if not status then
     -- this also happens when sound is deactivated
