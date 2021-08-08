@@ -87,9 +87,9 @@ test/PVPW_TestCombatEventsEnemyAvoidWarrior.lua
 test/PVPW_TestSoundPriestEn.lua
 test/PVPW_TestSoundSelfAvoidPriestEn.lua
 test/PVPW_TestSoundEnemyAvoidPriestEn.lua
-test/PVPW_TestCombatEventsPriestEn.lua
-test/PVPW_TestCombatEventsSelfAvoidPriestEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidPriestEn.lua
+test/PVPW_TestCombatEventsPriest.lua
+test/PVPW_TestCombatEventsSelfAvoidPriest.lua
+test/PVPW_TestCombatEventsEnemyAvoidPriest.lua
 # rogue
 test/PVPW_TestSoundRogueEn.lua
 test/PVPW_TestSoundSelfAvoidRogueEn.lua

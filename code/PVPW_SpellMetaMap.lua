@@ -31,6 +31,535 @@ me.tag = "SpellMetaMap"
 local categories = RGPVPW_CONSTANTS.CATEGORIES_NEW
 
 local spellMetaMap = {
+  [categories.PRIEST.id] = {
+    ["abolish_disease"] = {
+      ["name"] = "Abolish Disease",
+      ["soundFileName"] = "abolish_disease",
+      ["spellIconId"] = 136066,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["binding_heal"] = {
+      ["name"] = "Binding Heal",
+      ["soundFileName"] = "binding_heal",
+      ["spellIconId"] = 135883,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["chastise"] = {
+      ["name"] = "Chastise",
+      ["soundFileName"] = "chastise",
+      ["spellIconId"] = 135886,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["consume_magic"] = {
+      ["name"] = "Consume Magic",
+      ["soundFileName"] = "consume_magic",
+      ["spellIconId"] = 135754,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cure_disease"] = {
+      ["name"] = "Cure Disease",
+      ["soundFileName"] = "cure_disease",
+      ["spellIconId"] = 135935,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["desperate_prayer"] = {
+      ["name"] = "Desperate Prayer",
+      ["soundFileName"] = "desperate_prayer",
+      ["spellIconId"] = 135954,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["devouring_plague"] = {
+      ["name"] = "Devouring Plague",
+      ["soundFileName"] = "devouring_plague",
+      ["spellIconId"] = 136123,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dispel_magic"] = {
+      ["name"] = "Dispel Magic",
+      ["soundFileName"] = "dispel_magic",
+      ["spellIconId"] = 135894,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["elunes_grace"] = {
+      ["name"] = "Elune's Grace",
+      ["soundFileName"] = "elunes_grace",
+      ["spellIconId"] = 135900,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["fear_ward"] = {
+      ["name"] = "Fear Ward",
+      ["soundFileName"] = "fear_ward",
+      ["spellIconId"] = 135902,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["feedback"] = {
+      ["name"] = "Feedback",
+      ["soundFileName"] = "feedback",
+      ["spellIconId"] = 136189,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["flash_heal"] = {
+      ["name"] = "Flash Heal",
+      ["soundFileName"] = "flash_heal",
+      ["spellIconId"] = 135907,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["greater_heal"] = {
+      ["name"] = "Greater Heal",
+      ["soundFileName"] = "greater_heal",
+      ["spellIconId"] = 135913,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["heal"] = {
+      ["name"] = "Heal",
+      ["soundFileName"] = "heal",
+      ["spellIconId"] = 135916,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hex_of_weakness"] = {
+      ["name"] = "Hex of Weakness",
+      ["soundFileName"] = "hex_of_weakness",
+      ["spellIconId"] = 136157,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["holy_fire"] = {
+      ["name"] = "Holy Fire",
+      ["soundFileName"] = "holy_fire",
+      ["spellIconId"] = 135972,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["inner_fire"] = {
+      ["name"] = "Inner Fire",
+      ["soundFileName"] = "inner_fire",
+      ["spellIconId"] = 135926,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["lesser_heal"] = {
+      ["name"] = "Lesser Heal",
+      ["soundFileName"] = "lesser_heal",
+      ["spellIconId"] = 135929,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["levitate"] = {
+      ["name"] = "Levitate",
+      ["soundFileName"] = "levitate",
+      ["spellIconId"] = 135928,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["mana_burn"] = {
+      ["name"] = "Mana Burn",
+      ["soundFileName"] = "mana_burn",
+      ["spellIconId"] = 136170,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mass_dispel"] = {
+      ["name"] = "Mass Dispel",
+      ["soundFileName"] = "mass_dispel",
+      ["spellIconId"] = 135739,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mind_blast"] = {
+      ["name"] = "Mind Blast",
+      ["soundFileName"] = "mind_blast",
+      ["spellIconId"] = 136224,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mind_control"] = {
+      ["name"] = "Mind Control",
+      ["soundFileName"] = "mind_control",
+      ["spellIconId"] = 136206,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mind_vision"] = {
+      ["name"] = "Mind Vision",
+      ["soundFileName"] = "mind_vision",
+      ["spellIconId"] = 135934,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["power_word_fortitude"] = {
+      ["name"] = "Power Word: Fortitude",
+      ["soundFileName"] = "power_word_fortitude",
+      ["spellIconId"] = 135987,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["power_word_shield"] = {
+      ["name"] = "Power Word: Shield",
+      ["soundFileName"] = "power_word_shield",
+      ["spellIconId"] = 135940,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["prayer_of_fortitude"] = {
+      ["name"] = "Prayer of Fortitude",
+      ["soundFileName"] = "prayer_of_fortitude",
+      ["spellIconId"] = 135941,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["prayer_of_healing"] = {
+      ["name"] = "Prayer of Healing",
+      ["soundFileName"] = "prayer_of_healing",
+      ["spellIconId"] = 135943,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["prayer_of_mending"] = {
+      ["name"] = "Prayer of Mending",
+      ["soundFileName"] = "prayer_of_mending",
+      ["spellIconId"] = 135944,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["prayer_of_shadow_protection"] = {
+      ["name"] = "Prayer of Shadow Protection",
+      ["soundFileName"] = "prayer_of_shadow_protection",
+      ["spellIconId"] = 135945,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["prayer_of_spirit"] = {
+      ["name"] = "Prayer of Spirit",
+      ["soundFileName"] = "prayer_of_spirit",
+      ["spellIconId"] = 135946,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["psychic_scream"] = {
+      ["name"] = "Psychic Scream",
+      ["soundFileName"] = "psychic_scream",
+      ["spellIconId"] = 136184,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["renew"] = {
+      ["name"] = "Renew",
+      ["soundFileName"] = "renew",
+      ["spellIconId"] = 135953,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["resurrection"] = {
+      ["name"] = "Resurrection",
+      ["soundFileName"] = "resurrection",
+      ["spellIconId"] = 135955,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadow_protection"] = {
+      ["name"] = "Shadow Protection",
+      ["soundFileName"] = "shadow_protection",
+      ["spellIconId"] = 136121,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["shadow_word_death"] = {
+      ["name"] = "Shadow Word: Death",
+      ["soundFileName"] = "shadow_word_death",
+      ["spellIconId"] = 136149,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadow_word_pain"] = {
+      ["name"] = "Shadow Word: Pain",
+      ["soundFileName"] = "shadow_word_pain",
+      ["spellIconId"] = 136207,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadowfiend"] = {
+      ["name"] = "Shadowfiend",
+      ["soundFileName"] = "shadowfiend",
+      ["spellIconId"] = 136199,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadowguard"] = {
+      ["name"] = "Shadowguard",
+      ["soundFileName"] = "shadowguard",
+      ["spellIconId"] = 136051,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["smite"] = {
+      ["name"] = "Smite",
+      ["soundFileName"] = "smite",
+      ["spellIconId"] = 135924,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["starshards"] = {
+      ["name"] = "Starshards",
+      ["soundFileName"] = "starshards",
+      ["spellIconId"] = 135753,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["symbol_of_hope"] = {
+      ["name"] = "Symbol of Hope",
+      ["soundFileName"] = "symbol_of_hope",
+      ["spellIconId"] = 135982,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["touch_of_weakness"] = {
+      ["name"] = "Touch of Weakness",
+      ["soundFileName"] = "touch_of_weakness",
+      ["spellIconId"] = 136143,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["blackout"] = {
+      ["name"] = "Blackout",
+      ["soundFileName"] = "blackout",
+      ["spellIconId"] = 136160,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["circle_of_healing"] = {
+      ["name"] = "Circle of Healing",
+      ["soundFileName"] = "circle_of_healing",
+      ["spellIconId"] = 135887,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["divine_spirit"] = {
+      ["name"] = "Divine Spirit",
+      ["soundFileName"] = "divine_spirit",
+      ["spellIconId"] = 135898,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["holy_nova"] = {
+      ["name"] = "Holy Nova",
+      ["soundFileName"] = "holy_nova",
+      ["spellIconId"] = 135922,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["inner_focus"] = {
+      ["name"] = "Inner Focus",
+      ["soundFileName"] = "inner_focus",
+      ["spellIconId"] = 135863,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["mind_flay"] = {
+      ["name"] = "Mind Flay",
+      ["soundFileName"] = "mind_flay",
+      ["spellIconId"] = 136208,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["pain_suppression"] = {
+      ["name"] = "Pain Suppression",
+      ["soundFileName"] = "pain_suppression",
+      ["spellIconId"] = 135936,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["power_infusion"] = {
+      ["name"] = "Power Infusion",
+      ["soundFileName"] = "power_infusion",
+      ["spellIconId"] = 135939,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["shadowform"] = {
+      ["name"] = "Shadowform",
+      ["soundFileName"] = "shadowform",
+      ["spellIconId"] = 136200,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["silence"] = {
+      ["name"] = "Silence",
+      ["soundFileName"] = "silence",
+      ["spellIconId"] = 136164,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["vampiric_embrace"] = {
+      ["name"] = "Vampiric Embrace",
+      ["soundFileName"] = "vampiric_embrace",
+      ["spellIconId"] = 136230,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["vampiric_touch"] = {
+      ["name"] = "Vampiric Touch",
+      ["soundFileName"] = "vampiric_touch",
+      ["spellIconId"] = 135978,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.WARRIOR.id] = {
     ["battle_stance"] = {
       ["name"] = "Battle Stance",
