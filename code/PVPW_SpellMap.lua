@@ -48,1608 +48,1608 @@ local spellMap = {
     Priest ABILITIES
   ]]--
   [552] = {
-    categories.PRIEST.id,
-    "abolish_disease",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "abolish_disease",
+    ["rank"] = 0
   },
   [32546] = {
-    categories.PRIEST.id,
-    "binding_heal",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "binding_heal",
+    ["rank"] = 1
   },
   [44041] = {
-    categories.PRIEST.id,
-    "chastise",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 1
   },
   [44043] = {
-    categories.PRIEST.id,
-    "chastise",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 2
   },
   [44044] = {
-    categories.PRIEST.id,
-    "chastise",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 3
   },
   [44045] = {
-    categories.PRIEST.id,
-    "chastise",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 4
   },
   [44046] = {
-    categories.PRIEST.id,
-    "chastise",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 5
   },
   [44047] = {
-    categories.PRIEST.id,
-    "chastise",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "chastise",
+    ["rank"] = 6
   },
   [32676] = {
-    categories.PRIEST.id,
-    "consume_magic",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "consume_magic",
+    ["rank"] = 0
   },
   [528] = {
-    categories.PRIEST.id,
-    "cure_disease",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "cure_disease",
+    ["rank"] = 0
   },
   [13908] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 1
   },
   [19236] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 2
   },
   [19238] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 3
   },
   [19240] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 4
   },
   [19241] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 5
   },
   [19242] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 6
   },
   [19243] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 7
   },
   [25437] = {
-    categories.PRIEST.id,
-    "desperate_prayer",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "desperate_prayer",
+    ["rank"] = 8
   },
   [2944] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 1
   },
   [19276] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 2
   },
   [19277] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 3
   },
   [19278] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 4
   },
   [19279] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 5
   },
   [19280] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 6
   },
   [25467] = {
-    categories.PRIEST.id,
-    "devouring_plague",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "devouring_plague",
+    ["rank"] = 7
   },
   [527] = {
-    categories.PRIEST.id,
-    "dispel_magic",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "dispel_magic",
+    ["rank"] = 1
   },
   [988] = {
-    categories.PRIEST.id,
-    "dispel_magic",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "dispel_magic",
+    ["rank"] = 2
   },
   [2651] = {
-    categories.PRIEST.id,
-    "elunes_grace",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "elunes_grace",
+    ["rank"] = 0
   },
   [6346] = {
-    categories.PRIEST.id,
-    "fear_ward",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "fear_ward",
+    ["rank"] = 0
   },
   [13896] = {
-    categories.PRIEST.id,
-    "feedback",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 1
   },
   [19271] = {
-    categories.PRIEST.id,
-    "feedback",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 2
   },
   [19273] = {
-    categories.PRIEST.id,
-    "feedback",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 3
   },
   [19274] = {
-    categories.PRIEST.id,
-    "feedback",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 4
   },
   [19275] = {
-    categories.PRIEST.id,
-    "feedback",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 5
   },
   [25441] = {
-    categories.PRIEST.id,
-    "feedback",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "feedback",
+    ["rank"] = 6
   },
   [2061] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 1
   },
   [9472] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 2
   },
   [9473] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 3
   },
   [9474] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 4
   },
   [10915] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 5
   },
   [10916] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 6
   },
   [10917] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 7
   },
   [25233] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 8
   },
   [25235] = {
-    categories.PRIEST.id,
-    "flash_heal",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "flash_heal",
+    ["rank"] = 9
   },
   [2060] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 1
   },
   [10963] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 2
   },
   [10964] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 3
   },
   [10965] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 4
   },
   [25314] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 5
   },
   [25210] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 6
   },
   [25213] = {
-    categories.PRIEST.id,
-    "greater_heal",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "greater_heal",
+    ["rank"] = 7
   },
   [2054] = {
-    categories.PRIEST.id,
-    "heal",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "heal",
+    ["rank"] = 1
   },
   [2055] = {
-    categories.PRIEST.id,
-    "heal",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "heal",
+    ["rank"] = 2
   },
   [6063] = {
-    categories.PRIEST.id,
-    "heal",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "heal",
+    ["rank"] = 3
   },
   [6064] = {
-    categories.PRIEST.id,
-    "heal",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "heal",
+    ["rank"] = 4
   },
   [9035] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 1
   },
   [19281] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 2
   },
   [19282] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 3
   },
   [19283] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 4
   },
   [19284] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 5
   },
   [19285] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 6
   },
   [25470] = {
-    categories.PRIEST.id,
-    "hex_of_weakness",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "hex_of_weakness",
+    ["rank"] = 7
   },
   [14914] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 1
   },
   [15262] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 2
   },
   [15263] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 3
   },
   [15264] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 4
   },
   [15265] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 5
   },
   [15266] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 6
   },
   [15267] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 7
   },
   [15261] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 8
   },
   [25384] = {
-    categories.PRIEST.id,
-    "holy_fire",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_fire",
+    ["rank"] = 9
   },
   [588] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 1
   },
   [7128] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 2
   },
   [602] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 3
   },
   [1006] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 4
   },
   [10951] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 5
   },
   [10952] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 6
   },
   [25431] = {
-    categories.PRIEST.id,
-    "inner_fire",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_fire",
+    ["rank"] = 7
   },
   [2050] = {
-    categories.PRIEST.id,
-    "lesser_heal",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "lesser_heal",
+    ["rank"] = 1
   },
   [2052] = {
-    categories.PRIEST.id,
-    "lesser_heal",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "lesser_heal",
+    ["rank"] = 2
   },
   [2053] = {
-    categories.PRIEST.id,
-    "lesser_heal",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "lesser_heal",
+    ["rank"] = 3
   },
   [1706] = {
-    categories.PRIEST.id,
-    "levitate",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "levitate",
+    ["rank"] = 0
   },
   [8129] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 1
   },
   [8131] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 2
   },
   [10874] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 3
   },
   [10875] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 4
   },
   [10876] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 5
   },
   [25379] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 6
   },
   [25380] = {
-    categories.PRIEST.id,
-    "mana_burn",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mana_burn",
+    ["rank"] = 7
   },
   [32375] = {
-    categories.PRIEST.id,
-    "mass_dispel",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mass_dispel",
+    ["rank"] = 0
   },
   [8092] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 1
   },
   [8102] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 2
   },
   [8103] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 3
   },
   [8104] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 4
   },
   [8105] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 5
   },
   [8106] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 6
   },
   [10945] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 7
   },
   [10946] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 8
   },
   [10947] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 9
   },
   [25372] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    10
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 10
   },
   [25375] = {
-    categories.PRIEST.id,
-    "mind_blast",
-    11
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_blast",
+    ["rank"] = 11
   },
   [605] = {
-    categories.PRIEST.id,
-    "mind_control",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_control",
+    ["rank"] = 1
   },
   [10911] = {
-    categories.PRIEST.id,
-    "mind_control",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_control",
+    ["rank"] = 2
   },
   [10912] = {
-    categories.PRIEST.id,
-    "mind_control",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_control",
+    ["rank"] = 3
   },
   [2096] = {
-    categories.PRIEST.id,
-    "mind_vision",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_vision",
+    ["rank"] = 1
   },
   [10909] = {
-    categories.PRIEST.id,
-    "mind_vision",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_vision",
+    ["rank"] = 2
   },
   [1243] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 1
   },
   [1244] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 2
   },
   [1245] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 3
   },
   [2791] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 4
   },
   [10937] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 5
   },
   [10938] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 6
   },
   [25389] = {
-    categories.PRIEST.id,
-    "power_word_fortitude",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_fortitude",
+    ["rank"] = 7
   },
   [17] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 1
   },
   [592] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 2
   },
   [600] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 3
   },
   [3747] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 4
   },
   [6065] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 5
   },
   [6066] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 6
   },
   [10898] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 7
   },
   [10899] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 8
   },
   [10900] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 9
   },
   [10901] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    10
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 10
   },
   [25217] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    11
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 11
   },
   [25218] = {
-    categories.PRIEST.id,
-    "power_word_shield",
-    12
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_word_shield",
+    ["rank"] = 12
   },
   [21562] = {
-    categories.PRIEST.id,
-    "prayer_of_fortitude",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_fortitude",
+    ["rank"] = 1
   },
   [21564] = {
-    categories.PRIEST.id,
-    "prayer_of_fortitude",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_fortitude",
+    ["rank"] = 2
   },
   [25392] = {
-    categories.PRIEST.id,
-    "prayer_of_fortitude",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_fortitude",
+    ["rank"] = 3
   },
   [596] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 1
   },
   [996] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 2
   },
   [10960] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 3
   },
   [10961] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 4
   },
   [25316] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 5
   },
   [25308] = {
-    categories.PRIEST.id,
-    "prayer_of_healing",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_healing",
+    ["rank"] = 6
   },
   [33076] = {
-    categories.PRIEST.id,
-    "prayer_of_mending",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_mending",
+    ["rank"] = 1
   },
   [27683] = {
-    categories.PRIEST.id,
-    "prayer_of_shadow_protection",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_shadow_protection",
+    ["rank"] = 1
   },
   [39374] = {
-    categories.PRIEST.id,
-    "prayer_of_shadow_protection",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_shadow_protection",
+    ["rank"] = 2
   },
   [27681] = {
-    categories.PRIEST.id,
-    "prayer_of_spirit",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_spirit",
+    ["rank"] = 1
   },
   [32999] = {
-    categories.PRIEST.id,
-    "prayer_of_spirit",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "prayer_of_spirit",
+    ["rank"] = 2
   },
   [8122] = {
-    categories.PRIEST.id,
-    "psychic_scream",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "psychic_scream",
+    ["rank"] = 1
   },
   [8124] = {
-    categories.PRIEST.id,
-    "psychic_scream",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "psychic_scream",
+    ["rank"] = 2
   },
   [10888] = {
-    categories.PRIEST.id,
-    "psychic_scream",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "psychic_scream",
+    ["rank"] = 3
   },
   [10890] = {
-    categories.PRIEST.id,
-    "psychic_scream",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "psychic_scream",
+    ["rank"] = 4
   },
   [139] = {
-    categories.PRIEST.id,
-    "renew",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 1
   },
   [6074] = {
-    categories.PRIEST.id,
-    "renew",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 2
   },
   [6075] = {
-    categories.PRIEST.id,
-    "renew",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 3
   },
   [6076] = {
-    categories.PRIEST.id,
-    "renew",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 4
   },
   [6077] = {
-    categories.PRIEST.id,
-    "renew",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 5
   },
   [6078] = {
-    categories.PRIEST.id,
-    "renew",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 6
   },
   [10927] = {
-    categories.PRIEST.id,
-    "renew",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 7
   },
   [10928] = {
-    categories.PRIEST.id,
-    "renew",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 8
   },
   [10929] = {
-    categories.PRIEST.id,
-    "renew",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 9
   },
   [25315] = {
-    categories.PRIEST.id,
-    "renew",
-    10
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 10
   },
   [25221] = {
-    categories.PRIEST.id,
-    "renew",
-    11
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 11
   },
   [25222] = {
-    categories.PRIEST.id,
-    "renew",
-    12
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "renew",
+    ["rank"] = 12
   },
   [2006] = {
-    categories.PRIEST.id,
-    "resurrection",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 1
   },
   [2010] = {
-    categories.PRIEST.id,
-    "resurrection",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 2
   },
   [10880] = {
-    categories.PRIEST.id,
-    "resurrection",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 3
   },
   [10881] = {
-    categories.PRIEST.id,
-    "resurrection",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 4
   },
   [20770] = {
-    categories.PRIEST.id,
-    "resurrection",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 5
   },
   [25435] = {
-    categories.PRIEST.id,
-    "resurrection",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "resurrection",
+    ["rank"] = 6
   },
   [976] = {
-    categories.PRIEST.id,
-    "shadow_protection",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_protection",
+    ["rank"] = 1
   },
   [10957] = {
-    categories.PRIEST.id,
-    "shadow_protection",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_protection",
+    ["rank"] = 2
   },
   [10958] = {
-    categories.PRIEST.id,
-    "shadow_protection",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_protection",
+    ["rank"] = 3
   },
   [25433] = {
-    categories.PRIEST.id,
-    "shadow_protection",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_protection",
+    ["rank"] = 4
   },
   [32379] = {
-    categories.PRIEST.id,
-    "shadow_word_death",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_death",
+    ["rank"] = 1
   },
   [32996] = {
-    categories.PRIEST.id,
-    "shadow_word_death",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_death",
+    ["rank"] = 2
   },
   [589] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 1
   },
   [594] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 2
   },
   [970] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 3
   },
   [992] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 4
   },
   [2767] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 5
   },
   [10892] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 6
   },
   [10893] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 7
   },
   [10894] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 8
   },
   [25367] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 9
   },
   [25368] = {
-    categories.PRIEST.id,
-    "shadow_word_pain",
-    10
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadow_word_pain",
+    ["rank"] = 10
   },
   [34433] = {
-    categories.PRIEST.id,
-    "shadowfiend",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowfiend",
+    ["rank"] = 1
   },
   [18137] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 1
   },
   [19308] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 2
   },
   [19309] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 3
   },
   [19310] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 4
   },
   [19311] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 5
   },
   [19312] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 6
   },
   [25477] = {
-    categories.PRIEST.id,
-    "shadowguard",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowguard",
+    ["rank"] = 7
   },
   [585] = {
-    categories.PRIEST.id,
-    "smite",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 1
   },
   [591] = {
-    categories.PRIEST.id,
-    "smite",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 2
   },
   [598] = {
-    categories.PRIEST.id,
-    "smite",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 3
   },
   [984] = {
-    categories.PRIEST.id,
-    "smite",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 4
   },
   [1004] = {
-    categories.PRIEST.id,
-    "smite",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 5
   },
   [6060] = {
-    categories.PRIEST.id,
-    "smite",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 6
   },
   [10933] = {
-    categories.PRIEST.id,
-    "smite",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 7
   },
   [10934] = {
-    categories.PRIEST.id,
-    "smite",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 8
   },
   [25363] = {
-    categories.PRIEST.id,
-    "smite",
-    9
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 9
   },
   [25364] = {
-    categories.PRIEST.id,
-    "smite",
-    10
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "smite",
+    ["rank"] = 10
   },
   [10797] = {
-    categories.PRIEST.id,
-    "starshards",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 1
   },
   [19296] = {
-    categories.PRIEST.id,
-    "starshards",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 2
   },
   [19299] = {
-    categories.PRIEST.id,
-    "starshards",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 3
   },
   [19302] = {
-    categories.PRIEST.id,
-    "starshards",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 4
   },
   [19303] = {
-    categories.PRIEST.id,
-    "starshards",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 5
   },
   [19304] = {
-    categories.PRIEST.id,
-    "starshards",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 6
   },
   [19305] = {
-    categories.PRIEST.id,
-    "starshards",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 7
   },
   [25446] = {
-    categories.PRIEST.id,
-    "starshards",
-    8
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "starshards",
+    ["rank"] = 8
   },
   [32548] = {
-    categories.PRIEST.id,
-    "symbol_of_hope",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "symbol_of_hope",
+    ["rank"] = 0
   },
   [2652] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 1
   },
   [19261] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 2
   },
   [19262] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 3
   },
   [19264] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 4
   },
   [19265] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 5
   },
   [19266] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 6
   },
   [25461] = {
-    categories.PRIEST.id,
-    "touch_of_weakness",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "touch_of_weakness",
+    ["rank"] = 7
   },
   --[[
     Priest TALENTS
   ]]--
   [15268] = {
-    categories.PRIEST.id,
-    "blackout",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "blackout",
+    ["rank"] = 1
   },
   [15323] = {
-    categories.PRIEST.id,
-    "blackout",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "blackout",
+    ["rank"] = 2
   },
   [15324] = {
-    categories.PRIEST.id,
-    "blackout",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "blackout",
+    ["rank"] = 3
   },
   [15325] = {
-    categories.PRIEST.id,
-    "blackout",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "blackout",
+    ["rank"] = 4
   },
   [15326] = {
-    categories.PRIEST.id,
-    "blackout",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "blackout",
+    ["rank"] = 5
   },
   [34861] = {
-    categories.PRIEST.id,
-    "circle_of_healing",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "circle_of_healing",
+    ["rank"] = 1
   },
   [34863] = {
-    categories.PRIEST.id,
-    "circle_of_healing",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "circle_of_healing",
+    ["rank"] = 2
   },
   [34864] = {
-    categories.PRIEST.id,
-    "circle_of_healing",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "circle_of_healing",
+    ["rank"] = 3
   },
   [34865] = {
-    categories.PRIEST.id,
-    "circle_of_healing",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "circle_of_healing",
+    ["rank"] = 4
   },
   [34866] = {
-    categories.PRIEST.id,
-    "circle_of_healing",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "circle_of_healing",
+    ["rank"] = 5
   },
   [14752] = {
-    categories.PRIEST.id,
-    "divine_spirit",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "divine_spirit",
+    ["rank"] = 1
   },
   [14818] = {
-    categories.PRIEST.id,
-    "divine_spirit",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "divine_spirit",
+    ["rank"] = 2
   },
   [14819] = {
-    categories.PRIEST.id,
-    "divine_spirit",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "divine_spirit",
+    ["rank"] = 3
   },
   [27841] = {
-    categories.PRIEST.id,
-    "divine_spirit",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "divine_spirit",
+    ["rank"] = 4
   },
   [25312] = {
-    categories.PRIEST.id,
-    "divine_spirit",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "divine_spirit",
+    ["rank"] = 5
   },
   [15237] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 1
   },
   [15430] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 2
   },
   [15431] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 3
   },
   [27799] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 4
   },
   [27800] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 5
   },
   [27801] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 6
   },
   [25331] = {
-    categories.PRIEST.id,
-    "holy_nova",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "holy_nova",
+    ["rank"] = 7
   },
   [14751] = {
-    categories.PRIEST.id,
-    "inner_focus",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "inner_focus",
+    ["rank"] = 0
   },
   [15407] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 1
   },
   [17311] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 2
   },
   [17312] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 3
   },
   [17313] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    4
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 4
   },
   [17314] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    5
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 5
   },
   [18807] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    6
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 6
   },
   [25387] = {
-    categories.PRIEST.id,
-    "mind_flay",
-    7
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "mind_flay",
+    ["rank"] = 7
   },
   [33206] = {
-    categories.PRIEST.id,
-    "pain_suppression",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "pain_suppression",
+    ["rank"] = 0
   },
   [10060] = {
-    categories.PRIEST.id,
-    "power_infusion",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "power_infusion",
+    ["rank"] = 0
   },
   [15473] = {
-    categories.PRIEST.id,
-    "shadowform",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "shadowform",
+    ["rank"] = 0
   },
   [15487] = {
-    categories.PRIEST.id,
-    "silence",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "silence",
+    ["rank"] = 0
   },
   [15286] = {
-    categories.PRIEST.id,
-    "vampiric_embrace",
-    0
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "vampiric_embrace",
+    ["rank"] = 0
   },
   [34914] = {
-    categories.PRIEST.id,
-    "vampiric_touch",
-    1
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "vampiric_touch",
+    ["rank"] = 1
   },
   [34916] = {
-    categories.PRIEST.id,
-    "vampiric_touch",
-    2
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "vampiric_touch",
+    ["rank"] = 2
   },
   [34917] = {
-    categories.PRIEST.id,
-    "vampiric_touch",
-    3
+    ["category"] = categories.PRIEST.id,
+    ["name"] = "vampiric_touch",
+    ["rank"] = 3
   },
   --[[
     WARRIOR ABILITIES
   ]]--
   [2457] = {
-    categories.WARRIOR.id,
-    "battle_stance",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "battle_stance",
+    ["rank"] = 0
   },
   [18499] = {
-    categories.WARRIOR.id,
-    "berserker_rage",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "berserker_rage",
+    ["rank"] = 0
   },
   [2458] = {
-    categories.WARRIOR.id,
-    "berserker_stance",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "berserker_stance",
+    ["rank"] = 0
   },
   [2687] = {
-    categories.WARRIOR.id,
-    "bloodrage",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "bloodrage",
+    ["rank"] = 0
   },
   [100] = {
-    categories.WARRIOR.id,
-    "charge",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "charge",
+    ["rank"] = 1
   },
   [6178] = {
-    categories.WARRIOR.id,
-    "charge",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "charge",
+    ["rank"] = 2
   },
   [11578] = {
-    categories.WARRIOR.id,
-    "charge",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "charge",
+    ["rank"] = 3
   },
   [71] = {
-    categories.WARRIOR.id,
-    "defensive_stance",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "defensive_stance",
+    ["rank"] = 0
   },
   [1160] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 1
   },
   [6190] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 2
   },
   [11554] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 3
   },
   [11555] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 4
   },
   [11556] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    5
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 5
   },
   [25202] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    6
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 6
   },
   [25203] = {
-    categories.WARRIOR.id,
-    "demoralizing_shout",
-    7
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "demoralizing_shout",
+    ["rank"] = 7
   },
   [676] = {
-    categories.WARRIOR.id,
-    "disarm",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "disarm",
+    ["rank"] = 0
   },
   [1715] = {
-    categories.WARRIOR.id,
-    "hamstring",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "hamstring",
+    ["rank"] = 1
   },
   [7372] = {
-    categories.WARRIOR.id,
-    "hamstring",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "hamstring",
+    ["rank"] = 2
   },
   [7373] = {
-    categories.WARRIOR.id,
-    "hamstring",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "hamstring",
+    ["rank"] = 3
   },
   [25212] = {
-    categories.WARRIOR.id,
-    "hamstring",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "hamstring",
+    ["rank"] = 4
   },
   [20252] = {
-    categories.WARRIOR.id,
-    "intercept",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intercept",
+    ["rank"] = 1
   },
   [20616] = {
-    categories.WARRIOR.id,
-    "intercept",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intercept",
+    ["rank"] = 2
   },
   [20617] = {
-    categories.WARRIOR.id,
-    "intercept",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intercept",
+    ["rank"] = 3
   },
   [25272] = {
-    categories.WARRIOR.id,
-    "intercept",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intercept",
+    ["rank"] = 4
   },
   [25275] = {
-    categories.WARRIOR.id,
-    "intercept",
-    5
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intercept",
+    ["rank"] = 5
   },
   [3411] = {
-    categories.WARRIOR.id,
-    "intervene",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intervene",
+    ["rank"] = 0
   },
   [5246] = {
-    categories.WARRIOR.id,
-    "intimidating_shout",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "intimidating_shout",
+    ["rank"] = 0
   },
   [7384] = {
-    categories.WARRIOR.id,
-    "overpower",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "overpower",
+    ["rank"] = 1
   },
   [7887] = {
-    categories.WARRIOR.id,
-    "overpower",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "overpower",
+    ["rank"] = 2
   },
   [11584] = {
-    categories.WARRIOR.id,
-    "overpower",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "overpower",
+    ["rank"] = 3
   },
   [11585] = {
-    categories.WARRIOR.id,
-    "overpower",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "overpower",
+    ["rank"] = 4
   },
   [6552] = {
-    categories.WARRIOR.id,
-    "pummel",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "pummel",
+    ["rank"] = 1
   },
   [6554] = {
-    categories.WARRIOR.id,
-    "pummel",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "pummel",
+    ["rank"] = 2
   },
   [1719] = {
-    categories.WARRIOR.id,
-    "recklessness",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "recklessness",
+    ["rank"] = 0
   },
   [20230] = {
-    categories.WARRIOR.id,
-    "retaliation",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "retaliation",
+    ["rank"] = 0
   },
   [72] = {
-    categories.WARRIOR.id,
-    "shield_bash",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_bash",
+    ["rank"] = 1
   },
   [1671] = {
-    categories.WARRIOR.id,
-    "shield_bash",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_bash",
+    ["rank"] = 2
   },
   [1672] = {
-    categories.WARRIOR.id,
-    "shield_bash",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_bash",
+    ["rank"] = 3
   },
   [29704] = {
-    categories.WARRIOR.id,
-    "shield_bash",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_bash",
+    ["rank"] = 4
   },
   [2565] = {
-    categories.WARRIOR.id,
-    "shield_block",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_block",
+    ["rank"] = 0
   },
   [871] = {
-    categories.WARRIOR.id,
-    "shield_wall",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_wall",
+    ["rank"] = 0
   },
   [23920] = {
-    categories.WARRIOR.id,
-    "spell_reflection",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "spell_reflection",
+    ["rank"] = 0
   },
   [7386] = {
-    categories.WARRIOR.id,
-    "sunder_armor",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sunder_armor",
+    ["rank"] = 1
   },
   [7405] = {
-    categories.WARRIOR.id,
-    "sunder_armor",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sunder_armor",
+    ["rank"] = 2
   },
   [8380] = {
-    categories.WARRIOR.id,
-    "sunder_armor",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sunder_armor",
+    ["rank"] = 3
   },
   [11596] = {
-    categories.WARRIOR.id,
-    "sunder_armor",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sunder_armor",
+    ["rank"] = 4
   },
   [11597] = {
-    categories.WARRIOR.id,
-    "sunder_armor",
-    5
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sunder_armor",
+    ["rank"] = 5
   },
   [1680] = {
-    categories.WARRIOR.id,
-    "whirlwind",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "whirlwind",
+    ["rank"] = 0
   },
   --[[
     WARRIOR TALENTS
   ]]--
   [12809] = {
-    categories.WARRIOR.id,
-    "concussion_blow",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "concussion_blow",
+    ["rank"] = 0
   },
   [12292] = {
-    categories.WARRIOR.id,
-    "death_wish",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "death_wish",
+    ["rank"] = 0
   },
   [12975] = {
-    categories.WARRIOR.id,
-    "last_stand",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "last_stand",
+    ["rank"] = 0
   },
   [12294] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 1
   },
   [21551] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 2
   },
   [21552] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 3
   },
   [21553] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 4
   },
   [25248] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    5
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 5
   },
   [30330] = {
-    categories.WARRIOR.id,
-    "mortal_strike",
-    6
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "mortal_strike",
+    ["rank"] = 6
   },
   [12323] = {
-    categories.WARRIOR.id,
-    "piercing_howl",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "piercing_howl",
+    ["rank"] = 0
   },
   [29801] = {
-    categories.WARRIOR.id,
-    "rampage",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "rampage",
+    ["rank"] = 1
   },
   [30030] = {
-    categories.WARRIOR.id,
-    "rampage",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "rampage",
+    ["rank"] = 2
   },
   [30033] = {
-    categories.WARRIOR.id,
-    "rampage",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "rampage",
+    ["rank"] = 3
   },
   [29834] = {
-    categories.WARRIOR.id,
-    "second_wind",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "second_wind",
+    ["rank"] = 1
   },
   [29838] = {
-    categories.WARRIOR.id,
-    "second_wind",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "second_wind",
+    ["rank"] = 2
   },
   [23922] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    1
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 1
   },
   [23923] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    2
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 2
   },
   [23924] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    3
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 3
   },
   [23925] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    4
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 4
   },
   [25258] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    5
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 5
   },
   [30356] = {
-    categories.WARRIOR.id,
-    "shield_slam",
-    6
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "shield_slam",
+    ["rank"] = 6
   },
   [12328] = {
-    categories.WARRIOR.id,
-    "sweeping_strikes",
-    0
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "sweeping_strikes",
+    ["rank"] = 0
   }
   --[[
 
@@ -1705,11 +1705,11 @@ function me.SearchByCategory(category)
   local spells = {}
 
   for spellId, searchedSpell in pairs(spellMap) do
-    if category == searchedSpell[1] then
+    if category == searchedSpell.category then
       local spell = {}
       spell.id = spellId
-      spell.name = searchedSpell[2]
-      spell.rank = searchedSpell[3]
+      spell.name = searchedSpell.name
+      spell.rank = searchedSpell.rank
 
       table.insert(spells, spell)
     end

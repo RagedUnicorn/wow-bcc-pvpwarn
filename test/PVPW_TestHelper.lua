@@ -423,7 +423,12 @@ function me.TestSound(spellName, testCategory, event, spellType)
     return false
   end
 
-  local spellMetaData = mod[spellMap].GetSpellMetaDataForSupportedEvent({testCategory, spellName}, event)
+  local spell = {
+    ["category"] = testCategory,
+    ["name"] = spellName
+  }
+
+  local spellMetaData = mod[spellMap].GetSpellMetaDataForSupportedEvent(spell, event)
   local status = mod.sound.PlaySound(
     testCategory,
     spellType,

@@ -869,24 +869,23 @@ local spellMetaMap = {
 function me.GetSpellMetaDataForSupportedEvent(spell, event)
   if not spell or type(spell) ~= "table" then return nil end
   if not event or type(event) ~= "string" then return nil end
-
-  local category = spell[1]
-  local spellName = spell[2]
-
+  DevTools_Dump(spell)
   mod.logger.LogDebug(me.tag,
-    "Searching for spell metadata with category {" .. category .. "} and spellName {" .. spellName .. "}")
+    "Searching for spell metadata with category {" .. spell.category .. "} and spellName {" .. spell.name .. "}")
 
-  if spellMetaMap[category] ~= nil and spellMetaMap[category][spellName] ~= nil then
-    if me.SupportsEvent(spellMetaMap[category][spellName], event) then
-      mod.logger.LogInfo(me.tag, "Found spell for category {" .. category .. "} and spellName {" .. spellName .. "}")
+  if spellMetaMap[spell.category] ~= nil and spellMetaMap[spell.category][spell.name] ~= nil then
+    if me.SupportsEvent(spellMetaMap[spell.category][spell.name], event) then
+      mod.logger.LogInfo(
+        me.tag, "Found spell for category {" .. spell.category .. "} and spellName {" .. spell.name .. "}")
 
-      return spellMetaMap[category][spellName]
+      return spellMetaMap[spell.category][spell.name]
     else
       return nil
     end
   end
 
-  mod.logger.LogDebug(me.tag, "Spell with category {" .. category .. "} and spellName {" .. spellName .. "} not found")
+  mod.logger.LogDebug(
+    me.tag, "Spell with category {" .. spell.category .. "} and spellName {" .. spell.name .. "} not found")
   return nil
 end
 

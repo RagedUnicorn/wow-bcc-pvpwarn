@@ -115,22 +115,20 @@ function me.ProcessNormal(event, callback, ...)
   if not me.HasFoundSpell(spell, spellId) then return end
   if not me.HasFoundSupportedSpell(spellMetaData, spellId) then return end
 
-  local category = spell[1]
-
-  if not me.IsSpellActive(category, spellId) then return end
+  if not me.IsSpellActive(spell.category, spellId) then return end
 
   local visualWarningColor = mod.spellConfiguration.GetVisualWarningColor(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellId
+    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, spell.category, spellId
   )
 
-  playSound = me.IsSoundWarningActive(category, spellId)
-  playVisual = me.IsVisualWarningActive(category, spellId, visualWarningColor)
+  playSound = me.IsSoundWarningActive(spell.category, spellId)
+  playVisual = me.IsVisualWarningActive(spell.category, spellId, visualWarningColor)
 
   if playVisual then
     spellMetaData.visualWarningColor = visualWarningColor
   end
 
-  mod.warn.PlayWarning(category, spellType, spellMetaData, callback, playSound, playVisual)
+  mod.warn.PlayWarning(spell.category, spellType, spellMetaData, callback, playSound, playVisual)
 end
 
 --[[
