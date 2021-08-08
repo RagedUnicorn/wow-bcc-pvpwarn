@@ -121,13 +121,14 @@ end
     The normalized spellName
 ]]--
 function me.NormalizeSpellName(spellName)
-  local name = ""
+  local name = string.gsub(spellName, "[':%(%)]+", "") -- remove special characters
+  local normalizedSpellName = ""
 
-  for match in string.gmatch(spellName, "%a+") do
-    name = name .. me.FirstToUpper(match)
+  for match in string.gmatch(name, "%a+") do
+    normalizedSpellName = normalizedSpellName .. me.FirstToUpper(match)
   end
 
-  return name
+  return normalizedSpellName
 end
 
 --[[
