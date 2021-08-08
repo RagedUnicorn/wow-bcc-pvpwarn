@@ -564,7 +564,7 @@ local spellMetaMap = {
     ["battle_stance"] = {
       ["name"] = "Battle Stance",
       ["soundFileName"] = "battle_stance",
-      ["spellIcon"] = "ability_warrior_offensivestance",
+      ["spellIconId"] = 132349,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
@@ -573,7 +573,7 @@ local spellMetaMap = {
     ["berserker_rage"] = {
       ["name"] = "Berserker Rage",
       ["soundFileName"] = "berserker_rage",
-      ["spellIcon"] = "spell_nature_ancestralguardian",
+      ["spellIconId"] = 136009,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -583,7 +583,7 @@ local spellMetaMap = {
     ["berserker_stance"] = {
       ["name"] = "Berserker Stance",
       ["soundFileName"] = "berserker_stance",
-      ["spellIcon"] = "ability_racial_avatar",
+      ["spellIconId"] = "132275",
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
@@ -592,7 +592,7 @@ local spellMetaMap = {
     ["bloodrage"] = {
       ["name"] = "Bloodrage",
       ["soundFileName"] = "bloodrage",
-      ["spellIcon"] = "ability_racial_bloodrage",
+      ["spellIconId"] = 132277,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -602,7 +602,7 @@ local spellMetaMap = {
     ["charge"] = {
       ["name"] = "Charge",
       ["soundFileName"] = "charge",
-      ["spellIcon"] = "ability_warrior_charge",
+      ["spellIconId"] = 132337,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -611,7 +611,7 @@ local spellMetaMap = {
     ["defensive_stance"] = {
       ["name"] = "Defensive Stance",
       ["soundFileName"] = "defensive_stance",
-      ["spellIcon"] = "ability_warrior_defensivestance",
+      ["spellIconId"] = 132341,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
@@ -620,7 +620,7 @@ local spellMetaMap = {
     ["demoralizing_shout"] = {
       ["name"] = "Demoralizing Shout",
       ["soundFileName"] = "demoralizing_shout",
-      ["spellIcon"] = "ability_warrior_warcry",
+      ["spellIconId"] = 132366,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -629,7 +629,7 @@ local spellMetaMap = {
     ["disarm"] = {
       ["name"] = "Disarm",
       ["soundFileName"] = "disarm",
-      ["spellIcon"] = "ability_warrior_disarm",
+      ["spellIconId"] = 132343,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -638,7 +638,7 @@ local spellMetaMap = {
     ["hamstring"] = {
       ["name"] = "Hamstring",
       ["soundFileName"] = "hamstring",
-      ["spellIcon"] = "ability_shockwave",
+      ["spellIconId"] = 132316,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -647,7 +647,7 @@ local spellMetaMap = {
     ["intercept"] = {
       ["name"] = "Intercept",
       ["soundFileName"] = "intercept",
-      ["spellIcon"] = "ability_rogue_sprint",
+      ["spellIconId"] = 132307,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -656,7 +656,7 @@ local spellMetaMap = {
     ["intervene"] = {
       ["name"] = "Intervene",
       ["soundFileName"] = "intervene",
-      ["spellIcon"] = "ability_warrior_victoryrush",
+      ["spellIconId"] = 132365,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -665,7 +665,7 @@ local spellMetaMap = {
     ["intimidating_shout"] = {
       ["name"] = "Intimidating Shout",
       ["soundFileName"] = "intimidating_shout",
-      ["spellIcon"] = "ability_golemthunderclap",
+      ["spellIconId"] = 132154,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -674,7 +674,7 @@ local spellMetaMap = {
     ["overpower"] = {
       ["name"] = "Overpower",
       ["soundFileName"] = "overpower",
-      ["spellIcon"] = "ability_meleedamage",
+      ["spellIconId"] = 132223,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -683,7 +683,7 @@ local spellMetaMap = {
     ["pummel"] = {
       ["name"] = "Pummel",
       ["soundFileName"] = "pummel",
-      ["spellIcon"] = "inv_gauntlets_04",
+      ["spellIconId"] = 132938,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -692,7 +692,7 @@ local spellMetaMap = {
     ["recklessness"] = {
       ["name"] = "Recklessness",
       ["soundFileName"] = "recklessness",
-      ["spellIcon"] = "ability_criticalstrike",
+      ["spellIconId"] = 132109,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -702,7 +702,7 @@ local spellMetaMap = {
     ["retaliation"] = {
       ["name"] = "Retaliation",
       ["soundFileName"] = "retaliation",
-      ["spellIcon"] = "ability_warrior_challange",
+      ["spellIconId"] = 132336,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -712,7 +712,7 @@ local spellMetaMap = {
     ["shield_bash"] = {
       ["name"] = "Shield Bash",
       ["soundFileName"] = "shield_bash",
-      ["spellIcon"] = "ability_warrior_shieldbash",
+      ["spellIconId"] = 132357,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -721,7 +721,7 @@ local spellMetaMap = {
     ["shield_block"] = {
       ["name"] = "Shield Block",
       ["soundFileName"] = "shield_block",
-      ["spellIcon"] = "ability_defend",
+      ["spellIconId"] = 132110,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -731,7 +731,7 @@ local spellMetaMap = {
     ["shield_wall"] = {
       ["name"] = "Shield Wall",
       ["soundFileName"] = "shield_wall",
-      ["spellIcon"] = "ability_warrior_shieldwall",
+      ["spellIconId"] = 132362,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -741,7 +741,7 @@ local spellMetaMap = {
     ["spell_reflection"] = {
       ["name"] = "Spell Reflection",
       ["soundFileName"] = "spell_reflection",
-      ["spellIcon"] = "ability_warrior_shieldreflection",
+      ["spellIconId"] = 132361,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -751,7 +751,7 @@ local spellMetaMap = {
     ["sunder_armor"] = {
       ["name"] = "Sunder Armor",
       ["soundFileName"] = "sunder_armor",
-      ["spellIcon"] = "ability_warrior_sunder",
+      ["spellIconId"] = 132363,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -760,7 +760,7 @@ local spellMetaMap = {
     ["whirlwind"] = {
       ["name"] = "Whirlwind",
       ["soundFileName"] = "whirlwind",
-      ["spellIcon"] = "ability_whirlwind",
+      ["spellIconId"] = 132369,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -769,7 +769,7 @@ local spellMetaMap = {
     ["concussion_blow"] = {
       ["name"] = "Concussion Blow",
       ["soundFileName"] = "concussion_blow",
-      ["spellIcon"] = "ability_thunderbolt",
+      ["spellIconId"] = 132325,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -778,7 +778,7 @@ local spellMetaMap = {
     ["death_wish"] = {
       ["name"] = "Death Wish",
       ["soundFileName"] = "death_wish",
-      ["spellIcon"] = "spell_shadow_deathpact",
+      ["spellIconId"] = 136146,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -788,7 +788,7 @@ local spellMetaMap = {
     ["last_stand"] = {
       ["name"] = "Last Stand",
       ["soundFileName"] = "last_stand",
-      ["spellIcon"] = "spell_holy_ashestoashes",
+      ["spellIconId"] = 135871,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -798,7 +798,7 @@ local spellMetaMap = {
     ["mortal_strike"] = {
       ["name"] = "Mortal Strike",
       ["soundFileName"] = "mortal_strike",
-      ["spellIcon"] = "ability_warrior_savageblow",
+      ["spellIconId"] = 132355,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -807,7 +807,7 @@ local spellMetaMap = {
     ["piercing_howl"] = {
       ["name"] = "Piercing Howl",
       ["soundFileName"] = "piercing_howl",
-      ["spellIcon"] = "spell_shadow_deathscream",
+      ["spellIconId"] = 136147,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -816,7 +816,7 @@ local spellMetaMap = {
     ["rampage"] = {
       ["name"] = "Rampage",
       ["soundFileName"] = "rampage",
-      ["spellIcon"] = "ability_warrior_rampage",
+      ["spellIconId"] = 132352,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -826,7 +826,7 @@ local spellMetaMap = {
     ["second_wind"] = {
       ["name"] = "Second Wind",
       ["soundFileName"] = "second_wind",
-      ["spellIcon"] = "ability_hunter_harass",
+      ["spellIconId"] = 132175,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -836,7 +836,7 @@ local spellMetaMap = {
     ["shield_slam"] = {
       ["name"] = "Shield Slam",
       ["soundFileName"] = "shield_slam",
-      ["spellIcon"] = "inv_shield_05",
+      ["spellIconId"] = 134951,
       ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
@@ -845,7 +845,7 @@ local spellMetaMap = {
     ["sweeping_strikes"] = {
       ["name"] = "Sweeping Strikes",
       ["soundFileName"] = "sweeping_strikes",
-      ["spellIcon"] = "ability_rogue_slicedice",
+      ["spellIconId"] = 132306,
       ["hasFade"] = true,
       ["active"] = true,
       ["trackedEvents"] = {
