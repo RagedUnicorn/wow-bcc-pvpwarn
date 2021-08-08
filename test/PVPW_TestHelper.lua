@@ -173,7 +173,7 @@ end
 function me.HookMaxWarnAge()
   mod.logger.LogWarn(me.tag, "Warning hooking 'MAX_WARN_AGE' for debugging purposes")
   origMaxWarnAge = RGPVPW_CONSTANTS.MAX_WARN_AGE
-  RGPVPW_CONSTANTS.MAX_WARN_AGE = 20
+  RGPVPW_CONSTANTS.MAX_WARN_AGE = 999
 end
 
 --[[
