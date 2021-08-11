@@ -45,6 +45,1192 @@ local categories = RGPVPW_CONSTANTS.CATEGORIES_NEW
 ]]--
 local spellMap = {
   --[[
+    Druid ABILITIES
+  ]]--
+  [2893] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "abolish_poison",
+    ["rank"] = 0
+  },
+  [1066] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "aquatic_form",
+    ["rank"] = 0
+  },
+  [22812] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "barkskin",
+    ["rank"] = 0
+  },
+  [5211] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "bash",
+    ["rank"] = 1
+  },
+  [6798] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "bash",
+    ["rank"] = 2
+  },
+  [8983] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "bash",
+    ["rank"] = 3
+  },
+  [5487] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "bear_form",
+    ["rank"] = 0
+  },
+  [768] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cat_form",
+    ["rank"] = 0
+  },
+  [1082] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 1
+  },
+  [3029] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 2
+  },
+  [5201] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 3
+  },
+  [9849] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 4
+  },
+  [9850] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 5
+  },
+  [27000] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "claw",
+    ["rank"] = 6
+  },
+  [8998] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cower",
+    ["rank"] = 1
+  },
+  [9000] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cower",
+    ["rank"] = 2
+  },
+  [9892] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cower",
+    ["rank"] = 3
+  },
+  [31709] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cower",
+    ["rank"] = 4
+  },
+  [27004] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cower",
+    ["rank"] = 5
+  },
+  [8946] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cure_poison",
+    ["rank"] = 0
+  },
+  [33786] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "cyclone",
+    ["rank"] = 0
+  },
+  [1850] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "dash",
+    ["rank"] = 1
+  },
+  [9821] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "dash",
+    ["rank"] = 2
+  },
+  [33357] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "dash",
+    ["rank"] = 3
+  },
+  [99] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 1
+  },
+  [1735] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 2
+  },
+  [9490] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 3
+  },
+  [9747] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 4
+  },
+  [9898] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 5
+  },
+  [26998] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "demoralizing_roar",
+    ["rank"] = 6
+  },
+  [9634] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "dire_bear_form",
+    ["rank"] = 0
+  },
+  [5229] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "enrage",
+    ["rank"] = 0
+  },
+  [339] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 1
+  },
+  [1062] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 2
+  },
+  [5195] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 3
+  },
+  [5196] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 4
+  },
+  [9852] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 5
+  },
+  [9853] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 6
+  },
+  [26989] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "entangling_roots",
+    ["rank"] = 7
+  },
+  [770] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire",
+    ["rank"] = 1
+  },
+  [778] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire",
+    ["rank"] = 2
+  },
+  [9749] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire",
+    ["rank"] = 3
+  },
+  [9907] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire",
+    ["rank"] = 4
+  },
+  [26993] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire",
+    ["rank"] = 5
+  },
+  [22568] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 1
+  },
+  [22827] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 2
+  },
+  [22828] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 3
+  },
+  [22829] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 4
+  },
+  [31018] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 5
+  },
+  [24248] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ferocious_bite",
+    ["rank"] = 6
+  },
+  [33943] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "flight_form",
+    ["rank"] = 0
+  },
+  [22842] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "frenzied_regeneration",
+    ["rank"] = 1
+  },
+  [22895] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "frenzied_regeneration",
+    ["rank"] = 2
+  },
+  [22896] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "frenzied_regeneration",
+    ["rank"] = 3
+  },
+  [26999] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "frenzied_regeneration",
+    ["rank"] = 4
+  },
+  [21849] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "gift_of_the_wild",
+    ["rank"] = 1
+  },
+  [21850] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "gift_of_the_wild",
+    ["rank"] = 2
+  },
+  [26991] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "gift_of_the_wild",
+    ["rank"] = 3
+  },
+  [5185] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 1
+  },
+  [5186] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 2
+  },
+  [5187] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 3
+  },
+  [5188] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 4
+  },
+  [5189] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 5
+  },
+  [6778] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 6
+  },
+  [8903] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 7
+  },
+  [9758] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 8
+  },
+  [9888] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 9
+  },
+  [9889] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 10
+  },
+  [25297] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 11
+  },
+  [26978] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 12
+  },
+  [26979] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "healing_touch",
+    ["rank"] = 13
+  },
+  [2637] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hibernate",
+    ["rank"] = 1
+  },
+  [18657] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hibernate",
+    ["rank"] = 2
+  },
+  [18658] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hibernate",
+    ["rank"] = 3
+  },
+  [16914] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hurricane",
+    ["rank"] = 1
+  },
+  [17401] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hurricane",
+    ["rank"] = 2
+  },
+  [17402] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hurricane",
+    ["rank"] = 3
+  },
+  [27012] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "hurricane",
+    ["rank"] = 4
+  },
+  [29166] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "innervate",
+    ["rank"] = 0
+  },
+  [33745] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "lacerate",
+    ["rank"] = 1
+  },
+  [33763] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "lifebloom",
+    ["rank"] = 1
+  },
+  [22570] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "maim",
+    ["rank"] = 1
+  },
+  [33878] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_bear",
+    ["rank"] = 1
+  },
+  [33986] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_bear",
+    ["rank"] = 2
+  },
+  [33987] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_bear",
+    ["rank"] = 3
+  },
+  [33876] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_cat",
+    ["rank"] = 1
+  },
+  [33982] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_cat",
+    ["rank"] = 2
+  },
+  [33983] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mangle_cat",
+    ["rank"] = 3
+  },
+  [1126] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 1
+  },
+  [5232] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 2
+  },
+  [6756] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 3
+  },
+  [5234] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 4
+  },
+  [8907] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 5
+  },
+  [9884] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 6
+  },
+  [9885] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 7
+  },
+  [26990] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "mark_of_the_wild",
+    ["rank"] = 8
+  },
+  [8921] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 1
+  },
+  [8924] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 2
+  },
+  [8925] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 3
+  },
+  [8926] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 4
+  },
+  [8927] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 5
+  },
+  [8928] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 6
+  },
+  [8929] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 7
+  },
+  [9833] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 8
+  },
+  [9834] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 9
+  },
+  [9835] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 10
+  },
+  [26987] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 11
+  },
+  [26988] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonfire",
+    ["rank"] = 12
+  },
+  [9005] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "pounce",
+    ["rank"] = 1
+  },
+  [9823] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "pounce",
+    ["rank"] = 2
+  },
+  [9827] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "pounce",
+    ["rank"] = 3
+  },
+  [27006] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "pounce",
+    ["rank"] = 4
+  },
+  [5215] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "prowl",
+    ["rank"] = 1
+  },
+  [6783] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "prowl",
+    ["rank"] = 2
+  },
+  [9913] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "prowl",
+    ["rank"] = 3
+  },
+  [1822] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rake",
+    ["rank"] = 1
+  },
+  [1823] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rake",
+    ["rank"] = 2
+  },
+  [1824] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rake",
+    ["rank"] = 3
+  },
+  [9904] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rake",
+    ["rank"] = 4
+  },
+  [27003] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rake",
+    ["rank"] = 5
+  },
+  [6785] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ravage",
+    ["rank"] = 1
+  },
+  [6787] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ravage",
+    ["rank"] = 2
+  },
+  [9866] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ravage",
+    ["rank"] = 3
+  },
+  [9867] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ravage",
+    ["rank"] = 4
+  },
+  [27005] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "ravage",
+    ["rank"] = 5
+  },
+  [20484] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 1
+  },
+  [20739] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 2
+  },
+  [20742] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 3
+  },
+  [20747] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 4
+  },
+  [20748] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 5
+  },
+  [26994] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rebirth",
+    ["rank"] = 6
+  },
+  [8936] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 1
+  },
+  [8938] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 2
+  },
+  [8939] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 3
+  },
+  [8940] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 4
+  },
+  [8941] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 5
+  },
+  [9750] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 6
+  },
+  [9856] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 7
+  },
+  [9857] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 8
+  },
+  [9858] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 9
+  },
+  [26980] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "regrowth",
+    ["rank"] = 10
+  },
+  [774] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 1
+  },
+  [1058] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 2
+  },
+  [1430] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 3
+  },
+  [2090] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 4
+  },
+  [2091] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 5
+  },
+  [3627] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 6
+  },
+  [8910] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 7
+  },
+  [9839] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 8
+  },
+  [9840] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 9
+  },
+  [9841] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 10
+  },
+  [25299] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 11
+  },
+  [26981] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 12
+  },
+  [26982] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rejuvenation",
+    ["rank"] = 13
+  },
+  [2782] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "remove_curse",
+    ["rank"] = 0
+  },
+  [1079] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 1
+  },
+  [9492] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 2
+  },
+  [9493] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 3
+  },
+  [9752] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 4
+  },
+  [9894] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 5
+  },
+  [9896] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 6
+  },
+  [27008] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "rip",
+    ["rank"] = 7
+  },
+  [5221] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 1
+  },
+  [6800] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 2
+  },
+  [8992] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 3
+  },
+  [9829] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 4
+  },
+  [9830] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 5
+  },
+  [27001] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 6
+  },
+  [27002] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "shred",
+    ["rank"] = 7
+  },
+  [2912] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 1
+  },
+  [8949] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 2
+  },
+  [8950] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 3
+  },
+  [8951] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 4
+  },
+  [9875] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 5
+  },
+  [9876] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 6
+  },
+  [25298] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 7
+  },
+  [26986] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "starfire",
+    ["rank"] = 8
+  },
+  [40120] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swift_flight_form",
+    ["rank"] = 0
+  },
+  [779] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 1
+  },
+  [780] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 2
+  },
+  [769] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 3
+  },
+  [9754] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 4
+  },
+  [9908] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 5
+  },
+  [26997] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swipe",
+    ["rank"] = 6
+  },
+  [467] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 1
+  },
+  [782] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 2
+  },
+  [1075] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 3
+  },
+  [8914] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 4
+  },
+  [9756] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 5
+  },
+  [9910] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 6
+  },
+  [26992] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "thorns",
+    ["rank"] = 7
+  },
+  [5217] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tigers_fury",
+    ["rank"] = 1
+  },
+  [6793] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tigers_fury",
+    ["rank"] = 2
+  },
+  [9845] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tigers_fury",
+    ["rank"] = 3
+  },
+  [9846] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tigers_fury",
+    ["rank"] = 4
+  },
+  [740] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tranquility",
+    ["rank"] = 1
+  },
+  [8918] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tranquility",
+    ["rank"] = 2
+  },
+  [9862] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tranquility",
+    ["rank"] = 3
+  },
+  [9863] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tranquility",
+    ["rank"] = 4
+  },
+  [26983] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tranquility",
+    ["rank"] = 5
+  },
+  [783] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "travel_form",
+    ["rank"] = 0
+  },
+  [5176] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 1
+  },
+  [5177] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 2
+  },
+  [5178] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 3
+  },
+  [5179] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 4
+  },
+  [5180] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 5
+  },
+  [6780] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 6
+  },
+  [8905] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 7
+  },
+  [9912] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 8
+  },
+  [26984] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 9
+  },
+  [26985] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "wrath",
+    ["rank"] = 10
+  },
+  --[[
+    Druid TALENTS
+  ]]--
+  [16857] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire_feral",
+    ["rank"] = 1
+  },
+  [17390] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire_feral",
+    ["rank"] = 2
+  },
+  [17391] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire_feral",
+    ["rank"] = 3
+  },
+  [17392] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire_feral",
+    ["rank"] = 4
+  },
+  [27011] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "faerie_fire_feral",
+    ["rank"] = 5
+  },
+  [16979] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "feral_charge",
+    ["rank"] = 0
+  },
+  [33831] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "force_of_nature",
+    ["rank"] = 0
+  },
+  [5570] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 1
+  },
+  [24974] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 2
+  },
+  [24975] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 3
+  },
+  [24976] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 4
+  },
+  [24977] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 5
+  },
+  [27013] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "insect_swarm",
+    ["rank"] = 6
+  },
+  [24858] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "moonkin_form",
+    ["rank"] = 0
+  },
+  [16689] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 1
+  },
+  [16810] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 2
+  },
+  [16811] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 3
+  },
+  [16812] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 4
+  },
+  [16813] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 5
+  },
+  [17329] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 6
+  },
+  [27009] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_grasp",
+    ["rank"] = 7
+  },
+  [17116] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "natures_swiftness",
+    ["rank"] = 0
+  },
+  [16864] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "omen_of_clarity",
+    ["rank"] = 0
+  },
+  [18562] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "swiftmend",
+    ["rank"] = 0
+  },
+  [33891] = {
+    ["category"] = categories.DRUID.id,
+    ["name"] = "tree_of_life",
+    ["rank"] = 0
+  },
+  --[[
     Priest ABILITIES
   ]]--
   [552] = {

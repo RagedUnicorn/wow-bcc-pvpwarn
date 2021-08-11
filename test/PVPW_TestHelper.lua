@@ -139,7 +139,7 @@ end
   @return {string}
 ]]--
 function me.FirstToUpper(str)
-    return (str:gsub("^%l", string.upper))
+  return (str:gsub("^%l", string.upper))
 end
 
 --[[

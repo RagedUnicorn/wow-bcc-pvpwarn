@@ -24,9 +24,9 @@
 
 --[[
   Run all tests:
-    /run rgpvpw.testCombatEvent.Test([categoryName])
+    /run rgpvpw.testCombatEvent.Test([category])
   Run combat event tests:
-    /run rgpvpw.testCombatEvent.ShouldHaveCombatEventTestForAllTrackedEvents([categoryName])
+    /run rgpvpw.testCombatEvent.ShouldHaveCombatEventTestForAllTrackedEvents([category])
   Run combat event self avoid tests:
     /run rgpvpw.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(
       RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID [, categoryName]

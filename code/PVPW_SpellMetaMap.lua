@@ -31,6 +31,555 @@ me.tag = "SpellMetaMap"
 local categories = RGPVPW_CONSTANTS.CATEGORIES_NEW
 
 local spellMetaMap = {
+  [categories.DRUID.id] = {
+    ["abolish_poison"] = {
+      ["name"] = "Abolish Poison",
+      ["soundFileName"] = "abolish_poison",
+      ["spellIconId"] = 136068,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+          "SPELL_AURA_APPLIED",
+          "SPELL_AURA_REMOVED",
+          "SPELL_AURA_REFRESH"
+        }
+    },
+    ["aquatic_form"] = {
+      ["name"] = "Aquatic Form",
+      ["soundFileName"] = "aquatic_form",
+      ["spellIconId"] = 132112,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["barkskin"] = {
+      ["name"] = "Barkskin",
+      ["soundFileName"] = "barkskin",
+      ["spellIconId"] = 136097,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["bash"] = {
+      ["name"] = "Bash",
+      ["soundFileName"] = "bash",
+      ["spellIconId"] = 132114,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["bear_form"] = {
+      ["name"] = "Bear Form",
+      ["soundFileName"] = "bear_form",
+      ["spellIconId"] = 132276,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["cat_form"] = {
+      ["name"] = "Cat Form",
+      ["soundFileName"] = "cat_form",
+      ["spellIconId"] = 132115,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["claw"] = {
+      ["name"] = "Claw",
+      ["soundFileName"] = "claw",
+      ["spellIconId"] = 132140,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cower"] = {
+      ["name"] = "Cower",
+      ["soundFileName"] = "cower",
+      ["spellIconId"] = 132118,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cure_poison"] = {
+      ["name"] = "Cure Poison",
+      ["soundFileName"] = "cure_poison",
+      ["spellIconId"] = 136067,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["cyclone"] = {
+      ["name"] = "Cyclone",
+      ["soundFileName"] = "cyclone",
+      ["spellIconId"] = 136022,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dash"] = {
+      ["name"] = "Dash",
+      ["soundFileName"] = "dash",
+      ["spellIconId"] = 132120,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["demoralizing_roar"] = {
+      ["name"] = "Demoralizing Roar",
+      ["soundFileName"] = "demoralizing_roar",
+      ["spellIconId"] = 132121,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dire_bear_form"] = {
+      ["name"] = "Dire Bear Form",
+      ["soundFileName"] = "dire_bear_form",
+      ["spellIconId"] = 132276,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["enrage"] = {
+      ["name"] = "Enrage",
+      ["soundFileName"] = "enrage",
+      ["spellIconId"] = 132126,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["entangling_roots"] = {
+      ["name"] = "Entangling Roots",
+      ["soundFileName"] = "entangling_roots",
+      ["spellIconId"] = 136100,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["faerie_fire"] = {
+      ["name"] = "Faerie Fire",
+      ["soundFileName"] = "faerie_fire",
+      ["spellIconId"] = 136033,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ferocious_bite"] = {
+      ["name"] = "Ferocious Bite",
+      ["soundFileName"] = "ferocious_bite",
+      ["spellIconId"] = 132127,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flight_form"] = {
+      ["name"] = "Flight Form",
+      ["soundFileName"] = "flight_form",
+      ["spellIconId"] = 132128,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["frenzied_regeneration"] = {
+      ["name"] = "Frenzied Regeneration",
+      ["soundFileName"] = "frenzied_regeneration",
+      ["spellIconId"] = 132091,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["gift_of_the_wild"] = {
+      ["name"] = "Gift of the Wild",
+      ["soundFileName"] = "gift_of_the_wild",
+      ["spellIconId"] = 136038,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["healing_touch"] = {
+      ["name"] = "Healing Touch",
+      ["soundFileName"] = "healing_touch",
+      ["spellIconId"] = 136041,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hibernate"] = {
+      ["name"] = "Hibernate",
+      ["soundFileName"] = "hibernate",
+      ["spellIconId"] = 136090,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hurricane"] = {
+      ["name"] = "Hurricane",
+      ["soundFileName"] = "hurricane",
+      ["spellIconId"] = 136018,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["innervate"] = {
+      ["name"] = "Innervate",
+      ["soundFileName"] = "innervate",
+      ["spellIconId"] = 136048,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["lacerate"] = {
+      ["name"] = "Lacerate",
+      ["soundFileName"] = "lacerate",
+      ["spellIconId"] = 132131,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["lifebloom"] = {
+      ["name"] = "Lifebloom",
+      ["soundFileName"] = "lifebloom",
+      ["spellIconId"] = 134206,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["maim"] = {
+      ["name"] = "Maim",
+      ["soundFileName"] = "maim",
+      ["spellIconId"] = 132134,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mangle_bear"] = {
+      ["name"] = "Mangle (Bear)",
+      ["soundFileName"] = "mangle",
+      ["spellIconId"] = 132135,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mangle_cat"] = {
+      ["name"] = "Mangle (Cat)",
+      ["soundFileName"] = "mangle",
+      ["spellIconId"] = 132135,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mark_of_the_wild"] = {
+      ["name"] = "Mark of the Wild",
+      ["soundFileName"] = "mark_of_the_wild",
+      ["spellIconId"] = 136078,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["moonfire"] = {
+      ["name"] = "Moonfire",
+      ["soundFileName"] = "moonfire",
+      ["spellIconId"] = 136096,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["pounce"] = {
+      ["name"] = "Pounce",
+      ["soundFileName"] = "pounce",
+      ["spellIconId"] = 132142,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["prowl"] = {
+      ["name"] = "Prowl",
+      ["soundFileName"] = "prowl",
+      ["spellIconId"] = 132089,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rake"] = {
+      ["name"] = "Rake",
+      ["soundFileName"] = "rake",
+      ["spellIconId"] = 132122,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ravage"] = {
+      ["name"] = "Ravage",
+      ["soundFileName"] = "ravage",
+      ["spellIconId"] = 132141,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rebirth"] = {
+      ["name"] = "Rebirth",
+      ["soundFileName"] = "rebirth",
+      ["spellIconId"] = 136080,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["regrowth"] = {
+      ["name"] = "Regrowth",
+      ["soundFileName"] = "regrowth",
+      ["spellIconId"] = 136085,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rejuvenation"] = {
+      ["name"] = "Rejuvenation",
+      ["soundFileName"] = "rejuvenation",
+      ["spellIconId"] = 136081,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["remove_curse"] = {
+      ["name"] = "Remove Curse",
+      ["soundFileName"] = "remove_curse",
+      ["spellIconId"] = 135952,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rip"] = {
+      ["name"] = "Rip",
+      ["soundFileName"] = "rip",
+      ["spellIconId"] = 132152,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shred"] = {
+      ["name"] = "Shred",
+      ["soundFileName"] = "shred",
+      ["spellIconId"] = 136231,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["starfire"] = {
+      ["name"] = "Starfire",
+      ["soundFileName"] = "starfire",
+      ["spellIconId"] = 135753,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["swift_flight_form"] = {
+      ["name"] = "Swift Flight Form",
+      ["soundFileName"] = "swift_flight_form",
+      ["spellIconId"] = 132128,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["swipe"] = {
+      ["name"] = "Swipe",
+      ["soundFileName"] = "swipe",
+      ["spellIconId"] = 134296,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["thorns"] = {
+      ["name"] = "Thorns",
+      ["soundFileName"] = "thorns",
+      ["spellIconId"] = 136104,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["tigers_fury"] = {
+      ["name"] = "Tiger's Fury",
+      ["soundFileName"] = "tigers_fury",
+      ["spellIconId"] = 132242,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["tranquility"] = {
+      ["name"] = "Tranquility",
+      ["soundFileName"] = "tranquility",
+      ["spellIconId"] = 136107,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["travel_form"] = {
+      ["name"] = "Travel Form",
+      ["soundFileName"] = "travel_form",
+      ["spellIconId"] = 132144,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["wrath"] = {
+      ["name"] = "Wrath",
+      ["soundFileName"] = "wrath",
+      ["spellIconId"] = 136006,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["faerie_fire_feral"] = {
+      ["name"] = "Faerie Fire (Feral)",
+      ["soundFileName"] = "faerie_fire",
+      ["spellIconId"] = 136033,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["feral_charge"] = {
+      ["name"] = "Feral Charge",
+      ["soundFileName"] = "feral_charge",
+      ["spellIconId"] = 132183,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["force_of_nature"] = {
+      ["name"] = "Force of Nature",
+      ["soundFileName"] = "force_of_nature",
+      ["spellIconId"] = 132129,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["insect_swarm"] = {
+      ["name"] = "Insect Swarm",
+      ["soundFileName"] = "insect_swarm",
+      ["spellIconId"] = 136045,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["moonkin_form"] = {
+      ["name"] = "Moonkin Form",
+      ["soundFileName"] = "moonkin_form",
+      ["spellIconId"] = 136036,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    },
+    ["natures_grasp"] = {
+      ["name"] = "Nature's Grasp",
+      ["soundFileName"] = "natures_grasp",
+      ["spellIconId"] = 136063,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["natures_swiftness"] = {
+      ["name"] = "Nature's Swiftness",
+      ["soundFileName"] = "natures_swiftness",
+      ["spellIconId"] = 136076,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["omen_of_clarity"] = {
+      ["name"] = "Omen of Clarity",
+      ["soundFileName"] = "omen_of_clarity",
+      ["spellIconId"] = 136017,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["swiftmend"] = {
+      ["name"] = "Swiftmend",
+      ["soundFileName"] = "swiftmend",
+      ["spellIconId"] = 134914,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["tree_of_life"] = {
+      ["name"] = "Tree of Life",
+      ["soundFileName"] = "tree_of_life",
+      ["spellIconId"] = 132145,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED"
+      }
+    }
+  },
   [categories.PRIEST.id] = {
     ["abolish_disease"] = {
       ["name"] = "Abolish Disease",
@@ -869,7 +1418,7 @@ local spellMetaMap = {
 function me.GetSpellMetaDataForSupportedEvent(spell, event)
   if not spell or type(spell) ~= "table" then return nil end
   if not event or type(event) ~= "string" then return nil end
-  DevTools_Dump(spell)
+
   mod.logger.LogDebug(me.tag,
     "Searching for spell metadata with category {" .. spell.category .. "} and spellName {" .. spell.name .. "}")
 
