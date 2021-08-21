@@ -1231,6 +1231,707 @@ local spellMap = {
     ["rank"] = 0
   },
   --[[
+    Hunter ABILITIES
+  ]]--
+  [3044] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 1
+  },
+  [14281] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 2
+  },
+  [14282] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 3
+  },
+  [14283] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 4
+  },
+  [14284] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 5
+  },
+  [14285] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 6
+  },
+  [14286] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 7
+  },
+  [14287] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 8
+  },
+  [27019] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "arcane_shot",
+    ["rank"] = 9
+  },
+  [13161] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_beast",
+    ["rank"] = 0
+  },
+  [5118] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_cheetah",
+    ["rank"] = 0
+  },
+  [13165] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 1
+  },
+  [14318] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 2
+  },
+  [14319] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 3
+  },
+  [14320] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 4
+  },
+  [14321] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 5
+  },
+  [14322] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 6
+  },
+  [25296] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 7
+  },
+  [27044] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_hawk",
+    ["rank"] = 8
+  },
+  [13163] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_monkey",
+    ["rank"] = 0
+  },
+  [13159] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_pack",
+    ["rank"] = 0
+  },
+  [34074] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_viper",
+    ["rank"] = 0
+  },
+  [20043] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_wild",
+    ["rank"] = 1
+  },
+  [20190] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_wild",
+    ["rank"] = 2
+  },
+  [27045] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aspect_of_the_wild",
+    ["rank"] = 3
+  },
+  [5116] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "concussive_shot",
+    ["rank"] = 0
+  },
+  [781] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "disengage",
+    ["rank"] = 1
+  },
+  [14272] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "disengage",
+    ["rank"] = 2
+  },
+  [14273] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "disengage",
+    ["rank"] = 3
+  },
+  [27015] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "disengage",
+    ["rank"] = 4
+  },
+  [13813] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "explosive_trap",
+    ["rank"] = 1
+  },
+  [14316] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "explosive_trap",
+    ["rank"] = 2
+  },
+  [14317] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "explosive_trap",
+    ["rank"] = 3
+  },
+  [27025] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "explosive_trap",
+    ["rank"] = 4
+  },
+  [1543] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "flare",
+    ["rank"] = 0
+  },
+  [1499] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "freezing_trap",
+    ["rank"] = 1
+  },
+  [14310] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "freezing_trap",
+    ["rank"] = 2
+  },
+  [14311] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "freezing_trap",
+    ["rank"] = 3
+  },
+  [13809] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "frost_trap",
+    ["rank"] = 0
+  },
+  [1130] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "hunters_mark",
+    ["rank"] = 1
+  },
+  [14323] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "hunters_mark",
+    ["rank"] = 2
+  },
+  [14324] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "hunters_mark",
+    ["rank"] = 3
+  },
+  [14325] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "hunters_mark",
+    ["rank"] = 4
+  },
+  [13795] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 1
+  },
+  [14302] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 2
+  },
+  [14303] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 3
+  },
+  [14304] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 4
+  },
+  [14305] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 5
+  },
+  [27023] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "immolation_trap",
+    ["rank"] = 6
+  },
+  [136] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 1
+  },
+  [3111] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 2
+  },
+  [3661] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 3
+  },
+  [3662] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 4
+  },
+  [13542] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 5
+  },
+  [13543] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 6
+  },
+  [13544] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 7
+  },
+  [27046] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mend_pet",
+    ["rank"] = 8
+  },
+  [1495] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mongoose_bite",
+    ["rank"] = 1
+  },
+  [14269] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mongoose_bite",
+    ["rank"] = 2
+  },
+  [14270] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mongoose_bite",
+    ["rank"] = 3
+  },
+  [14271] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mongoose_bite",
+    ["rank"] = 4
+  },
+  [36916] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "mongoose_bite",
+    ["rank"] = 5
+  },
+  [2643] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 1
+  },
+  [14288] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 2
+  },
+  [14289] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 3
+  },
+  [14290] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 4
+  },
+  [25294] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 5
+  },
+  [27021] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "multi_shot",
+    ["rank"] = 6
+  },
+  [3045] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "rapid_fire",
+    ["rank"] = 0
+  },
+  [2973] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 1
+  },
+  [14260] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 2
+  },
+  [14261] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 3
+  },
+  [14262] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 4
+  },
+  [14263] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 5
+  },
+  [14264] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 6
+  },
+  [14265] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 7
+  },
+  [14266] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 8
+  },
+  [27014] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "raptor_strike",
+    ["rank"] = 9
+  },
+  [982] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "revive_pet",
+    ["rank"] = 0
+  },
+  [1513] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "scare_beast",
+    ["rank"] = 1
+  },
+  [14326] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "scare_beast",
+    ["rank"] = 2
+  },
+  [14327] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "scare_beast",
+    ["rank"] = 3
+  },
+  [3043] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "scorpid_sting",
+    ["rank"] = 0
+  },
+  [1978] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 1
+  },
+  [13549] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 2
+  },
+  [13550] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 3
+  },
+  [13551] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 4
+  },
+  [13552] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 5
+  },
+  [13553] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 6
+  },
+  [13554] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 7
+  },
+  [13555] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 8
+  },
+  [25295] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 9
+  },
+  [27016] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "serpent_sting",
+    ["rank"] = 10
+  },
+  [34600] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "snake_trap",
+    ["rank"] = 0
+  },
+  [1494] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_beasts",
+    ["rank"] = 0
+  },
+  [19878] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_demons",
+    ["rank"] = 0
+  },
+  [19879] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_dragonkin",
+    ["rank"] = 0
+  },
+  [19880] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_elementals",
+    ["rank"] = 0
+  },
+  [19882] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_giants",
+    ["rank"] = 0
+  },
+  [19885] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_hidden",
+    ["rank"] = 0
+  },
+  [19883] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_humanoids",
+    ["rank"] = 0
+  },
+  [19884] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "track_undead",
+    ["rank"] = 0
+  },
+  [3034] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "viper_sting",
+    ["rank"] = 1
+  },
+  [14279] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "viper_sting",
+    ["rank"] = 2
+  },
+  [14280] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "viper_sting",
+    ["rank"] = 3
+  },
+  [27018] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "viper_sting",
+    ["rank"] = 4
+  },
+  [1510] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "volley",
+    ["rank"] = 1
+  },
+  [14294] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "volley",
+    ["rank"] = 2
+  },
+  [14295] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "volley",
+    ["rank"] = 3
+  },
+  [27022] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "volley",
+    ["rank"] = 4
+  },
+  [2974] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wing_clip",
+    ["rank"] = 1
+  },
+  [14267] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wing_clip",
+    ["rank"] = 2
+  },
+  [14268] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wing_clip",
+    ["rank"] = 3
+  },
+  --[[
+    Hunter TALENTS
+  ]]--
+  [19434] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 1
+  },
+  [20900] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 2
+  },
+  [20901] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 3
+  },
+  [20902] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 4
+  },
+  [20903] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 5
+  },
+  [20904] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 6
+  },
+  [27065] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "aimed_shot",
+    ["rank"] = 7
+  },
+  [19574] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "bestial_wrath",
+    ["rank"] = 0
+  },
+  [19306] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "counterattack",
+    ["rank"] = 1
+  },
+  [20909] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "counterattack",
+    ["rank"] = 2
+  },
+  [20910] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "counterattack",
+    ["rank"] = 3
+  },
+  [27067] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "counterattack",
+    ["rank"] = 4
+  },
+  [19263] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "deterrence",
+    ["rank"] = 0
+  },
+  [19577] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "intimidation",
+    ["rank"] = 0
+  },
+  [23989] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "readiness",
+    ["rank"] = 0
+  },
+  [19503] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "scatter_shot",
+    ["rank"] = 0
+  },
+  [34490] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "silencing_shot",
+    ["rank"] = 0
+  },
+  [34692] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "the_beast_within",
+    ["rank"] = 0
+  },
+  [19506] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "trueshot_aura",
+    ["rank"] = 1
+  },
+  [20905] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "trueshot_aura",
+    ["rank"] = 2
+  },
+  [20906] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "trueshot_aura",
+    ["rank"] = 3
+  },
+  [27066] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "trueshot_aura",
+    ["rank"] = 4
+  },
+  [19386] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wyvern_sting",
+    ["rank"] = 1
+  },
+  [24132] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wyvern_sting",
+    ["rank"] = 2
+  },
+  [24133] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wyvern_sting",
+    ["rank"] = 3
+  },
+  [27068] = {
+    ["category"] = categories.HUNTER.id,
+    ["name"] = "wyvern_sting",
+    ["rank"] = 4
+  },
+  --[[
     Priest ABILITIES
   ]]--
   [552] = {

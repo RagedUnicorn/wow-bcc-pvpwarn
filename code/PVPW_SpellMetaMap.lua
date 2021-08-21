@@ -580,6 +580,446 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.HUNTER.id] = {
+    ["arcane_shot"] = {
+      ["name"] = "Arcane Shot",
+      ["soundFileName"] = "arcane_shot",
+      ["spellIconId"] = 132218,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_beast"] = {
+      ["name"] = "Aspect of the Beast",
+      ["soundFileName"] = "aspect_of_the_beast",
+      ["spellIconId"] = 132252,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_cheetah"] = {
+      ["name"] = "Aspect of the Cheetah",
+      ["soundFileName"] = "aspect_of_the_cheetah",
+      ["spellIconId"] = 132242,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_hawk"] = {
+      ["name"] = "Aspect of the Hawk",
+      ["soundFileName"] = "aspect_of_the_hawk",
+      ["spellIconId"] = 136076,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_monkey"] = {
+      ["name"] = "Aspect of the Monkey",
+      ["soundFileName"] = "aspect_of_the_monkey",
+      ["spellIconId"] = 132159,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_pack"] = {
+      ["name"] = "Aspect of the Pack",
+      ["soundFileName"] = "aspect_of_the_pack",
+      ["spellIconId"] = 132267,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_viper"] = {
+      ["name"] = "Aspect of the Viper",
+      ["soundFileName"] = "aspect_of_the_viper",
+      ["spellIconId"] = 132160,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aspect_of_the_wild"] = {
+      ["name"] = "Aspect of the Wild",
+      ["soundFileName"] = "aspect_of_the_wild",
+      ["spellIconId"] = 136074,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["concussive_shot"] = {
+      ["name"] = "Concussive Shot",
+      ["soundFileName"] = "concussive_shot",
+      ["spellIconId"] = 135860,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["disengage"] = {
+      ["name"] = "Disengage",
+      ["soundFileName"] = "disengage",
+      ["spellIconId"] = 132294,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["explosive_trap"] = {
+      ["name"] = "Explosive Trap",
+      ["soundFileName"] = "explosive_trap",
+      ["spellIconId"] = 135826,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flare"] = {
+      ["name"] = "Flare",
+      ["soundFileName"] = "flare",
+      ["spellIconId"] = 135815,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["freezing_trap"] = {
+      ["name"] = "Freezing Trap",
+      ["soundFileName"] = "freezing_trap",
+      ["spellIconId"] = 135834,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_trap"] = {
+      ["name"] = "Frost Trap",
+      ["soundFileName"] = "frost_trap",
+      ["spellIconId"] = 135840,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hunters_mark"] = {
+      ["name"] = "Hunter's Mark",
+      ["soundFileName"] = "hunters_mark",
+      ["spellIconId"] = 132212,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["immolation_trap"] = {
+      ["name"] = "Immolation Trap",
+      ["soundFileName"] = "immolation_trap",
+      ["spellIconId"] = 135813,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mend_pet"] = {
+      ["name"] = "Mend Pet",
+      ["soundFileName"] = "mend_pet",
+      ["spellIconId"] = 132179,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mongoose_bite"] = {
+      ["name"] = "Mongoose Bite",
+      ["soundFileName"] = "mongoose_bite",
+      ["spellIconId"] = 132215,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["multi_shot"] = {
+      ["name"] = "Multi-Shot",
+      ["soundFileName"] = "multi_shot",
+      ["spellIconId"] = 132330,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rapid_fire"] = {
+      ["name"] = "Rapid Fire",
+      ["soundFileName"] = "rapid_fire",
+      ["spellIconId"] = 132208,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["raptor_strike"] = {
+      ["name"] = "Raptor Strike",
+      ["soundFileName"] = "raptor_strike",
+      ["spellIconId"] = 132223,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["revive_pet"] = {
+      ["name"] = "Revive Pet",
+      ["soundFileName"] = "revive_pet",
+      ["spellIconId"] = 132163,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["scare_beast"] = {
+      ["name"] = "Scare Beast",
+      ["soundFileName"] = "scare_beast",
+      ["spellIconId"] = 132118,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["scorpid_sting"] = {
+      ["name"] = "Scorpid Sting",
+      ["soundFileName"] = "scorpid_sting",
+      ["spellIconId"] = 132169,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["serpent_sting"] = {
+      ["name"] = "Serpent Sting",
+      ["soundFileName"] = "serpent_sting",
+      ["spellIconId"] = 132204,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["snake_trap"] = {
+      ["name"] = "Snake Trap",
+      ["soundFileName"] = "snake_trap",
+      ["spellIconId"] = 132211,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_beasts"] = {
+      ["name"] = "Track Beasts",
+      ["soundFileName"] = "track_beasts",
+      ["spellIconId"] = 132328,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_demons"] = {
+      ["name"] = "Track Demons",
+      ["soundFileName"] = "track_demons",
+      ["spellIconId"] = 136217,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_dragonkin"] = {
+      ["name"] = "Track Dragonkin",
+      ["soundFileName"] = "track_dragonkin",
+      ["spellIconId"] = 134153,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_elementals"] = {
+      ["name"] = "Track Elementals",
+      ["soundFileName"] = "track_elementals",
+      ["spellIconId"] = 135861,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_giants"] = {
+      ["name"] = "Track Giants",
+      ["soundFileName"] = "track_giants",
+      ["spellIconId"] = 132275,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_hidden"] = {
+      ["name"] = "Track Hidden",
+      ["soundFileName"] = "track_hidden",
+      ["spellIconId"] = 132320,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_humanoids"] = {
+      ["name"] = "Track Humanoids",
+      ["soundFileName"] = "track_humanoids",
+      ["spellIconId"] = 135942,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["track_undead"] = {
+      ["name"] = "Track Undead",
+      ["soundFileName"] = "track_undead",
+      ["spellIconId"] = 136142,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["viper_sting"] = {
+      ["name"] = "Viper Sting",
+      ["soundFileName"] = "viper_sting",
+      ["spellIconId"] = 132157,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["volley"] = {
+      ["name"] = "Volley",
+      ["soundFileName"] = "volley",
+      ["spellIconId"] = 132222,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["wing_clip"] = {
+      ["name"] = "Wing Clip",
+      ["soundFileName"] = "wing_clip",
+      ["spellIconId"] = 132309,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["aimed_shot"] = {
+      ["name"] = "Aimed Shot",
+      ["soundFileName"] = "aimed_shot",
+      ["spellIconId"] = 135130,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["bestial_wrath"] = {
+      ["name"] = "Bestial Wrath",
+      ["soundFileName"] = "bestial_wrath",
+      ["spellIconId"] = 132127,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["counterattack"] = {
+      ["name"] = "Counterattack",
+      ["soundFileName"] = "counterattack",
+      ["spellIconId"] = 132336,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["deterrence"] = {
+      ["name"] = "Deterrence",
+      ["soundFileName"] = "deterrence",
+      ["spellIconId"] = 132369,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["intimidation"] = {
+      ["name"] = "Intimidation",
+      ["soundFileName"] = "intimidation",
+      ["spellIconId"] = 132111,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["readiness"] = {
+      ["name"] = "Readiness",
+      ["soundFileName"] = "readiness",
+      ["spellIconId"] = 132206,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["scatter_shot"] = {
+      ["name"] = "Scatter Shot",
+      ["soundFileName"] = "scatter_shot",
+      ["spellIconId"] = 132153,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["silencing_shot"] = {
+      ["name"] = "Silencing Shot",
+      ["soundFileName"] = "silencing_shot",
+      ["spellIconId"] = 132323,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["the_beast_within"] = {
+      ["name"] = "The Beast Within",
+      ["soundFileName"] = "the_beast_within",
+      ["spellIconId"] = 132166,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["trueshot_aura"] = {
+      ["name"] = "Trueshot Aura",
+      ["soundFileName"] = "trueshot_aura",
+      ["spellIconId"] = 132329,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["wyvern_sting"] = {
+      ["name"] = "Wyvern Sting",
+      ["soundFileName"] = "wyvern_sting",
+      ["spellIconId"] = 135125,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.PRIEST.id] = {
     ["abolish_disease"] = {
       ["name"] = "Abolish Disease",
