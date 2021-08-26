@@ -1020,6 +1020,508 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.MAGE.id] = {
+    ["amplify_magic"] = {
+      ["name"] = "Amplify Magic",
+      ["soundFileName"] = "amplify_magic",
+      ["spellIconId"] = 135907,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["arcane_blast"] = {
+      ["name"] = "Arcane Blast",
+      ["soundFileName"] = "arcane_blast",
+      ["spellIconId"] = 135735,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["arcane_brilliance"] = {
+      ["name"] = "Arcane Brilliance",
+      ["soundFileName"] = "arcane_brilliance",
+      ["spellIconId"] = 135869,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["arcane_explosion"] = {
+      ["name"] = "Arcane Explosion",
+      ["soundFileName"] = "arcane_explosion",
+      ["spellIconId"] = 136116,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["arcane_intellect"] = {
+      ["name"] = "Arcane Intellect",
+      ["soundFileName"] = "arcane_intellect",
+      ["spellIconId"] = 135932,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["arcane_missiles"] = {
+      ["name"] = "Arcane Missiles",
+      ["soundFileName"] = "arcane_missiles",
+      ["spellIconId"] = 136096,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["blink"] = {
+      ["name"] = "Blink",
+      ["soundFileName"] = "blink",
+      ["spellIconId"] = 135736,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["blizzard"] = {
+      ["name"] = "Blizzard",
+      ["soundFileName"] = "blizzard",
+      ["spellIconId"] = 135857,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cone_of_cold"] = {
+      ["name"] = "Cone of Cold",
+      ["soundFileName"] = "cone_of_cold",
+      ["spellIconId"] = 135852,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_food"] = {
+      ["name"] = "Conjure Food",
+      ["soundFileName"] = "conjure_food",
+      ["spellIconId"] = 133988,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_mana_agate"] = {
+      ["name"] = "Conjure Mana Agate",
+      ["soundFileName"] = "conjure_mana",
+      ["spellIconId"] = 134104,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_mana_citrine"] = {
+      ["name"] = "Conjure Mana Citrine",
+      ["soundFileName"] = "conjure_mana",
+      ["spellIconId"] = 134116,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_mana_emerald"] = {
+      ["name"] = "Conjure Mana Emerald",
+      ["soundFileName"] = "conjure_mana",
+      ["spellIconId"] = 134134,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_mana_jade"] = {
+      ["name"] = "Conjure Mana Jade",
+      ["soundFileName"] = "conjure_mana",
+      ["spellIconId"] = 134105,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_mana_ruby"] = {
+      ["name"] = "Conjure Mana Ruby",
+      ["soundFileName"] = "conjure_mana",
+      ["spellIconId"] = 134128,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["conjure_water"] = {
+      ["name"] = "Conjure Water",
+      ["soundFileName"] = "conjure_water",
+      ["spellIconId"] = 132803,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["counterspell"] = {
+      ["name"] = "Counterspell",
+      ["soundFileName"] = "counterspell",
+      ["spellIconId"] = 135856,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dampen_magic"] = {
+      ["name"] = "Dampen Magic",
+      ["soundFileName"] = "dampen_magic",
+      ["spellIconId"] = 136006,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["evocation"] = {
+      ["name"] = "Evocation",
+      ["soundFileName"] = "evocation",
+      ["spellIconId"] = 136075,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+      }
+    },
+    ["fire_blast"] = {
+      ["name"] = "Fire Blast",
+      ["soundFileName"] = "fire_blast",
+      ["spellIconId"] = 135807,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fire_ward"] = {
+      ["name"] = "Fire Ward",
+      ["soundFileName"] = "fire_ward",
+      ["spellIconId"] = 135806,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["fireball"] = {
+      ["name"] = "Fireball",
+      ["soundFileName"] = "fireball",
+      ["spellIconId"] = 135812,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flamestrike"] = {
+      ["name"] = "Flamestrike",
+      ["soundFileName"] = "flamestrike",
+      ["spellIconId"] = 135826,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_armor"] = {
+      ["name"] = "Frost Armor",
+      ["soundFileName"] = "frost_armor",
+      ["spellIconId"] = 135843,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["frost_nova"] = {
+      ["name"] = "Frost Nova",
+      ["soundFileName"] = "frost_nova",
+      ["spellIconId"] = 135848,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_ward"] = {
+      ["name"] = "Frost Ward",
+      ["soundFileName"] = "frost_ward",
+      ["spellIconId"] = 135850,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["frostbolt"] = {
+      ["name"] = "Frostbolt",
+      ["soundFileName"] = "frostbolt",
+      ["spellIconId"] = 135846,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ice_armor"] = {
+      ["name"] = "Ice Armor",
+      ["soundFileName"] = "ice_armor",
+      ["spellIconId"] = 135843,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["ice_block"] = {
+      ["name"] = "Ice Block",
+      ["soundFileName"] = "ice_block",
+      ["spellIconId"] = 135841,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ice_lance"] = {
+      ["name"] = "Ice Lance",
+      ["soundFileName"] = "ice_lance",
+      ["spellIconId"] = 135844,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["invisibility"] = {
+      ["name"] = "Invisibility",
+      ["soundFileName"] = "invisibility",
+      ["spellIconId"] = 132220,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mage_armor"] = {
+      ["name"] = "Mage Armor",
+      ["soundFileName"] = "mage_armor",
+      ["spellIconId"] = 135991,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["mana_shield"] = {
+      ["name"] = "Mana Shield",
+      ["soundFileName"] = "mana_shield",
+      ["spellIconId"] = 136153,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["molten_armor"] = {
+      ["name"] = "Molten Armor",
+      ["soundFileName"] = "molten_armor",
+      ["spellIconId"] = 135991,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["polymorph"] = {
+      ["name"] = "Polymorph",
+      ["soundFileName"] = "polymorph",
+      ["spellIconId"] = 136071,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["polymorph_pig"] = {
+      ["name"] = "Polymorph: Pig",
+      ["soundFileName"] = "polymorph",
+      ["spellIconId"] = 135997,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["polymorph_turtle"] = {
+      ["name"] = "Polymorph: Turtle",
+      ["soundFileName"] = "polymorph",
+      ["spellIconId"] = 132199,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["remove_lesser_curse"] = {
+      ["name"] = "Remove Lesser Curse",
+      ["soundFileName"] = "remove_curse",
+      ["spellIconId"] = 136082,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["scorch"] = {
+      ["name"] = "Scorch",
+      ["soundFileName"] = "scorch",
+      ["spellIconId"] = 135827,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["slow_fall"] = {
+      ["name"] = "Slow Fall",
+      ["soundFileName"] = "slow_fall",
+      ["spellIconId"] = 135992,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["spellsteal"] = {
+      ["name"] = "Spellsteal",
+      ["soundFileName"] = "spellsteal",
+      ["spellIconId"] = 135729,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["arcane_power"] = {
+      ["name"] = "Arcane Power",
+      ["soundFileName"] = "arcane_power",
+      ["spellIconId"] = 136048,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["blast_wave"] = {
+      ["name"] = "Blast Wave",
+      ["soundFileName"] = "blast_wave",
+      ["spellIconId"] = 135903,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cold_snap"] = {
+      ["name"] = "Cold Snap",
+      ["soundFileName"] = "cold_snap",
+      ["spellIconId"] = 135865,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["combustion"] = {
+      ["name"] = "Combustion",
+      ["soundFileName"] = "combustion",
+      ["spellIconId"] = 135824,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["dragons_breath"] = {
+      ["name"] = "Dragon's Breath",
+      ["soundFileName"] = "dragons_breath",
+      ["spellIconId"] = 134153,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ice_barrier"] = {
+      ["name"] = "Ice Barrier",
+      ["soundFileName"] = "ice_barrier",
+      ["spellIconId"] = 135988,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["icy_veins"] = {
+      ["name"] = "Icy Veins",
+      ["soundFileName"] = "icy_veins",
+      ["spellIconId"] = 135838,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["presence_of_mind"] = {
+      ["name"] = "Presence of Mind",
+      ["soundFileName"] = "presence_of_mind",
+      ["spellIconId"] = 136031,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["pyroblast"] = {
+      ["name"] = "Pyroblast",
+      ["soundFileName"] = "pyroblast",
+      ["spellIconId"] = 135808,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["slow"] = {
+      ["name"] = "Slow",
+      ["soundFileName"] = "slow",
+      ["spellIconId"] = 136091,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["summon_water_elemental"] = {
+      ["name"] = "Summon Water Elemental",
+      ["soundFileName"] = "summon_water_elemental",
+      ["spellIconId"] = 135862,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.PRIEST.id] = {
     ["abolish_disease"] = {
       ["name"] = "Abolish Disease",

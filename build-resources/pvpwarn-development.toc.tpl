@@ -101,7 +101,7 @@ test/PVPW_TestCombatEventsEnemyAvoidRogueEn.lua
 test/PVPW_TestSoundMageEn.lua
 test/PVPW_TestSoundSelfAvoidMageEn.lua
 test/PVPW_TestSoundEnemyAvoidMageEn.lua
-test/PVPW_TestCombatEventsMageEn.lua
+test/PVPW_TestCombatEventsMage.lua
 test/PVPW_TestCombatEventsSelfAvoidMageEn.lua
 test/PVPW_TestCombatEventsEnemyAvoidMageEn.lua
 # hunter

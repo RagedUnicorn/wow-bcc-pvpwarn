@@ -1932,6 +1932,1072 @@ local spellMap = {
     ["rank"] = 4
   },
   --[[
+    Mage ABILITIES
+  ]]--
+  [1008] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 1
+  },
+  [8455] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 2
+  },
+  [10169] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 3
+  },
+  [10170] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 4
+  },
+  [27130] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 5
+  },
+  [33946] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "amplify_magic",
+    ["rank"] = 6
+  },
+  [30451] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_blast",
+    ["rank"] = 0
+  },
+  [23028] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_brilliance",
+    ["rank"] = 1
+  },
+  [27127] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_brilliance",
+    ["rank"] = 2
+  },
+  [1449] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 1
+  },
+  [8437] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 2
+  },
+  [8438] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 3
+  },
+  [8439] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 4
+  },
+  [10201] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 5
+  },
+  [10202] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 6
+  },
+  [27080] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 7
+  },
+  [27082] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_explosion",
+    ["rank"] = 8
+  },
+  [1459] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 1
+  },
+  [1460] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 2
+  },
+  [1461] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 3
+  },
+  [10156] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 4
+  },
+  [10157] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 5
+  },
+  [27126] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_intellect",
+    ["rank"] = 6
+  },
+  [5143] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 1
+  },
+  [5144] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 2
+  },
+  [5145] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 3
+  },
+  [8416] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 4
+  },
+  [8417] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 5
+  },
+  [10211] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 6
+  },
+  [10212] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 7
+  },
+  [25345] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 8
+  },
+  [27075] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 9
+  },
+  [38699] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 10
+  },
+  [38704] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_missiles",
+    ["rank"] = 11
+  },
+  [1953] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blink",
+    ["rank"] = 0
+  },
+  [10] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 1
+  },
+  [6141] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 2
+  },
+  [8427] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 3
+  },
+  [10185] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 4
+  },
+  [10186] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 5
+  },
+  [10187] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 6
+  },
+  [27085] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blizzard",
+    ["rank"] = 7
+  },
+  [120] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 1
+  },
+  [8492] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 2
+  },
+  [10159] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 3
+  },
+  [10160] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 4
+  },
+  [10161] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 5
+  },
+  [27087] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cone_of_cold",
+    ["rank"] = 6
+  },
+  [587] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 1
+  },
+  [597] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 2
+  },
+  [990] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 3
+  },
+  [6129] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 4
+  },
+  [10144] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 5
+  },
+  [10145] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 6
+  },
+  [28612] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 7
+  },
+  [33717] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_food",
+    ["rank"] = 8
+  },
+  [759] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_mana_agate",
+    ["rank"] = 0
+  },
+  [10053] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_mana_citrine",
+    ["rank"] = 0
+  },
+  [27101] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_mana_emerald",
+    ["rank"] = 0
+  },
+  [3552] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_mana_jade",
+    ["rank"] = 0
+  },
+  [10054] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_mana_ruby",
+    ["rank"] = 0
+  },
+  [5504] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 1
+  },
+  [5505] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 2
+  },
+  [5506] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 3
+  },
+  [6127] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 4
+  },
+  [10138] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 5
+  },
+  [10139] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 6
+  },
+  [10140] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 7
+  },
+  [37420] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 8
+  },
+  [27090] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "conjure_water",
+    ["rank"] = 9
+  },
+  [2139] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "counterspell",
+    ["rank"] = 0
+  },
+  [604] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 1
+  },
+  [8450] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 2
+  },
+  [8451] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 3
+  },
+  [10173] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 4
+  },
+  [10174] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 5
+  },
+  [33944] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dampen_magic",
+    ["rank"] = 6
+  },
+  [12051] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "evocation",
+    ["rank"] = 0
+  },
+  [2136] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 1
+  },
+  [2137] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 2
+  },
+  [2138] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 3
+  },
+  [8412] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 4
+  },
+  [8413] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 5
+  },
+  [10197] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 6
+  },
+  [10199] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 7
+  },
+  [27078] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 8
+  },
+  [27079] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_blast",
+    ["rank"] = 9
+  },
+  [543] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 1
+  },
+  [8457] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 2
+  },
+  [8458] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 3
+  },
+  [10223] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 4
+  },
+  [10225] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 5
+  },
+  [27128] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fire_ward",
+    ["rank"] = 6
+  },
+  [133] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 1
+  },
+  [143] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 2
+  },
+  [145] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 3
+  },
+  [3140] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 4
+  },
+  [8400] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 5
+  },
+  [8401] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 6
+  },
+  [8402] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 7
+  },
+  [10148] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 8
+  },
+  [10149] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 9
+  },
+  [10150] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 10
+  },
+  [10151] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 11
+  },
+  [25306] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "fireball",
+    ["rank"] = 12
+  },
+  [2120] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 1
+  },
+  [2121] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 2
+  },
+  [8422] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 3
+  },
+  [8423] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 4
+  },
+  [10215] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 5
+  },
+  [10216] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 6
+  },
+  [27086] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "flamestrike",
+    ["rank"] = 7
+  },
+  [168] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_armor",
+    ["rank"] = 1
+  },
+  [7300] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_armor",
+    ["rank"] = 2
+  },
+  [7301] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_armor",
+    ["rank"] = 3
+  },
+  [122] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_nova",
+    ["rank"] = 1
+  },
+  [865] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_nova",
+    ["rank"] = 2
+  },
+  [6131] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_nova",
+    ["rank"] = 3
+  },
+  [10230] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_nova",
+    ["rank"] = 4
+  },
+  [27088] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_nova",
+    ["rank"] = 5
+  },
+  [6143] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 1
+  },
+  [8461] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 2
+  },
+  [8462] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 3
+  },
+  [10177] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 4
+  },
+  [28609] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 5
+  },
+  [32796] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frost_ward",
+    ["rank"] = 6
+  },
+  [116] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 1
+  },
+  [205] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 2
+  },
+  [837] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 3
+  },
+  [7322] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 4
+  },
+  [8406] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 5
+  },
+  [8407] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 6
+  },
+  [8408] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 7
+  },
+  [10179] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 8
+  },
+  [10180] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 9
+  },
+  [10181] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 10
+  },
+  [25304] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 11
+  },
+  [27071] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 12
+  },
+  [27072] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 13
+  },
+  [38697] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "frostbolt",
+    ["rank"] = 14
+  },
+  [7302] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_armor",
+    ["rank"] = 1
+  },
+  [7320] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_armor",
+    ["rank"] = 2
+  },
+  [10219] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_armor",
+    ["rank"] = 3
+  },
+  [10220] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_armor",
+    ["rank"] = 4
+  },
+  [27124] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_armor",
+    ["rank"] = 5
+  },
+  [45438] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_block",
+    ["rank"] = 0
+  },
+  [30455] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_lance",
+    ["rank"] = 1
+  },
+  [66] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "invisibility",
+    ["rank"] = 0
+  },
+  [6117] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mage_armor",
+    ["rank"] = 1
+  },
+  [22782] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mage_armor",
+    ["rank"] = 2
+  },
+  [22783] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mage_armor",
+    ["rank"] = 3
+  },
+  [27125] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mage_armor",
+    ["rank"] = 4
+  },
+  [1463] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 1
+  },
+  [8494] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 2
+  },
+  [8495] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 3
+  },
+  [10191] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 4
+  },
+  [10192] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 5
+  },
+  [10193] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 6
+  },
+  [27131] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "mana_shield",
+    ["rank"] = 7
+  },
+  [30482] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "molten_armor",
+    ["rank"] = 1
+  },
+  [118] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph",
+    ["rank"] = 1
+  },
+  [12824] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph",
+    ["rank"] = 2
+  },
+  [12825] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph",
+    ["rank"] = 3
+  },
+  [12826] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph",
+    ["rank"] = 4
+  },
+  [28272] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph_pig",
+    ["rank"] = 1
+  },
+  [28271] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "polymorph_turtle",
+    ["rank"] = 1
+  },
+  [475] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "remove_lesser_curse",
+    ["rank"] = 0
+  },
+  [2948] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 1
+  },
+  [8444] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 2
+  },
+  [8445] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 3
+  },
+  [8446] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 4
+  },
+  [10205] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 5
+  },
+  [10206] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 6
+  },
+  [10207] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 7
+  },
+  [27073] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 8
+  },
+  [27074] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "scorch",
+    ["rank"] = 9
+  },
+  [130] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "slow_fall",
+    ["rank"] = 0
+  },
+  [30449] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "spellsteal",
+    ["rank"] = 0
+  },
+  --[[
+    Mage TALENTS
+  ]]--
+  [12042] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "arcane_power",
+    ["rank"] = 0
+  },
+  [11113] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 1
+  },
+  [13018] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 2
+  },
+  [13019] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 3
+  },
+  [13020] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 4
+  },
+  [13021] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 5
+  },
+  [27133] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 6
+  },
+  [33933] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "blast_wave",
+    ["rank"] = 7
+  },
+  [11958] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "cold_snap",
+    ["rank"] = 0
+  },
+  [11129] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "combustion",
+    ["rank"] = 0
+  },
+  [31661] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dragons_breath",
+    ["rank"] = 1
+  },
+  [33041] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dragons_breath",
+    ["rank"] = 2
+  },
+  [33042] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dragons_breath",
+    ["rank"] = 3
+  },
+  [33043] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "dragons_breath",
+    ["rank"] = 4
+  },
+  [11426] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 1
+  },
+  [13031] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 2
+  },
+  [13032] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 3
+  },
+  [13033] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 4
+  },
+  [27134] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 5
+  },
+  [33405] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "ice_barrier",
+    ["rank"] = 6
+  },
+  [12472] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "icy_veins",
+    ["rank"] = 0
+  },
+  [12043] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "presence_of_mind",
+    ["rank"] = 0
+  },
+  [11366] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 1
+  },
+  [12505] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 2
+  },
+  [12522] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 3
+  },
+  [12523] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 4
+  },
+  [12524] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 5
+  },
+  [12525] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 6
+  },
+  [12526] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 7
+  },
+  [18809] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 8
+  },
+  [27132] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 9
+  },
+  [33938] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "pyroblast",
+    ["rank"] = 10
+  },
+  [31589] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "slow",
+    ["rank"] = 0
+  },
+  [31687] = {
+    ["category"] = categories.MAGE.id,
+    ["name"] = "summon_water_elemental",
+    ["rank"] = 0
+  },
+  --[[
     Priest ABILITIES
   ]]--
   [552] = {
