@@ -277,48 +277,52 @@ RGPVPW_CONSTANTS = {
     }
   },
   CATEGORIES_NEW = {
-    WARRIOR = {
+    DRUID = {
       ["id"] = 1,
-      ["categoryName"] = "warrior"
+      ["categoryName"] = "druid"
     },
-    PRIEST = {
+    HUNTER = {
       ["id"] = 2,
-      ["categoryName"] = "priest"
+      ["categoryName"] = "hunter"
     },
     MAGE = {
       ["id"] = 3,
       ["categoryName"] = "mage"
     },
-    HUNTER = {
-      ["id"] = 4,
-      ["categoryName"] = "hunter"
-    },
-    WARLOCK = {
-      ["id"] = 5,
-      ["categoryName"] = "warlock"
-    },
     PALADIN = {
-      ["id"] = 6,
+      ["id"] = 4,
       ["categoryName"] = "paladin"
     },
-    DRUID = {
-      ["id"] = 7,
-      ["categoryName"] = "druid"
+    PRIEST = {
+      ["id"] = 5,
+      ["categoryName"] = "priest"
+    },
+    ROGUE = {
+      ["id"] = 6,
+      ["categoryName"] = "rogue"
     },
     SHAMAN = {
-      ["id"] = 8,
+      ["id"] = 7,
       ["categoryName"] = "shaman"
     },
-    RACIALS = {
+    WARLOCK = {
+      ["id"] = 8,
+      ["categoryName"] = "warlock"
+    },
+    WARRIOR = {
       ["id"] = 9,
+      ["categoryName"] = "warlock"
+    },
+    RACIALS = {
+      ["id"] = 10,
       ["categoryName"] = "racials"
     },
     ITEMS = {
-      ["id"] = 10,
+      ["id"] = 11,
       ["categoryName"] = "items"
     },
     MISC = {
-      ["id"] = 11,
+      ["id"] = 12,
       ["categoryName"] = "misc"
     }
   },
