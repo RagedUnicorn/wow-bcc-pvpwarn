@@ -2510,6 +2510,378 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.ROGUE.id] = {
+    ["ambush"] = {
+      ["name"] = "Ambush",
+      ["soundFileName"] = "ambush",
+      ["spellIconId"] = 132282,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["anesthetic_poison"] = {
+      ["name"] = "Anesthetic Poison",
+      ["soundFileName"] = "anesthetic_poison",
+      ["spellIconId"] = 136093,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["backstab"] = {
+      ["name"] = "Backstab",
+      ["soundFileName"] = "backstab",
+      ["spellIconId"] = 132090,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["blind"] = {
+      ["name"] = "Blind",
+      ["soundFileName"] = "blind",
+      ["spellIconId"] = 136175,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cheap_shot"] = {
+      ["name"] = "Cheap Shot",
+      ["soundFileName"] = "cheap_shot",
+      ["spellIconId"] = 132092,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cloak_of_shadows"] = {
+      ["name"] = "Cloak of Shadows",
+      ["soundFileName"] = "cloak_of_shadows",
+      ["spellIconId"] = 136177,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["crippling_poison"] = {
+      ["name"] = "Crippling Poison",
+      ["soundFileName"] = "crippling_poison",
+      ["spellIconId"] = 132274,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["deadly_poison"] = {
+      ["name"] = "Deadly Poison",
+      ["soundFileName"] = "deadly_poison",
+      ["spellIconId"] = 132290,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["deadly_throw"] = {
+      ["name"] = "Deadly Throw",
+      ["soundFileName"] = "deadly_throw",
+      ["spellIconId"] = 135430,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["distract"] = {
+      ["name"] = "Distract",
+      ["soundFileName"] = "distract",
+      ["spellIconId"] = 132289,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["envenom"] = {
+      ["name"] = "Envenom",
+      ["soundFileName"] = "envenom",
+      ["spellIconId"] = 132287,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["evasion"] = {
+      ["name"] = "Evasion",
+      ["soundFileName"] = "evasion",
+      ["spellIconId"] = 136205,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["eviscerate"] = {
+      ["name"] = "Eviscerate",
+      ["soundFileName"] = "eviscerate",
+      ["spellIconId"] = 132292,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["expose_armor"] = {
+      ["name"] = "Expose Armor",
+      ["soundFileName"] = "expose_armor",
+      ["spellIconId"] = 132354,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["garrote"] = {
+      ["name"] = "Garrote",
+      ["soundFileName"] = "garrote",
+      ["spellIconId"] = 132297,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["gouge"] = {
+      ["name"] = "Gouge",
+      ["soundFileName"] = "gouge",
+      ["spellIconId"] = 132155,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["instant_poison"] = {
+      ["name"] = "Instant Poison",
+      ["soundFileName"] = "instant_poison",
+      ["spellIconId"] = 132273,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["kick"] = {
+      ["name"] = "Kick",
+      ["soundFileName"] = "kick",
+      ["spellIconId"] = 132219,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["kidney_shot"] = {
+      ["name"] = "Kidney Shot",
+      ["soundFileName"] = "kidney_shot",
+      ["spellIconId"] = 132298,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mind_numbing_poison"] = {
+      ["name"] = "Mind-numbing Poison",
+      ["soundFileName"] = "mind_numbing_poison",
+      ["spellIconId"] = 136066,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rupture"] = {
+      ["name"] = "Rupture",
+      ["soundFileName"] = "rupture",
+      ["spellIconId"] = 132302,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["sap"] = {
+      ["name"] = "Sap",
+      ["soundFileName"] = "sap",
+      ["spellIconId"] = 132310,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shiv"] = {
+      ["name"] = "Shiv",
+      ["soundFileName"] = "shiv",
+      ["spellIconId"] = 135428,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["sinister_strike"] = {
+      ["name"] = "Sinister Strike",
+      ["soundFileName"] = "sinister_strike",
+      ["spellIconId"] = 136189,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["slice_and_dice"] = {
+      ["name"] = "Slice and Dice",
+      ["soundFileName"] = "slice_and_dice",
+      ["spellIconId"] = 132306,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["sprint"] = {
+      ["name"] = "Sprint",
+      ["soundFileName"] = "sprint",
+      ["spellIconId"] = 132307,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["stealth"] = {
+      ["name"] = "Stealth",
+      ["soundFileName"] = "stealth",
+      ["spellIconId"] = 132320,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["vanish"] = {
+      ["name"] = "Vanish",
+      ["soundFileName"] = "vanish",
+      ["spellIconId"] = 132331,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["wound_poison"] = {
+      ["name"] = "Wound Poison",
+      ["soundFileName"] = "wound_poison",
+      ["spellIconId"] = 134197,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["adrenaline_rush"] = {
+      ["name"] = "Adrenaline Rush",
+      ["soundFileName"] = "adrenaline_rush",
+      ["spellIconId"] = 136206,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["blade_flurry"] = {
+      ["name"] = "Blade Flurry",
+      ["soundFileName"] = "blade_flurry",
+      ["spellIconId"] = 132350,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["cheat_death"] = {
+      ["name"] = "Cheat Death",
+      ["soundFileName"] = "cheat_death",
+      ["spellIconId"] = 132285,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cold_blood"] = {
+      ["name"] = "Cold Blood",
+      ["soundFileName"] = "cold_blood",
+      ["spellIconId"] = 135988,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ghostly_strike"] = {
+      ["name"] = "Ghostly Strike",
+      ["soundFileName"] = "ghostly_strike",
+      ["spellIconId"] = 136136,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["hemorrhage"] = {
+      ["name"] = "Hemorrhage",
+      ["soundFileName"] = "hemorrhage",
+      ["spellIconId"] = 136168,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mutilate"] = {
+      ["name"] = "Mutilate",
+      ["soundFileName"] = "mutilate",
+      ["spellIconId"] = 132304,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["premeditation"] = {
+      ["name"] = "Premeditation",
+      ["soundFileName"] = "premeditation",
+      ["spellIconId"] = 136183,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["preparation"] = {
+      ["name"] = "Preparation",
+      ["soundFileName"] = "preparation",
+      ["spellIconId"] = 136121,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["riposte"] = {
+      ["name"] = "Riposte",
+      ["soundFileName"] = "riposte",
+      ["spellIconId"] = 132336,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadowstep"] = {
+      ["name"] = "Shadowstep",
+      ["soundFileName"] = "shadowstep",
+      ["spellIconId"] = 132303,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.WARRIOR.id] = {
     ["battle_stance"] = {
       ["name"] = "Battle Stance",

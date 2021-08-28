@@ -94,7 +94,7 @@ test/PVPW_TestCombatEventsEnemyAvoidPriest.lua
 test/PVPW_TestSoundRogueEn.lua
 test/PVPW_TestSoundSelfAvoidRogueEn.lua
 test/PVPW_TestSoundEnemyAvoidRogueEn.lua
-test/PVPW_TestCombatEventsRogueEn.lua
+test/PVPW_TestCombatEventsRogue.lua
 test/PVPW_TestCombatEventsSelfAvoidRogueEn.lua
 test/PVPW_TestCombatEventsEnemyAvoidRogueEn.lua
 # mage

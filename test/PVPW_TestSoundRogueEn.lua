@@ -29,7 +29,7 @@ mod.testSoundRogueEn = me
 me.tag = "TestSoundRogueEn"
 
 local testGroupName = "SoundRogueEn"
-local testCategory = "rogue"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.ROGUE.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,78 +42,85 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundKick)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAmbush)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAnestheticPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBackstab)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBlind)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSprint)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSprint)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCheapShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCloakOfShadows)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownCloakOfShadows)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCripplingPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyThrow)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDistract)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnvenom)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEvasion)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownEvasion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEviscerate)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundExposeArmor)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGarrote)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGouge)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInstantPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundKick)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundKidneyShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCheapShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMindNumbingPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRupture)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSap)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShiv)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSinisterStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSliceAndDice)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSliceAndDice)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSprint)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSprint)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStealth)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundVanish)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWoundPoison)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAdrenalineRush)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownAdrenalineRush)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBladeFlurry)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownBladeFlurry)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCheatDeath)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundColdBlood)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownColdBlood)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGhostlyStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownGhostlyStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHemorrhage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMutilate)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPremeditation)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPreparation)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundVanish)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStealth)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRiposte)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShadowstep)
+end
+
+function me.TestSoundAmbush()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundAmbush",
+    testCategory,
+    "ambush"
+  )
+end
+
+function me.TestSoundAnestheticPoison()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundAnestheticPoison",
+    testCategory,
+    "anesthetic_poison"
+  )
+end
+
+function me.TestSoundBackstab()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundBackstab",
+    testCategory,
+    "backstab"
+  )
 end
 
 function me.TestSoundBlind()
-  mod.testHelper.TestSoundApplied(
+  mod.testHelper.TestSoundSuccess(
     "TestSoundBlind",
     testCategory,
-    "Blind"
-  )
-end
-
-function me.TestSoundKick()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundKick",
-    testCategory,
-    "Kick"
-  )
-end
-
-function me.TestSoundSprint()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundSprint",
-    testCategory,
-    "Sprint"
-  )
-end
-
-function me.TestSoundDownSprint()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownSprint",
-    testCategory,
-    "Sprint"
-  )
-end
-
-function me.TestSoundEvasion()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundEvasion",
-    testCategory,
-    "Evasion"
-  )
-end
-
-function me.TestSoundDownEvasion()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownEvasion",
-    testCategory,
-    "Evasion"
-  )
-end
-
-function me.TestSoundKidneyShot()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundKidneyShot",
-    testCategory,
-    "Kidney Shot"
+    "blind"
   )
 end
 
@@ -121,71 +128,207 @@ function me.TestSoundCheapShot()
   mod.testHelper.TestSoundSuccess(
     "TestSoundCheapShot",
     testCategory,
-    "Cheap Shot"
+    "cheap_shot"
   )
 end
 
-function me.TestSoundAdrenalineRush()
+function me.TestSoundCloakOfShadows()
   mod.testHelper.TestSoundApplied(
-    "TestSoundAdrenalineRush",
+    "TestSoundCloakOfShadows",
     testCategory,
-    "Adrenaline Rush"
+    "cloak_of_shadows"
   )
 end
 
-function me.TestSoundDownAdrenalineRush()
+function me.TestSoundDownCloakOfShadows()
   mod.testHelper.TestSoundRemoved(
-    "TestSoundDownAdrenalineRush",
+    "TestSoundDownCloakOfShadows",
     testCategory,
-    "Adrenaline Rush"
+    "cloak_of_shadows"
   )
 end
 
-function me.TestSoundBladeFlurry()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundBladeFlurry",
-    testCategory,
-    "Blade Flurry"
-  )
-end
-
-function me.TestSoundDownBladeFlurry()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownBladeFlurry",
-    testCategory,
-    "Blade Flurry"
-  )
-end
-
-function me.TestSoundColdBlood()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundColdBlood",
-    testCategory,
-    "Cold Blood"
-  )
-end
-
-function me.TestSoundDownColdBlood()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownColdBlood",
-    testCategory,
-    "Cold Blood"
-  )
-end
-
-function me.TestSoundPreparation()
+function me.TestSoundCripplingPoison()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundPreparation",
+    "TestSoundCripplingPoison",
     testCategory,
-    "Preparation"
+    "crippling_poison"
   )
 end
 
-function me.TestSoundVanish()
+function me.TestSoundDeadlyPoison()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundVanish",
+    "TestSoundDeadlyPoison",
     testCategory,
-    "Vanish"
+    "deadly_poison"
+  )
+end
+
+function me.TestSoundDeadlyThrow()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundDeadlyThrow",
+    testCategory,
+    "deadly_throw"
+  )
+end
+
+function me.TestSoundDistract()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundDistract",
+    testCategory,
+    "distract"
+  )
+end
+
+function me.TestSoundEnvenom()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundEnvenom",
+    testCategory,
+    "envenom"
+  )
+end
+
+function me.TestSoundEvasion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundEvasion",
+    testCategory,
+    "evasion"
+  )
+end
+
+function me.TestSoundDownEvasion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownEvasion",
+    testCategory,
+    "evasion"
+  )
+end
+
+function me.TestSoundEviscerate()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundEviscerate",
+    testCategory,
+    "eviscerate"
+  )
+end
+
+function me.TestSoundExposeArmor()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundExposeArmor",
+    testCategory,
+    "expose_armor"
+  )
+end
+
+function me.TestSoundGarrote()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundGarrote",
+    testCategory,
+    "garrote"
+  )
+end
+
+function me.TestSoundGouge()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundGouge",
+    testCategory,
+    "gouge"
+  )
+end
+
+function me.TestSoundInstantPoison()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundInstantPoison",
+    testCategory,
+    "instant_poison"
+  )
+end
+
+function me.TestSoundKick()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundKick",
+    testCategory,
+    "kick"
+  )
+end
+
+function me.TestSoundKidneyShot()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundKidneyShot",
+    testCategory,
+    "kidney_shot"
+  )
+end
+
+function me.TestSoundMindNumbingPoison()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundMindNumbingPoison",
+    testCategory,
+    "mind_numbing_poison"
+  )
+end
+
+function me.TestSoundRupture()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundRupture",
+    testCategory,
+    "rupture"
+  )
+end
+
+function me.TestSoundSap()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSap",
+    testCategory,
+    "sap"
+  )
+end
+
+function me.TestSoundShiv()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundShiv",
+    testCategory,
+    "shiv"
+  )
+end
+
+function me.TestSoundSinisterStrike()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSinisterStrike",
+    testCategory,
+    "sinister_strike"
+  )
+end
+
+function me.TestSoundSliceAndDice()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSliceAndDice",
+    testCategory,
+    "slice_and_dice"
+  )
+end
+
+function me.TestSoundDownSliceAndDice()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSliceAndDice",
+    testCategory,
+    "slice_and_dice"
+  )
+end
+
+function me.TestSoundSprint()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSprint",
+    testCategory,
+    "sprint"
+  )
+end
+
+function me.TestSoundDownSprint()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSprint",
+    testCategory,
+    "sprint"
   )
 end
 
@@ -193,6 +336,142 @@ function me.TestSoundStealth()
   mod.testHelper.TestSoundSuccess(
     "TestSoundStealth",
     testCategory,
-    "Stealth"
+    "stealth"
+  )
+end
+
+function me.TestSoundVanish()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundVanish",
+    testCategory,
+    "vanish"
+  )
+end
+
+function me.TestSoundWoundPoison()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWoundPoison",
+    testCategory,
+    "wound_poison"
+  )
+end
+
+function me.TestSoundAdrenalineRush()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundAdrenalineRush",
+    testCategory,
+    "adrenaline_rush"
+  )
+end
+
+function me.TestSoundDownAdrenalineRush()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownAdrenalineRush",
+    testCategory,
+    "adrenaline_rush"
+  )
+end
+
+function me.TestSoundBladeFlurry()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundBladeFlurry",
+    testCategory,
+    "blade_flurry"
+  )
+end
+
+function me.TestSoundDownBladeFlurry()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownBladeFlurry",
+    testCategory,
+    "blade_flurry"
+  )
+end
+
+function me.TestSoundCheatDeath()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundCheatDeath",
+    testCategory,
+    "cheat_death"
+  )
+end
+
+function me.TestSoundColdBlood()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundColdBlood",
+    testCategory,
+    "cold_blood"
+  )
+end
+
+function me.TestSoundDownColdBlood()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownColdBlood",
+    testCategory,
+    "cold_blood"
+  )
+end
+
+function me.TestSoundGhostlyStrike()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundGhostlyStrike",
+    testCategory,
+    "ghostly_strike"
+  )
+end
+
+function me.TestSoundDownGhostlyStrike()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownGhostlyStrike",
+    testCategory,
+    "ghostly_strike"
+  )
+end
+
+function me.TestSoundHemorrhage()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundHemorrhage",
+    testCategory,
+    "hemorrhage"
+  )
+end
+
+function me.TestSoundMutilate()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundMutilate",
+    testCategory,
+    "mutilate"
+  )
+end
+
+function me.TestSoundPremeditation()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundPremeditation",
+    testCategory,
+    "premeditation"
+  )
+end
+
+function me.TestSoundPreparation()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundPreparation",
+    testCategory,
+    "preparation"
+  )
+end
+
+function me.TestSoundRiposte()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundRiposte",
+    testCategory,
+    "riposte"
+  )
+end
+
+function me.TestSoundShadowstep()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundShadowstep",
+    testCategory,
+    "shadowstep"
   )
 end

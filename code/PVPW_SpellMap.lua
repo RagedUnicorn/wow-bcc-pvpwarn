@@ -5095,6 +5095,712 @@ local spellMap = {
     ["rank"] = 3
   },
   --[[
+    ROGUE ABILITIES
+  ]]--
+  [8676] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 1
+  },
+  [8724] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 2
+  },
+  [8725] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 3
+  },
+  [11267] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 4
+  },
+  [11268] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 5
+  },
+  [11269] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 6
+  },
+  [27441] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ambush",
+    ["rank"] = 7
+  },
+  [26785] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "anesthetic_poison",
+    ["rank"] = 1
+  },
+  [53] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 1
+  },
+  [2589] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 2
+  },
+  [2590] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 3
+  },
+  [2591] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 4
+  },
+  [8721] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 5
+  },
+  [11279] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 6
+  },
+  [11280] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 7
+  },
+  [11281] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 8
+  },
+  [25300] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 9
+  },
+  [26863] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "backstab",
+    ["rank"] = 10
+  },
+  [2094] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "blind",
+    ["rank"] = 0
+  },
+  [1833] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cheap_shot",
+    ["rank"] = 0
+  },
+  [31224] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cloak_of_shadows",
+    ["rank"] = 0
+  },
+  [3408] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "crippling_poison",
+    ["rank"] = 1
+  },
+  [11202] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "crippling_poison",
+    ["rank"] = 2
+  },
+  [2823] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 1
+  },
+  [2824] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 2
+  },
+  [11355] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 3
+  },
+  [11356] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 4
+  },
+  [25351] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 5
+  },
+  [26967] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 6
+  },
+  [27186] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison",
+    ["rank"] = 7
+  },
+  [26679] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_throw",
+    ["rank"] = 0
+  },
+  [1725] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "distract",
+    ["rank"] = 0
+  },
+  [32645] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "envenom",
+    ["rank"] = 1
+  },
+  [32684] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "envenom",
+    ["rank"] = 2
+  },
+  [5277] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "evasion",
+    ["rank"] = 1
+  },
+  [26669] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "evasion",
+    ["rank"] = 2
+  },
+  [2098] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 1
+  },
+  [6760] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 2
+  },
+  [6761] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 3
+  },
+  [6762] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 4
+  },
+  [8623] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 5
+  },
+  [8624] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 6
+  },
+  [11299] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 7
+  },
+  [11300] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 8
+  },
+  [31016] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 9
+  },
+  [26865] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "eviscerate",
+    ["rank"] = 10
+  },
+  [8647] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 1
+  },
+  [8649] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 2
+  },
+  [8650] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 3
+  },
+  [11197] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 4
+  },
+  [11198] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 5
+  },
+  [26866] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "expose_armor",
+    ["rank"] = 6
+  },
+  [703] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 1
+  },
+  [8631] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 2
+  },
+  [8632] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 3
+  },
+  [8633] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 4
+  },
+  [11289] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 5
+  },
+  [11290] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 6
+  },
+  [26839] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 7
+  },
+  [26884] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "garrote",
+    ["rank"] = 8
+  },
+  [1776] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 1
+  },
+  [1777] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 2
+  },
+  [8629] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 3
+  },
+  [11285] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 4
+  },
+  [11286] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 5
+  },
+  [38764] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "gouge",
+    ["rank"] = 6
+  },
+  [8679] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 1
+  },
+  [8686] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 2
+  },
+  [8688] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 3
+  },
+  [11338] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 4
+  },
+  [11339] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 5
+  },
+  [11340] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 6
+  },
+  [26891] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison",
+    ["rank"] = 7
+  },
+  [1766] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kick",
+    ["rank"] = 1
+  },
+  [1767] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kick",
+    ["rank"] = 2
+  },
+  [1768] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kick",
+    ["rank"] = 3
+  },
+  [1769] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kick",
+    ["rank"] = 4
+  },
+  [38768] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kick",
+    ["rank"] = 5
+  },
+  [408] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kidney_shot",
+    ["rank"] = 1
+  },
+  [8643] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "kidney_shot",
+    ["rank"] = 2
+  },
+  [5761] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison",
+    ["rank"] = 1
+  },
+  [8693] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison",
+    ["rank"] = 2
+  },
+  [11399] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison",
+    ["rank"] = 3
+  },
+  [1943] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 1
+  },
+  [8639] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 2
+  },
+  [8640] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 3
+  },
+  [11273] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 4
+  },
+  [11274] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 5
+  },
+  [11275] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 6
+  },
+  [26867] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "rupture",
+    ["rank"] = 7
+  },
+  [6770] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sap",
+    ["rank"] = 1
+  },
+  [2070] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sap",
+    ["rank"] = 2
+  },
+  [11297] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sap",
+    ["rank"] = 3
+  },
+  [5938] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "shiv",
+    ["rank"] = 1
+  },
+  [1752] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 1
+  },
+  [1757] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 2
+  },
+  [1758] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 3
+  },
+  [1759] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 4
+  },
+  [1760] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 5
+  },
+  [8621] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 6
+  },
+  [11293] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 7
+  },
+  [11294] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 8
+  },
+  [26861] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 9
+  },
+  [26862] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sinister_strike",
+    ["rank"] = 10
+  },
+  [5171] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "slice_and_dice",
+    ["rank"] = 1
+  },
+  [6774] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "slice_and_dice",
+    ["rank"] = 2
+  },
+  [2983] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sprint",
+    ["rank"] = 1
+  },
+  [8696] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sprint",
+    ["rank"] = 2
+  },
+  [11305] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "sprint",
+    ["rank"] = 3
+  },
+  [1784] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "stealth",
+    ["rank"] = 1
+  },
+  [1785] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "stealth",
+    ["rank"] = 2
+  },
+  [1786] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "stealth",
+    ["rank"] = 3
+  },
+  [1787] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "stealth",
+    ["rank"] = 4
+  },
+  [1856] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "vanish",
+    ["rank"] = 1
+  },
+  [1857] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "vanish",
+    ["rank"] = 2
+  },
+  [26889] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "vanish",
+    ["rank"] = 3
+  },
+  [13219] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison",
+    ["rank"] = 1
+  },
+  [13225] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison",
+    ["rank"] = 2
+  },
+  [13226] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison",
+    ["rank"] = 3
+  },
+  [13227] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison",
+    ["rank"] = 4
+  },
+  [27188] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison",
+    ["rank"] = 5
+  },
+  --[[
+    ROGUE TALENTS
+  ]]--
+  [13750] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "adrenaline_rush",
+    ["rank"] = 0
+  },
+  [13877] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "blade_flurry",
+    ["rank"] = 0
+  },
+  [31228] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cheat_death",
+    ["rank"] = 1
+  },
+  [31229] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cheat_death",
+    ["rank"] = 2
+  },
+  [31230] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cheat_death",
+    ["rank"] = 3
+  },
+  [14177] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "cold_blood",
+    ["rank"] = 0
+  },
+  [14278] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "ghostly_strike",
+    ["rank"] = 0
+  },
+  [16511] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "hemorrhage",
+    ["rank"] = 1
+  },
+  [17347] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "hemorrhage",
+    ["rank"] = 2
+  },
+  [17348] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "hemorrhage",
+    ["rank"] = 3
+  },
+  [26864] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "hemorrhage",
+    ["rank"] = 4
+  },
+  [1329] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mutilate",
+    ["rank"] = 1
+  },
+  [34411] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mutilate",
+    ["rank"] = 2
+  },
+  [34412] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mutilate",
+    ["rank"] = 3
+  },
+  [34413] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mutilate",
+    ["rank"] = 4
+  },
+  [14183] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "premeditation",
+    ["rank"] = 0
+  },
+  [14185] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "preparation",
+    ["rank"] = 0
+  },
+  [14251] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "riposte",
+    ["rank"] = 0
+  },
+  [36554] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "shadowstep",
+    ["rank"] = 0
+  },
+  --[[
     WARRIOR ABILITIES
   ]]--
   [2457] = {
