@@ -1522,6 +1522,465 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.PALADIN.id] = {
+    ["avenging_wrath"] = {
+      ["name"] = "Avenging Wrath",
+      ["soundFileName"] = "avenging_wrath",
+      ["spellIconId"] = 135875,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["blessing_of_freedom"] = {
+      ["name"] = "Blessing of Freedom",
+      ["soundFileName"] = "blessing_of_freedom",
+      ["spellIconId"] = 135968,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["blessing_of_light"] = {
+      ["name"] = "Blessing of Light",
+      ["soundFileName"] = "blessing_of_light",
+      ["spellIconId"] = 135943,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["blessing_of_might"] = {
+      ["name"] = "Blessing of Might",
+      ["soundFileName"] = "blessing_of_might",
+      ["spellIconId"] = 135906,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["blessing_of_protection"] = {
+      ["name"] = "Blessing of Protection",
+      ["soundFileName"] = "blessing_of_protection",
+      ["spellIconId"] = 135964,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["blessing_of_sacrifice"] = {
+      ["name"] = "Blessing of Sacrifice",
+      ["soundFileName"] = "blessing_of_sacrifice",
+      ["spellIconId"] = 135966,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["blessing_of_wisdom"] = {
+      ["name"] = "Blessing of Wisdom",
+      ["soundFileName"] = "blessing_of_wisdom",
+      ["spellIconId"] = 135970,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["cleanse"] = {
+      ["name"] = "Cleanse",
+      ["soundFileName"] = "cleanse",
+      ["spellIconId"] = 135953,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["concentration_aura"] = {
+      ["name"] = "Concentration Aura",
+      ["soundFileName"] = "concentration_aura",
+      ["spellIconId"] = 135933,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["consecration"] = {
+      ["name"] = "Consecration",
+      ["soundFileName"] = "consecration",
+      ["spellIconId"] = 135926,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["crusader_aura"] = {
+      ["name"] = "Crusader Aura",
+      ["soundFileName"] = "crusader_aura",
+      ["spellIconId"] = 135890,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["devotion_aura"] = {
+      ["name"] = "Devotion Aura",
+      ["soundFileName"] = "devotion_aura",
+      ["spellIconId"] = 135893,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["divine_intervention"] = {
+      ["name"] = "Divine Intervention",
+      ["soundFileName"] = "divine_intervention",
+      ["spellIconId"] = 136106,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["divine_protection"] = {
+      ["name"] = "Divine Protection",
+      ["soundFileName"] = "divine_protection",
+      ["spellIconId"] = 135954,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["divine_shield"] = {
+      ["name"] = "Divine Shield",
+      ["soundFileName"] = "divine_shield",
+      ["spellIconId"] = 135896,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["fire_resistance_aura"] = {
+      ["name"] = "Fire Resistance Aura",
+      ["soundFileName"] = "fire_resistance_aura",
+      ["spellIconId"] = 135824,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flash_of_light"] = {
+      ["name"] = "Flash of Light",
+      ["soundFileName"] = "flash_of_light",
+      ["spellIconId"] = 135907,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_resistance_aura"] = {
+      ["name"] = "Frost Resistance Aura",
+      ["soundFileName"] = "frost_resistance_aura",
+      ["spellIconId"] = 135865,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["greater_blessing_of_kings"] = {
+      ["name"] = "Greater Blessing of Kings",
+      ["soundFileName"] = "greater_blessing_of_kings",
+      ["spellIconId"] = 135993,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["greater_blessing_of_light"] = {
+      ["name"] = "Greater Blessing of Light",
+      ["soundFileName"] = "greater_blessing_of_light",
+      ["spellIconId"] = 135909,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["greater_blessing_of_might"] = {
+      ["name"] = "Greater Blessing of Might",
+      ["soundFileName"] = "greater_blessing_of_might",
+      ["spellIconId"] = 135908,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["greater_blessing_of_wisdom"] = {
+      ["name"] = "Greater Blessing of Wisdom",
+      ["soundFileName"] = "greater_blessing_of_wisdom",
+      ["spellIconId"] = 135912,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["hammer_of_justice"] = {
+      ["name"] = "Hammer of Justice",
+      ["soundFileName"] = "hammer_of_justice",
+      ["spellIconId"] = 135963,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hammer_of_wrath"] = {
+      ["name"] = "Hammer of Wrath",
+      ["soundFileName"] = "hammer_of_wrath",
+      ["spellIconId"] = 132326,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["holy_light"] = {
+      ["name"] = "Holy Light",
+      ["soundFileName"] = "holy_light",
+      ["spellIconId"] = 135920,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["judgement"] = {
+      ["name"] = "Judgement",
+      ["soundFileName"] = "judgement",
+      ["spellIconId"] = 135959,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["lay_on_hands"] = {
+      ["name"] = "Lay on Hands",
+      ["soundFileName"] = "lay_on_hands",
+      ["spellIconId"] = 135928,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["purify"] = {
+      ["name"] = "Purify",
+      ["soundFileName"] = "purify",
+      ["spellIconId"] = 135949,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["redemption"] = {
+      ["name"] = "Redemption",
+      ["soundFileName"] = "redemption",
+      ["spellIconId"] = 135955,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["retribution_aura"] = {
+      ["name"] = "Retribution Aura",
+      ["soundFileName"] = "retribution_aura",
+      ["spellIconId"] = 135873,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_blood"] = {
+      ["name"] = "Seal of Blood",
+      ["soundFileName"] = "seal_of_blood",
+      ["spellIconId"] = 135961,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_corruption"] = {
+      ["name"] = "Seal of Corruption",
+      ["soundFileName"] = "seal_of_corruption",
+      ["spellIconId"] = 135969,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_justice"] = {
+      ["name"] = "Seal of Justice",
+      ["soundFileName"] = "seal_of_justice",
+      ["spellIconId"] = 135971,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_light"] = {
+      ["name"] = "Seal of Light",
+      ["soundFileName"] = "seal_of_light",
+      ["spellIconId"] = 135917,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_righteousness"] = {
+      ["name"] = "Seal of Righteousness",
+      ["soundFileName"] = "seal_of_righteousness",
+      ["spellIconId"] = 132325,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_the_crusader"] = {
+      ["name"] = "Seal of the Crusader",
+      ["soundFileName"] = "seal_of_the_crusader",
+      ["spellIconId"] = 135924,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_the_martyr"] = {
+      ["name"] = "Seal of the Martyr",
+      ["soundFileName"] = "seal_of_the_martyr",
+      ["spellIconId"] = 135961,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_vengeance"] = {
+      ["name"] = "Seal of Vengeance",
+      ["soundFileName"] = "seal_of_vengeance",
+      ["spellIconId"] = 135969,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_wisdom"] = {
+      ["name"] = "Seal of Wisdom",
+      ["soundFileName"] = "seal_of_wisdom",
+      ["spellIconId"] = 135960,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadow_resistance_aura"] = {
+      ["name"] = "Shadow Resistance Aura",
+      ["soundFileName"] = "shadow_resistance_aura",
+      ["spellIconId"] = 136192,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["avengers_shield"] = {
+      ["name"] = "Avenger's Shield",
+      ["soundFileName"] = "avengers_shield",
+      ["spellIconId"] = 135874,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["blessing_of_kings"] = {
+      ["name"] = "Blessing of Kings",
+      ["soundFileName"] = "blessing_of_kings",
+      ["spellIconId"] = 135995,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["blessing_of_sanctuary"] = {
+      ["name"] = "Blessing of Sanctuary",
+      ["soundFileName"] = "blessing_of_sanctuary",
+      ["spellIconId"] = 136051,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["crusader_strike"] = {
+      ["name"] = "Crusader Strike",
+      ["soundFileName"] = "crusader_strike",
+      ["spellIconId"] = 135891,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["divine_favor"] = {
+      ["name"] = "Divine Favor",
+      ["soundFileName"] = "divine_favor",
+      ["spellIconId"] = 135915,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["holy_shock"] = {
+      ["name"] = "Holy Shock",
+      ["soundFileName"] = "holy_shock",
+      ["spellIconId"] = 135972,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["repentance"] = {
+      ["name"] = "Repentance",
+      ["soundFileName"] = "repentance",
+      ["spellIconId"] = 135942,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seal_of_command"] = {
+      ["name"] = "Seal of Command",
+      ["soundFileName"] = "seal_of_command",
+      ["spellIconId"] = 132347,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.PRIEST.id] = {
     ["abolish_disease"] = {
       ["name"] = "Abolish Disease",

@@ -2998,6 +2998,852 @@ local spellMap = {
     ["rank"] = 0
   },
   --[[
+    Paladin ABILITIES
+  ]]--
+  [31884] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "avenging_wrath",
+    ["rank"] = 0
+  },
+  [1044] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_freedom",
+    ["rank"] = 0
+  },
+  [19977] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_light",
+    ["rank"] = 1
+  },
+  [19978] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_light",
+    ["rank"] = 2
+  },
+  [19979] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_light",
+    ["rank"] = 3
+  },
+  [27144] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_light",
+    ["rank"] = 4
+  },
+  [19740] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 1
+  },
+  [19834] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 2
+  },
+  [19835] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 3
+  },
+  [19836] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 4
+  },
+  [19837] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 5
+  },
+  [19838] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 6
+  },
+  [25291] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 7
+  },
+  [27140] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_might",
+    ["rank"] = 8
+  },
+  [1022] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_protection",
+    ["rank"] = 1
+  },
+  [5599] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_protection",
+    ["rank"] = 2
+  },
+  [10278] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_protection",
+    ["rank"] = 3
+  },
+  [6940] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sacrifice",
+    ["rank"] = 1
+  },
+  [20729] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sacrifice",
+    ["rank"] = 2
+  },
+  [27147] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sacrifice",
+    ["rank"] = 3
+  },
+  [27148] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sacrifice",
+    ["rank"] = 4
+  },
+  [19742] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 1
+  },
+  [19850] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 2
+  },
+  [19852] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 3
+  },
+  [19853] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 4
+  },
+  [19854] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 5
+  },
+  [25290] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 6
+  },
+  [27142] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_wisdom",
+    ["rank"] = 7
+  },
+  [4987] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "cleanse",
+    ["rank"] = 0
+  },
+  [19746] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "concentration_aura",
+    ["rank"] = 0
+  },
+  [26573] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 1
+  },
+  [20116] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 2
+  },
+  [20922] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 3
+  },
+  [20923] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 4
+  },
+  [20924] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 5
+  },
+  [27173] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "consecration",
+    ["rank"] = 6
+  },
+  [32223] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "crusader_aura",
+    ["rank"] = 0
+  },
+  [465] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 1
+  },
+  [10290] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 2
+  },
+  [643] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 3
+  },
+  [10291] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 4
+  },
+  [1032] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 5
+  },
+  [10292] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 6
+  },
+  [10293] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 7
+  },
+  [27149] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "devotion_aura",
+    ["rank"] = 8
+  },
+  [19752] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_intervention",
+    ["rank"] = 0
+  },
+  [498] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_protection",
+    ["rank"] = 1
+  },
+  [5573] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_protection",
+    ["rank"] = 2
+  },
+  [642] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_shield",
+    ["rank"] = 1
+  },
+  [1020] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_shield",
+    ["rank"] = 2
+  },
+  [19891] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "fire_resistance_aura",
+    ["rank"] = 1
+  },
+  [19899] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "fire_resistance_aura",
+    ["rank"] = 2
+  },
+  [19900] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "fire_resistance_aura",
+    ["rank"] = 3
+  },
+  [27153] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "fire_resistance_aura",
+    ["rank"] = 4
+  },
+  [19750] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 1
+  },
+  [19939] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 2
+  },
+  [19940] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 3
+  },
+  [19941] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 4
+  },
+  [19942] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 5
+  },
+  [19943] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 6
+  },
+  [27137] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "flash_of_light",
+    ["rank"] = 7
+  },
+  [19888] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "frost_resistance_aura",
+    ["rank"] = 1
+  },
+  [19897] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "frost_resistance_aura",
+    ["rank"] = 2
+  },
+  [19898] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "frost_resistance_aura",
+    ["rank"] = 3
+  },
+  [27152] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "frost_resistance_aura",
+    ["rank"] = 4
+  },
+  [25898] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_kings",
+    ["rank"] = 0
+  },
+  [25890] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_light",
+    ["rank"] = 1
+  },
+  [27145] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_light",
+    ["rank"] = 2
+  },
+  [25782] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_might",
+    ["rank"] = 1
+  },
+  [25916] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_might",
+    ["rank"] = 2
+  },
+  [27141] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_might",
+    ["rank"] = 3
+  },
+  [25894] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_wisdom",
+    ["rank"] = 1
+  },
+  [25918] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_wisdom",
+    ["rank"] = 2
+  },
+  [27143] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "greater_blessing_of_wisdom",
+    ["rank"] = 3
+  },
+  [853] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_justice",
+    ["rank"] = 1
+  },
+  [5588] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_justice",
+    ["rank"] = 2
+  },
+  [5589] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_justice",
+    ["rank"] = 3
+  },
+  [10308] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_justice",
+    ["rank"] = 4
+  },
+  [24275] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_wrath",
+    ["rank"] = 1
+  },
+  [24274] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_wrath",
+    ["rank"] = 2
+  },
+  [24239] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_wrath",
+    ["rank"] = 3
+  },
+  [27180] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "hammer_of_wrath",
+    ["rank"] = 4
+  },
+  [635] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 1
+  },
+  [639] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 2
+  },
+  [647] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 3
+  },
+  [1026] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 4
+  },
+  [1042] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 5
+  },
+  [3472] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 6
+  },
+  [10328] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 7
+  },
+  [10329] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 8
+  },
+  [25292] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 9
+  },
+  [27135] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 10
+  },
+  [27136] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_light",
+    ["rank"] = 11
+  },
+  [20271] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "judgement",
+    ["rank"] = 0
+  },
+  [633] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "lay_on_hands",
+    ["rank"] = 1
+  },
+  [2800] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "lay_on_hands",
+    ["rank"] = 2
+  },
+  [10310] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "lay_on_hands",
+    ["rank"] = 3
+  },
+  [27154] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "lay_on_hands",
+    ["rank"] = 4
+  },
+  [1152] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "purify",
+    ["rank"] = 0
+  },
+  [7328] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "redemption",
+    ["rank"] = 1
+  },
+  [10322] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "redemption",
+    ["rank"] = 2
+  },
+  [10324] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "redemption",
+    ["rank"] = 3
+  },
+  [20772] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "redemption",
+    ["rank"] = 4
+  },
+  [20773] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "redemption",
+    ["rank"] = 5
+  },
+  [7294] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 1
+  },
+  [10298] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 2
+  },
+  [10299] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 3
+  },
+  [10300] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 4
+  },
+  [10301] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 5
+  },
+  [27150] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "retribution_aura",
+    ["rank"] = 6
+  },
+  [31892] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_blood",
+    ["rank"] = 1
+  },
+  [348704] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_corruption",
+    ["rank"] = 1
+  },
+  [20164] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_justice",
+    ["rank"] = 1
+  },
+  [31895] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_justice",
+    ["rank"] = 2
+  },
+  [20165] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_light",
+    ["rank"] = 1
+  },
+  [20347] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_light",
+    ["rank"] = 2
+  },
+  [20348] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_light",
+    ["rank"] = 3
+  },
+  [20349] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_light",
+    ["rank"] = 4
+  },
+  [27160] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_light",
+    ["rank"] = 5
+  },
+  [21084] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 1
+  },
+  [20287] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 2
+  },
+  [20288] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 3
+  },
+  [20289] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 4
+  },
+  [20290] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 5
+  },
+  [20291] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 6
+  },
+  [20292] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 7
+  },
+  [20293] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 8
+  },
+  [27155] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_righteousness",
+    ["rank"] = 9
+  },
+  [21082] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 1
+  },
+  [20162] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 2
+  },
+  [20305] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 3
+  },
+  [20306] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 4
+  },
+  [20307] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 5
+  },
+  [20308] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 6
+  },
+  [27158] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_crusader",
+    ["rank"] = 7
+  },
+  [348700] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_the_martyr",
+    ["rank"] = 1
+  },
+  [31801] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_vengeance",
+    ["rank"] = 1
+  },
+  [20166] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_wisdom",
+    ["rank"] = 1
+  },
+  [20356] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_wisdom",
+    ["rank"] = 2
+  },
+  [20357] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_wisdom",
+    ["rank"] = 3
+  },
+  [27166] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_wisdom",
+    ["rank"] = 4
+  },
+  [19876] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "shadow_resistance_aura",
+    ["rank"] = 1
+  },
+  [19895] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "shadow_resistance_aura",
+    ["rank"] = 2
+  },
+  [19896] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "shadow_resistance_aura",
+    ["rank"] = 3
+  },
+  [27151] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "shadow_resistance_aura",
+    ["rank"] = 4
+  },
+  --[[
+    Paladin TALENTS
+  ]]--
+  [31935] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "avengers_shield",
+    ["rank"] = 1
+  },
+  [32699] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "avengers_shield",
+    ["rank"] = 2
+  },
+  [32700] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "avengers_shield",
+    ["rank"] = 3
+  },
+  [20217] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_kings",
+    ["rank"] = 0
+  },
+  [20911] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sanctuary",
+    ["rank"] = 1
+  },
+  [20912] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sanctuary",
+    ["rank"] = 2
+  },
+  [20913] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sanctuary",
+    ["rank"] = 3
+  },
+  [20914] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sanctuary",
+    ["rank"] = 4
+  },
+  [27168] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "blessing_of_sanctuary",
+    ["rank"] = 5
+  },
+  [35395] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "crusader_strike",
+    ["rank"] = 0
+  },
+  [20216] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "divine_favor",
+    ["rank"] = 0
+  },
+  [20473] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_shock",
+    ["rank"] = 1
+  },
+  [20929] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_shock",
+    ["rank"] = 2
+  },
+  [20930] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_shock",
+    ["rank"] = 3
+  },
+  [27174] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_shock",
+    ["rank"] = 4
+  },
+  [33072] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "holy_shock",
+    ["rank"] = 5
+  },
+  [20066] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "repentance",
+    ["rank"] = 0
+  },
+  [20375] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 1
+  },
+  [20915] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 2
+  },
+  [20918] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 3
+  },
+  [20919] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 4
+  },
+  [20920] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 5
+  },
+  [27170] = {
+    ["category"] = categories.PALADIN.id,
+    ["name"] = "seal_of_command",
+    ["rank"] = 6
+  },
+  --[[
     Priest ABILITIES
   ]]--
   [552] = {
