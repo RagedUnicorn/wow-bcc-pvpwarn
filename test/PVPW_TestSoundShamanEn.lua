@@ -29,7 +29,7 @@ mod.testSoundShamanEn = me
 me.tag = "TestSoundShamanEn"
 
 local testGroupName = "SoundShamanEn"
-local testCategory = "shaman"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.SHAMAN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,207 +42,124 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundElementalMastery)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownElementalMastery)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNaturesSwiftness)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownNaturesSwiftness)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundTremorTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPoisonCleansingTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGroundingTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFireResistanceTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFlametongueTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGraceOfAirTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNatureResistanceTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStoneskinTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStrengthOfEarthTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWindfuryTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWindwallTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAncestralSpirit)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBloodlust)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownBloodlust)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundChainHeal)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundChainLightning)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCureDisease)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCurePoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDiseaseCleansingTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEarthElementalTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEarthShock)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEarthbindTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFireElementalTotem)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFireNovaTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFireResistanceTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFlameShock)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFlametongueTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFlametongueWeapon)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostResistanceTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostShock)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostbrandWeapon)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGhostWolf)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownGhostWolf)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGraceOfAirTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGroundingTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHealingStreamTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHealingWave)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHeroism)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownHeroism)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLesserHealingWave)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLightningBolt)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLightningShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLightningShield)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMagmaTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundManaSpringTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNatureResistanceTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPoisonCleansingTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundPurge)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundReincarnation)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRockbiterWeapon)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSearingTotem)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStoneclawTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostResistanceTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHealingStreamTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDiseaseCleansingTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundManaSpringTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStoneskinTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStrengthOfEarthTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundTremorTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWaterBreathing)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownWaterBreathing)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWaterShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownWaterShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWindfuryTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWindfuryWeapon)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWindwallTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWrathOfAirTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEarthShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownEarthShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundElementalMastery)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownElementalMastery)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundManaTideTotem)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundTranquilAirTotem)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNaturesSwiftness)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownNaturesSwiftness)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShamanisticRage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShamanisticRage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStormstrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundTotemOfWrath)
 end
 
-function me.TestSoundElementalMastery()
+function me.TestSoundAncestralSpirit()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundAncestralSpirit",
+    testCategory,
+    "ancestral_spirit"
+  )
+end
+
+function me.TestSoundBloodlust()
   mod.testHelper.TestSoundApplied(
-    "TestSoundElementalMastery",
+    "TestSoundBloodlust",
     testCategory,
-    "Elemental Mastery"
+    "bloodlust"
   )
 end
 
-function me.TestSoundDownElementalMastery()
+function me.TestSoundDownBloodlust()
   mod.testHelper.TestSoundRemoved(
-    "TestSoundDownElementalMastery",
+    "TestSoundDownBloodlust",
     testCategory,
-    "Elemental Mastery"
+    "bloodlust"
   )
 end
 
-function me.TestSoundNaturesSwiftness()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundNaturesSwiftness",
-    testCategory,
-    "Nature's Swiftness"
-  )
-end
-
-function me.TestSoundDownNaturesSwiftness()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownNaturesSwiftness",
-    testCategory,
-    "Nature's Swiftness"
-  )
-end
-
-function me.TestSoundTremorTotem()
+function me.TestSoundChainHeal()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundTremorTotem",
+    "TestSoundChainHeal",
     testCategory,
-    "Tremor Totem"
+    "chain_heal"
   )
 end
 
-function me.TestSoundPoisonCleansingTotem()
+function me.TestSoundChainLightning()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundPoisonCleansingTotem",
+    "TestSoundChainLightning",
     testCategory,
-    "Poison Cleansing Totem"
+    "chain_lightning"
   )
 end
 
-function me.TestSoundGroundingTotem()
+function me.TestSoundCureDisease()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundGroundingTotem",
+    "TestSoundCureDisease",
     testCategory,
-    "Grounding Totem"
+    "cure_disease"
   )
 end
 
-function me.TestSoundFireResistanceTotem()
+function me.TestSoundCurePoison()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundFireResistanceTotem",
+    "TestSoundCurePoison",
     testCategory,
-    "Fire Resistance Totem"
-  )
-end
-
-function me.TestSoundFlametongueTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundFlametongueTotem",
-    testCategory,
-    "Flametongue Totem"
-  )
-end
-
-function me.TestSoundGraceOfAirTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundGraceOfAirTotem",
-    testCategory,
-    "Grace of Air Totem"
-  )
-end
-
-function me.TestSoundNatureResistanceTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundNatureResistanceTotem",
-    testCategory,
-    "Nature Resistance Totem"
-  )
-end
-
-function me.TestSoundStoneskinTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundStoneskinTotem",
-    testCategory,
-    "Stoneskin Totem"
-  )
-end
-
-function me.TestSoundStrengthOfEarthTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundStrengthOfEarthTotem",
-    testCategory,
-    "Strength of Earth Totem"
-  )
-end
-
-function me.TestSoundWindfuryTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundWindfuryTotem",
-    testCategory,
-    "Windfury Totem"
-  )
-end
-
-function me.TestSoundWindwallTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundWindwallTotem",
-    testCategory,
-    "Windwall Totem"
-  )
-end
-
-function me.TestSoundEarthbindTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundEarthbindTotem",
-    testCategory,
-    "Earthbind Totem"
-  )
-end
-
-function me.TestSoundFireNovaTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundFireNovaTotem",
-    testCategory,
-    "Fire Nova Totem"
-  )
-end
-
-function me.TestSoundMagmaTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundMagmaTotem",
-    testCategory,
-    "Magma Totem"
-  )
-end
-
-function me.TestSoundSearingTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundSearingTotem",
-    testCategory,
-    "Searing Totem"
-  )
-end
-
-function me.TestSoundStoneclawTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundStoneclawTotem",
-    testCategory,
-    "Stoneclaw Totem"
-  )
-end
-
-function me.TestSoundFrostResistanceTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundFrostResistanceTotem",
-    testCategory,
-    "Frost Resistance Totem"
-  )
-end
-
-function me.TestSoundHealingStreamTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundHealingStreamTotem",
-    testCategory,
-    "Healing Stream Totem"
+    "cure_poison"
   )
 end
 
@@ -250,7 +167,207 @@ function me.TestSoundDiseaseCleansingTotem()
   mod.testHelper.TestSoundSuccess(
     "TestSoundDiseaseCleansingTotem",
     testCategory,
-    "Disease Cleansing Totem"
+    "disease_cleansing_totem"
+  )
+end
+
+function me.TestSoundEarthElementalTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundEarthElementalTotem",
+    testCategory,
+    "earth_elemental_totem"
+  )
+end
+
+function me.TestSoundEarthShock()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundEarthShock",
+    testCategory,
+    "earth_shock"
+  )
+end
+
+function me.TestSoundEarthbindTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundEarthbindTotem",
+    testCategory,
+    "earthbind_totem"
+  )
+end
+
+function me.TestSoundFireElementalTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFireElementalTotem",
+    testCategory,
+    "fire_elemental_totem"
+  )
+end
+
+function me.TestSoundFireNovaTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFireNovaTotem",
+    testCategory,
+    "fire_nova_totem"
+  )
+end
+
+function me.TestSoundFireResistanceTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFireResistanceTotem",
+    testCategory,
+    "fire_resistance_totem"
+  )
+end
+
+function me.TestSoundFlameShock()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFlameShock",
+    testCategory,
+    "flame_shock"
+  )
+end
+
+function me.TestSoundFlametongueTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFlametongueTotem",
+    testCategory,
+    "flametongue_totem"
+  )
+end
+
+function me.TestSoundFlametongueWeapon()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFlametongueWeapon",
+    testCategory,
+    "flametongue_weapon"
+  )
+end
+
+function me.TestSoundFrostResistanceTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFrostResistanceTotem",
+    testCategory,
+    "frost_resistance_totem"
+  )
+end
+
+function me.TestSoundFrostShock()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFrostShock",
+    testCategory,
+    "frost_shock"
+  )
+end
+
+function me.TestSoundFrostbrandWeapon()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFrostbrandWeapon",
+    testCategory,
+    "frostbrand_weapon"
+  )
+end
+
+function me.TestSoundGhostWolf()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundGhostWolf",
+    testCategory,
+    "ghost_wolf"
+  )
+end
+
+function me.TestSoundDownGhostWolf()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownGhostWolf",
+    testCategory,
+    "ghost_wolf"
+  )
+end
+
+function me.TestSoundGraceOfAirTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundGraceOfAirTotem",
+    testCategory,
+    "grace_of_air_totem"
+  )
+end
+
+function me.TestSoundGroundingTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundGroundingTotem",
+    testCategory,
+    "grounding_totem"
+  )
+end
+
+function me.TestSoundHealingStreamTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundHealingStreamTotem",
+    testCategory,
+    "healing_stream_totem"
+  )
+end
+
+function me.TestSoundHealingWave()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundHealingWave",
+    testCategory,
+    "healing_wave"
+  )
+end
+
+function me.TestSoundHeroism()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundHeroism",
+    testCategory,
+    "heroism"
+  )
+end
+
+function me.TestSoundDownHeroism()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownHeroism",
+    testCategory,
+    "heroism"
+  )
+end
+
+function me.TestSoundLesserHealingWave()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundLesserHealingWave",
+    testCategory,
+    "lesser_healing_wave"
+  )
+end
+
+function me.TestSoundLightningBolt()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundLightningBolt",
+    testCategory,
+    "lightning_bolt"
+  )
+end
+
+function me.TestSoundLightningShield()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundLightningShield",
+    testCategory,
+    "lightning_shield"
+  )
+end
+
+function me.TestSoundDownLightningShield()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownLightningShield",
+    testCategory,
+    "lightning_shield"
+  )
+end
+
+function me.TestSoundMagmaTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundMagmaTotem",
+    testCategory,
+    "magma_totem"
   )
 end
 
@@ -258,7 +375,183 @@ function me.TestSoundManaSpringTotem()
   mod.testHelper.TestSoundSuccess(
     "TestSoundManaSpringTotem",
     testCategory,
-    "Mana Spring Totem"
+    "mana_spring_totem"
+  )
+end
+
+function me.TestSoundNatureResistanceTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundNatureResistanceTotem",
+    testCategory,
+    "nature_resistance_totem"
+  )
+end
+
+function me.TestSoundPoisonCleansingTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundPoisonCleansingTotem",
+    testCategory,
+    "poison_cleansing_totem"
+  )
+end
+
+function me.TestSoundPurge()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundPurge",
+    testCategory,
+    "purge"
+  )
+end
+
+function me.TestSoundReincarnation()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundReincarnation",
+    testCategory,
+    "reincarnation"
+  )
+end
+
+function me.TestSoundRockbiterWeapon()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundRockbiterWeapon",
+    testCategory,
+    "rockbiter_weapon"
+  )
+end
+
+function me.TestSoundSearingTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSearingTotem",
+    testCategory,
+    "searing_totem"
+  )
+end
+
+function me.TestSoundStoneclawTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundStoneclawTotem",
+    testCategory,
+    "stoneclaw_totem"
+  )
+end
+
+function me.TestSoundStoneskinTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundStoneskinTotem",
+    testCategory,
+    "stoneskin_totem"
+  )
+end
+
+function me.TestSoundStrengthOfEarthTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundStrengthOfEarthTotem",
+    testCategory,
+    "strength_of_earth_totem"
+  )
+end
+
+function me.TestSoundTremorTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundTremorTotem",
+    testCategory,
+    "tremor_totem"
+  )
+end
+
+function me.TestSoundWaterBreathing()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundWaterBreathing",
+    testCategory,
+    "water_breathing"
+  )
+end
+
+function me.TestSoundDownWaterBreathing()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownWaterBreathing",
+    testCategory,
+    "water_breathing"
+  )
+end
+
+function me.TestSoundWaterShield()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundWaterShield",
+    testCategory,
+    "water_shield"
+  )
+end
+
+function me.TestSoundDownWaterShield()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownWaterShield",
+    testCategory,
+    "water_shield"
+  )
+end
+
+function me.TestSoundWindfuryTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWindfuryTotem",
+    testCategory,
+    "windfury_totem"
+  )
+end
+
+function me.TestSoundWindfuryWeapon()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWindfuryWeapon",
+    testCategory,
+    "windfury_weapon"
+  )
+end
+
+function me.TestSoundWindwallTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWindwallTotem",
+    testCategory,
+    "windwall_totem"
+  )
+end
+
+function me.TestSoundWrathOfAirTotem()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundWrathOfAirTotem",
+    testCategory,
+    "wrath_of_air_totem"
+  )
+end
+
+function me.TestSoundEarthShield()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundEarthShield",
+    testCategory,
+    "earth_shield"
+  )
+end
+
+function me.TestSoundDownEarthShield()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownEarthShield",
+    testCategory,
+    "earth_shield"
+  )
+end
+
+function me.TestSoundElementalMastery()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundElementalMastery",
+    testCategory,
+    "elemental_mastery"
+  )
+end
+
+function me.TestSoundDownElementalMastery()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownElementalMastery",
+    testCategory,
+    "elemental_mastery"
   )
 end
 
@@ -266,14 +559,54 @@ function me.TestSoundManaTideTotem()
   mod.testHelper.TestSoundSuccess(
     "TestSoundManaTideTotem",
     testCategory,
-    "Mana Tide Totem"
+    "mana_tide_totem"
   )
 end
 
-function me.TestSoundTranquilAirTotem()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundTranquilAirTotem",
+function me.TestSoundNaturesSwiftness()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundNaturesSwiftness",
     testCategory,
-    "Tranquil Air Totem"
+    "natures_swiftness"
+  )
+end
+
+function me.TestSoundDownNaturesSwiftness()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownNaturesSwiftness",
+    testCategory,
+    "natures_swiftness"
+  )
+end
+
+function me.TestSoundShamanisticRage()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundShamanisticRage",
+    testCategory,
+    "shamanistic_rage"
+  )
+end
+
+function me.TestSoundDownShamanisticRage()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownShamanisticRage",
+    testCategory,
+    "shamanistic_rage"
+  )
+end
+
+function me.TestSoundStormstrike()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundStormstrike",
+    testCategory,
+    "stormstrike"
+  )
+end
+
+function me.TestSoundTotemOfWrath()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundTotemOfWrath",
+    testCategory,
+    "totem_of_wrath"
   )
 end

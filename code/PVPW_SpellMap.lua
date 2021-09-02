@@ -5801,6 +5801,1062 @@ local spellMap = {
     ["rank"] = 0
   },
   --[[
+    SHAMAN ABILITIES
+  ]]--
+  [2008] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ancestral_spirit",
+    ["rank"] = 1
+  },
+  [20609] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ancestral_spirit",
+    ["rank"] = 2
+  },
+  [20610] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ancestral_spirit",
+    ["rank"] = 3
+  },
+  [20776] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ancestral_spirit",
+    ["rank"] = 4
+  },
+  [20777] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ancestral_spirit",
+    ["rank"] = 5
+  },
+  [2825] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "bloodlust",
+    ["rank"] = 1
+  },
+  [1064] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_heal",
+    ["rank"] = 1
+  },
+  [10622] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_heal",
+    ["rank"] = 2
+  },
+  [10623] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_heal",
+    ["rank"] = 3
+  },
+  [25422] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_heal",
+    ["rank"] = 4
+  },
+  [25423] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_heal",
+    ["rank"] = 5
+  },
+  [421] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 1
+  },
+  [930] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 2
+  },
+  [2860] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 3
+  },
+  [10605] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 4
+  },
+  [25439] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 5
+  },
+  [25442] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "chain_lightning",
+    ["rank"] = 6
+  },
+  [2870] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "cure_disease",
+    ["rank"] = 0
+  },
+  [526] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "cure_poison",
+    ["rank"] = 0
+  },
+  [8170] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "disease_cleansing_totem",
+    ["rank"] = 0
+  },
+  [2062] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_elemental_totem",
+    ["rank"] = 1
+  },
+  [8042] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 1
+  },
+  [8044] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 2
+  },
+  [8045] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 3
+  },
+  [8046] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 4
+  },
+  [10412] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 5
+  },
+  [10413] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 6
+  },
+  [10414] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shock",
+    ["rank"] = 7
+  },
+  [2484] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earthbind_totem",
+    ["rank"] = 0
+  },
+  [2894] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_elemental_totem",
+    ["rank"] = 1
+  },
+  [1535] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 1
+  },
+  [8498] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 2
+  },
+  [8499] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 3
+  },
+  [11314] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 4
+  },
+  [11315] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 5
+  },
+  [25546] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 6
+  },
+  [25547] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_nova_totem",
+    ["rank"] = 7
+  },
+  [8184] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_resistance_totem",
+    ["rank"] = 1
+  },
+  [10537] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_resistance_totem",
+    ["rank"] = 2
+  },
+  [10538] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_resistance_totem",
+    ["rank"] = 3
+  },
+  [25563] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "fire_resistance_totem",
+    ["rank"] = 4
+  },
+  [8050] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 1
+  },
+  [8052] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 2
+  },
+  [8053] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 3
+  },
+  [10447] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 4
+  },
+  [10448] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 5
+  },
+  [29228] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 6
+  },
+  [25457] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flame_shock",
+    ["rank"] = 7
+  },
+  [8227] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_totem",
+    ["rank"] = 1
+  },
+  [8249] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_totem",
+    ["rank"] = 2
+  },
+  [10526] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_totem",
+    ["rank"] = 3
+  },
+  [16387] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_totem",
+    ["rank"] = 4
+  },
+  [25557] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_totem",
+    ["rank"] = 5
+  },
+  [8024] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 1
+  },
+  [8027] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 2
+  },
+  [8030] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 3
+  },
+  [16339] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 4
+  },
+  [16341] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 5
+  },
+  [16342] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 6
+  },
+  [25489] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "flametongue_weapon",
+    ["rank"] = 7
+  },
+  [8181] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_resistance_totem",
+    ["rank"] = 1
+  },
+  [10478] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_resistance_totem",
+    ["rank"] = 2
+  },
+  [10479] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_resistance_totem",
+    ["rank"] = 3
+  },
+  [25560] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_resistance_totem",
+    ["rank"] = 4
+  },
+  [8056] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_shock",
+    ["rank"] = 1
+  },
+  [8058] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_shock",
+    ["rank"] = 2
+  },
+  [10472] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_shock",
+    ["rank"] = 3
+  },
+  [10473] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_shock",
+    ["rank"] = 4
+  },
+  [25464] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frost_shock",
+    ["rank"] = 5
+  },
+  [8033] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 1
+  },
+  [8038] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 2
+  },
+  [10456] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 3
+  },
+  [16355] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 4
+  },
+  [16356] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 5
+  },
+  [25500] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "frostbrand_weapon",
+    ["rank"] = 6
+  },
+  [2645] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "ghost_wolf",
+    ["rank"] = 0
+  },
+  [8835] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "grace_of_air_totem",
+    ["rank"] = 1
+  },
+  [10627] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "grace_of_air_totem",
+    ["rank"] = 2
+  },
+  [25359] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "grace_of_air_totem",
+    ["rank"] = 3
+  },
+  [8177] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "grounding_totem",
+    ["rank"] = 0
+  },
+  [5394] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 1
+  },
+  [6375] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 2
+  },
+  [6377] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 3
+  },
+  [10462] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 4
+  },
+  [10463] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 5
+  },
+  [25567] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_stream_totem",
+    ["rank"] = 6
+  },
+  [331] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 1
+  },
+  [332] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 2
+  },
+  [547] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 3
+  },
+  [913] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 4
+  },
+  [939] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 5
+  },
+  [959] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 6
+  },
+  [8005] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 7
+  },
+  [10395] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 8
+  },
+  [10396] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 9
+  },
+  [25357] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 10
+  },
+  [25391] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 11
+  },
+  [25396] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "healing_wave",
+    ["rank"] = 12
+  },
+  [32182] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "heroism",
+    ["rank"] = 0
+  },
+  [8004] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 1
+  },
+  [8008] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 2
+  },
+  [8010] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 3
+  },
+  [10466] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 4
+  },
+  [10467] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 5
+  },
+  [10468] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 6
+  },
+  [25420] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lesser_healing_wave",
+    ["rank"] = 7
+  },
+  [403] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 1
+  },
+  [529] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 2
+  },
+  [548] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 3
+  },
+  [915] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 4
+  },
+  [943] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 5
+  },
+  [6041] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 6
+  },
+  [10391] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 7
+  },
+  [10392] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 8
+  },
+  [15207] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 9
+  },
+  [15208] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 10
+  },
+  [25448] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 11
+  },
+  [25449] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_bolt",
+    ["rank"] = 12
+  },
+  [324] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 1
+  },
+  [325] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 2
+  },
+  [905] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 3
+  },
+  [945] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 4
+  },
+  [8134] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 5
+  },
+  [10431] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 6
+  },
+  [10432] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 7
+  },
+  [25469] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 8
+  },
+  [25472] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "lightning_shield",
+    ["rank"] = 9
+  },
+  [8190] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "magma_totem",
+    ["rank"] = 1
+  },
+  [10585] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "magma_totem",
+    ["rank"] = 2
+  },
+  [10586] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "magma_totem",
+    ["rank"] = 3
+  },
+  [10587] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "magma_totem",
+    ["rank"] = 4
+  },
+  [25552] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "magma_totem",
+    ["rank"] = 5
+  },
+  [5675] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_spring_totem",
+    ["rank"] = 1
+  },
+  [10495] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_spring_totem",
+    ["rank"] = 2
+  },
+  [10496] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_spring_totem",
+    ["rank"] = 3
+  },
+  [10497] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_spring_totem",
+    ["rank"] = 4
+  },
+  [25570] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_spring_totem",
+    ["rank"] = 5
+  },
+  [10595] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "nature_resistance_totem",
+    ["rank"] = 1
+  },
+  [10600] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "nature_resistance_totem",
+    ["rank"] = 2
+  },
+  [10601] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "nature_resistance_totem",
+    ["rank"] = 3
+  },
+  [25574] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "nature_resistance_totem",
+    ["rank"] = 4
+  },
+  [8166] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "poison_cleansing_totem",
+    ["rank"] = 0
+  },
+  [370] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "purge",
+    ["rank"] = 1
+  },
+  [8012] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "purge",
+    ["rank"] = 2
+  },
+  [20608] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "reincarnation",
+    ["rank"] = 0
+  },
+  [8017] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 1
+  },
+  [8018] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 2
+  },
+  [8019] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 3
+  },
+  [10399] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 4
+  },
+  [16314] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 5
+  },
+  [16315] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 6
+  },
+  [16316] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 7
+  },
+  [25479] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 8
+  },
+  [25485] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "rockbiter_weapon",
+    ["rank"] = 9
+  },
+  [3599] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 1
+  },
+  [6363] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 2
+  },
+  [6364] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 3
+  },
+  [6365] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 4
+  },
+  [10437] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 5
+  },
+  [10438] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 6
+  },
+  [25533] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "searing_totem",
+    ["rank"] = 7
+  },
+  [5730] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 1
+  },
+  [6390] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 2
+  },
+  [6391] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 3
+  },
+  [6392] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 4
+  },
+  [10427] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 5
+  },
+  [10428] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 6
+  },
+  [25525] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneclaw_totem",
+    ["rank"] = 7
+  },
+  [8071] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 1
+  },
+  [8154] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 2
+  },
+  [8155] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 3
+  },
+  [10406] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 4
+  },
+  [10407] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 5
+  },
+  [10408] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 6
+  },
+  [25508] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 7
+  },
+  [25509] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stoneskin_totem",
+    ["rank"] = 8
+  },
+  [8075] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 1
+  },
+  [8160] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 2
+  },
+  [8161] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 3
+  },
+  [10442] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 4
+  },
+  [25361] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 5
+  },
+  [25528] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "strength_of_earth_totem",
+    ["rank"] = 6
+  },
+  [8143] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "tremor_totem",
+    ["rank"] = 0
+  },
+  [131] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "water_breathing",
+    ["rank"] = 0
+  },
+  [24398] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "water_shield",
+    ["rank"] = 1
+  },
+  [33736] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "water_shield",
+    ["rank"] = 2
+  },
+  [8512] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_totem",
+    ["rank"] = 1
+  },
+  [10613] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_totem",
+    ["rank"] = 2
+  },
+  [10614] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_totem",
+    ["rank"] = 3
+  },
+  [25585] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_totem",
+    ["rank"] = 4
+  },
+  [25587] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_totem",
+    ["rank"] = 5
+  },
+  [8232] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_weapon",
+    ["rank"] = 1
+  },
+  [8235] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_weapon",
+    ["rank"] = 2
+  },
+  [10486] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_weapon",
+    ["rank"] = 3
+  },
+  [16362] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_weapon",
+    ["rank"] = 4
+  },
+  [25505] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windfury_weapon",
+    ["rank"] = 5
+  },
+  [15107] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windwall_totem",
+    ["rank"] = 1
+  },
+  [15111] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windwall_totem",
+    ["rank"] = 2
+  },
+  [15112] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windwall_totem",
+    ["rank"] = 3
+  },
+  [25577] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "windwall_totem",
+    ["rank"] = 4
+  },
+  [3738] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "wrath_of_air_totem",
+    ["rank"] = 1
+  },
+  --[[
+    SHAMAN TALENTS
+  ]]--
+  [974] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shield",
+    ["rank"] = 1
+  },
+  [32593] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shield",
+    ["rank"] = 2
+  },
+  [32594] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "earth_shield",
+    ["rank"] = 3
+  },
+  [16166] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "elemental_mastery",
+    ["rank"] = 0
+  },
+  [16190] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "mana_tide_totem",
+    ["rank"] = 0
+  },
+  [16188] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "natures_swiftness",
+    ["rank"] = 0
+  },
+  [30823] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "shamanistic_rage",
+    ["rank"] = 1
+  },
+  [17364] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "stormstrike",
+    ["rank"] = 0
+  },
+  [30706] = {
+    ["category"] = categories.SHAMAN.id,
+    ["name"] = "totem_of_wrath",
+    ["rank"] = 1
+  },
+  --[[
     WARRIOR ABILITIES
   ]]--
   [2457] = {

@@ -2882,6 +2882,501 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.SHAMAN.id] = {
+    ["ancestral_spirit"] = {
+      ["name"] = "Ancestral Spirit",
+      ["soundFileName"] = "ancestral_spirit",
+      ["spellIconId"] = 136077,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["bloodlust"] = {
+      ["name"] = "Bloodlust",
+      ["soundFileName"] = "bloodlust",
+      ["spellIconId"] = 2825,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["chain_heal"] = {
+      ["name"] = "Chain Heal",
+      ["soundFileName"] = "chain_heal",
+      ["spellIconId"] = 136042,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["chain_lightning"] = {
+      ["name"] = "Chain Lightning",
+      ["soundFileName"] = "chain_lightning",
+      ["spellIconId"] = 136015,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cure_disease"] = {
+      ["name"] = "Cure Disease",
+      ["soundFileName"] = "cure_disease",
+      ["spellIconId"] = 136083,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["cure_poison"] = {
+      ["name"] = "Cure Poison",
+      ["soundFileName"] = "cure_poison",
+      ["spellIconId"] = 136067,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["disease_cleansing_totem"] = {
+      ["name"] = "Disease Cleansing Totem",
+      ["soundFileName"] = "disease_cleansing_totem",
+      ["spellIconId"] = 136019,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["earth_elemental_totem"] = {
+      ["name"] = "Earth Elemental Totem",
+      ["soundFileName"] = "earth_elemental_totem",
+      ["spellIconId"] = 136024,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["earth_shock"] = {
+      ["name"] = "Earth Shock",
+      ["soundFileName"] = "earth_shock",
+      ["spellIconId"] = 136026,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["earthbind_totem"] = {
+      ["name"] = "Earthbind Totem",
+      ["soundFileName"] = "earthbind_totem",
+      ["spellIconId"] = 136102,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fire_elemental_totem"] = {
+      ["name"] = "Fire  Elemental Totem",
+      ["soundFileName"] = "fire_elemental_totem",
+      ["spellIconId"] = 135790,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fire_nova_totem"] = {
+      ["name"] = "Fire Nova Totem",
+      ["soundFileName"] = "fire_nova_totem",
+      ["spellIconId"] = 135824,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fire_resistance_totem"] = {
+      ["name"] = "Fire Resistance Totem",
+      ["soundFileName"] = "fire_resistance_totem",
+      ["spellIconId"] = 135832,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flame_shock"] = {
+      ["name"] = "Flame Shock",
+      ["soundFileName"] = "flame_shock",
+      ["spellIconId"] = 135813,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flametongue_totem"] = {
+      ["name"] = "Flametongue Totem",
+      ["soundFileName"] = "flametongue_totem",
+      ["spellIconId"] = 136040,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["flametongue_weapon"] = {
+      ["name"] = "Flametongue Weapon",
+      ["soundFileName"] = "flametongue_weapon",
+      ["spellIconId"] = 135814,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_resistance_totem"] = {
+      ["name"] = "Frost Resistance Totem",
+      ["soundFileName"] = "frost_resistance_totem",
+      ["spellIconId"] = 135866,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_shock"] = {
+      ["name"] = "Frost Shock",
+      ["soundFileName"] = "frost_shock",
+      ["spellIconId"] = 135849,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frostbrand_weapon"] = {
+      ["name"] = "Frostbrand Weapon",
+      ["soundFileName"] = "frostbrand_weapon",
+      ["spellIconId"] = 135847,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ghost_wolf"] = {
+      ["name"] = "Ghost Wolf",
+      ["soundFileName"] = "ghost_wolf",
+      ["spellIconId"] = 136095,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["grace_of_air_totem"] = {
+      ["name"] = "Grace of Air Totem",
+      ["soundFileName"] = "grace_of_air_totem",
+      ["spellIconId"] = 136046,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["grounding_totem"] = {
+      ["name"] = "Grounding Totem",
+      ["soundFileName"] = "grounding_totem",
+      ["spellIconId"] = 136039,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["healing_stream_totem"] = {
+      ["name"] = "Healing Stream Totem",
+      ["soundFileName"] = "healing_stream_totem",
+      ["spellIconId"] = 135127,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["healing_wave"] = {
+      ["name"] = "Healing Wave",
+      ["soundFileName"] = "healing_wave",
+      ["spellIconId"] = 136052,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["heroism"] = {
+      ["name"] = "Heroism",
+      ["soundFileName"] = "heroism",
+      ["spellIconId"] = 132313,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["lesser_healing_wave"] = {
+      ["name"] = "Lesser Healing Wave",
+      ["soundFileName"] = "lesser_healing_wave",
+      ["spellIconId"] = 136043,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["lightning_bolt"] = {
+      ["name"] = "Lightning Bolt",
+      ["soundFileName"] = "lightning_bolt",
+      ["spellIconId"] = 136048,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["lightning_shield"] = {
+      ["name"] = "Lightning Shield",
+      ["soundFileName"] = "lightning_shield",
+      ["spellIconId"] = 136051,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["magma_totem"] = {
+      ["name"] = "Magma Totem",
+      ["soundFileName"] = "magma_totem",
+      ["spellIconId"] = 135826,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mana_spring_totem"] = {
+      ["name"] = "Mana Spring Totem",
+      ["soundFileName"] = "mana_spring_totem",
+      ["spellIconId"] = 136053,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["nature_resistance_totem"] = {
+      ["name"] = "Nature Resistance Totem",
+      ["soundFileName"] = "nature_resistance_totem",
+      ["spellIconId"] = 136061,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["poison_cleansing_totem"] = {
+      ["name"] = "Poison Cleansing Totem",
+      ["soundFileName"] = "poison_cleansing_totem",
+      ["spellIconId"] = 136070,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["purge"] = {
+      ["name"] = "Purge",
+      ["soundFileName"] = "purge",
+      ["spellIconId"] = 136075,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["reincarnation"] = {
+      ["name"] = "Reincarnation",
+      ["soundFileName"] = "reincarnation",
+      ["spellIconId"] = 136080,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rockbiter_weapon"] = {
+      ["name"] = "Rockbiter Weapon",
+      ["soundFileName"] = "rockbiter_weapon",
+      ["spellIconId"] = 136086,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["searing_totem"] = {
+      ["name"] = "Searing Totem",
+      ["soundFileName"] = "searing_totem",
+      ["spellIconId"] = 135825,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["stoneclaw_totem"] = {
+      ["name"] = "Stoneclaw Totem",
+      ["soundFileName"] = "stoneclaw_totem",
+      ["spellIconId"] = 136097,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["stoneskin_totem"] = {
+      ["name"] = "Stoneskin Totem",
+      ["soundFileName"] = "stoneskin_totem",
+      ["spellIconId"] = 136098,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["strength_of_earth_totem"] = {
+      ["name"] = "Strength of Earth Totem",
+      ["soundFileName"] = "strength_of_earth_totem",
+      ["spellIconId"] = 136023,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["tremor_totem"] = {
+      ["name"] = "Tremor Totem",
+      ["soundFileName"] = "tremor_totem",
+      ["spellIconId"] = 136108,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["water_breathing"] = {
+      ["name"] = "Water Breathing",
+      ["soundFileName"] = "water_breathing",
+      ["spellIconId"] = 136148,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["water_shield"] = {
+      ["name"] = "Water Shield",
+      ["soundFileName"] = "water_shield",
+      ["spellIconId"] = 132315,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["windfury_totem"] = {
+      ["name"] = "Windfury Totem",
+      ["soundFileName"] = "windfury_totem",
+      ["spellIconId"] = 136114,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["windfury_weapon"] = {
+      ["name"] = "Windfury Weapon",
+      ["soundFileName"] = "windfury_weapon",
+      ["spellIconId"] = 136018,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["windwall_totem"] = {
+      ["name"] = "Windwall Totem",
+      ["soundFileName"] = "windwall_totem",
+      ["spellIconId"] = 136022,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["wrath_of_air_totem"] = {
+      ["name"] = "Wrath of Air Totem",
+      ["soundFileName"] = "wrath_of_air_totem",
+      ["spellIconId"] = 136092,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["earth_shield"] = {
+      ["name"] = "Earth Shield",
+      ["soundFileName"] = "earth_shield",
+      ["spellIconId"] = 136089,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["elemental_mastery"] = {
+      ["name"] = "Elemental Mastery",
+      ["soundFileName"] = "elemental_mastery",
+      ["spellIconId"] = 136115,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["mana_tide_totem"] = {
+      ["name"] = "Mana Tide Totem",
+      ["soundFileName"] = "mana_tide_totem",
+      ["spellIconId"] = 135861,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["natures_swiftness"] = {
+      ["name"] = "Nature's Swiftness",
+      ["soundFileName"] = "natures_swiftness",
+      ["spellIconId"] = 136076,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["shamanistic_rage"] = {
+      ["name"] = "Shamanistic Rage",
+      ["soundFileName"] = "shamanistic_rage",
+      ["spellIconId"] = 136088,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["stormstrike"] = {
+      ["name"] = "Stormstrike",
+      ["soundFileName"] = "stormstrike",
+      ["spellIconId"] = 132314,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["totem_of_wrath"] = {
+      ["name"] = "Totem of Wrath",
+      ["soundFileName"] = "totem_of_wrath",
+      ["spellIconId"] = 135829,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.WARRIOR.id] = {
     ["battle_stance"] = {
       ["name"] = "Battle Stance",
