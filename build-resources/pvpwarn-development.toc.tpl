@@ -129,7 +129,7 @@ test/PVPW_TestCombatEventsEnemyAvoidPaladinEn.lua
 test/PVPW_TestSoundDruidEn.lua
 test/PVPW_TestSoundSelfAvoidDruidEn.lua
 test/PVPW_TestSoundEnemyAvoidDruidEn.lua
-test/PVPW_TestCombatEventsDruidEn.lua
+test/PVPW_TestCombatEventsDruid.lua
 test/PVPW_TestCombatEventsSelfAvoidDruidEn.lua
 test/PVPW_TestCombatEventsEnemyAvoidDruidEn.lua
 # shaman
