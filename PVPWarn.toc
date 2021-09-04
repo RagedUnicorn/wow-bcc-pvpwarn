@@ -150,7 +150,7 @@ test/PVPW_TestCombatEventsEnemyAvoidWarrior.lua
 
 # racials
 test/PVPW_TestSoundRacialsEn.lua
-test/PVPW_TestCombatEventsRacialsEn.lua
+test/PVPW_TestCombatEventsRacials.lua
 
 # items
 test/PVPW_TestSoundItemsEn.lua

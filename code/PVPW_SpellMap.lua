@@ -6967,32 +6967,32 @@ local spellMap = {
   [20707] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 1 -- fictional rank
+    ["rank"] = 1 -- fake rank
   },
   [20762] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 2 -- fictional rank
+    ["rank"] = 2 -- fake rank
   },
   [20763] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 3 -- fictional rank
+    ["rank"] = 3 -- fake rank
   },
   [20764] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 4 -- fictional rank
+    ["rank"] = 4 -- fake rank
   },
   [20765] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 5 -- fictional rank
+    ["rank"] = 5 -- fake rank
   },
   [27239] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "soulstone_resurrection",
-    ["rank"] = 6 -- fictional rank
+    ["rank"] = 6 -- fake rank
   },
   [2362] = {
     ["category"] = categories.WARLOCK.id,
@@ -7017,22 +7017,22 @@ local spellMap = {
   [128] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "spellstone",
-    ["rank"] = 1 -- fictional rank
+    ["rank"] = 1 -- fake rank
   },
   [17729] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "spellstone", -- greater spellstone
-    ["rank"] = 2 -- fictional rank
+    ["rank"] = 2 -- fake rank
   },
   [17730] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "spellstone", -- major spellstone
-    ["rank"] = 3 -- fictional rank
+    ["rank"] = 3 -- fake rank
   },
   [28170] = {
     ["category"] = categories.WARLOCK.id,
     ["name"] = "spellstone", -- master spellstone
-    ["rank"] = 4 -- fictional rank
+    ["rank"] = 4 -- fake rank
   },
   [980] = {
     ["category"] = categories.WARLOCK.id,
@@ -8262,10 +8262,95 @@ local spellMap = {
     ["category"] = categories.WARRIOR.id,
     ["name"] = "sweeping_strikes",
     ["rank"] = 0
-  }
+  },
   --[[
-
+    RACIALS
   ]]--
+  [28880] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "gift_of_the_naaru",
+    ["rank"] = 0
+  },
+  [20594] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "stoneform",
+    ["rank"] = 0
+  },
+  [20589] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "escape_artist",
+    ["rank"] = 0
+  },
+  [20600] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "perception",
+    ["rank"] = 0
+  },
+  [20580] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "shadowmeld",
+    ["rank"] = 0
+  },
+  [28730] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "arcane_torrent",
+    ["rank"] = 1 -- fake rank
+  },
+  [25046] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "arcane_torrent",
+    ["rank"] = 2 -- fake rank
+  },
+  [28734] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "mana_tap",
+    ["rank"] = 0
+  },
+  [20572] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "blood_fury",
+    ["rank"] = 1 -- fake rank
+  },
+  [33697] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "blood_fury",
+    ["rank"] = 2 -- fake rank
+  },
+  [33702] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "blood_fury",
+    ["rank"] = 3 -- fake rank
+  },
+  [20549] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "war_stomp",
+    ["rank"] = 0
+  },
+  [20554] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "berserking",
+    ["rank"] = 1 -- fake rank
+  },
+  [26297] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "berserking",
+    ["rank"] = 2 -- fake rank
+  },
+  [26296] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "berserking",
+    ["rank"] = 3 -- fake rank
+  },
+  [20577] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "cannibalize",
+    ["rank"] = 0
+  },
+  [7744] = {
+    ["category"] = categories.RACIALS.id,
+    ["name"] = "will_of_the_forsaken",
+    ["rank"] = 0
+  }
 }
 
 --[[

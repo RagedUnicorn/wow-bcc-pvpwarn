@@ -4186,6 +4186,122 @@ local spellMetaMap = {
         "SPELL_AURA_REMOVED"
       }
     }
+  },
+  [categories.RACIALS.id] = {
+    ["gift_of_the_naaru"] = {
+      ["name"] = "Gift of the Naaru",
+      ["soundFileName"] = "gift_of_the_naaru",
+      ["spellIconId"] = 135923,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["stoneform"] = {
+      ["name"] = "Stoneform",
+      ["soundFileName"] = "stoneform",
+      ["spellIconId"] = 136225,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["escape_artist"] = {
+      ["name"] = "Escape Artist",
+      ["soundFileName"] = "escape_artist",
+      ["spellIconId"] = 132309,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["perception"] = {
+      ["name"] = "Perception",
+      ["soundFileName"] = "perception",
+      ["spellIconId"] = 136090,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["shadowmeld"] = {
+      ["name"] = "Shadowmeld",
+      ["soundFileName"] = "shadowmeld",
+      ["spellIconId"] = 132089,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["arcane_torrent"] = {
+      ["name"] = "Arcane Torrent",
+      ["soundFileName"] = "arcane_torrent",
+      ["spellIconId"] = 136222,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mana_tap"] = {
+      ["name"] = "Mana Tap",
+      ["soundFileName"] = "mana_tap",
+      ["spellIconId"] = 135738,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["blood_fury"] = {
+      ["name"] = "Blood Fury",
+      ["soundFileName"] = "blood_fury",
+      ["spellIconId"] = 135726,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["war_stomp"] = {
+      ["name"] = "War Stomp",
+      ["soundFileName"] = "war_stomp",
+      ["spellIconId"] = 132368,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["berserking"] = {
+      ["name"] = "Berserking",
+      ["soundFileName"] = "berserking",
+      ["spellIconId"] = 135727,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["cannibalize"] = {
+      ["name"] = "Cannibalize",
+      ["soundFileName"] = "cannibalize",
+      ["spellIconId"] = 132278,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["will_of_the_forsaken"] = {
+      ["name"] = "Will of the Forsaken",
+      ["soundFileName"] = "will_of_the_forsaken",
+      ["spellIconId"] = 136187,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    }
   }
 }
 
