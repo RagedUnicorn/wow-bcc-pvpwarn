@@ -49,13 +49,13 @@ profiles/PVPW_WarriorProfile.lua
 # debug
 code/PVPW_Debug.lua
 
-# gui
 # custom blizzard dropdown impl
 libs/LibUiDropDownMenu/LibUiDropDownMenu.lua
 libs/LibUiDropDownMenu/LibUiDropDownMenu.xml
 libs/LibUiDropDownMenu/LibUiDropDownMenuTemplates.lua
 libs/LibUiDropDownMenu/LibUiDropDownMenuTemplates.xml
 
+# gui
 gui/PVPW_Frame.xml
 gui/PVPW_AddonConfiguration.lua
 gui/PVPW_AboutContent.lua
@@ -76,55 +76,6 @@ test/PVPW_TestHelper.lua
 test/PVPW_TestSound.lua
 test/PVPW_TestCombatEvent.lua
 
-# warrior
-test/PVPW_TestSoundWarriorEn.lua
-test/PVPW_TestSoundSelfAvoidWarriorEn.lua
-test/PVPW_TestSoundEnemyAvoidWarriorEn.lua
-test/PVPW_TestCombatEventsWarrior.lua
-test/PVPW_TestCombatEventsSelfAvoidWarrior.lua
-test/PVPW_TestCombatEventsEnemyAvoidWarrior.lua
-# priest
-test/PVPW_TestSoundPriestEn.lua
-test/PVPW_TestSoundSelfAvoidPriestEn.lua
-test/PVPW_TestSoundEnemyAvoidPriestEn.lua
-test/PVPW_TestCombatEventsPriest.lua
-test/PVPW_TestCombatEventsSelfAvoidPriest.lua
-test/PVPW_TestCombatEventsEnemyAvoidPriest.lua
-# rogue
-test/PVPW_TestSoundRogueEn.lua
-test/PVPW_TestSoundSelfAvoidRogueEn.lua
-test/PVPW_TestSoundEnemyAvoidRogueEn.lua
-test/PVPW_TestCombatEventsRogue.lua
-test/PVPW_TestCombatEventsSelfAvoidRogueEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidRogueEn.lua
-# mage
-test/PVPW_TestSoundMageEn.lua
-test/PVPW_TestSoundSelfAvoidMageEn.lua
-test/PVPW_TestSoundEnemyAvoidMageEn.lua
-test/PVPW_TestCombatEventsMage.lua
-test/PVPW_TestCombatEventsSelfAvoidMageEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidMageEn.lua
-# hunter
-test/PVPW_TestSoundHunterEn.lua
-test/PVPW_TestSoundSelfAvoidHunterEn.lua
-test/PVPW_TestSoundEnemyAvoidHunterEn.lua
-test/PVPW_TestCombatEventsHunter.lua
-test/PVPW_TestCombatEventsSelfAvoidHunterEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidHunterEn.lua
-# warlock
-test/PVPW_TestSoundWarlockEn.lua
-test/PVPW_TestSoundSelfAvoidWarlockEn.lua
-test/PVPW_TestSoundEnemyAvoidWarlockEn.lua
-test/PVPW_TestCombatEventsWarlock.lua
-test/PVPW_TestCombatEventsSelfAvoidWarlockEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidWarlockEn.lua
-# paladin
-test/PVPW_TestSoundPaladinEn.lua
-test/PVPW_TestSoundSelfAvoidPaladinEn.lua
-test/PVPW_TestSoundEnemyAvoidPaladinEn.lua
-test/PVPW_TestCombatEventsPaladin.lua
-test/PVPW_TestCombatEventsSelfAvoidPaladinEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidPaladinEn.lua
 # druid
 test/PVPW_TestSoundDruidEn.lua
 test/PVPW_TestSoundSelfAvoidDruidEn.lua
@@ -132,6 +83,47 @@ test/PVPW_TestSoundEnemyAvoidDruidEn.lua
 test/PVPW_TestCombatEventsDruid.lua
 test/PVPW_TestCombatEventsSelfAvoidDruidEn.lua
 test/PVPW_TestCombatEventsEnemyAvoidDruidEn.lua
+
+# hunter
+test/PVPW_TestSoundHunterEn.lua
+test/PVPW_TestSoundSelfAvoidHunterEn.lua
+test/PVPW_TestSoundEnemyAvoidHunterEn.lua
+test/PVPW_TestCombatEventsHunter.lua
+test/PVPW_TestCombatEventsSelfAvoidHunterEn.lua
+test/PVPW_TestCombatEventsEnemyAvoidHunterEn.lua
+
+# mage
+test/PVPW_TestSoundMageEn.lua
+test/PVPW_TestSoundSelfAvoidMageEn.lua
+test/PVPW_TestSoundEnemyAvoidMageEn.lua
+test/PVPW_TestCombatEventsMage.lua
+test/PVPW_TestCombatEventsSelfAvoidMageEn.lua
+test/PVPW_TestCombatEventsEnemyAvoidMageEn.lua
+
+# paladin
+test/PVPW_TestSoundPaladinEn.lua
+test/PVPW_TestSoundSelfAvoidPaladinEn.lua
+test/PVPW_TestSoundEnemyAvoidPaladinEn.lua
+test/PVPW_TestCombatEventsPaladin.lua
+test/PVPW_TestCombatEventsSelfAvoidPaladinEn.lua
+test/PVPW_TestCombatEventsEnemyAvoidPaladinEn.lua
+
+# priest
+test/PVPW_TestSoundPriestEn.lua
+test/PVPW_TestSoundSelfAvoidPriestEn.lua
+test/PVPW_TestSoundEnemyAvoidPriestEn.lua
+test/PVPW_TestCombatEventsPriest.lua
+test/PVPW_TestCombatEventsSelfAvoidPriest.lua
+test/PVPW_TestCombatEventsEnemyAvoidPriest.lua
+
+# rogue
+test/PVPW_TestSoundRogueEn.lua
+test/PVPW_TestSoundSelfAvoidRogueEn.lua
+test/PVPW_TestSoundEnemyAvoidRogueEn.lua
+test/PVPW_TestCombatEventsRogue.lua
+test/PVPW_TestCombatEventsSelfAvoidRogueEn.lua
+test/PVPW_TestCombatEventsEnemyAvoidRogueEn.lua
+
 # shaman
 test/PVPW_TestSoundShamanEn.lua
 test/PVPW_TestSoundSelfAvoidShamanEn.lua
@@ -139,12 +131,31 @@ test/PVPW_TestSoundEnemyAvoidShamanEn.lua
 test/PVPW_TestCombatEventsShaman.lua
 test/PVPW_TestCombatEventsSelfAvoidShamanEn.lua
 test/PVPW_TestCombatEventsEnemyAvoidShamanEn.lua
+
+# warlock
+test/PVPW_TestSoundWarlockEn.lua
+test/PVPW_TestSoundSelfAvoidWarlockEn.lua
+test/PVPW_TestSoundEnemyAvoidWarlockEn.lua
+test/PVPW_TestCombatEventsWarlock.lua
+test/PVPW_TestCombatEventsSelfAvoidWarlockEn.lua
+test/PVPW_TestCombatEventsEnemyAvoidWarlockEn.lua
+
+# warrior
+test/PVPW_TestSoundWarriorEn.lua
+test/PVPW_TestSoundSelfAvoidWarriorEn.lua
+test/PVPW_TestSoundEnemyAvoidWarriorEn.lua
+test/PVPW_TestCombatEventsWarrior.lua
+test/PVPW_TestCombatEventsSelfAvoidWarrior.lua
+test/PVPW_TestCombatEventsEnemyAvoidWarrior.lua
+
 # racials
 test/PVPW_TestSoundRacialsEn.lua
 test/PVPW_TestCombatEventsRacialsEn.lua
+
 # items
 test/PVPW_TestSoundItemsEn.lua
 test/PVPW_TestCombatEventsItemsEn.lua
+
 # misc
 test/PVPW_TestSoundMiscEn.lua
 test/PVPW_TestCombatEventsMiscEn.lua

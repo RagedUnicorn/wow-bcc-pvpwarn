@@ -48,13 +48,13 @@ profiles/PVPW_ShamanProfile.lua
 profiles/PVPW_WarlockProfile.lua
 profiles/PVPW_WarriorProfile.lua
 
-# gui
 # custom blizzard dropdown impl
 libs/LibUiDropDownMenu/LibUiDropDownMenu.lua
 libs/LibUiDropDownMenu/LibUiDropDownMenu.xml
 libs/LibUiDropDownMenu/LibUiDropDownMenuTemplates.lua
 libs/LibUiDropDownMenu/LibUiDropDownMenuTemplates.xml
 
+# gui
 gui/PVPW_Frame.xml
 gui/PVPW_AddonConfiguration.lua
 gui/PVPW_AboutContent.lua
