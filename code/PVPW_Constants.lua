@@ -311,7 +311,7 @@ RGPVPW_CONSTANTS = {
     },
     WARRIOR = {
       ["id"] = 9,
-      ["categoryName"] = "warlock"
+      ["categoryName"] = "warrior"
     },
     RACIALS = {
       ["id"] = 10,
