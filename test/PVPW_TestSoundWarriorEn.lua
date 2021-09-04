@@ -88,7 +88,7 @@ function me.CollectTestCases()
 end
 
 function me.TestSoundBattleStance()
-  mod.testHelper.TestSoundApplied(
+  mod.testHelper.TestSoundSuccess(
     "TestSoundBattleStance",
     testCategory,
     "battle_stance"
@@ -112,7 +112,7 @@ function me.TestSoundDownBerserkerRage()
 end
 
 function me.TestSoundBerserkerStance()
-  mod.testHelper.TestSoundApplied(
+  mod.testHelper.TestSoundSuccess(
     "TestSoundBerserkerStance",
     testCategory,
     "berserker_stance"
@@ -144,7 +144,7 @@ function me.TestSoundCharge()
 end
 
 function me.TestSoundDefensiveStance()
-  mod.testHelper.TestSoundApplied(
+  mod.testHelper.TestSoundSuccess(
     "TestSoundDefensiveStance",
     testCategory,
     "defensive_stance"

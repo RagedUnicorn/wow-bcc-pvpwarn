@@ -42,16 +42,16 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBattleStanceApplied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBattleStanceSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBerserkerRageApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBerserkerRageRemoved)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBerserkerStanceApplied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBerserkerStanceSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBloodrageApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBloodrageRemoved)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventChargeRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventChargeRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventChargeRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDefensiveStanceApplied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDefensiveStanceSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDemoralizingShoutRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDemoralizingShoutRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDemoralizingShoutRank3Success)
@@ -129,9 +129,9 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSweepingStrikesRemoved)
 end
 
-function me.TestCombatEventBattleStanceApplied()
-  mod.testHelper.TestCombatEventApplied(
-    "TestCombatEventBattleStanceApplied",
+function me.TestCombatEventBattleStanceSuccess()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventBattleStanceSuccess",
     testCategory,
     2457
   )
@@ -153,9 +153,9 @@ function me.TestCombatEventBerserkerRageRemoved()
   )
 end
 
-function me.TestCombatEventBerserkerStanceApplied()
-  mod.testHelper.TestCombatEventApplied(
-    "TestCombatEventBerserkerStanceApplied",
+function me.TestCombatEventBerserkerStanceSuccess()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventBerserkerStanceSuccess",
     testCategory,
     2458
   )
@@ -201,9 +201,9 @@ function me.TestCombatEventChargeRank3Success()
   )
 end
 
-function me.TestCombatEventDefensiveStanceApplied()
-  mod.testHelper.TestCombatEventApplied(
-    "TestCombatEventDefensiveStanceApplied",
+function me.TestCombatEventDefensiveStanceSuccess()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventDefensiveStanceSuccess",
     testCategory,
     71
   )

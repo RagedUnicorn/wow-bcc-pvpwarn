@@ -3900,7 +3900,7 @@ local spellMetaMap = {
       ["spellIconId"] = 132349,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_AURA_APPLIED"
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["berserker_rage"] = {
@@ -3919,7 +3919,7 @@ local spellMetaMap = {
       ["spellIconId"] = "132275",
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_AURA_APPLIED"
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["bloodrage"] = {
@@ -3947,7 +3947,7 @@ local spellMetaMap = {
       ["spellIconId"] = 132341,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_AURA_APPLIED"
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["demoralizing_shout"] = {
