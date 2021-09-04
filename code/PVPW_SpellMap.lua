@@ -6857,6 +6857,1057 @@ local spellMap = {
     ["rank"] = 1
   },
   --[[
+    WARLOCK ABILITIES
+  ]]--
+  [710] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "banish",
+    ["rank"] = 1
+  },
+  [18647] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "banish",
+    ["rank"] = 2
+  },
+  [172] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 1
+  },
+  [6222] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 2
+  },
+  [6223] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 3
+  },
+  [7648] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 4
+  },
+  [11671] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 5
+  },
+  [11672] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 6
+  },
+  [25311] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 7
+  },
+  [27216] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "corruption",
+    ["rank"] = 8
+  },
+  [6366] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_firestone",
+    ["rank"] = 1
+  },
+  [17951] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_firestone",
+    ["rank"] = 2
+  },
+  [17952] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_firestone",
+    ["rank"] = 3
+  },
+  [17953] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_firestone",
+    ["rank"] = 4
+  },
+  [27250] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_firestone",
+    ["rank"] = 5
+  },
+  [693] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 1
+  },
+  [20752] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 2
+  },
+  [20755] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 3
+  },
+  [20756] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 4
+  },
+  [20757] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 5
+  },
+  [27238] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_soulstone",
+    ["rank"] = 6
+  },
+  [20707] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 1 -- fictional rank
+  },
+  [20762] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 2 -- fictional rank
+  },
+  [20763] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 3 -- fictional rank
+  },
+  [20764] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 4 -- fictional rank
+  },
+  [20765] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 5 -- fictional rank
+  },
+  [27239] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soulstone_resurrection",
+    ["rank"] = 6 -- fictional rank
+  },
+  [2362] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_spellstone",
+    ["rank"] = 1
+  },
+  [17727] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_spellstone",
+    ["rank"] = 2
+  },
+  [17728] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_spellstone",
+    ["rank"] = 3
+  },
+  [28172] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "create_spellstone",
+    ["rank"] = 4
+  },
+  [128] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "spellstone",
+    ["rank"] = 1 -- fictional rank
+  },
+  [17729] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "spellstone", -- greater spellstone
+    ["rank"] = 2 -- fictional rank
+  },
+  [17730] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "spellstone", -- major spellstone
+    ["rank"] = 3 -- fictional rank
+  },
+  [28170] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "spellstone", -- master spellstone
+    ["rank"] = 4 -- fictional rank
+  },
+  [980] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 1
+  },
+  [1014] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 2
+  },
+  [6217] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 3
+  },
+  [11711] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 4
+  },
+  [11712] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 5
+  },
+  [11713] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 6
+  },
+  [27218] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_agony",
+    ["rank"] = 7
+  },
+  [704] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_recklessness",
+    ["rank"] = 1
+  },
+  [7658] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_recklessness",
+    ["rank"] = 2
+  },
+  [7659] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_recklessness",
+    ["rank"] = 3
+  },
+  [11717] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_recklessness",
+    ["rank"] = 4
+  },
+  [27226] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_recklessness",
+    ["rank"] = 5
+  },
+  [1490] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_the_elements",
+    ["rank"] = 1
+  },
+  [11721] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_the_elements",
+    ["rank"] = 2
+  },
+  [11722] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_the_elements",
+    ["rank"] = 3
+  },
+  [27228] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_the_elements",
+    ["rank"] = 4
+  },
+  [1714] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_tongues",
+    ["rank"] = 1
+  },
+  [11719] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_tongues",
+    ["rank"] = 2
+  },
+  [702] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 1
+  },
+  [1108] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 2
+  },
+  [6205] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 3
+  },
+  [7646] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 4
+  },
+  [11707] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 5
+  },
+  [11708] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 6
+  },
+  [27224] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 7
+  },
+  [30909] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_weakness",
+    ["rank"] = 8
+  },
+  [6789] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "death_coil",
+    ["rank"] = 1
+  },
+  [17925] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "death_coil",
+    ["rank"] = 2
+  },
+  [17926] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "death_coil",
+    ["rank"] = 3
+  },
+  [27223] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "death_coil",
+    ["rank"] = 4
+  },
+  [706] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 1
+  },
+  [1086] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 2
+  },
+  [11733] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 3
+  },
+  [11734] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 4
+  },
+  [11735] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 5
+  },
+  [27260] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_armor",
+    ["rank"] = 6
+  },
+  [687] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_skin",
+    ["rank"] = 1
+  },
+  [696] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demon_skin",
+    ["rank"] = 2
+  },
+  [132] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "detect_invisibility",
+    ["rank"] = 0
+  },
+  [689] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 1
+  },
+  [699] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 2
+  },
+  [709] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 3
+  },
+  [7651] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 4
+  },
+  [11699] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 5
+  },
+  [11700] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 6
+  },
+  [27219] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 7
+  },
+  [27220] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_life",
+    ["rank"] = 8
+  },
+  [5138] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_mana",
+    ["rank"] = 1
+  },
+  [6226] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_mana",
+    ["rank"] = 2
+  },
+  [11703] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_mana",
+    ["rank"] = 3
+  },
+  [11704] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_mana",
+    ["rank"] = 4
+  },
+  [27221] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_mana",
+    ["rank"] = 5
+  },
+  [1120] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_soul",
+    ["rank"] = 1
+  },
+  [8288] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_soul",
+    ["rank"] = 2
+  },
+  [8289] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_soul",
+    ["rank"] = 3
+  },
+  [11675] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_soul",
+    ["rank"] = 4
+  },
+  [27217] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "drain_soul",
+    ["rank"] = 5
+  },
+  [126] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "eye_of_kilrogg",
+    ["rank"] = 0
+  },
+  [5782] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fear",
+    ["rank"] = 1
+  },
+  [6213] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fear",
+    ["rank"] = 2
+  },
+  [6215] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fear",
+    ["rank"] = 3
+  },
+  [28176] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fel_armor",
+    ["rank"] = 1
+  },
+  [28189] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fel_armor",
+    ["rank"] = 2
+  },
+  [755] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 1
+  },
+  [3698] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 2
+  },
+  [3699] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 3
+  },
+  [3700] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 4
+  },
+  [11693] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 5
+  },
+  [11694] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 6
+  },
+  [11695] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 7
+  },
+  [27259] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "health_funnel",
+    ["rank"] = 8
+  },
+  [1949] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "hellfire",
+    ["rank"] = 1
+  },
+  [11683] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "hellfire",
+    ["rank"] = 2
+  },
+  [11684] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "hellfire",
+    ["rank"] = 3
+  },
+  [27213] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "hellfire",
+    ["rank"] = 4
+  },
+  [5484] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "howl_of_terror",
+    ["rank"] = 1
+  },
+  [17928] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "howl_of_terror",
+    ["rank"] = 2
+  },
+  [348] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 1
+  },
+  [707] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 2
+  },
+  [1094] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 3
+  },
+  [2941] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 4
+  },
+  [11665] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 5
+  },
+  [11667] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 6
+  },
+  [11668] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 7
+  },
+  [25309] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 8
+  },
+  [27215] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "immolate",
+    ["rank"] = 9
+  },
+  [29722] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "incinerate",
+    ["rank"] = 1
+  },
+  [32231] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "incinerate",
+    ["rank"] = 2
+  },
+  [1454] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 1
+  },
+  [1455] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 2
+  },
+  [1456] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 3
+  },
+  [11687] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 4
+  },
+  [11688] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 5
+  },
+  [11689] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 6
+  },
+  [27222] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "life_tap",
+    ["rank"] = 7
+  },
+  [5740] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "rain_of_fire",
+    ["rank"] = 1
+  },
+  [6219] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "rain_of_fire",
+    ["rank"] = 2
+  },
+  [11677] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "rain_of_fire",
+    ["rank"] = 3
+  },
+  [11678] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "rain_of_fire",
+    ["rank"] = 4
+  },
+  [27212] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "rain_of_fire",
+    ["rank"] = 5
+  },
+  [29893] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "ritual_of_souls",
+    ["rank"] = 1
+  },
+  [698] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "ritual_of_summoning",
+    ["rank"] = 0
+  },
+  [5676] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 1
+  },
+  [17919] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 2
+  },
+  [17920] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 3
+  },
+  [17921] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 4
+  },
+  [17922] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 5
+  },
+  [17923] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 6
+  },
+  [27210] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 7
+  },
+  [30459] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "searing_pain",
+    ["rank"] = 8
+  },
+  [27243] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "seed_of_corruption",
+    ["rank"] = 1
+  },
+  [686] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 1
+  },
+  [695] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 2
+  },
+  [705] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 3
+  },
+  [1088] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 4
+  },
+  [1106] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 5
+  },
+  [7641] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 6
+  },
+  [11659] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 7
+  },
+  [11660] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 8
+  },
+  [11661] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 9
+  },
+  [25307] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 10
+  },
+  [27209] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_bolt",
+    ["rank"] = 11
+  },
+  [6229] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_ward",
+    ["rank"] = 1
+  },
+  [11739] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_ward",
+    ["rank"] = 2
+  },
+  [11740] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_ward",
+    ["rank"] = 3
+  },
+  [28610] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadow_ward",
+    ["rank"] = 4
+  },
+  [6353] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soul_fire",
+    ["rank"] = 1
+  },
+  [17924] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soul_fire",
+    ["rank"] = 2
+  },
+  [27211] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soul_fire",
+    ["rank"] = 3
+  },
+  [30545] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soul_fire",
+    ["rank"] = 4
+  },
+  [691] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "summon_felhunter",
+    ["rank"] = 0
+  },
+  [688] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "summon_imp",
+    ["rank"] = 0
+  },
+  [712] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "summon_succubus",
+    ["rank"] = 0
+  },
+  [697] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "summon_voidwalker",
+    ["rank"] = 0
+  },
+  [5697] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "unending_breath",
+    ["rank"] = 0
+  },
+  --[[
+    WARLOCK TALENTS
+  ]]--
+  [18288] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "amplify_curse",
+    ["rank"] = 0
+  },
+  [17962] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 1
+  },
+  [18930] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 2
+  },
+  [18931] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 3
+  },
+  [18932] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 4
+  },
+  [27266] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 5
+  },
+  [30912] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "conflagrate",
+    ["rank"] = 6
+  },
+  [18223] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "curse_of_exhaustion",
+    ["rank"] = 0
+  },
+  [18220] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "dark_pact",
+    ["rank"] = 1
+  },
+  [18937] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "dark_pact",
+    ["rank"] = 2
+  },
+  [18938] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "dark_pact",
+    ["rank"] = 3
+  },
+  [27265] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "dark_pact",
+    ["rank"] = 4
+  },
+  [18788] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "demonic_sacrifice",
+    ["rank"] = 0
+  },
+  [18708] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "fel_domination",
+    ["rank"] = 0
+  },
+  [30300] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "nether_protection",
+    ["rank"] = 0
+  },
+  [18094] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "nightfall",
+    ["rank"] = 1
+  },
+  [18095] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "nightfall",
+    ["rank"] = 2
+  },
+  [17877] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 1
+  },
+  [18867] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 2
+  },
+  [18868] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 3
+  },
+  [18869] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 4
+  },
+  [18870] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 5
+  },
+  [18871] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 6
+  },
+  [27263] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 7
+  },
+  [30546] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowburn",
+    ["rank"] = 8
+  },
+  [30283] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowfury",
+    ["rank"] = 1
+  },
+  [30413] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowfury",
+    ["rank"] = 2
+  },
+  [30414] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "shadowfury",
+    ["rank"] = 3
+  },
+  [18265] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 1
+  },
+  [18879] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 2
+  },
+  [18880] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 3
+  },
+  [18881] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 4
+  },
+  [27264] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 5
+  },
+  [30911] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "siphon_life",
+    ["rank"] = 6
+  },
+  [19028] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "soul_link",
+    ["rank"] = 0
+  },
+  [30146] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "summon_felguard",
+    ["rank"] = 0
+  },
+  [30108] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "unstable_affliction",
+    ["rank"] = 1
+  },
+  [30404] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "unstable_affliction",
+    ["rank"] = 2
+  },
+  [30405] = {
+    ["category"] = categories.WARLOCK.id,
+    ["name"] = "unstable_affliction",
+    ["rank"] = 3
+  },
+  --[[
     WARRIOR ABILITIES
   ]]--
   [2457] = {

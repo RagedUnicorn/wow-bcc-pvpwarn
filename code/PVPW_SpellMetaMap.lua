@@ -3377,6 +3377,522 @@ local spellMetaMap = {
       }
     }
   },
+  [categories.WARLOCK.id] = {
+    ["banish"] = {
+      ["name"] = "Banish",
+      ["soundFileName"] = "banish",
+      ["spellIconId"] = 136135,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["corruption"] = {
+      ["name"] = "Corruption",
+      ["soundFileName"] = "corruption",
+      ["spellIconId"] = 136118,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["create_firestone"] = {
+      ["name"] = "Create Firestone",
+      ["soundFileName"] = "create_firestone",
+      ["spellIconId"] = 134085,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["create_soulstone"] = {
+      ["name"] = "Create Soulstone",
+      ["soundFileName"] = "create_soulstone",
+      ["spellIconId"] = 134336,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["soulstone_resurrection"] = {
+      ["name"] = "Soulstone Resurrection",
+      ["soundFileName"] = "soulstone_resurrection",
+      ["spellIconId"] = 136210,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["create_spellstone"] = {
+      ["name"] = "Create Spellstone",
+      ["soundFileName"] = "create_spellstone",
+      ["spellIconId"] = 134336,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["spellstone"] = {
+      ["name"] = "Spellstone",
+      ["soundFileName"] = "spellstone",
+      ["spellIconId"] = 134131,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_agony"] = {
+      ["name"] = "Curse of Agony",
+      ["soundFileName"] = "curse_of_agony",
+      ["spellIconId"] = 136139,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_recklessness"] = {
+      ["name"] = "Curse of Recklessness",
+      ["soundFileName"] = "curse_of_recklessness",
+      ["spellIconId"] = 136225,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_the_elements"] = {
+      ["name"] = "Curse of the Elements",
+      ["soundFileName"] = "curse_of_the_elements",
+      ["spellIconId"] = 136130,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_tongues"] = {
+      ["name"] = "Curse of Tongues",
+      ["soundFileName"] = "curse_of_tongues",
+      ["spellIconId"] = 136140,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_weakness"] = {
+      ["name"] = "Curse of Weakness",
+      ["soundFileName"] = "curse_of_weakness",
+      ["spellIconId"] = 136138,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["death_coil"] = {
+      ["name"] = "Death Coil",
+      ["soundFileName"] = "death_coil",
+      ["spellIconId"] = 136145,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["demon_armor"] = {
+      ["name"] = "Demon Armor",
+      ["soundFileName"] = "demon_armor",
+      ["spellIconId"] = 136185,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["demon_skin"] = {
+      ["name"] = "Demon Skin",
+      ["soundFileName"] = "demon_skin",
+      ["spellIconId"] = 136185,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["detect_invisibility"] = {
+      ["name"] = "Detect Invisibility",
+      ["soundFileName"] = "detect_invisibility",
+      ["spellIconId"] = 136153,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["drain_life"] = {
+      ["name"] = "Drain Life",
+      ["soundFileName"] = "drain_life",
+      ["spellIconId"] = 136169,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["drain_mana"] = {
+      ["name"] = "Drain Mana",
+      ["soundFileName"] = "drain_mana",
+      ["spellIconId"] = 136208,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["drain_soul"] = {
+      ["name"] = "Drain Soul",
+      ["soundFileName"] = "drain_soul",
+      ["spellIconId"] = 136163,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["eye_of_kilrogg"] = {
+      ["name"] = "Eye of Kilrogg",
+      ["soundFileName"] = "eye_of_kilrogg",
+      ["spellIconId"] = 136155,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fear"] = {
+      ["name"] = "Fear",
+      ["soundFileName"] = "fear",
+      ["spellIconId"] = 136183,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fel_armor"] = {
+      ["name"] = "Fel Armor",
+      ["soundFileName"] = "fel_armor",
+      ["spellIconId"] = 136156,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["health_funnel"] = {
+      ["name"] = "Health Funnel",
+      ["soundFileName"] = "health_funnel",
+      ["spellIconId"] = 136168,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hellfire"] = {
+      ["name"] = "Hellfire",
+      ["soundFileName"] = "hellfire",
+      ["spellIconId"] = 135818,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["howl_of_terror"] = {
+      ["name"] = "Howl of Terror",
+      ["soundFileName"] = "howl_of_terror",
+      ["spellIconId"] = 136147,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["immolate"] = {
+      ["name"] = "Immolate",
+      ["soundFileName"] = "immolate",
+      ["spellIconId"] = 135817,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["incinerate"] = {
+      ["name"] = "Incinerate",
+      ["soundFileName"] = "incinerate",
+      ["spellIconId"] = 135789,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["life_tap"] = {
+      ["name"] = "Life Tap",
+      ["soundFileName"] = "life_tap",
+      ["spellIconId"] = 136126,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["rain_of_fire"] = {
+      ["name"] = "Rain of Fire",
+      ["soundFileName"] = "rain_of_fire",
+      ["spellIconId"] = 136186,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ritual_of_souls"] = {
+      ["name"] = "Ritual of Souls",
+      ["soundFileName"] = "ritual_of_souls",
+      ["spellIconId"] = 136194,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ritual_of_summoning"] = {
+      ["name"] = "Ritual of Summoning",
+      ["soundFileName"] = "ritual_of_summoning",
+      ["spellIconId"] = 136223,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["searing_pain"] = {
+      ["name"] = "Searing Pain",
+      ["soundFileName"] = "searing_pain",
+      ["spellIconId"] = 135827,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["seed_of_corruption"] = {
+      ["name"] = "Seed of Corruption",
+      ["soundFileName"] = "seed_of_corruption",
+      ["spellIconId"] = 136193,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadow_bolt"] = {
+      ["name"] = "Shadow Bolt",
+      ["soundFileName"] = "shadow_bolt",
+      ["spellIconId"] = 136197,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadow_ward"] = {
+      ["name"] = "Shadow Ward",
+      ["soundFileName"] = "shadow_ward",
+      ["spellIconId"] = 136121,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["soul_fire"] = {
+      ["name"] = "Soul Fire",
+      ["soundFileName"] = "soul_fire",
+      ["spellIconId"] = 135808,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["summon_felhunter"] = {
+      ["name"] = "Summon Felhunter",
+      ["soundFileName"] = "summon_felhunter",
+      ["spellIconId"] = 136217,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["summon_imp"] = {
+      ["name"] = "Summon Imp",
+      ["soundFileName"] = "summon_imp",
+      ["spellIconId"] = 136218,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["summon_succubus"] = {
+      ["name"] = "Summon Succubus",
+      ["soundFileName"] = "summon_succubus",
+      ["spellIconId"] = 136220,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["summon_voidwalker"] = {
+      ["name"] = "Summon Voidwalker",
+      ["soundFileName"] = "summon_voidwalker",
+      ["spellIconId"] = 136221,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["unending_breath"] = {
+      ["name"] = "Unending Breath",
+      ["soundFileName"] = "unending_breath",
+      ["spellIconId"] = 136148,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["amplify_curse"] = {
+      ["name"] = "Amplify Curse",
+      ["soundFileName"] = "amplify_curse",
+      ["spellIconId"] = 136132,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["conflagrate"] = {
+      ["name"] = "Conflagrate",
+      ["soundFileName"] = "conflagrate",
+      ["spellIconId"] = 135807,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["curse_of_exhaustion"] = {
+      ["name"] = "Curse of Exhaustion",
+      ["soundFileName"] = "curse_of_exhaustion",
+      ["spellIconId"] = 136162,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dark_pact"] = {
+      ["name"] = "Dark Pact",
+      ["soundFileName"] = "dark_pact",
+      ["spellIconId"] = 136141,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["demonic_sacrifice"] = {
+      ["name"] = "Demonic Sacrifice",
+      ["soundFileName"] = "demonic_sacrifice",
+      ["spellIconId"] = 136184,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fel_domination"] = {
+      ["name"] = "Fel Domination",
+      ["soundFileName"] = "fel_domination",
+      ["spellIconId"] = 136082,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["nether_protection"] = {
+      ["name"] = "Nether Protection",
+      ["soundFileName"] = "nether_protection",
+      ["spellIconId"] = 136178,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["nightfall"] = {
+      ["name"] = "Nightfall",
+      ["soundFileName"] = "nightfall",
+      ["spellIconId"] = 136223,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
+    },
+    ["shadowburn"] = {
+      ["name"] = "Shadowburn",
+      ["soundFileName"] = "shadowburn",
+      ["spellIconId"] = 136191,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["shadowfury"] = {
+      ["name"] = "Shadowfury",
+      ["soundFileName"] = "shadowfury",
+      ["spellIconId"] = 136201,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["siphon_life"] = {
+      ["name"] = "Siphon Life",
+      ["soundFileName"] = "siphon_life",
+      ["spellIconId"] = 136188,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["soul_link"] = {
+      ["name"] = "Soul Link",
+      ["soundFileName"] = "soul_link",
+      ["spellIconId"] = 136160,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["summon_felguard"] = {
+      ["name"] = "Summon Felguard",
+      ["soundFileName"] = "summon_felguard",
+      ["spellIconId"] = 136216,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["unstable_affliction"] = {
+      ["name"] = "Unstable Affliction",
+      ["soundFileName"] = "unstable_affliction",
+      ["spellIconId"] = 136228,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
+  },
   [categories.WARRIOR.id] = {
     ["battle_stance"] = {
       ["name"] = "Battle Stance",
