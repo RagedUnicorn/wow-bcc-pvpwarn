@@ -30,6 +30,8 @@ RGPVPW_CONSTANTS = {
   ]]--
   UNIT_ID_PLAYER = "player",
   UNIT_ID_TARGET = "target",
+  FACTION_ALLIANCE = "Alliance",
+  FACTION_HORDE = "Horde",
   --[[
     Buff types
   ]]--

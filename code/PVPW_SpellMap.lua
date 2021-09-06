@@ -8350,7 +8350,248 @@ local spellMap = {
     ["category"] = categories.RACIALS.id,
     ["name"] = "will_of_the_forsaken",
     ["rank"] = 0
-  }
+  },
+  --[[
+    ITEMS Trinkets
+  ]]--
+  [33807] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "abacus_of_violent_odds",
+    ["rank"] = 0
+  },
+  [33479] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "adamantine_figurine",
+    ["rank"] = 0
+  },
+  [44055] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "battlemaster",
+    ["rank"] = 0
+  },
+  [43713] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "ancient_aqir_artifact",
+    ["rank"] = 0
+  },
+  [43716] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "berserkers_call",
+    ["rank"] = 0
+  },
+  [35166] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "bloodlust_brooch",
+    ["rank"] = 0
+  },
+  [51953] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "dark_iron_smoking_pipe",
+    ["rank"] = 0
+  },
+  [36890] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "dimensional_ripper_area_52",
+    ["rank"] = 0
+  },
+  [23442] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "dimensional_ripper_everlook",
+    ["rank"] = 0
+  },
+  [51954] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "direbrew_hops",
+    ["rank"] = 0
+  },
+  [34775] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "dragonspine_trophy",
+    ["rank"] = 0
+  },
+  [51955] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "empty_mug_of_direbrew",
+    ["rank"] = 0
+  },
+  [35165] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "essence_of_the_martyr",
+    ["rank"] = 0
+  },
+  [46783] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_crimson_serpent",
+    ["rank"] = 0
+  },
+  [46780] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_empyrean_tortoise",
+    ["rank"] = 0
+  },
+  [31038] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_felsteel_boar",
+    ["rank"] = 0
+  },
+  [46782] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_khorium_boar",
+    ["rank"] = 0
+  },
+  [31040] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_living_ruby_serpent",
+    ["rank"] = 0
+  },
+  [31047] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_nightseye_panther",
+    ["rank"] = 0
+  },
+  [46784] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "figurine_shadowsong_panther",
+    ["rank"] = 0
+  },
+  [30507] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "gnomish_poultryizer",
+    ["rank"] = 0
+  },
+  [46567] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "goblin_rocket_launcher",
+    ["rank"] = 0
+  },
+  [43712] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "hex_shrunken_head",
+    ["rank"] = 0
+  },
+  [35163] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "icon_of_the_silver_crescent",
+    ["rank"] = 0
+  },
+  [42292] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "insignia_pvp_trinket",
+    ["rank"] = 0
+  },
+  [23723] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "mind_quickening_gem",
+    ["rank"] = 0
+  },
+  [28528] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "moroes_lucky_pocket_watch",
+    ["rank"] = 0
+  },
+  [38332] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "ribbon_of_sacrifice",
+    ["rank"] = 0
+  },
+  [40464] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "shadowmoon_insignia",
+    ["rank"] = 0
+  },
+  [45053] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "shard_of_contempt",
+    ["rank"] = 0
+  },
+  [38325] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "spyglass_of_the_hidden_fleet",
+    ["rank"] = 0
+  },
+  [34428] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "steely_naaru_sliver",
+    ["rank"] = 0
+  },
+  [33828] = { -- alliance
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "talisman_trinket",
+    ["rank"] = 0
+  },
+  [32140] = { -- horde
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "talisman_trinket",
+    ["rank"] = 0
+  },
+  [40396] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "the_skull_of_guldan",
+    ["rank"] = 0
+  },
+  [43995] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "tiny_voodoo_mask",
+    ["rank"] = 0
+  },
+  [43710] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "tome_of_diabolic_remedy",
+    ["rank"] = 0
+  },
+  [42084] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "tsunami_talisman",
+    ["rank"] = 0
+  },
+  [23453] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "ultrasafe_transporter_gadgetzan",
+    ["rank"] = 0
+  },
+  [36941] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "ultrasafe_transporter_toshleys_station",
+    ["rank"] = 0
+  },
+  [45064] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "vial_of_the_sunwell",
+    ["rank"] = 0
+  },
+  --[[
+    ITEMS Misc
+  ]]--
+  [30249] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "hyper_vision_goggles",
+    ["rank"] = 0
+  },
+  [30458] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "nigh_invulnerability_belt",
+    ["rank"] = 0
+  },
+  [30457] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "nigh_invulnerability_belt_backfire",
+    ["rank"] = 0
+  },
+  [51582] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "rocket_boots_xtreme",
+    ["rank"] = 0
+  },
+  [5024] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "skull_of_impending_doom",
+    ["rank"] = 0
+  },
+  [9774] = {
+    ["category"] = categories.ITEMS.id,
+    ["name"] = "immune_root",
+    ["rank"] = 0
+  },
 }
 
 --[[

@@ -22,6 +22,8 @@
   SOFTWARE.
 ]]--
 
+-- luacheck: globals UnitFactionGroup
+
 local mod = rgpvpw
 local me = {}
 mod.spellMetaMap = me
@@ -4296,6 +4298,496 @@ local spellMetaMap = {
       ["name"] = "Will of the Forsaken",
       ["soundFileName"] = "will_of_the_forsaken",
       ["spellIconId"] = 136187,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    }
+  },
+  [categories.ITEMS.id] = {
+    ["abacus_of_violent_odds"] = {
+      ["name"] = "Abacus of Violent Odds",
+      ["soundFileName"] = "abacus_of_violent_odds",
+      ["spellIconId"] = 133876,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["adamantine_figurine"] = {
+      ["name"] = "Adamantine Figurine",
+      ["soundFileName"] = "adamantine_figurine",
+      ["spellIconId"] = 134907,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ancient_aqir_artifact"] = {
+      ["name"] = "Ancient Aqir Artifact",
+      ["soundFileName"] = "ancient_aqir_artifact",
+      ["spellIconId"] = 135443,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["battlemaster"] = {
+      ["name"] = "Battlemaster Trinket",
+      ["soundFileName"] = "battlemaster_trinket",
+      ["spellIconId"] = 136035,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["berserkers_call"] = {
+      ["name"] = "Berserker's Call",
+      ["soundFileName"] = "berserkers_call",
+      ["spellIconId"] = 135727,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["bloodlust_brooch"] = {
+      ["name"] = "Bloodlust Brooch",
+      ["soundFileName"] = "bloodlust_brooch",
+      ["spellIconId"] = 134317,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["dark_iron_smoking_pipe"] = {
+      ["name"] = "Dark Iron Smoking Pipe",
+      ["soundFileName"] = "dark_iron_smoking_pipe",
+      ["spellIconId"] = 134374,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["dimensional_ripper_area_52"] = {
+      ["name"] = "Dimensional Ripper - Area 52",
+      ["soundFileName"] = "dimensional_ripper_area_52",
+      ["spellIconId"] = 133865,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["dimensional_ripper_everlook"] = {
+      ["name"] = "Dimensional Ripper - Everlook",
+      ["soundFileName"] = "dimensional_ripper_everlook",
+      ["spellIconId"] = 133865,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["direbrew_hops"] = {
+      ["name"] = "Direbrew Hops",
+      ["soundFileName"] = "direbrew_hops",
+      ["spellIconId"] = 134188,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["dragonspine_trophy"] = {
+      ["name"] = "Dragonspine Trophy",
+      ["soundFileName"] = "dragonspine_trophy",
+      ["spellIconId"] = 133720,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["empty_mug_of_direbrew"] = {
+      ["name"] = "Empty Mug of Direbrew",
+      ["soundFileName"] = "empty_mug_of_direbrew",
+      ["spellIconId"] = 132790,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["essence_of_the_martyr"] = {
+      ["name"] = "Essence of the Martyr",
+      ["soundFileName"] = "essence_of_the_martyr",
+      ["spellIconId"] = 135447,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["figurine_crimson_serpent"] = {
+      ["name"] = "Figurine - Crimson Serpent",
+      ["soundFileName"] = "figurine_crimson_serpent",
+      ["spellIconId"] = 133262,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["figurine_empyrean_tortoise"] = {
+      ["name"] = "Figurine - Empyrean Tortoise",
+      ["soundFileName"] = "figurine_empyrean_tortoise",
+      ["spellIconId"] = 132199,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["figurine_felsteel_boar"] = {
+      ["name"] = "Figurine - Felsteel Boar",
+      ["soundFileName"] = "figurine_felsteel_boar",
+      ["spellIconId"] = 133274,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["figurine_khorium_boar"] = {
+      ["name"] = "Figurine - Khorium Boar",
+      ["soundFileName"] = "figurine_khorium_boar",
+      ["spellIconId"] = 133274,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["figurine_living_ruby_serpent"] = {
+      ["name"] = "Figurine - Living Ruby Serpent",
+      ["soundFileName"] = "figurine_living_ruby_serpent",
+      ["spellIconId"] = 133262,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["figurine_nightseye_panther"] = {
+      ["name"] = "Figurine - Nightseye Panther",
+      ["soundFileName"] = "figurine_nightseye_panther",
+      ["spellIconId"] = 133236,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["figurine_shadowsong_panther"] = {
+      ["name"] = "Figurine - Shadowsong Panther",
+      ["soundFileName"] = "figurine_shadowsong_panther",
+      ["spellIconId"] = 133236,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["gnomish_poultryizer"] = {
+      ["name"] = "Gnomish Poultryizer",
+      ["soundFileName"] = "gnomish_poultryizer",
+      ["spellIconId"] = 133864,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["goblin_rocket_launcher"] = {
+      ["name"] = "Goblin Rocket Launcher",
+      ["soundFileName"] = "goblin_rocket_launcher",
+      ["spellIconId"] = 133032,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hex_shrunken_head"] = {
+      ["name"] = "Hex Shrunken Head",
+      ["soundFileName"] = "hex_shrunken_head",
+      ["spellIconId"] = 134177,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["icon_of_the_silver_crescent"] = {
+      ["name"] = "Icon of the Silver Crescent",
+      ["soundFileName"] = "icon_of_the_silver_crescent",
+      ["spellIconId"] = 135659,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["insignia_pvp_trinket"] = {
+      ["name"] = (function()
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_ALLIANCE then
+          return "Medallion of the Alliance"
+        end
+
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_HORDE then
+          return "Medallion of the Horde"
+        end
+
+        return nil
+      end)(),
+      ["soundFileName"] = "insignia_pvp_trinket",
+      ["spellIconId"] = (function()
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_ALLIANCE then
+          return 133452
+        end
+
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_HORDE then
+          return 133453
+        end
+
+        return nil
+      end)(),
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["mind_quickening_gem"] = {
+      ["name"] = "Mind Quickening Gem",
+      ["soundFileName"] = "mind_quickening_gem",
+      ["spellIconId"] = 136115,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["moroes_lucky_pocket_watch"] = {
+      ["name"] = "Moroes' Lucky Pocket Watch",
+      ["soundFileName"] = "moroes_lucky_pocket_watch",
+      ["spellIconId"] = 134377,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ribbon_of_sacrifice"] = {
+      ["name"] = "Ribbon of Sacrifice",
+      ["soundFileName"] = "ribbon_of_sacrifice",
+      ["spellIconId"] = 133686,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["shadowmoon_insignia"] = {
+      ["name"] = "Shadowmoon Insignia",
+      ["soundFileName"] = "shadowmoon_insignia",
+      ["spellIconId"] = 133265,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["shard_of_contempt"] = {
+      ["name"] = "Shard of Contempt",
+      ["soundFileName"] = "shard_of_contempt",
+      ["spellIconId"] = 134417,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["spyglass_of_the_hidden_fleet"] = {
+      ["name"] = "Spyglass of the Hidden Fleet",
+      ["soundFileName"] = "spyglass_of_the_hidden_fleet",
+      ["spellIconId"] = 134441,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["steely_naaru_sliver"] = {
+      ["name"] = "Steely Naaru Sliver",
+      ["soundFileName"] = "steely_naaru_sliver",
+      ["spellIconId"] = 133451,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["talisman_trinket"] = {
+      ["name"] = (function()
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_ALLIANCE then
+          return "Talisman of the Alliance"
+        end
+
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_HORDE then
+          return "Talisman of the Horde"
+        end
+
+        return nil
+      end)(),
+      ["soundFileName"] = "talisman_trinket",
+      ["spellIconId"] = (function()
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_ALLIANCE then
+          return 133443
+        end
+
+        if UnitFactionGroup(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) == RGPVPW_CONSTANTS.FACTION_HORDE then
+          return 133442
+        end
+
+        return nil
+      end)(),
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["the_skull_of_guldan"] = {
+      ["name"] = "The Skull of Gul'dan",
+      ["soundFileName"] = "the_skull_of_guldan",
+      ["spellIconId"] = 133729,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["tiny_voodoo_mask"] = {
+      ["name"] = "Tiny Voodoo Mask",
+      ["soundFileName"] = "tiny_voodoo_mask",
+      ["spellIconId"] = 133067,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["tome_of_diabolic_remedy"] = {
+      ["name"] = "Tome of Diabolic Remedy",
+      ["soundFileName"] = "tome_of_diabolic_remedy",
+      ["spellIconId"] = 134554,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["tsunami_talisman"] = {
+      ["name"] = "Tsunami Talisman",
+      ["soundFileName"] = "tsunami_talisman",
+      ["spellIconId"] = 136111,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ultrasafe_transporter_gadgetzan"] = {
+      ["name"] = "Ultrasafe Transporter: Gadgetzan",
+      ["soundFileName"] = "ultrasafe_transporter_gadgetzan",
+      ["spellIconId"] = 133870,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["ultrasafe_transporter_toshleys_station"] = {
+      ["name"] = "Ultrasafe Transporter: Toshley's Station",
+      ["soundFileName"] = "ultrasafe_transporter_toshleys_station",
+      ["spellIconId"] = 133870,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["vial_of_the_sunwell"] = {
+      ["name"] = "Vial of the Sunwell",
+      ["soundFileName"] = "vial_of_the_sunwell",
+      ["spellIconId"] = 134728,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["hyper_vision_goggles"] = {
+      ["name"] = "Hyper-Vision Goggles",
+      ["soundFileName"] = "hyper_vision_goggles",
+      ["spellIconId"] = 133023,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["nigh_invulnerability_belt"] = {
+      ["name"] = "Nigh-Invulnerability Belt",
+      ["soundFileName"] = "nigh_invulnerability_belt",
+      ["spellIconId"] = 132516,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["nigh_invulnerability_belt_backfire"] = {
+      ["name"] = "Nigh-Invulnerability Belt (Backfire)",
+      ["soundFileName"] = "nigh_invulnerability_belt_backfire",
+      ["spellIconId"] = 132516,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["rocket_boots_xtreme"] = {
+      ["name"] = "Rocket Boots Xtreme",
+      ["soundFileName"] = "rocket_boots_xtreme",
+      ["spellIconId"] = 133029,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["skull_of_impending_doom"] = {
+      ["name"] = "Skull of Impending Doom",
+      ["soundFileName"] = "flee",
+      ["spellIconId"] = 133729,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["immune_root"] = {
+      ["name"] = "Freedom (Spider Belt / Ornate Mithril Boots)",
+      ["soundFileName"] = "immune_root",
+      ["spellIconId"] = 136115,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",

@@ -154,7 +154,7 @@ test/PVPW_TestCombatEventsRacials.lua
 
 # items
 test/PVPW_TestSoundItemsEn.lua
-test/PVPW_TestCombatEventsItemsEn.lua
+test/PVPW_TestCombatEventsItems.lua
 
 # misc
 test/PVPW_TestSoundMiscEn.lua
