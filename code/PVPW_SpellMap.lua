@@ -8592,6 +8592,271 @@ local spellMap = {
     ["name"] = "immune_root",
     ["rank"] = 0
   },
+  --[[
+    MISC potions
+  ]]--
+  [12608] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "catseye_elixir",
+    ["rank"] = 0
+  },
+  [28508] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "destruction_potion",
+    ["rank"] = 0
+  },
+  [6615] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "free_action_potion",
+    ["rank"] = 0
+  },
+  [28507] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "haste_potion",
+    ["rank"] = 0
+  },
+  [28506] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "heroic_potion",
+    ["rank"] = 0
+  },
+  [28494] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "insane_strength_potion",
+    ["rank"] = 0
+  },
+  [11392] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "invisibility_potion",
+    ["rank"] = 0
+  },
+  [28515] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "ironshield_potion",
+    ["rank"] = 0
+  },
+  [3680] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "lesser_invisibility_potion",
+    ["rank"] = 0
+  },
+  [24364] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "living_action_potion",
+    ["rank"] = 0
+  },
+  [28536] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_arcane_protection_potion",
+    ["rank"] = 0
+  },
+  [28511] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_fire_protection_potion",
+    ["rank"] = 0
+  },
+  [28512] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_frost_protection_potion",
+    ["rank"] = 0
+  },
+  [28538] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_holy_protection_potion",
+    ["rank"] = 0
+  },
+  [28513] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_nature_protection_potion",
+    ["rank"] = 0
+  },
+  [28537] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "major_shadow_protection_potion",
+    ["rank"] = 0
+  },
+  [17528] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "mighty_rage_potion",
+    ["rank"] = 0
+  },
+  [6612] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "rage_potion",
+    ["rank"] = 0
+  },
+  [11359] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "restorative_potion",
+    ["rank"] = 0
+  },
+  [28492] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "sneaking_potion",
+    ["rank"] = 0
+  },
+  [28495] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "super_healing_potion",
+    ["rank"] = 0
+  },
+  [28555] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "super_mana_potion",
+    ["rank"] = 0
+  },
+  [28517] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "super_rejuvenation_potion",
+    ["rank"] = 0
+  },
+  --[[
+    MISC engineering
+  ]]--
+  [30217] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "adamantite_grenade",
+    ["rank"] = 0
+  },
+  [30216] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "fel_iron_bomb",
+    ["rank"] = 0
+  },
+  [39965] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "frost_grenade",
+    ["rank"] = 0
+  },
+  [30486] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "super_sapper_charge",
+    ["rank"] = 0
+  },
+  --[[
+    MISC gathering
+  ]]--
+  [28527] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "fel_blossom",
+    ["rank"] = 0
+  },
+  [28726] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "nightmare_seed",
+    ["rank"] = 0
+  },
+  --[[
+    MISC misc
+  ]]--
+  [9512] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "thistle_tea",
+    ["rank"] = 0
+  },
+  [746] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 1 -- linen-bandage
+  },
+  [1159] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 2 -- heavy-linen-bandage
+  },
+  [3267] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 3 -- wool-bandage
+  },
+  [3268] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 4 -- heavy-wool-bandage
+  },
+  [7926] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 5 -- silk-bandage
+  },
+  [7927] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 6 -- heavy-silk-bandage
+  },
+  [24412] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 7 -- arathi-basin-silk-bandage / defilers-silk-bandage / highlanders-silk-bandage
+  },
+  [23569] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 8 -- warsong-gulch-silk-bandage
+  },
+  [10838] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 9 -- mageweave-bandage
+  },
+  [10839] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 10 -- heavy-mageweave-bandage
+  },
+  [24413] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 11 -- arathi-basin-mageweave-bandage / defilers-mageweave-bandage / highlanders-mageweave-bandage
+  },
+  [23568] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 12 -- warsong-gulch-mageweave-bandage
+  },
+  [18608] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 13 -- runecloth-bandage
+  },
+  [18610] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 14 -- heavy-runecloth-bandage
+  },
+  [24414] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 15 -- arathi-basin-runecloth-bandage / defilers-runecloth-bandage / highlanders-runecloth-bandage
+  },
+  [23696] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 16 -- alterac-heavy-runecloth-bandage
+  },
+  [23567] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 17 -- warsong-gulch-runecloth-bandage
+  },
+  [27030] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 18 -- netherweave-bandage
+  },
+  [27031] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "first_aid",
+    ["rank"] = 19 -- heavy-netherweave-bandage
+  },
+  --[[
+    MISC tailoring
+  ]]--
+  [31367] = {
+    ["category"] = categories.MISC.id,
+    ["name"] = "netherweave_net",
+    ["rank"] = 0
+  }
 }
 
 --[[

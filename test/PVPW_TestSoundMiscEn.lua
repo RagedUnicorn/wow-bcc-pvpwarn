@@ -29,7 +29,7 @@ mod.testSoundMiscEn = me
 me.tag = "TestSoundMiscEn"
 
 local testGroupName = "SoundMiscEn"
-local testCategory = "misc"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.MISC.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,46 +42,466 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRestoreEnergy)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCatseyeElixir)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownCatseyeElixir)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDestructionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownDestructionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFreeActionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownFreeActionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHastePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownHastePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundHeroicPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownHeroicPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInsaneStrengthPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownInsaneStrengthPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInvisibilityPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownInvisibilityPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundIronshieldPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownIronshieldPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLesserInvisibilityPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLesserInvisibilityPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLivingActionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLivingActionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorArcaneProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorArcaneProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorFireProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorFireProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorFrostProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorFrostProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorHolyProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorHolyProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorNatureProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorNatureProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMajorShadowProtectionPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMajorShadowProtectionPotion)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMightyRagePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownMightyRagePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRagePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRestorativePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRestorativePotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSneakingPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSneakingPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSuperHealingPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSuperManaPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSuperRejuvenationPotion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAdamantiteGrenade)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFelIronBomb)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostGrenade)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSuperSapperCharge)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFelBlossom)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownFelBlossom)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNightmareSeed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownNightmareSeed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundThistleTea)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFirstAid)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShadowProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShadowProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFrostProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownFrostProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFireProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownFireProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNatureProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownNatureProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundArcaneProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownArcaneProtection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRestoration)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownRestoration)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLivingFreeAction)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownLivingFreeAction)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFreeAction)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownFreeAction)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInvulnerability)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownInvulnerability)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInvisibility)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundLesserInvisibility)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStealthDetection)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownStealthDetection)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundNetherweaveNet)
 end
 
-function me.TestSoundRestoreEnergy()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundRestoreEnergy",
+function me.TestSoundCatseyeElixir()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundCatseyeElixir",
     testCategory,
-    "Restore Energy"
+    "catseye_elixir"
+  )
+end
+
+function me.TestSoundDownCatseyeElixir()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownCatseyeElixir",
+    testCategory,
+    "catseye_elixir"
+  )
+end
+
+function me.TestSoundDestructionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundDestructionPotion",
+    testCategory,
+    "destruction_potion"
+  )
+end
+
+function me.TestSoundDownDestructionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownDestructionPotion",
+    testCategory,
+    "destruction_potion"
+  )
+end
+
+function me.TestSoundFreeActionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundFreeActionPotion",
+    testCategory,
+    "free_action_potion"
+  )
+end
+
+function me.TestSoundDownFreeActionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownFreeActionPotion",
+    testCategory,
+    "free_action_potion"
+  )
+end
+
+function me.TestSoundHastePotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundHastePotion",
+    testCategory,
+    "haste_potion"
+  )
+end
+
+function me.TestSoundDownHastePotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownHastePotion",
+    testCategory,
+    "haste_potion"
+  )
+end
+
+function me.TestSoundHeroicPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundHeroicPotion",
+    testCategory,
+    "heroic_potion"
+  )
+end
+
+function me.TestSoundDownHeroicPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownHeroicPotion",
+    testCategory,
+    "heroic_potion"
+  )
+end
+
+function me.TestSoundInsaneStrengthPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundInsaneStrengthPotion",
+    testCategory,
+    "insane_strength_potion"
+  )
+end
+
+function me.TestSoundDownInsaneStrengthPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownInsaneStrengthPotion",
+    testCategory,
+    "insane_strength_potion"
+  )
+end
+
+function me.TestSoundInvisibilityPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundInvisibilityPotion",
+    testCategory,
+    "invisibility_potion"
+  )
+end
+
+function me.TestSoundDownInvisibilityPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownInvisibilityPotion",
+    testCategory,
+    "invisibility_potion"
+  )
+end
+
+function me.TestSoundIronshieldPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundIronshieldPotion",
+    testCategory,
+    "ironshield_potion"
+  )
+end
+
+function me.TestSoundDownIronshieldPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownIronshieldPotion",
+    testCategory,
+    "ironshield_potion"
+  )
+end
+
+function me.TestSoundLesserInvisibilityPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundLesserInvisibilityPotion",
+    testCategory,
+    "lesser_invisibility_potion"
+  )
+end
+
+function me.TestSoundDownLesserInvisibilityPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownLesserInvisibilityPotion",
+    testCategory,
+    "lesser_invisibility_potion"
+  )
+end
+
+function me.TestSoundLivingActionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundLivingActionPotion",
+    testCategory,
+    "living_action_potion"
+  )
+end
+
+function me.TestSoundDownLivingActionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownLivingActionPotion",
+    testCategory,
+    "living_action_potion"
+  )
+end
+
+function me.TestSoundMajorArcaneProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorArcaneProtectionPotion",
+    testCategory,
+    "major_arcane_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorArcaneProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorArcaneProtectionPotion",
+    testCategory,
+    "major_arcane_protection_potion"
+  )
+end
+
+function me.TestSoundMajorFireProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorFireProtectionPotion",
+    testCategory,
+    "major_fire_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorFireProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorFireProtectionPotion",
+    testCategory,
+    "major_fire_protection_potion"
+  )
+end
+
+function me.TestSoundMajorFrostProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorFrostProtectionPotion",
+    testCategory,
+    "major_frost_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorFrostProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorFrostProtectionPotion",
+    testCategory,
+    "major_frost_protection_potion"
+  )
+end
+
+function me.TestSoundMajorHolyProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorHolyProtectionPotion",
+    testCategory,
+    "major_holy_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorHolyProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorHolyProtectionPotion",
+    testCategory,
+    "major_holy_protection_potion"
+  )
+end
+
+function me.TestSoundMajorNatureProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorNatureProtectionPotion",
+    testCategory,
+    "major_nature_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorNatureProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorNatureProtectionPotion",
+    testCategory,
+    "major_nature_protection_potion"
+  )
+end
+
+function me.TestSoundMajorShadowProtectionPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMajorShadowProtectionPotion",
+    testCategory,
+    "major_shadow_protection_potion"
+  )
+end
+
+function me.TestSoundDownMajorShadowProtectionPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMajorShadowProtectionPotion",
+    testCategory,
+    "major_shadow_protection_potion"
   )
 end
 
 function me.TestSoundMightyRagePotion()
-  mod.testHelper.TestSoundSuccess(
+  mod.testHelper.TestSoundApplied(
     "TestSoundMightyRagePotion",
     testCategory,
-    "Mighty Rage Potion"
+    "mighty_rage_potion"
+  )
+end
+
+function me.TestSoundDownMightyRagePotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownMightyRagePotion",
+    testCategory,
+    "mighty_rage_potion"
+  )
+end
+
+function me.TestSoundRagePotion()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundRagePotion",
+    testCategory,
+    "rage_potion"
+  )
+end
+
+function me.TestSoundRestorativePotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundRestorativePotion",
+    testCategory,
+    "restorative_potion"
+  )
+end
+
+function me.TestSoundDownRestorativePotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownRestorativePotion",
+    testCategory,
+    "restorative_potion"
+  )
+end
+
+function me.TestSoundSneakingPotion()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundSneakingPotion",
+    testCategory,
+    "sneaking_potion"
+  )
+end
+
+function me.TestSoundDownSneakingPotion()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownSneakingPotion",
+    testCategory,
+    "sneaking_potion"
+  )
+end
+
+function me.TestSoundSuperHealingPotion()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSuperHealingPotion",
+    testCategory,
+    "super_healing_potion"
+  )
+end
+
+function me.TestSoundSuperManaPotion()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSuperManaPotion",
+    testCategory,
+    "super_mana_potion"
+  )
+end
+
+function me.TestSoundSuperRejuvenationPotion()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSuperRejuvenationPotion",
+    testCategory,
+    "super_rejuvenation_potion"
+  )
+end
+
+function me.TestSoundAdamantiteGrenade()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundAdamantiteGrenade",
+    testCategory,
+    "adamantite_grenade"
+  )
+end
+
+function me.TestSoundFelIronBomb()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFelIronBomb",
+    testCategory,
+    "fel_iron_bomb"
+  )
+end
+
+function me.TestSoundFrostGrenade()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundFrostGrenade",
+    testCategory,
+    "frost_grenade"
+  )
+end
+
+function me.TestSoundSuperSapperCharge()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSuperSapperCharge",
+    testCategory,
+    "super_sapper_charge"
+  )
+end
+
+function me.TestSoundFelBlossom()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundFelBlossom",
+    testCategory,
+    "fel_blossom"
+  )
+end
+
+function me.TestSoundDownFelBlossom()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownFelBlossom",
+    testCategory,
+    "fel_blossom"
+  )
+end
+
+function me.TestSoundNightmareSeed()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundNightmareSeed",
+    testCategory,
+    "nightmare_seed"
+  )
+end
+
+function me.TestSoundDownNightmareSeed()
+  mod.testHelper.TestSoundRemoved(
+    "TestSoundDownNightmareSeed",
+    testCategory,
+    "nightmare_seed"
+  )
+end
+
+function me.TestSoundThistleTea()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundThistleTea",
+    testCategory,
+    "thistle_tea"
   )
 end
 
@@ -89,182 +509,15 @@ function me.TestSoundFirstAid()
   mod.testHelper.TestSoundSuccess(
     "TestSoundFirstAid",
     testCategory,
-    "First Aid"
+    "first_aid"
   )
 end
 
-function me.TestSoundShadowProtection()
+
+function me.TestSoundNetherweaveNet()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundShadowProtection",
+    "TestSoundNetherweaveNet",
     testCategory,
-    "Shadow Protection"
-  )
-end
-
-function me.TestSoundDownShadowProtection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownShadowProtection",
-    testCategory,
-    "Shadow Protection"
-  )
-end
-
-function me.TestSoundFrostProtection()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundFrostProtection",
-    testCategory,
-    "Frost Protection"
-  )
-end
-
-function me.TestSoundDownFrostProtection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownFrostProtection",
-    testCategory,
-    "Frost Protection"
-  )
-end
-
-function me.TestSoundFireProtection()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundFireProtection",
-    testCategory,
-    "Fire Protection"
-  )
-end
-
-function me.TestSoundDownFireProtection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownFireProtection",
-    testCategory,
-    "Fire Protection"
-  )
-end
-
-function me.TestSoundNatureProtection()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundNatureProtection",
-    testCategory,
-    "Nature Protection"
-  )
-end
-
-function me.TestSoundDownNatureProtection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownNatureProtection",
-    testCategory,
-    "Nature Protection"
-  )
-end
-
-function me.TestSoundArcaneProtection()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundArcaneProtection",
-    testCategory,
-    "Arcane Protection"
-  )
-end
-
-function me.TestSoundDownArcaneProtection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownArcaneProtection",
-    testCategory,
-    "Arcane Protection"
-  )
-end
-
-function me.TestSoundRestoration()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundRestoration",
-    testCategory,
-    "Restoration"
-  )
-end
-
-function me.TestSoundDownRestoration()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownRestoration",
-    testCategory,
-    "Restoration"
-  )
-end
-
-function me.TestSoundLivingFreeAction()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundLivingFreeAction",
-    testCategory,
-    "Living Free Action"
-  )
-end
-
-function me.TestSoundDownLivingFreeAction()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownLivingFreeAction",
-    testCategory,
-    "Living Free Action"
-  )
-end
-
-function me.TestSoundFreeAction()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundFreeAction",
-    testCategory,
-    "Free Action"
-  )
-end
-
-function me.TestSoundDownFreeAction()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownFreeAction",
-    testCategory,
-    "Free Action"
-  )
-end
-
-function me.TestSoundInvulnerability()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundInvulnerability",
-    testCategory,
-    "Invulnerability"
-  )
-end
-
-function me.TestSoundDownInvulnerability()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownInvulnerability",
-    testCategory,
-    "Invulnerability"
-  )
-end
-
-function me.TestSoundInvisibility()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundInvisibility",
-    testCategory,
-    "Invisibility"
-  )
-end
-
-function me.TestSoundLesserInvisibility()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundLesserInvisibility",
-    testCategory,
-    "Lesser Invisibility"
-  )
-end
-
-function me.TestSoundStealthDetection()
-  mod.testHelper.TestSoundApplied(
-    "TestSoundStealthDetection",
-    testCategory,
-    "Stealth Detection"
-  )
-end
-
-function me.TestSoundDownStealthDetection()
-  mod.testHelper.TestSoundRemoved(
-    "TestSoundDownStealthDetection",
-    testCategory,
-    "Stealth Detection"
+    "netherweave_net"
   )
 end

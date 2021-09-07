@@ -4794,6 +4794,317 @@ local spellMetaMap = {
         "SPELL_AURA_REMOVED"
       }
     }
+  },
+  [categories.MISC.id] = {
+    ["catseye_elixir"] = {
+      ["name"] = "Catseye Elixir",
+      ["soundFileName"] = "catseye_elixir",
+      ["spellIconId"] = 134816,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["destruction_potion"] = {
+      ["name"] = "Destruction Potion",
+      ["soundFileName"] = "destruction_potion",
+      ["spellIconId"] = 134729,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["free_action_potion"] = {
+      ["name"] = "Free Action Potion",
+      ["soundFileName"] = "free_action_potion",
+      ["spellIconId"] = 134715,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["haste_potion"] = {
+      ["name"] = "Haste Potion",
+      ["soundFileName"] = "haste_potion",
+      ["spellIconId"] = 134730,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["heroic_potion"] = {
+      ["name"] = "Heroic Potion",
+      ["soundFileName"] = "heroic_potion",
+      ["spellIconId"] = 134728,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["insane_strength_potion"] = {
+      ["name"] = "Insane Strength Potion",
+      ["soundFileName"] = "insane_strength_potion",
+      ["spellIconId"] = 134731,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["invisibility_potion"] = {
+      ["name"] = "Invisibility Potion",
+      ["soundFileName"] = "invisibility_potion",
+      ["spellIconId"] = 134805,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["ironshield_potion"] = {
+      ["name"] = "Ironshield Potion",
+      ["soundFileName"] = "ironshield_potion",
+      ["spellIconId"] = 134758,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["lesser_invisibility_potion"] = {
+      ["name"] = "Lesser Invisibility Potion",
+      ["soundFileName"] = "lesser_invisibility_potion",
+      ["spellIconId"] = 134798,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["living_action_potion"] = {
+      ["name"] = "Living Action Potion",
+      ["soundFileName"] = "living_action_potion",
+      ["spellIconId"] = 134718,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_arcane_protection_potion"] = {
+      ["name"] = "Major Arcane Protection Potion",
+      ["soundFileName"] = "arcane_protection",
+      ["spellIconId"] = 134752,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_fire_protection_potion"] = {
+      ["name"] = "Major Fire Protection Potion",
+      ["soundFileName"] = "fire_protection",
+      ["spellIconId"] = 134748,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_frost_protection_potion"] = {
+      ["name"] = "Major Frost Protection Potion",
+      ["soundFileName"] = "frost_protection",
+      ["spellIconId"] = 134750,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_holy_protection_potion"] = {
+      ["name"] = "Major Holy Protection Potion",
+      ["soundFileName"] = "holy_protection",
+      ["spellIconId"] = 134749,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_nature_protection_potion"] = {
+      ["name"] = "Major Nature Protection Potion",
+      ["soundFileName"] = "nature_protection",
+      ["spellIconId"] = 134751,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["major_shadow_protection_potion"] = {
+      ["name"] = "Major Shadow Protection Potion",
+      ["soundFileName"] = "shadow_protection",
+      ["spellIconId"] = 134747,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["mighty_rage_potion"] = {
+      ["name"] = "Mighty Rage Potion",
+      ["soundFileName"] = "mighty_rage_potion",
+      ["spellIconId"] = 134821,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["rage_potion"] = {
+      ["name"] = "Rage Potion",
+      ["soundFileName"] = "rage_potion",
+      ["spellIconId"] = 134804,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["restorative_potion"] = {
+      ["name"] = "Restorative Potion",
+      ["soundFileName"] = "restorative_potion",
+      ["spellIconId"] = 134712,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["sneaking_potion"] = {
+      ["name"] = "Sneaking Potion",
+      ["soundFileName"] = "sneaking_potion",
+      ["spellIconId"] = 134733,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["super_healing_potion"] = {
+      ["name"] = "Super Healing Potion",
+      ["soundFileName"] = "super_healing_potion",
+      ["spellIconId"] = 134756,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["super_mana_potion"] = {
+      ["name"] = "Super Mana Potion",
+      ["soundFileName"] = "super_mana_potion",
+      ["spellIconId"] = 134762,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["super_rejuvenation_potion"] = {
+      ["name"] = "Super Rejuvenation Potion",
+      ["soundFileName"] = "super_rejuvenation_potion",
+      ["spellIconId"] = 134759,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["adamantite_grenade"] = {
+      ["name"] = "Adamantite Grenade",
+      ["soundFileName"] = "adamantite_grenade",
+      ["spellIconId"] = 133716,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fel_iron_bomb"] = {
+      ["name"] = "Fel Iron Bomb",
+      ["soundFileName"] = "fel_iron_bomb",
+      ["spellIconId"] = 133009,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["frost_grenade"] = {
+      ["name"] = "Frost Grenade",
+      ["soundFileName"] = "frost_grenade",
+      ["spellIconId"] = 135851,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["super_sapper_charge"] = {
+      ["name"] = "Super Sapper Charge",
+      ["soundFileName"] = "super_sapper_charge",
+      ["spellIconId"] = 133035,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["fel_blossom"] = {
+      ["name"] = "Fel Blossom",
+      ["soundFileName"] = "fel_blossom",
+      ["spellIconId"] = 134206,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["nightmare_seed"] = {
+      ["name"] = "Nightmare Seed",
+      ["soundFileName"] = "nightmare_seed",
+      ["spellIconId"] = 134217,
+      ["hasFade"] = true,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED"
+      }
+    },
+    ["thistle_tea"] = {
+      ["name"] = "Thistle Tea",
+      ["soundFileName"] = "thistle_tea",
+      ["spellIconId"] = 132819,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["netherweave_net"] = {
+      ["name"] = "Netherweave Net",
+      ["soundFileName"] = "netherweave_net",
+      ["spellIconId"] = 134325,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["first_aid"] = {
+      ["name"] = "First Aid",
+      ["soundFileName"] = "first_aid",
+      ["spellIconId"] = 135966,
+      ["hasFade"] = false,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    }
   }
 }
 
