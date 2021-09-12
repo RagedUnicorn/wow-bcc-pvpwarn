@@ -2897,7 +2897,7 @@ local spellMetaMap = {
     ["bloodlust"] = {
       ["name"] = "Bloodlust",
       ["soundFileName"] = "bloodlust",
-      ["spellIconId"] = 2825,
+      ["spellIconId"] = 136012,
       ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
