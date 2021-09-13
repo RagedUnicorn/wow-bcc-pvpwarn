@@ -29,7 +29,7 @@ mod.testCombatEventsItems = me
 me.tag = "TestCombatEventsItems"
 
 local testGroupName = "CombatEventsItems"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.ITEMS.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.ITEMS.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

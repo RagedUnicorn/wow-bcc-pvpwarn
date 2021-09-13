@@ -57,7 +57,7 @@ local navigation = {
 --[[
   Currently active category
 ]]--
-local categoryName = nil
+local categoryId = nil
 
 local spellTab = 1
 local resistTab = 2
@@ -96,11 +96,11 @@ function me.MenuOnShow(self)
     me.CreateCategoryMenu(self)
   end
 
-  -- if categoryName ~= self.categoryName then
+  if categoryId ~= self.value then
     me.ResetNavigation()
     me.UpdateCategoryMenu(self)
     me.ActivateTab(spellTab) -- activate the spell tab (first tab)
-  -- end
+  end
 end
 
 --[[
@@ -218,7 +218,7 @@ function me.UpdateCategoryMenu(self)
   end
 
   -- update the current active category
-  categoryName = self.categoryName
+  categoryId = self.value
 end
 
 --[[
@@ -250,7 +250,7 @@ function me.ActivateTab(position)
 
   nav.active = true
   nav.contentFrame:Show()
-  nav.func(nav.contentFrame, categoryName)
+  nav.func(nav.contentFrame, categoryId)
 end
 
 --[[

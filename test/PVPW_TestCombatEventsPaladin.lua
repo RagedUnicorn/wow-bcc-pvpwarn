@@ -29,7 +29,7 @@ mod.testCombatEventsPaladin = me
 me.tag = "TestCombatEventsPaladin"
 
 local testGroupName = "CombatEventsPaladin"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.PALADIN.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

@@ -29,7 +29,7 @@ mod.testSoundWarlockEn = me
 me.tag = "TestSoundWarlockEn"
 
 local testGroupName = "SoundWarlockEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.WARLOCK.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.WARLOCK.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

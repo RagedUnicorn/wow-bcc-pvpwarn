@@ -54,7 +54,18 @@ function me.SetupAddonConfiguration()
     mod.profileMenu.BuildUi
   )
 
-  me.BuildSpellCategories(panel.main)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.MISC)
 
   me.BuildCategory(
     RGPVPW_CONSTANTS.ELEMENT_GENERAL_SUB_OPTION_FRAME,
@@ -114,23 +125,21 @@ function me.BuildCategory(frameName, parent, panelText, onShowCallback)
 end
 
 --[[
-  Build configuration panels for all categories
-  @param {table} configurationPanel
+  @param {table} parent
+  @param {table} category
 ]]--
-function me.BuildSpellCategories(parent)
-  for index, category in ipairs(RGPVPW_CONSTANTS.CATEGORIES) do
-    local menu = CreateFrame("Frame", category.name, parent)
-    menu.name = rgpvpw.L[category.localizationKey]
-    menu.parent = parent.name
-    menu.value = index
-    menu.categoryName = category.categoryName
+function me.BuildSpellCategory(parent, category)
+  local menu = CreateFrame("Frame", category.name, parent)
+  menu.name = rgpvpw.L[category.localizationKey]
+  menu.parent = parent.name
+  menu.value = category.id
+  menu.categoryName = category.categoryName
 
-    menu:SetScript("OnShow", mod.categoryMenu.MenuOnShow)
-    -- Important to hide panel initially. Interface addon options will take care of showing the menu
-    menu:Hide()
-    -- Add the child to the Interface Options
-    InterfaceOptions_AddCategory(menu)
-  end
+  menu:SetScript("OnShow", mod.categoryMenu.MenuOnShow)
+  -- Important to hide panel initially. Interface addon options will take care of showing the menu
+  menu:Hide()
+  -- Add the child to the Interface Options
+  InterfaceOptions_AddCategory(menu, category.id)
 end
 
 --[[

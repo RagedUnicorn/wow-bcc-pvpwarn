@@ -29,7 +29,7 @@ mod.testSoundPaladinEn = me
 me.tag = "TestSoundPaladinEn"
 
 local testGroupName = "SoundPaladinEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.PALADIN.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

@@ -28,7 +28,7 @@ mod.spellMap = me
 
 me.tag = "SpellMap"
 
-local categories = RGPVPW_CONSTANTS.CATEGORIES_NEW
+local categories = RGPVPW_CONSTANTS.CATEGORIES
 
 --[[
   Additionaly sort spells by abilities (every character with max level has all abilites) and

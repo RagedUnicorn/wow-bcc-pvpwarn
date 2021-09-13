@@ -29,7 +29,7 @@ mod.testSoundDruidEn = me
 me.tag = "TestSoundDruidEn"
 
 local testGroupName = "SoundDruidEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.DRUID.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.DRUID.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

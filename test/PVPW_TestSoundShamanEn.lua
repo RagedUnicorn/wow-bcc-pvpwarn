@@ -29,7 +29,7 @@ mod.testSoundShamanEn = me
 me.tag = "TestSoundShamanEn"
 
 local testGroupName = "SoundShamanEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.SHAMAN.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.SHAMAN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

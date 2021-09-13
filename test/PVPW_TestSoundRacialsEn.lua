@@ -29,7 +29,7 @@ mod.testSoundRacialsEn = me
 me.tag = "TestSoundRacialsEn"
 
 local testGroupName = "SoundRacialsEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.RACIALS.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.RACIALS.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

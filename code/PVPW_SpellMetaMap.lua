@@ -30,7 +30,7 @@ mod.spellMetaMap = me
 
 me.tag = "SpellMetaMap"
 
-local categories = RGPVPW_CONSTANTS.CATEGORIES_NEW
+local categories = RGPVPW_CONSTANTS.CATEGORIES
 
 local spellMetaMap = {
   [categories.DRUID.id] = {
@@ -5164,19 +5164,43 @@ function me.SupportsEvent(spellMetaData, event)
 end
 
 --[[
+  Get all spellMetaData for a specific category
+
+  @param {number} category
+
+  @return {table}
+    table - the found spells and their respective spellMetaData
+]]--
+function me.GetSpellMetaDataByCategory(category)
+  if not category then return nil end
+
+  local spellList = {}
+
+  for spellName, spellData in pairs(spellMetaMap[category]) do
+    local clonedSpell = mod.common.Clone(spellData)
+    clonedSpell.normalizedSpellName = spellName
+    table.insert(spellList, clonedSpell)
+  end
+
+  return spellList
+end
+
+--[[
   Search for the spellData of a specific spell by its category and spellName
 
+  @param {number} categoryId
   @param {string} spellName
 
   @return {table | nil}
     table - the found spellMetaData
     nil - if no data could be found
 ]]--
-function me.GetSpellMetaDataByCategoryAndName(category, spellName)
-  if spellMetaMap[category] ~= nil and spellMetaMap[category][spellName] ~= nil then
-    return spellMetaMap[category][spellName]
+function me.GetSpellMetaDataByCategoryAndName(categoryId, spellName)
+  if spellMetaMap[categoryId] ~= nil and spellMetaMap[categoryId][spellName] ~= nil then
+    return spellMetaMap[categoryId][spellName]
   end
 
-  mod.logger.LogDebug(me.tag, "Spell with category {" .. category .. "} and spellName {" .. spellName .. "} not found")
+  mod.logger.LogDebug(
+    me.tag, "Spell with categoryId {" .. categoryId .. "} and spellName {" .. spellName .. "} not found")
   return nil
 end

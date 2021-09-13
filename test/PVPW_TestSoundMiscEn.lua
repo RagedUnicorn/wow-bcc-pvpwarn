@@ -29,7 +29,7 @@ mod.testSoundMiscEn = me
 me.tag = "TestSoundMiscEn"
 
 local testGroupName = "SoundMiscEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.MISC.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.MISC.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)

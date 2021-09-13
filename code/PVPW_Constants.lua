@@ -197,135 +197,97 @@ RGPVPW_CONSTANTS = {
     misc category
 
     {
+      ["id"] = -- {number} id of the category
       ["categoryName"] = "", -- {string} name of the category such as "warrior"
       ["localizationKey"] = "", -- {string} name for the localization key
       ["name"] = "", -- {string} name of the content frame
       ["enemyAvoidEnabled"] = -- {boolean} boolean whether this category has enemy resists enabled or not
-    },
+    }
   ]]--
-  -- TODO OLD
   CATEGORIES = {
-    [1] = {
+    DRUID = {
+      ["id"] = 1,
       ["categoryName"] = "druid",
       ["localizationKey"] = "category_druid",
       ["name"] = "PVPW_DruidOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [2] = {
+    HUNTER = {
+      ["id"] = 2,
       ["categoryName"] = "hunter",
       ["localizationKey"] = "category_hunter",
       ["name"] = "PVPW_HunterOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [3] = {
+    MAGE = {
+      ["id"] = 3,
       ["categoryName"] = "mage",
       ["localizationKey"] = "category_mage",
       ["name"] = "PVPW_MageOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [4] = {
+    PALADIN = {
+      ["id"] = 4,
       ["categoryName"] = "paladin",
       ["localizationKey"] = "category_paladin",
       ["name"] = "PVPW_PaladinOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [5] = {
+    PRIEST = {
+      ["id"] = 5,
       ["categoryName"] = "priest",
       ["localizationKey"] = "category_priest",
       ["name"] = "PVPW_PriestOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [6] = {
+    ROGUE = {
+      ["id"] = 6,
       ["categoryName"] = "rogue",
       ["localizationKey"] = "category_rogue",
       ["name"] = "PVPW_RogueOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [7] = {
+    SHAMAN = {
+      ["id"] = 7,
       ["categoryName"] = "shaman",
       ["localizationKey"] = "category_shaman",
       ["name"] = "PVPW_ShamanOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["enemyAvoidEnabled"] = false
     },
-    [8] = {
+    WARLOCK = {
+      ["id"] = 8,
       ["categoryName"] = "warlock",
       ["localizationKey"] = "category_warlock",
       ["name"] = "PVPW_WarlockOptionsFrame",
       ["enemyAvoidEnabled"] = true
     },
-    [9] = {
+    WARRIOR = {
+      ["id"] = 9,
       ["categoryName"] = "warrior",
       ["localizationKey"] = "category_warrior",
       ["name"] = "PVPW_WarriorOptionsFrame",
       ["enemyAvoidEnabled"] = true
     },
-    [10] = {
-      ["categoryName"] = "items",
-      ["localizationKey"] = "category_items",
-      ["name"] = "PVPW_ItemsOptionsFrame",
-      ["enemyAvoidEnabled"] = false
-    },
-    [11] = {
+    RACIALS = {
+      ["id"] = 10,
       ["categoryName"] = "racials",
       ["localizationKey"] = "category_racials",
       ["name"] = "PVPW_RacialsOptionsFrame",
       ["enemyAvoidEnabled"] = false
     },
-    [12] = {
+    ITEMS = {
+      ["id"] = 11,
+      ["categoryName"] = "items",
+      ["localizationKey"] = "category_items",
+      ["name"] = "PVPW_ItemsOptionsFrame",
+      ["enemyAvoidEnabled"] = false
+    },
+    MISC = {
+      ["id"] = 12,
       ["categoryName"] = "misc",
       ["localizationKey"] = "category_misc",
       ["name"] = "PVPW_ItemsOptionsFrame",
       ["enemyAvoidEnabled"] = false
-    }
-  },
-  CATEGORIES_NEW = {
-    DRUID = {
-      ["id"] = 1,
-      ["categoryName"] = "druid"
-    },
-    HUNTER = {
-      ["id"] = 2,
-      ["categoryName"] = "hunter"
-    },
-    MAGE = {
-      ["id"] = 3,
-      ["categoryName"] = "mage"
-    },
-    PALADIN = {
-      ["id"] = 4,
-      ["categoryName"] = "paladin"
-    },
-    PRIEST = {
-      ["id"] = 5,
-      ["categoryName"] = "priest"
-    },
-    ROGUE = {
-      ["id"] = 6,
-      ["categoryName"] = "rogue"
-    },
-    SHAMAN = {
-      ["id"] = 7,
-      ["categoryName"] = "shaman"
-    },
-    WARLOCK = {
-      ["id"] = 8,
-      ["categoryName"] = "warlock"
-    },
-    WARRIOR = {
-      ["id"] = 9,
-      ["categoryName"] = "warrior"
-    },
-    RACIALS = {
-      ["id"] = 10,
-      ["categoryName"] = "racials"
-    },
-    ITEMS = {
-      ["id"] = 11,
-      ["categoryName"] = "items"
-    },
-    MISC = {
-      ["id"] = 12,
-      ["categoryName"] = "misc"
     }
   },
   --[[

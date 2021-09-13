@@ -162,7 +162,7 @@ end
 --[[
   Get a textures name by its numerical value
 
-  @parma {number} colorValue
+  @param {number} colorValue
 
   @return {string}
 ]]--
@@ -177,16 +177,16 @@ function me.GetTextureNameByValue(colorValue)
 end
 
 --[[
-  @param {number} category
+  @param {number} categoryId
 
-  @return {nil | string}
-    nil - if the category data could not be found (invalid category?)
-    string - the category name as a string
+  @return {table | nil}
+    table - all the data for a certain category
+    nil - if no matching category could be found
 ]]--
-function me.GetCategoryNameById(category)
-  for _, categoryData in pairs(RGPVPW_CONSTANTS.CATEGORIES_NEW) do
-    if categoryData.id == category then
-      return categoryData.categoryName
+function me.GetCategoryById(categoryId)
+  for _, categoryData in pairs(RGPVPW_CONSTANTS.CATEGORIES) do
+    if categoryData.id == categoryId then
+      return categoryData
     end
   end
 

@@ -29,7 +29,7 @@ mod.testSoundMageEn = me
 me.tag = "TestSoundMageEn"
 
 local testGroupName = "SoundMageEn"
-local testCategory = RGPVPW_CONSTANTS.CATEGORIES_NEW.MAGE.id
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.MAGE.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
