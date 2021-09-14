@@ -114,21 +114,22 @@ function me.ProcessNormal(event, callback, ...)
   if not me.IsValidSpellType(spellType) then return end
   if not me.HasFoundSpell(spell, spellId) then return end
   if not me.HasFoundSupportedSpell(spellMetaData, spellId) then return end
-
-  if not me.IsSpellActive(spell.category, spellId) then return end
+  if not me.IsSpellActive(spell.category, spell.name) then return end
 
   local visualWarningColor = mod.spellConfiguration.GetVisualWarningColor(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, spell.category, spellId
+    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, spell.category, spell.name
   )
 
-  playSound = me.IsSoundWarningActive(spell.category, spellId)
-  playVisual = me.IsVisualWarningActive(spell.category, spellId, visualWarningColor)
+  playSound = me.IsSoundWarningActive(spell.category, spell.name)
+  playVisual = me.IsVisualWarningActive(spell.category, spell.name, visualWarningColor)
 
   if playVisual then
     spellMetaData.visualWarningColor = visualWarningColor
   end
 
-  mod.warn.PlayWarning(spell.category, spellType, spellMetaData, callback, playSound, playVisual)
+  mod.warn.PlayWarning(
+    mod.common.GetCategoryById(spell.category).categoryName, spellType, spellMetaData, callback, playSound, playVisual)
+end
 end
 
 --[[
@@ -160,7 +161,7 @@ end
 function me.HasFoundSpell(spell, spellId)
   if spell == nil then
     mod.logger.LogInfo(me.tag, string.format(
-      "Ignore spell %i because search in spellMap resulted in not found", spellId
+      "Ignore spell {%i} because search in spellMap resulted in not found", spellId
       )
     )
     return false
@@ -182,7 +183,7 @@ end
 function me.HasFoundSupportedSpell(spellMetaData, spellId)
   if spellMetaData == nil then
     mod.logger.LogInfo(me.tag, string.format(
-      "Ignore spell %i because search in spellMetaMap resulted in not found", spellId
+      "Ignore spell {%i} because search in spellMetaMap resulted in not found", spellId
       )
     )
     return false
@@ -193,16 +194,16 @@ end
 
 --[[
   @param {number} category
-  @param {number} spellId
+  @param {string} spellName
 
   @return {boolean}
     true - if the spell is active
     false if the spell is not active
 ]]--
-function me.IsSpellActive(category, spellId)
-  if not mod.spellConfiguration.IsSpellActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellId) then
+function me.IsSpellActive(category, spellName)
+  if not mod.spellConfiguration.IsSpellActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName) then
     mod.logger.LogDebug(me.tag, string.format(
-      "Ignore spell %i - %i because it is not active", category, spellId
+      "Category {%i} - {%s} it is not active", category, spellName
       )
     )
     return false
@@ -213,40 +214,40 @@ end
 
 --[[
   @param {number} category
-  @param {number} spellId
+  @param {string} spellName
 
   @return {boolean}
     true - if sound is active for the spell
     false if sound is not active for the spell
 ]]--
-function me.IsSoundWarningActive(category, spellId)
-  if mod.spellConfiguration.IsSoundWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellId)
-    or mod.spellConfiguration.IsSoundFadeWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellId) then
+function me.IsSoundWarningActive(category, spellName)
+  if mod.spellConfiguration.IsSoundWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName)
+    or mod.spellConfiguration.IsSoundFadeWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName) then
     return true
   end
 
   mod.logger.LogDebug(me.tag, string.format(
-    "Ignore playing sound/soundFade for %i - %i because it is not active", category, spellId))
+    "Ignore playing sound/soundFade for category {%i} - {%s} because it is not active", category, spellName))
 
   return false
 end
 
 --[[
   @param {number} category
-  @param {number} spellId
+  @param {string} spellName
   @param {number} visualWarningColor
 
   @return {boolean}
     true - if visual warning is active
     false- if visual warning is not active
 ]]--
-function me.IsVisualWarningActive(category, spellId, visualWarningColor)
+function me.IsVisualWarningActive(category, spellName, visualWarningColor)
   if visualWarningColor ~= RGPVPW_CONSTANTS.DEFAULT_COLOR then
     return true
   end
 
   mod.logger.LogDebug(me.tag, string.format(
-    "Ignore playing visual warning for %s - %s because it is not active", category, spellId
+    "Ignore playing visual warning for {%i} - {%s} because it is not active", category, spellName
     )
   )
 

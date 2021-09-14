@@ -208,8 +208,9 @@ function me.UpdateCategoryMenu(self)
   tabButton2:SetParent(self)
   contentFrame1:SetParent(self)
   contentFrame2:SetParent(self)
-
-  if not RGPVPW_CONSTANTS.CATEGORIES[self.value].enemyAvoidEnabled then
+  DevTools_Dump(self)
+  mod.logger.LogError(me.tag, "Self.value: " .. self.value)
+  if not RGPVPW_CONSTANTS.CATEGORIES[string.upper(self.categoryName)].enemyAvoidEnabled then
     tabButton2:Hide()
     contentFrame2:Hide()
   else
