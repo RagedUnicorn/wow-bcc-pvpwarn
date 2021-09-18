@@ -68,9 +68,9 @@ function me.Init(frame, categoryId)
     -- changing the scrollframes parent to the respective active category panel
     spellScrollFrame:SetParent(frame)
     -- update the scrolllist with new category data
-    me.FauxScrollFrameOnUpdate(spellScrollFrame, activeCategoryData)
+    me.FauxScrollFrameOnUpdate(spellScrollFrame)
   else
-    me.BuildUi(frame, activeCategoryData)
+    me.BuildUi(frame)
   end
 end
 
@@ -78,11 +78,10 @@ end
   Create the spelllist configuration menu
 
   @param {table} frame
-  @param {table} categoryData
 ]]--
-function me.BuildUi(frame, categoryData)
+function me.BuildUi(frame)
   spellScrollFrame = me.CreateSpellList(frame)
-  me.FauxScrollFrameOnUpdate(spellScrollFrame, categoryData)
+  me.FauxScrollFrameOnUpdate(spellScrollFrame)
   builtMenu = true
 end
 
@@ -190,9 +189,13 @@ function me.CreateSpellStateCheckbox(spellFrame)
 
       local parentFrame = self:GetParent()
 
-      me.UpdateCheckButtonState(self, parentFrame.soundCheckBox)
-      me.UpdateCheckButtonState(self, parentFrame.soundSpecialCheckBox)
-      me.UpdateChooseVisualDropdownMenuState(parentFrame, self:GetChecked())
+      mod.spellStateHelper.UpdateCheckButtonState(self, parentFrame.soundCheckBox)
+      mod.spellStateHelper.UpdateCheckButtonState(self, parentFrame.soundSpecialCheckBox)
+      mod.spellStateHelper.UpdateChooseVisualDropdownMenuState(
+        parentFrame.chooseVisual,
+        parentFrame.chooseVisualLabel,
+        self:GetChecked()
+      )
     end,
     function(self)
       local isActive = mod.spellConfiguration.IsSpellActive(
@@ -415,13 +418,12 @@ end
   is only done once and the data is being cached for further update events.
 
   @param {table} scrollFrame
-  @param {table} categoryData
 ]]--
-function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
+function me.FauxScrollFrameOnUpdate(scrollFrame)
   if cachedCategoryData == nil then
     mod.logger.LogInfo(
-      me.tag, string.format("Warmed up cached spellList for category '%s'", categoryData.categoryName))
-    cachedCategoryData = mod.spellMetaMap.GetSpellMetaDataByCategory(categoryData.id)
+      me.tag, string.format("Warmed up cached spellList for category '%s'", activeCategoryData.categoryName))
+    cachedCategoryData = mod.spellMetaMap.GetSpellMetaDataByCategory(activeCategoryData.id)
   end
 
   local maxValue = mod.common.TableLength(cachedCategoryData) or 0
@@ -444,41 +446,49 @@ function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
 
     if value <= maxValue then
       local row = spellRows[i]
+
       if cachedCategoryData[value] ~= nil then
         local spell = cachedCategoryData[value]
 
         row.normalizedSpellName = spell.normalizedSpellName
         row.category = activeCategoryData.categoryName
         row.spellTitle:SetText(spell.name)
-
         row.playSound.soundFileName = spell.soundFileName
         row.playSoundSpecial.soundFileName = spell.soundFileName
 
-        me.UpdateIcon(
+        mod.spellStateHelper.UpdateIcon(
           row.spellIcon,
           activeCategoryData.categoryName,
           spell
         )
-        me.UpdateSpellStateCheckBox(
+        mod.spellStateHelper.UpdateSpellStateCheckBox(
           row.spellStateCheckBox,
+          row.spellStateCheckBox:GetParent().soundCheckBox,
+          row.spellStateCheckBox:GetParent().soundSpecialCheckBox,
+          row.spellStateCheckBox:GetParent().chooseVisual,
+          row.spellStateCheckBox:GetParent().chooseVisualLabel,
           activeCategoryData.id,
-          spell.normalizedSpellName
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL
         )
-        me.UpdateSound(
+        mod.spellStateHelper.UpdateSound(
           row.soundCheckBox,
           activeCategoryData.id,
-          spell.normalizedSpellName
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL
         )
-        me.UpdateSoundSpecial(
+        mod.spellStateHelper.UpdateSoundSpecial(
           row.soundSpecialCheckBox,
           row.playSoundSpecial,
           activeCategoryData.id,
-          spell
+          spell,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL
         )
-        me.UpdateChooseVisualDropdownMenu(
+        mod.spellStateHelper.UpdateChooseVisualDropdownMenu(
           row.chooseVisual,
           activeCategoryData.id,
-          spell.normalizedSpellName
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL
         )
 
         row:Show()
@@ -486,162 +496,5 @@ function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
         spellRows[i]:Hide()
       end
     end
-  end
-end
-
---[[
-  @param {table} spellIcon
-  @param {string} categoryName
-  @param {table} spell
-]]--
-function me.UpdateIcon(spellIcon, categoryName, spell)
-  local color = RGPVPW_CONSTANTS.CATEGORY_COLOR[categoryName]
-
-  spellIcon:SetTexture(spell.spellIconId)
-  spellIcon.iconHolder:SetBackdropBorderColor(unpack(color))
-end
-
---[[
-  @param {table} dropdownMenu
-  @param {number} categoryId
-  @param {string} spellName
-]]--
-function me.UpdateChooseVisualDropdownMenu(dropdownMenu, categoryId, spellName)
-  local colorValue = mod.spellConfiguration.GetVisualWarningColor(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
-    categoryId,
-    spellName
-  )
-
-  mod.libUiDropDownMenu.UiDropDownMenu_SetSelectedValue(
-    dropdownMenu,
-    colorValue
-  )
-
-  -- fix for updating text properly
-  mod.libUiDropDownMenu.UiDropDownMenu_SetText(dropdownMenu, rgpvpw.L[mod.common.GetTextureNameByValue(colorValue)])
-end
-
---[[
-  @param {table} spellStateCheckBox
-  @param {number} categoryId
-  @param {string} spellName
-]]--
-function me.UpdateSpellStateCheckBox(spellStateCheckBox, categoryId, spellName)
-  local isSpellActive = mod.spellConfiguration.IsSpellActive(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
-    categoryId,
-    spellName
-  )
-
-  local parentFrame = spellStateCheckBox:GetParent()
-
-  if isSpellActive then
-    mod.logger.LogDebug(me.tag, string.format(
-      "Spell {%s} for category {%i} is active", spellName, categoryId)
-    )
-    spellStateCheckBox:SetChecked(true)
-
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.soundCheckBox)
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.soundSpecialCheckBox)
-    me.UpdateChooseVisualDropdownMenuState(parentFrame, true)
-  else
-    mod.logger.LogDebug(me.tag, string.format(
-      "Spell {%s} for category {%i} is inactive", spellName, categoryId)
-    )
-    spellStateCheckBox:SetChecked(false)
-
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.soundCheckBox)
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.soundSpecialCheckBox)
-    me.UpdateChooseVisualDropdownMenuState(parentFrame, false)
-  end
-end
-
---[[
-  @param {table} soundCheckBox
-  @param {number} categoryId
-  @param {string} spellName
-]]--
-function me.UpdateSound(soundCheckBox, categoryId, spellName)
-  -- update sound checkbox state
-  soundCheckBox:SetChecked(
-    mod.spellConfiguration.IsSoundWarningActive(
-      RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
-      categoryId,
-      spellName
-    )
-  )
-end
-
---[[
-  @param {table} soundSpecialCheckBox
-  @param {table} soundSpecialButton
-  @param {number} categoryId
-  @param {table} spell
-]]--
-function me.UpdateSoundSpecial(soundSpecialCheckBox, soundSpecialButton, categoryId, spell)
-  if spell.hasFade then
-    soundSpecialCheckBox:SetChecked(mod.spellConfiguration.IsSoundFadeWarningActive(
-      RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
-      categoryId,
-      spell.normalizedSpellName
-    ))
-    soundSpecialCheckBox.text:SetText(rgpvpw.L["label_enable_sound_fade"])
-    soundSpecialCheckBox.type = RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED
-  elseif spell.hasCast then
-    soundSpecialCheckBox:SetChecked(mod.spellConfiguration.IsSoundStartWarningActive(
-      RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
-      categoryId,
-      spell.normalizedSpellName
-    ))
-    soundSpecialCheckBox.text:SetText(rgpvpw.L["label_enable_sound_cast"])
-    soundSpecialCheckBox.type = RGPVPW_CONSTANTS.SPELL_TYPES.START
-  else
-    soundSpecialCheckBox:Hide()
-    soundSpecialButton:Hide()
-
-    return
-  end
-
-  soundSpecialCheckBox:Show()
-  soundSpecialButton:Show()
-end
-
---[[
-  Updates a checkbutton based on its state or a dependent checkButton
-
-  @param {table} checkButton
-  @param {table} dependentCheckButton
-]]--
-function me.UpdateCheckButtonState(checkButton, dependentCheckButton)
-  if checkButton:GetChecked() then
-    if dependentCheckButton ~= nil then
-      mod.guiHelper.EnableCheckButton(dependentCheckButton)
-    else
-      mod.guiHelper.EnableCheckButton(checkButton)
-    end
-  else
-    if dependentCheckButton ~= nil then
-      mod.guiHelper.DisableCheckButton(dependentCheckButton)
-    else
-      mod.guiHelper.DisableCheckButton(checkButton)
-    end
-  end
-end
-
---[[
-  Enables or disables the chooseVisual dropdown and its label based
-  on the checkButton state of the spell itself
-
-  @param {table} frame
-  @param {boolean} enable
-]]--
-function me.UpdateChooseVisualDropdownMenuState(frame, enable)
-  if enable then
-    mod.libUiDropDownMenu.UiDropDownMenu_EnableDropDown(frame.chooseVisual)
-    frame.chooseVisualLabel:SetTextColor(1, 1, 1)
-  else
-    mod.libUiDropDownMenu.UiDropDownMenu_DisableDropDown(frame.chooseVisual)
-    frame.chooseVisualLabel:SetTextColor(0.66, 0.66, 0.66)
   end
 end

@@ -66,3 +66,4 @@ gui/PVPW_CategoryMenuAvoidTab.lua
 gui/PVPW_EnemyAvoidMenu.lua
 gui/PVPW_TargetFrame.lua
 gui/PVPW_GuiHelper.lua
+gui/PVPW_SpellStateHelper.lua

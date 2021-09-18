@@ -168,3 +168,19 @@ function me.GetCategoryById(categoryId)
 
   return nil
 end
+
+--[[
+  @param {string} categoryName
+
+  @return {table | nil}
+    table - all the data for a certain category
+    nil - if no matching category could be found
+]]--
+function me.GetCategoryByName(categoryName)
+  if RGPVPW_CONSTANTS.CATEGORIES[categoryName] ~= nil then
+    return RGPVPW_CONSTANTS.CATEGORIES[categoryName]
+  end
+
+  mod.logger.LogError(me.tag, string.format("Invalid categoryName %s", categoryName))
+  return nil
+end

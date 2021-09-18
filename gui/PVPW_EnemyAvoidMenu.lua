@@ -43,18 +43,19 @@ local spellEnemyAvoidScrollFrame
 ]]--
 local cachedCategoryData = nil
 --[[
-  Currently active category
+  Currently active category data
 ]]--
-local activeCategory = nil
+local activeCategoryData = nil
 
 --[[
   @param {table} frame
 ]]--
 function me.Init(frame)
-  if builtMenu then
-    return
-  else
+  if activeCategoryData == nil then
     me.SetCategoryName()
+  end
+
+  if not builtMenu then
     me.BuildUi(frame)
   end
 end
@@ -65,8 +66,8 @@ end
 function me.SetCategoryName()
   local _, englishClass = UnitClass(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
 
-  activeCategory = string.lower(englishClass)
-  mod.logger.LogDebug(me.tag, "Set category to: " .. string.lower(englishClass))
+  activeCategoryData = mod.common.GetCategoryByName(string.upper(englishClass))
+  mod.logger.LogDebug(me.tag, string.format("Set category to {%i}-{%s} ", activeCategoryData.id, englishClass))
 end
 
 --[[
@@ -188,19 +189,23 @@ function me.CreateSpellStateCheckbox(spellFrame)
     function(self)
       mod.spellConfiguration.ToggleSpellState(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
       local parentFrame = self:GetParent()
 
-      me.UpdateCheckButtonState(self, parentFrame.enemyAvoidSoundCheckBox)
-      me.UpdateChooseVisualDropdownMenuState(parentFrame, self:GetChecked())
+      mod.spellStateHelper.UpdateCheckButtonState(self, parentFrame.enemyAvoidSoundCheckBox)
+      mod.spellStateHelper.UpdateChooseVisualDropdownMenuState(
+        parentFrame.chooseEnemyAvoidVisual,
+        parentFrame.chooseEnemyAvoidVisualLabel,
+        self:GetChecked()
+      )
     end,
     function(self)
       local isActive = mod.spellConfiguration.IsSpellActive(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
@@ -229,14 +234,14 @@ function me.CreateSpellEnemyAvoidSoundCheckBox(spellFrame)
     function()
       mod.spellConfiguration.ToggleSoundWarning(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
     end,
     function(self)
       local isActive = mod.spellConfiguration.IsSoundWarningActive(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
@@ -295,7 +300,7 @@ end
 function me.DropDownMenuCallback(self)
   mod.spellConfiguration.UpdateVisualWarningColor(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-    activeCategory,
+    activeCategoryData.id,
     self:GetParent().dropdown:GetParent().normalizedSpellName,
     self.value
   )
@@ -315,7 +320,7 @@ function me.ToggleAvoidVisualWarningOnClick(self)
   -- retrieve color for specific spell and category from configuration
   local color = mod.spellConfiguration.GetVisualWarningColor(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-    self:GetParent().category,
+    activeCategoryData.id,
     self:GetParent().normalizedSpellName
   )
 
@@ -333,12 +338,15 @@ end
   is only done once and the data is being cached for further update events.
 
   @param {table} scrollFrame
-  @param {string} category
 ]]--
 function me.FauxScrollFrameOnUpdate(scrollFrame)
   if cachedCategoryData == nil then
-    mod.logger.LogInfo(me.tag, string.format("Warmed up cached spellEnemyAvoidList for category '%s'", activeCategory))
-    cachedCategoryData = mod.spellAvoidMap.GetAllForCategory(activeCategory)
+    mod.logger.LogInfo(
+      me.tag, string.format("Warmed up cached spellEnemyAvoidList for category '%s'", activeCategoryData.categoryName))
+    cachedCategoryData = mod.spellMetaMap.GetSpellMetaDataByCategory(
+      activeCategoryData.id,
+      {RGPVPW_CONSTANTS.EVENT_SPELL_MISSED}
+    )
   end
 
   local maxValue = mod.common.TableLength(cachedCategoryData) or 0
@@ -363,22 +371,39 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
       local row = spellAvoidRows[i]
 
       if cachedCategoryData[value] ~= nil then
-        row.normalizedSpellName = cachedCategoryData[value].normalizedSpellName
-        row.category = activeCategory
-        row.spellTitle:SetText(cachedCategoryData[value].name)
-        row.playEnemyAvoidSound.soundFileName = cachedCategoryData[value].soundFileName
+        local spell = cachedCategoryData[value]
 
-        me.UpdateIcon(
-          row.spellIcon, activeCategory, cachedCategoryData[value]
+        row.normalizedSpellName = cachedCategoryData[value].normalizedSpellName
+        row.category = activeCategoryData.categoryName
+        row.spellTitle:SetText(spell.name)
+        row.playEnemyAvoidSound.soundFileName = spell.soundFileName
+
+        mod.spellStateHelper.UpdateIcon(
+          row.spellIcon,
+          activeCategoryData.categoryName,
+          spell
         )
-        me.UpdateSpellStateCheckBox(
-          row.spellStateCheckBox, activeCategory, cachedCategoryData[value].normalizedSpellName
+        mod.spellStateHelper.UpdateSpellStateCheckBox(
+          row.spellStateCheckBox,
+          row.spellStateCheckBox:GetParent().enemyAvoidSoundCheckBox,
+          nil,
+          row.spellStateCheckBox:GetParent().chooseEnemyAvoidVisual,
+          row.spellStateCheckBox:GetParent().chooseEnemyAvoidVisualLabel,
+          activeCategoryData.id,
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID
         )
-        me.UpdateSound(
-          row.enemyAvoidSoundCheckBox, activeCategory, cachedCategoryData[value].normalizedSpellName
+        mod.spellStateHelper.UpdateSound(
+          row.enemyAvoidSoundCheckBox,
+          activeCategoryData.id,
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID
         )
-        me.UpdateChooseVisualDropdownMenu(
-          row.chooseEnemyAvoidVisual, activeCategory, cachedCategoryData[value].normalizedSpellName
+        mod.spellStateHelper.UpdateChooseVisualDropdownMenu(
+          row.chooseEnemyAvoidVisual,
+          activeCategoryData.id,
+          spell.normalizedSpellName,
+          RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID
         )
 
         row:Show()
@@ -386,136 +411,5 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         spellAvoidRows[i]:Hide()
       end
     end
-  end
-end
-
---[[
-  @param {table} spellIcon
-  @param {string} category
-  @param {number} spell
-]]--
-function me.UpdateIcon(spellIcon, category, spell)
-  local iconId
-  local color = RGPVPW_CONSTANTS.CATEGORY_COLOR[category]
-
-  --[[
-    For most items we have to track the actual spelleffect in the combat log. However for
-    people to recognize the item it is much better to use items icon itself.
-  ]]--
-  if spell.itemId ~= nil then
-    iconId = GetItemIcon(spell.itemId)
-  else
-    iconId = select(3, GetSpellInfo(spell.spellId))
-  end
-
-  spellIcon:SetTexture(iconId)
-  spellIcon.iconHolder:SetBackdropBorderColor(unpack(color))
-end
-
---[[
-  @param {table} spellStateCheckBox
-  @param {string} category
-  @param {string} spellName
-]]--
-function me.UpdateSpellStateCheckBox(spellStateCheckBox, category, spellName)
-  local isSpellActive = mod.spellConfiguration.IsSpellActive(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-    category,
-    spellName
-  )
-
-  local parentFrame = spellStateCheckBox:GetParent()
-
-  if isSpellActive then
-    mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is active", spellName, category)
-    )
-    spellStateCheckBox:SetChecked(true)
-
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.enemyAvoidSoundCheckBox)
-    me.UpdateChooseVisualDropdownMenuState(parentFrame, true)
-  else
-    mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is inactive", spellName, category)
-    )
-    spellStateCheckBox:SetChecked(false)
-
-    me.UpdateCheckButtonState(spellStateCheckBox, parentFrame.enemyAvoidSoundCheckBox)
-    me.UpdateChooseVisualDropdownMenuState(parentFrame, false)
-  end
-end
-
---[[
-  @param {table} soundCheckBox
-  @param {string} category
-  @param {string} spellName
-]]--
-function me.UpdateSound(soundCheckBox, category, spellName)
-  -- update sound checkbox state
-  soundCheckBox:SetChecked(
-    mod.spellConfiguration.IsSoundWarningActive(
-      RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-      category,
-      spellName
-    )
-  )
-end
-
---[[
-  @param {table} dropdownMenu
-  @param {string} category
-  @param {string} spellName
-]]--
-function me.UpdateChooseVisualDropdownMenu(dropdownMenu, category, spellName)
-  local colorValue = mod.spellConfiguration.GetVisualWarningColor(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID,
-    category,
-    spellName
-  )
-
-  mod.libUiDropDownMenu.UiDropDownMenu_SetSelectedValue(
-    dropdownMenu,
-    colorValue
-  )
-  -- fix for updating text properly
-  mod.libUiDropDownMenu.UiDropDownMenu_SetText(dropdownMenu, rgpvpw.L[mod.common.GetTextureNameByValue(colorValue)])
-end
-
---[[
-  Updates a checkbutton based on its state or a dependent checkButton
-
-  @param {table} checkButton
-  @param {table} dependentCheckButton
-]]--
-function me.UpdateCheckButtonState(checkButton, dependentCheckButton)
-  if checkButton:GetChecked() then
-    if dependentCheckButton ~= nil then
-      mod.guiHelper.EnableCheckButton(dependentCheckButton)
-    else
-      mod.guiHelper.EnableCheckButton(checkButton)
-    end
-  else
-    if dependentCheckButton ~= nil then
-      mod.guiHelper.DisableCheckButton(dependentCheckButton)
-    else
-      mod.guiHelper.DisableCheckButton(checkButton)
-    end
-  end
-end
-
---[[
-  Enables or disables the chooseVisual dropdown and its label based
-  on the checkButton state of the spell itself
-
-  @param {table} frame
-  @param {boolean} enable
-]]--
-function me.UpdateChooseVisualDropdownMenuState(frame, enable)
-  if enable then
-    mod.libUiDropDownMenu.UiDropDownMenu_EnableDropDown(frame.chooseEnemyAvoidVisual)
-    frame.chooseEnemyAvoidVisualLabel:SetTextColor(1, 1, 1)
-  else
-    mod.libUiDropDownMenu.UiDropDownMenu_DisableDropDown(frame.chooseEnemyAvoidVisual)
-    frame.chooseEnemyAvoidVisualLabel:SetTextColor(0.66, 0.66, 0.66)
   end
 end
