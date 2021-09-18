@@ -127,7 +127,8 @@ RGPVPW_CONSTANTS = {
     ["IMMUNE"] = 3,
     ["MISS"] = 4,
     ["BLOCK"] = 5,
-    ["RESIST"] = 6
+    ["RESIST"] = 6,
+    ["REFLECT"] = 7
   },
   EVENT_SPELL_CAST_SUCCESS = "SPELL_CAST_SUCCESS",
   EVENT_SPELL_CAST_START = "SPELL_CAST_START",
@@ -140,9 +141,9 @@ RGPVPW_CONSTANTS = {
     spelllists
   ]]--
   SPELL_TYPE = {
-    ["SPELL"] = "spellList",
-    ["SPELL_SELF_AVOID"] = "spellSelfAvoidList",
-    ["SPELL_ENEMY_AVOID"] = "spellEnemyAvoidList"
+    ["SPELL"] = "spellList", -- normal spells that are always casted by an enemy player
+    ["SPELL_SELF_AVOID"] = "spellSelfAvoidList", -- spells that the player himself avoided
+    ["SPELL_ENEMY_AVOID"] = "spellEnemyAvoidList" -- spell that an enemy player avoided
   },
   SPELL_AVOID_TYPE = {
     ["SELF_AVOID"] = 1,
@@ -201,7 +202,7 @@ RGPVPW_CONSTANTS = {
       ["categoryName"] = "", -- {string} name of the category such as "warrior"
       ["localizationKey"] = "", -- {string} name for the localization key
       ["name"] = "", -- {string} name of the content frame
-      ["enemyAvoidEnabled"] = -- {boolean} boolean whether this category has enemy resists enabled or not
+      ["selfAvoidEnabled"] = -- {boolean} boolean whether this category has self resists enabled or not
     }
   ]]--
   CATEGORIES = {
@@ -210,84 +211,84 @@ RGPVPW_CONSTANTS = {
       ["categoryName"] = "druid",
       ["localizationKey"] = "category_druid",
       ["name"] = "PVPW_DruidOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     HUNTER = {
       ["id"] = 2,
       ["categoryName"] = "hunter",
       ["localizationKey"] = "category_hunter",
       ["name"] = "PVPW_HunterOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     MAGE = {
       ["id"] = 3,
       ["categoryName"] = "mage",
       ["localizationKey"] = "category_mage",
       ["name"] = "PVPW_MageOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     PALADIN = {
       ["id"] = 4,
       ["categoryName"] = "paladin",
       ["localizationKey"] = "category_paladin",
       ["name"] = "PVPW_PaladinOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     PRIEST = {
       ["id"] = 5,
       ["categoryName"] = "priest",
       ["localizationKey"] = "category_priest",
       ["name"] = "PVPW_PriestOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     ROGUE = {
       ["id"] = 6,
       ["categoryName"] = "rogue",
       ["localizationKey"] = "category_rogue",
       ["name"] = "PVPW_RogueOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     SHAMAN = {
       ["id"] = 7,
       ["categoryName"] = "shaman",
       ["localizationKey"] = "category_shaman",
       ["name"] = "PVPW_ShamanOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = true
     },
     WARLOCK = {
       ["id"] = 8,
       ["categoryName"] = "warlock",
       ["localizationKey"] = "category_warlock",
       ["name"] = "PVPW_WarlockOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["selfAvoidEnabled"] = true
     },
     WARRIOR = {
       ["id"] = 9,
       ["categoryName"] = "warrior",
       ["localizationKey"] = "category_warrior",
       ["name"] = "PVPW_WarriorOptionsFrame",
-      ["enemyAvoidEnabled"] = true
+      ["selfAvoidEnabled"] = true
     },
     RACIALS = {
       ["id"] = 10,
       ["categoryName"] = "racials",
       ["localizationKey"] = "category_racials",
       ["name"] = "PVPW_RacialsOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = false
     },
     ITEMS = {
       ["id"] = 11,
       ["categoryName"] = "items",
       ["localizationKey"] = "category_items",
       ["name"] = "PVPW_ItemsOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = false
     },
     MISC = {
       ["id"] = 12,
       ["categoryName"] = "misc",
       ["localizationKey"] = "category_misc",
       ["name"] = "PVPW_ItemsOptionsFrame",
-      ["enemyAvoidEnabled"] = false
+      ["selfAvoidEnabled"] = false
     }
   },
   --[[

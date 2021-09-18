@@ -66,7 +66,7 @@ function me.ProcessEventHostilePlayers(event, callback, ...)
   if event == "SPELL_CAST_SUCCESS" then
     me.ProcessNormal(event, callback, ...)
   elseif event == "SPELL_CAST_START" then
-    me.ProcessStart(event, callback, ...)
+    -- me.ProcessStart(event, callback, ...) -- TODO
   elseif event == "SPELL_AURA_REMOVED" then
     me.ProcessNormal(event, callback, ...)
   elseif event == "SPELL_AURA_REFRESH" then
@@ -74,7 +74,7 @@ function me.ProcessEventHostilePlayers(event, callback, ...)
   elseif event == "SPELL_AURA_APPLIED" then
     me.ProcessNormal(event, callback, ...)
   elseif event == "SPELL_MISSED" then
-    me.ProcessResist(event, RGPVPW_CONSTANTS.TARGET_SELF, callback, ...)
+    me.ProcessMissed(event, RGPVPW_CONSTANTS.TARGET_SELF, callback, ...)
   else
     mod.logger.LogDebug(me.tag, "Ignore unsupported event: " .. event)
 
@@ -94,7 +94,7 @@ function me.ProcessEventMine(event, callback, ...)
   if true then return end -- TODO
 
   if event == "SPELL_MISSED" then
-    me.ProcessResist(event, RGPVPW_CONSTANTS.TARGET_ENEMY, callback, ...)
+    me.ProcessMissed(event, RGPVPW_CONSTANTS.TARGET_ENEMY, callback, ...)
   end
 end
 
@@ -108,19 +108,24 @@ function me.ProcessNormal(event, callback, ...)
   local playSound
   local playVisual
   local spellType = mod.common.GetSpellType(event)
-  local spell = mod.spellMap.SearchSpellById(spellId)
-  local spellMetaData = mod.spellMetaMap.GetSpellMetaDataForSupportedEvent(spell, event)
+  local spellMap = mod.common.GetSpellMap(spellType)
 
   if not me.IsValidSpellType(spellType) then return end
+
+  local spell = mod.spellMap.SearchSpellById(spellId)
+
   if not me.HasFoundSpell(spell, spellId) then return end
+  if not me.IsSpellActive(spellMap, spell.category, spell.name) then return end
+
+  local spellMetaData = mod.spellMetaMap.GetSpellMetaDataForSupportedEvent(spell, event)
+
   if not me.HasFoundSupportedSpell(spellMetaData, spellId) then return end
-  if not me.IsSpellActive(spell.category, spell.name) then return end
 
   local visualWarningColor = mod.spellConfiguration.GetVisualWarningColor(
-    RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, spell.category, spell.name
+    spellMap, spell.category, spell.name
   )
 
-  playSound = me.IsSoundWarningActive(spell.category, spell.name)
+  playSound = me.IsSoundWarningActive(spellMap, spell.category, spell.name)
   playVisual = me.IsVisualWarningActive(spell.category, spell.name, visualWarningColor)
 
   if playVisual then
@@ -130,6 +135,56 @@ function me.ProcessNormal(event, callback, ...)
   mod.warn.PlayWarning(
     mod.common.GetCategoryById(spell.category).categoryName, spellType, spellMetaData, callback, playSound, playVisual)
 end
+
+--[[
+  Process event "SPELL_MISSED" for spell resists
+  @param {string} event
+  @param {function} callback
+    Optional function that is invoked with status infos. Currently only used for testing
+  @param {number} spellMissedTarget
+    TARGET_SELF or TARGET_ENEMY
+
+    TARGET_SELF - meaning the player was the target of the spell and thus avoided an enemy spell
+    TARGET_ENEMY - meaning an enemy was the target of the spell and thus avoided a spell of the player himself
+  @param {vararg} ...
+]]--
+function me.ProcessMissed(event, spellMissedTarget, callback, ...)
+  local spellId, _, _, missType = select(12, ...)
+  local playSound
+  local playVisual
+
+  if not me.IsSupportedMissType(missType) then
+    mod.logger.LogDebug(me.tag, "ProcessMissed ignore unsupported missType: " .. missType)
+    return
+  end
+
+  local spellType = mod.common.GetSpellType(event, spellMissedTarget)
+  local spellMap = mod.common.GetSpellMap(spellType)
+
+  if not me.IsValidSpellType(spellType) then return end
+
+  local spell = mod.spellMap.SearchSpellById(spellId)
+
+  if not me.HasFoundSpell(spell, spellId) then return end
+  if not me.IsSpellActive(spellMap, spell.category, spell.name) then return end
+
+  local spellMetaData = mod.spellMetaMap.GetSpellMetaDataForSupportedEvent(spell, event)
+
+  if not me.HasFoundSupportedSpell(spellMetaData, spellId) then return end
+
+  local visualWarningColor = mod.spellConfiguration.GetVisualWarningColor(
+    spellMap, spell.category, spell.name
+  )
+
+  playSound = me.IsSoundWarningActive(spellMap, spell.category, spell.name)
+  playVisual = me.IsVisualWarningActive(spell.category, spell.name, visualWarningColor)
+
+  if playVisual then
+    spell.visualWarningColor = visualWarningColor
+  end
+
+  mod.warn.PlayWarning(
+    mod.common.GetCategoryById(spell.category).categoryName, spellType, spellMetaData, callback, playSound, playVisual)
 end
 
 --[[
@@ -161,8 +216,7 @@ end
 function me.HasFoundSpell(spell, spellId)
   if spell == nil then
     mod.logger.LogInfo(me.tag, string.format(
-      "Ignore spell {%i} because search in spellMap resulted in not found", spellId
-      )
+      "Ignore spell {%i} because search in spellMap resulted in not found", spellId)
     )
     return false
   end
@@ -183,8 +237,7 @@ end
 function me.HasFoundSupportedSpell(spellMetaData, spellId)
   if spellMetaData == nil then
     mod.logger.LogInfo(me.tag, string.format(
-      "Ignore spell {%i} because search in spellMetaMap resulted in not found", spellId
-      )
+      "Ignore spell {%i} because search in spellMetaMap resulted in not found", spellId)
     )
     return false
   end
@@ -193,18 +246,22 @@ function me.HasFoundSupportedSpell(spellMetaData, spellId)
 end
 
 --[[
-  @param {number} category
+  @param {string} spellList
+    Decides upon which stored list should be used. Possible values:
+    * spellList - enemy spell detected
+    * spellSelfAvoidList - player avoided spell
+    * spellEnemyAvoidList - enemy player avoided spell
+  @param {number} categoryId
   @param {string} spellName
 
   @return {boolean}
     true - if the spell is active
     false if the spell is not active
 ]]--
-function me.IsSpellActive(category, spellName)
-  if not mod.spellConfiguration.IsSpellActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName) then
+function me.IsSpellActive(spellList, categoryId, spellName)
+  if not mod.spellConfiguration.IsSpellActive(spellList, categoryId, spellName) then
     mod.logger.LogDebug(me.tag, string.format(
-      "Category {%i} - {%s} it is not active", category, spellName
-      )
+      "Category {%i} - {%s} it is not active", categoryId, spellName)
     )
     return false
   end
@@ -213,27 +270,32 @@ function me.IsSpellActive(category, spellName)
 end
 
 --[[
-  @param {number} category
+  @param {string} spellList
+    Decides upon which stored list should be used. Possible values:
+    * spellList - enemy spell detected
+    * spellSelfAvoidList - player avoided spell
+    * spellEnemyAvoidList - enemy player avoided spell
+  @param {number} categoryId
   @param {string} spellName
 
   @return {boolean}
     true - if sound is active for the spell
     false if sound is not active for the spell
 ]]--
-function me.IsSoundWarningActive(category, spellName)
-  if mod.spellConfiguration.IsSoundWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName)
-    or mod.spellConfiguration.IsSoundFadeWarningActive(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL, category, spellName) then
+function me.IsSoundWarningActive(spellList, categoryId, spellName)
+  if mod.spellConfiguration.IsSoundWarningActive(spellList, categoryId, spellName)
+    or mod.spellConfiguration.IsSoundFadeWarningActive(spellList, categoryId, spellName) then
     return true
   end
 
   mod.logger.LogDebug(me.tag, string.format(
-    "Ignore playing sound/soundFade for category {%i} - {%s} because it is not active", category, spellName))
+    "Ignore playing sound/soundFade for categoryId {%i} - {%s} because it is not active", categoryId, spellName))
 
   return false
 end
 
 --[[
-  @param {number} category
+  @param {number} categoryId
   @param {string} spellName
   @param {number} visualWarningColor
 
@@ -241,15 +303,39 @@ end
     true - if visual warning is active
     false- if visual warning is not active
 ]]--
-function me.IsVisualWarningActive(category, spellName, visualWarningColor)
+function me.IsVisualWarningActive(categoryId, spellName, visualWarningColor)
   if visualWarningColor ~= RGPVPW_CONSTANTS.DEFAULT_COLOR then
     return true
   end
 
   mod.logger.LogDebug(me.tag, string.format(
-    "Ignore playing visual warning for {%i} - {%s} because it is not active", category, spellName
+    "Ignore playing visual warning for {%i} - {%s} because it is not active", categoryId, spellName
     )
   )
+
+  return false
+end
+
+--[[
+  Check if the missType is supported. See RGPVPW_CONSTANTS.MISS_TYPES for all supported
+  types.
+
+  An example for an unsupported missType is "ABSORB". If we don't filter that one out
+  the player would get a warning that he resisted a damaging spell such as "Cone of Cold"
+  when he used some form of shield. E.g. a priest used "Power Word: Shield" and completely absorbed
+  the enemy spell.
+
+  @param {string} missType
+    RGPVPW_CONSTANTS.MISS_TYPES
+
+  @return {boolean}
+    true - if the missType is supported
+    false - if the missType is not supported
+]]--
+function me.IsSupportedMissType(missType)
+  if RGPVPW_CONSTANTS.MISS_TYPES[missType] ~= nil then
+    return true
+  end
 
   return false
 end

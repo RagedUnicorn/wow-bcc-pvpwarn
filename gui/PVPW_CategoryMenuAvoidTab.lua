@@ -44,16 +44,17 @@ local spellSelfAvoidScrollFrame
 ]]--
 local cachedCategoryData = nil
 --[[
-  Currently active category
+  Currently active category data
 ]]--
-local activeCategory = nil
+local activeCategoryData = nil
 
 --[[
   @param {table} frame
-  @param {string} category
+  @param {number} categoryId
 ]]--
-function me.Init(frame, category)
-  frame.categoryName = category
+function me.Init(frame, categoryId)
+  activeCategoryData = mod.common.GetCategoryById(categoryId)
+  frame.categoryName = activeCategoryData.categoryName
 
   if builtMenu then
     -- cleaned cached data from previous category
@@ -62,9 +63,9 @@ function me.Init(frame, category)
     -- changing the scrollframes parent to the respective active category panel
     spellSelfAvoidScrollFrame:SetParent(frame)
     -- update the scrolllist with new category data
-    me.FauxScrollFrameOnUpdate(spellSelfAvoidScrollFrame, category)
+    me.FauxScrollFrameOnUpdate(spellSelfAvoidScrollFrame, activeCategoryData)
   else
-    me.BuildUi(frame, category)
+    me.BuildUi(frame, activeCategoryData)
   end
 end
 
@@ -72,11 +73,11 @@ end
   Create the spelllist configuration menu
 
   @param {table} frame
-  @param {string} category
+  @param {table} categoryData
 ]]--
-function me.BuildUi(frame, category)
+function me.BuildUi(frame, categoryData)
   spellSelfAvoidScrollFrame = me.CreateSpellSelfAvoidList(frame)
-  me.FauxScrollFrameOnUpdate(spellSelfAvoidScrollFrame, category)
+  me.FauxScrollFrameOnUpdate(spellSelfAvoidScrollFrame, categoryData)
   builtMenu = true
 end
 
@@ -170,7 +171,7 @@ function me.CreateSpellStateCheckbox(spellFrame)
     function(self)
       mod.spellConfiguration.ToggleSpellState(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
@@ -182,7 +183,7 @@ function me.CreateSpellStateCheckbox(spellFrame)
     function(self)
       local isActive = mod.spellConfiguration.IsSpellActive(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
@@ -211,14 +212,14 @@ function me.CreateSpellAvoidSoundCheckBox(spellFrame)
     function()
       mod.spellConfiguration.ToggleSoundWarning(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
     end,
     function(self)
       local isActive = mod.spellConfiguration.IsSoundWarningActive(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-        activeCategory,
+        activeCategoryData.id,
         spellFrame.normalizedSpellName
       )
 
@@ -276,7 +277,7 @@ end
 function me.DropDownMenuCallback(self)
   mod.spellConfiguration.UpdateVisualWarningColor(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-    activeCategory,
+    activeCategoryData.id,
     self:GetParent().dropdown:GetParent().normalizedSpellName,
     self.value
   )
@@ -296,7 +297,7 @@ function me.ToggleAvoidVisualWarningOnClick(self)
   -- retrieve color for specific spell and category from configuration
   local color = mod.spellConfiguration.GetVisualWarningColor(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-    self:GetParent().category,
+    activeCategoryData.id,
     self:GetParent().normalizedSpellName
   )
 
@@ -314,14 +315,16 @@ end
   is only done once and the data is being cached for further update events.
 
   @param {table} scrollFrame
-  @param {string} category
+  @param {table} categoryData
 ]]--
-function me.FauxScrollFrameOnUpdate(scrollFrame, category)
-  activeCategory = category
-
+function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
   if cachedCategoryData == nil then
-    mod.logger.LogInfo(me.tag, string.format("Warmed up cached spellAvoidList for category '%s'", category))
-    cachedCategoryData = mod.spellAvoidMap.GetAllForCategory(category)
+    mod.logger.LogInfo(
+      me.tag, string.format("Warmed up cached spellAvoidList for category '%s'", categoryData.categoryName))
+    cachedCategoryData = mod.spellMetaMap.GetSpellMetaDataByCategory(
+      categoryData.id,
+      {RGPVPW_CONSTANTS.EVENT_SPELL_MISSED}
+    )
   end
 
   local maxValue = mod.common.TableLength(cachedCategoryData) or 0
@@ -347,21 +350,27 @@ function me.FauxScrollFrameOnUpdate(scrollFrame, category)
 
       if cachedCategoryData[value] ~= nil then
         row.normalizedSpellName = cachedCategoryData[value].normalizedSpellName
-        row.category = category
+        row.category = activeCategoryData.categoryName
         row.spellTitle:SetText(cachedCategoryData[value].name)
         row.playAvoidSound.soundFileName = cachedCategoryData[value].soundFileName
 
         me.UpdateIcon(
-          row.spellIcon, category, cachedCategoryData[value]
+          row.spellIcon, activeCategoryData.categoryName, cachedCategoryData[value]
         )
         me.UpdateSpellStateCheckBox(
-          row.spellStateCheckBox, category, cachedCategoryData[value].normalizedSpellName
+          row.spellStateCheckBox,
+          activeCategoryData.id,
+          cachedCategoryData[value].normalizedSpellName
         )
         me.UpdateSound(
-          row.avoidSoundCheckBox, category, cachedCategoryData[value].normalizedSpellName
+          row.avoidSoundCheckBox,
+          activeCategoryData.id,
+          cachedCategoryData[value].normalizedSpellName
         )
         me.UpdateChooseVisualDropdownMenu(
-          row.chooseAvoidVisual, category, cachedCategoryData[value].normalizedSpellName
+          row.chooseAvoidVisual,
+          activeCategoryData.id,
+          cachedCategoryData[value].normalizedSpellName
         )
 
         row:Show()
@@ -374,36 +383,25 @@ end
 
 --[[
   @param {table} spellIcon
-  @param {string} category
+  @param {string} categoryName
   @param {table} spell
 ]]--
-function me.UpdateIcon(spellIcon, category, spell)
-  local iconId
-  local color = RGPVPW_CONSTANTS.CATEGORY_COLOR[category]
+function me.UpdateIcon(spellIcon, categoryName, spell)
+  local color = RGPVPW_CONSTANTS.CATEGORY_COLOR[categoryName]
 
-  --[[
-    For most items we have to track the actual spelleffect in the combat log. However for
-    people to recognize the item it is much better to use items icon itself.
-  ]]--
-  if spell.itemId ~= nil then
-    iconId = GetItemIcon(spell.itemId)
-  else
-    iconId = select(3, GetSpellInfo(spell.spellId))
-  end
-
-  spellIcon:SetTexture(iconId)
+  spellIcon:SetTexture(spell.spellIconId)
   spellIcon.iconHolder:SetBackdropBorderColor(unpack(color))
 end
 
 --[[
   @param {table} spellStateCheckBox
-  @param {string} category
+  @param {number} categoryId
   @param {string} spellName
 ]]--
-function me.UpdateSpellStateCheckBox(spellStateCheckBox, category, spellName)
+function me.UpdateSpellStateCheckBox(spellStateCheckBox, categoryId, spellName)
   local isSpellActive = mod.spellConfiguration.IsSpellActive(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-    category,
+    categoryId,
     spellName
   )
 
@@ -411,7 +409,7 @@ function me.UpdateSpellStateCheckBox(spellStateCheckBox, category, spellName)
 
   if isSpellActive then
     mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is active", spellName, category)
+      "Spell {%s} for category {%s} is active", spellName, categoryId)
     )
     spellStateCheckBox:SetChecked(true)
 
@@ -419,7 +417,7 @@ function me.UpdateSpellStateCheckBox(spellStateCheckBox, category, spellName)
     me.UpdateChooseVisualDropdownMenuState(parentFrame, true)
   else
     mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is inactive", spellName, category)
+      "Spell {%s} for category {%i} is inactive", spellName, categoryId)
     )
     spellStateCheckBox:SetChecked(false)
 
@@ -430,15 +428,15 @@ end
 
 --[[
   @param {table} soundCheckBox
-  @param {string} category
+  @param {number} categoryId
   @param {string} spellName
 ]]--
-function me.UpdateSound(soundCheckBox, category, spellName)
+function me.UpdateSound(soundCheckBox, categoryId, spellName)
   -- update sound checkbox state
   soundCheckBox:SetChecked(
     mod.spellConfiguration.IsSoundWarningActive(
       RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-      category,
+      categoryId,
       spellName
     )
   )
@@ -446,17 +444,20 @@ end
 
 --[[
   @param {table} dropdownMenu
-  @param {string} category
+  @param {number} categoryId
   @param {string} spellName
 ]]--
-function me.UpdateChooseVisualDropdownMenu(dropdownMenu, category, spellName)
+function me.UpdateChooseVisualDropdownMenu(dropdownMenu, categoryId, spellName)
   local colorValue = mod.spellConfiguration.GetVisualWarningColor(
     RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID,
-    category,
+    categoryId,
     spellName
   )
 
-  mod.libUiDropDownMenu.UiDropDownMenu_SetSelectedValue(dropdownMenu, colorValue)
+  mod.libUiDropDownMenu.UiDropDownMenu_SetSelectedValue(
+    dropdownMenu,
+    colorValue
+  )
   -- fix for updating text properly
   mod.libUiDropDownMenu.UiDropDownMenu_SetText(dropdownMenu, rgpvpw.L[mod.common.GetTextureNameByValue(colorValue)])
 end

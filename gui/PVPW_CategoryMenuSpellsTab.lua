@@ -419,7 +419,8 @@ end
 ]]--
 function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
   if cachedCategoryData == nil then
-    mod.logger.LogInfo(me.tag, string.format("Warmed up cached spellList for category '%s'", categoryData.categoryName))
+    mod.logger.LogInfo(
+      me.tag, string.format("Warmed up cached spellList for category '%s'", categoryData.categoryName))
     cachedCategoryData = mod.spellMetaMap.GetSpellMetaDataByCategory(categoryData.id)
   end
 
@@ -453,11 +454,32 @@ function me.FauxScrollFrameOnUpdate(scrollFrame, categoryData)
         row.playSound.soundFileName = spell.soundFileName
         row.playSoundSpecial.soundFileName = spell.soundFileName
 
-        me.UpdateIcon(row.spellIcon, activeCategoryData.categoryName, spell)
-        me.UpdateSpellStateCheckBox(row.spellStateCheckBox, activeCategoryData.id, spell.normalizedSpellName)
-        me.UpdateSound(row.soundCheckBox, activeCategoryData.id, spell.normalizedSpellName)
-        me.UpdateSoundSpecial(row.soundSpecialCheckBox, row.playSoundSpecial, activeCategoryData.id, spell)
-        me.UpdateChooseVisualDropdownMenu(row.chooseVisual, activeCategoryData.id, spell.normalizedSpellName)
+        me.UpdateIcon(
+          row.spellIcon,
+          activeCategoryData.categoryName,
+          spell
+        )
+        me.UpdateSpellStateCheckBox(
+          row.spellStateCheckBox,
+          activeCategoryData.id,
+          spell.normalizedSpellName
+        )
+        me.UpdateSound(
+          row.soundCheckBox,
+          activeCategoryData.id,
+          spell.normalizedSpellName
+        )
+        me.UpdateSoundSpecial(
+          row.soundSpecialCheckBox,
+          row.playSoundSpecial,
+          activeCategoryData.id,
+          spell
+        )
+        me.UpdateChooseVisualDropdownMenu(
+          row.chooseVisual,
+          activeCategoryData.id,
+          spell.normalizedSpellName
+        )
 
         row:Show()
       else
@@ -516,7 +538,7 @@ function me.UpdateSpellStateCheckBox(spellStateCheckBox, categoryId, spellName)
 
   if isSpellActive then
     mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is active", spellName, categoryId)
+      "Spell {%s} for category {%i} is active", spellName, categoryId)
     )
     spellStateCheckBox:SetChecked(true)
 
@@ -525,7 +547,7 @@ function me.UpdateSpellStateCheckBox(spellStateCheckBox, categoryId, spellName)
     me.UpdateChooseVisualDropdownMenuState(parentFrame, true)
   else
     mod.logger.LogDebug(me.tag, string.format(
-      "Spell %s for category %s is inactive", spellName, categoryId)
+      "Spell {%s} for category {%i} is inactive", spellName, categoryId)
     )
     spellStateCheckBox:SetChecked(false)
 

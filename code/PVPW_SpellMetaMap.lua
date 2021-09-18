@@ -22,7 +22,7 @@
   SOFTWARE.
 ]]--
 
--- luacheck: globals UnitFactionGroup
+-- luacheck: globals UnitFactionGroup tContains
 
 local mod = rgpvpw
 local me = {}
@@ -182,7 +182,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136033,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["ferocious_bite"] = {
@@ -2592,7 +2593,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135430,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["distract"] = {
@@ -5167,19 +5169,46 @@ end
   Get all spellMetaData for a specific category
 
   @param {number} category
+  @param {table} eventFilter
+    optional eventFilter such as SPELL_MISSED
 
   @return {table}
     table - the found spells and their respective spellMetaData
 ]]--
-function me.GetSpellMetaDataByCategory(category)
+function me.GetSpellMetaDataByCategory(category, eventFilter)
   if not category then return nil end
 
   local spellList = {}
 
   for spellName, spellData in pairs(spellMetaMap[category]) do
-    local clonedSpell = mod.common.Clone(spellData)
-    clonedSpell.normalizedSpellName = spellName
-    table.insert(spellList, clonedSpell)
+    local shouldFilterSpell = false
+
+
+    --[[
+      If a filter was passed - filter the found spells for matching events
+    ]]--
+    if eventFilter ~= nil and type(eventFilter) == "table" then
+      for i = 1, #eventFilter do
+        if not tContains(spellData.trackedEvents, eventFilter[i]) then
+          shouldFilterSpell = true
+          mod.logger.LogDebug(
+            me.tag,
+            string.format(
+              "Spell %s does not fulfill search criteria - missing supported event %s - disabling",
+              spellName,
+              eventFilter[i]
+            )
+          )
+        end
+      end
+    end
+
+    if not shouldFilterSpell then
+      mod.logger.LogDebug(me.tag, string.format("Spell %s supports avoidEvent - enabling", spellName))
+      local clonedSpell = mod.common.Clone(spellData)
+      clonedSpell.normalizedSpellName = spellName
+      table.insert(spellList, clonedSpell)
+    end
   end
 
   return spellList
