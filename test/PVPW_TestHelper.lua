@@ -68,6 +68,17 @@ function me.GetCombatEvents()
   return combatEvents
 end
 
+local fadeEvents = {
+  RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED
+}
+
+--[[
+  @return {table}
+]]--
+function me.GetFadeEvents()
+  return fadeEvents
+end
+
 --[[
   All events that are considered avoid events
 ]]--

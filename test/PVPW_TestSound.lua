@@ -55,7 +55,6 @@ local testGroupName = "ShouldHaveSoundTestForAllSpells"
   @param {table} category
     A valid category see RGPVPW_CONSTANTS.CATEGORIES
 ]]--
--- /run rgpvpw.testSound.Test("en", RGPVPW_CONSTANTS.CATEGORIES.DRUID)
 function me.Test(language, category)
   mod.testReporter.StartTestGroup(testGroupName)
 
@@ -177,8 +176,10 @@ function me.SoundDownTest(category, spellMap, language)
   for _, spellData in pairs (spellMap) do
     local spellMetaData = mod.spellMetaMap.GetSpellMetaDataByCategoryAndName(category.id, spellData.name)
 
-    -- for spells without hasFade there is not test expected
-    if spellMetaData.hasFade then
+    --[[
+      Only spells that track SPELL_AURA_REMOVED are expected to have a sound down test
+    ]]--
+    if tContains(mod.testHelper.GetFadeEvents(), spellMetaData.trackedEvents) then
       local spellName = mod.testHelper.NormalizeSpellName(spellMetaData.name)
       local testName = "SoundTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) .. spellName
 
