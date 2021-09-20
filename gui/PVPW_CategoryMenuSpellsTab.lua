@@ -256,7 +256,7 @@ end
   @param {table} self
 ]]--
 function me.PlaySoundButtonOnClick(self)
-  mod.sound.PlaySound(self:GetParent().category, RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL, self.soundFileName)
+  mod.sound.PlaySound(activeCategoryData.id, RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL, self.soundFileName)
 end
 
 --[[
@@ -342,7 +342,7 @@ end
   @param {table} self
 ]]--
 function me.PlaySoundSpecialButtonOnClick(self)
-  mod.sound.PlaySound(self:GetParent().category, self:GetParent().soundSpecialCheckBox.type, self.soundFileName)
+  mod.sound.PlaySound(activeCategoryData.id, self:GetParent().soundSpecialCheckBox.type, self.soundFileName)
 end
 
 --[[

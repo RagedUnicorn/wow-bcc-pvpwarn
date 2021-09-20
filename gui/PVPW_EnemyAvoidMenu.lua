@@ -261,7 +261,7 @@ end
   @param {table} self
 ]]--
 function me.PlayAvoidSoundButtonOnClick(self)
-  mod.sound.PlaySound(self:GetParent().category, RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY, self.soundFileName)
+  mod.sound.PlaySound(activeCategoryData.id, RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY, self.soundFileName)
 end
 
 
