@@ -22,7 +22,7 @@
   SOFTWARE.
 ]]--
 
--- luacheck: globals GetLocale
+-- luacheck: globals GetLocale tContains
 
 local mod = rgpvpw
 local me = {}
@@ -183,4 +183,34 @@ function me.GetCategoryByName(categoryName)
 
   mod.logger.LogError(me.tag, string.format("Invalid categoryName %s", categoryName))
   return nil
+end
+
+--[[
+  @param {table} spell
+
+  @return {boolean}
+    true - if the spell supports fading
+    false - if the spell does not support fading
+]]--
+function me.SpellHasFade(spell)
+  if tContains(spell.trackedEvents, RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED) then
+    return true
+  end
+
+  return false
+end
+
+--[[
+  @param {table} spell
+
+  @return {boolean}
+    true - if the spell supports spell casting start
+    false - if the spell does not support spell casting start
+]]--
+function me.SpellHasStart(spell)
+  if tContains(spell.trackedEvents, RGPVPW_CONSTANTS.EVENT_SPELL_CAST_START) then
+    return true
+  end
+
+  return false
 end

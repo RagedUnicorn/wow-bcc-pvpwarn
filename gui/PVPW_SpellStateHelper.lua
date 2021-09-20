@@ -166,7 +166,7 @@ function me.UpdateSoundSpecial(
   spell,
   spellList
 )
-  if spell.hasFade then
+  if mod.common.SpellHasFade(spell) then
     soundSpecialCheckBox:SetChecked(mod.spellConfiguration.IsSoundFadeWarningActive(
       spellList,
       categoryId,
@@ -174,7 +174,7 @@ function me.UpdateSoundSpecial(
     ))
     soundSpecialCheckBox.text:SetText(rgpvpw.L["label_enable_sound_fade"])
     soundSpecialCheckBox.type = RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED
-  elseif spell.hasCast then
+  elseif mod.common.SpellHasStart(spell) then
     soundSpecialCheckBox:SetChecked(mod.spellConfiguration.IsSoundStartWarningActive(
       spellList,
       categoryId,

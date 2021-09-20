@@ -38,7 +38,6 @@ local spellMetaMap = {
       ["name"] = "Abolish Poison",
       ["soundFileName"] = "abolish_poison",
       ["spellIconId"] = 136068,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
           "SPELL_AURA_APPLIED",
           "SPELL_AURA_REMOVED",
@@ -49,7 +48,6 @@ local spellMetaMap = {
       ["name"] = "Aquatic Form",
       ["soundFileName"] = "aquatic_form",
       ["spellIconId"] = 132112,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -58,7 +56,6 @@ local spellMetaMap = {
       ["name"] = "Barkskin",
       ["soundFileName"] = "barkskin",
       ["spellIconId"] = 136097,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -68,7 +65,6 @@ local spellMetaMap = {
       ["name"] = "Bash",
       ["soundFileName"] = "bash",
       ["spellIconId"] = 132114,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -78,7 +74,6 @@ local spellMetaMap = {
       ["name"] = "Bear Form",
       ["soundFileName"] = "bear_form",
       ["spellIconId"] = 132276,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -87,7 +82,6 @@ local spellMetaMap = {
       ["name"] = "Cat Form",
       ["soundFileName"] = "cat_form",
       ["spellIconId"] = 132115,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -96,7 +90,6 @@ local spellMetaMap = {
       ["name"] = "Claw",
       ["soundFileName"] = "claw",
       ["spellIconId"] = 132140,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -106,7 +99,6 @@ local spellMetaMap = {
       ["name"] = "Cower",
       ["soundFileName"] = "cower",
       ["spellIconId"] = 132118,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -115,7 +107,6 @@ local spellMetaMap = {
       ["name"] = "Cure Poison",
       ["soundFileName"] = "cure_poison",
       ["spellIconId"] = 136067,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -126,7 +117,6 @@ local spellMetaMap = {
       ["name"] = "Cyclone",
       ["soundFileName"] = "cyclone",
       ["spellIconId"] = 136022,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -136,7 +126,6 @@ local spellMetaMap = {
       ["name"] = "Dash",
       ["soundFileName"] = "dash",
       ["spellIconId"] = 132120,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -146,7 +135,6 @@ local spellMetaMap = {
       ["name"] = "Demoralizing Roar",
       ["soundFileName"] = "demoralizing_roar",
       ["spellIconId"] = 132121,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -156,7 +144,6 @@ local spellMetaMap = {
       ["name"] = "Dire Bear Form",
       ["soundFileName"] = "dire_bear_form",
       ["spellIconId"] = 132276,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -165,7 +152,6 @@ local spellMetaMap = {
       ["name"] = "Enrage",
       ["soundFileName"] = "enrage",
       ["spellIconId"] = 132126,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -175,7 +161,6 @@ local spellMetaMap = {
       ["name"] = "Entangling Roots",
       ["soundFileName"] = "entangling_roots",
       ["spellIconId"] = 136100,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -185,7 +170,6 @@ local spellMetaMap = {
       ["name"] = "Faerie Fire",
       ["soundFileName"] = "faerie_fire",
       ["spellIconId"] = 136033,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -195,7 +179,6 @@ local spellMetaMap = {
       ["name"] = "Ferocious Bite",
       ["soundFileName"] = "ferocious_bite",
       ["spellIconId"] = 132127,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -205,7 +188,6 @@ local spellMetaMap = {
       ["name"] = "Flight Form",
       ["soundFileName"] = "flight_form",
       ["spellIconId"] = 132128,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -214,7 +196,6 @@ local spellMetaMap = {
       ["name"] = "Frenzied Regeneration",
       ["soundFileName"] = "frenzied_regeneration",
       ["spellIconId"] = 132091,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -224,7 +205,6 @@ local spellMetaMap = {
       ["name"] = "Gift of the Wild",
       ["soundFileName"] = "gift_of_the_wild",
       ["spellIconId"] = 136038,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -233,7 +213,6 @@ local spellMetaMap = {
       ["name"] = "Healing Touch",
       ["soundFileName"] = "healing_touch",
       ["spellIconId"] = 136041,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -242,7 +221,6 @@ local spellMetaMap = {
       ["name"] = "Hibernate",
       ["soundFileName"] = "hibernate",
       ["spellIconId"] = 136090,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -252,7 +230,6 @@ local spellMetaMap = {
       ["name"] = "Hurricane",
       ["soundFileName"] = "hurricane",
       ["spellIconId"] = 136018,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -261,7 +238,6 @@ local spellMetaMap = {
       ["name"] = "Innervate",
       ["soundFileName"] = "innervate",
       ["spellIconId"] = 136048,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -271,7 +247,6 @@ local spellMetaMap = {
       ["name"] = "Lacerate",
       ["soundFileName"] = "lacerate",
       ["spellIconId"] = 132131,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -281,7 +256,6 @@ local spellMetaMap = {
       ["name"] = "Lifebloom",
       ["soundFileName"] = "lifebloom",
       ["spellIconId"] = 134206,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -290,7 +264,6 @@ local spellMetaMap = {
       ["name"] = "Maim",
       ["soundFileName"] = "maim",
       ["spellIconId"] = 132134,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -300,7 +273,6 @@ local spellMetaMap = {
       ["name"] = "Mangle (Bear)",
       ["soundFileName"] = "mangle",
       ["spellIconId"] = 132135,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -310,7 +282,6 @@ local spellMetaMap = {
       ["name"] = "Mangle (Cat)",
       ["soundFileName"] = "mangle",
       ["spellIconId"] = 132135,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -320,7 +291,6 @@ local spellMetaMap = {
       ["name"] = "Mark of the Wild",
       ["soundFileName"] = "mark_of_the_wild",
       ["spellIconId"] = 136078,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -329,7 +299,6 @@ local spellMetaMap = {
       ["name"] = "Moonfire",
       ["soundFileName"] = "moonfire",
       ["spellIconId"] = 136096,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -339,7 +308,6 @@ local spellMetaMap = {
       ["name"] = "Pounce",
       ["soundFileName"] = "pounce",
       ["spellIconId"] = 132142,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -349,7 +317,6 @@ local spellMetaMap = {
       ["name"] = "Prowl",
       ["soundFileName"] = "prowl",
       ["spellIconId"] = 132089,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -358,7 +325,6 @@ local spellMetaMap = {
       ["name"] = "Rake",
       ["soundFileName"] = "rake",
       ["spellIconId"] = 132122,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -368,7 +334,6 @@ local spellMetaMap = {
       ["name"] = "Ravage",
       ["soundFileName"] = "ravage",
       ["spellIconId"] = 132141,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -378,7 +343,6 @@ local spellMetaMap = {
       ["name"] = "Rebirth",
       ["soundFileName"] = "rebirth",
       ["spellIconId"] = 136080,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -387,7 +351,6 @@ local spellMetaMap = {
       ["name"] = "Regrowth",
       ["soundFileName"] = "regrowth",
       ["spellIconId"] = 136085,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -396,7 +359,6 @@ local spellMetaMap = {
       ["name"] = "Rejuvenation",
       ["soundFileName"] = "rejuvenation",
       ["spellIconId"] = 136081,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -405,7 +367,6 @@ local spellMetaMap = {
       ["name"] = "Remove Curse",
       ["soundFileName"] = "remove_curse",
       ["spellIconId"] = 135952,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -414,7 +375,6 @@ local spellMetaMap = {
       ["name"] = "Rip",
       ["soundFileName"] = "rip",
       ["spellIconId"] = 132152,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -424,7 +384,6 @@ local spellMetaMap = {
       ["name"] = "Shred",
       ["soundFileName"] = "shred",
       ["spellIconId"] = 136231,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -434,7 +393,6 @@ local spellMetaMap = {
       ["name"] = "Starfire",
       ["soundFileName"] = "starfire",
       ["spellIconId"] = 135753,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -444,7 +402,6 @@ local spellMetaMap = {
       ["name"] = "Swift Flight Form",
       ["soundFileName"] = "swift_flight_form",
       ["spellIconId"] = 132128,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -453,7 +410,6 @@ local spellMetaMap = {
       ["name"] = "Swipe",
       ["soundFileName"] = "swipe",
       ["spellIconId"] = 134296,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -463,7 +419,6 @@ local spellMetaMap = {
       ["name"] = "Thorns",
       ["soundFileName"] = "thorns",
       ["spellIconId"] = 136104,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -474,7 +429,6 @@ local spellMetaMap = {
       ["name"] = "Tiger's Fury",
       ["soundFileName"] = "tigers_fury",
       ["spellIconId"] = 132242,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -485,7 +439,6 @@ local spellMetaMap = {
       ["name"] = "Tranquility",
       ["soundFileName"] = "tranquility",
       ["spellIconId"] = 136107,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -494,7 +447,6 @@ local spellMetaMap = {
       ["name"] = "Travel Form",
       ["soundFileName"] = "travel_form",
       ["spellIconId"] = 132144,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -503,7 +455,6 @@ local spellMetaMap = {
       ["name"] = "Wrath",
       ["soundFileName"] = "wrath",
       ["spellIconId"] = 136006,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -513,7 +464,6 @@ local spellMetaMap = {
       ["name"] = "Faerie Fire (Feral)",
       ["soundFileName"] = "faerie_fire",
       ["spellIconId"] = 136033,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -523,7 +473,6 @@ local spellMetaMap = {
       ["name"] = "Feral Charge",
       ["soundFileName"] = "feral_charge",
       ["spellIconId"] = 132183,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -533,7 +482,6 @@ local spellMetaMap = {
       ["name"] = "Force of Nature",
       ["soundFileName"] = "force_of_nature",
       ["spellIconId"] = 132129,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -542,7 +490,6 @@ local spellMetaMap = {
       ["name"] = "Insect Swarm",
       ["soundFileName"] = "insect_swarm",
       ["spellIconId"] = 136045,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -552,7 +499,6 @@ local spellMetaMap = {
       ["name"] = "Moonkin Form",
       ["soundFileName"] = "moonkin_form",
       ["spellIconId"] = 136036,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -561,7 +507,6 @@ local spellMetaMap = {
       ["name"] = "Nature's Grasp",
       ["soundFileName"] = "natures_grasp",
       ["spellIconId"] = 136063,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -571,7 +516,6 @@ local spellMetaMap = {
       ["name"] = "Nature's Swiftness",
       ["soundFileName"] = "natures_swiftness",
       ["spellIconId"] = 136076,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -581,7 +525,6 @@ local spellMetaMap = {
       ["name"] = "Omen of Clarity",
       ["soundFileName"] = "omen_of_clarity",
       ["spellIconId"] = 136017,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -591,7 +534,6 @@ local spellMetaMap = {
       ["name"] = "Swiftmend",
       ["soundFileName"] = "swiftmend",
       ["spellIconId"] = 134914,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -600,7 +542,6 @@ local spellMetaMap = {
       ["name"] = "Tree of Life",
       ["soundFileName"] = "tree_of_life",
       ["spellIconId"] = 132145,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED"
       }
@@ -611,7 +552,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Shot",
       ["soundFileName"] = "arcane_shot",
       ["spellIconId"] = 132218,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -620,7 +560,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Beast",
       ["soundFileName"] = "aspect_of_the_beast",
       ["spellIconId"] = 132252,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -629,7 +568,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Cheetah",
       ["soundFileName"] = "aspect_of_the_cheetah",
       ["spellIconId"] = 132242,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -638,7 +576,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Hawk",
       ["soundFileName"] = "aspect_of_the_hawk",
       ["spellIconId"] = 136076,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -647,7 +584,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Monkey",
       ["soundFileName"] = "aspect_of_the_monkey",
       ["spellIconId"] = 132159,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -656,7 +592,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Pack",
       ["soundFileName"] = "aspect_of_the_pack",
       ["spellIconId"] = 132267,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -665,7 +600,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Viper",
       ["soundFileName"] = "aspect_of_the_viper",
       ["spellIconId"] = 132160,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -674,7 +608,6 @@ local spellMetaMap = {
       ["name"] = "Aspect of the Wild",
       ["soundFileName"] = "aspect_of_the_wild",
       ["spellIconId"] = 136074,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -683,7 +616,6 @@ local spellMetaMap = {
       ["name"] = "Concussive Shot",
       ["soundFileName"] = "concussive_shot",
       ["spellIconId"] = 135860,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -692,7 +624,6 @@ local spellMetaMap = {
       ["name"] = "Disengage",
       ["soundFileName"] = "disengage",
       ["spellIconId"] = 132294,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -701,7 +632,6 @@ local spellMetaMap = {
       ["name"] = "Explosive Trap",
       ["soundFileName"] = "explosive_trap",
       ["spellIconId"] = 135826,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -710,7 +640,6 @@ local spellMetaMap = {
       ["name"] = "Flare",
       ["soundFileName"] = "flare",
       ["spellIconId"] = 135815,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -719,7 +648,6 @@ local spellMetaMap = {
       ["name"] = "Freezing Trap",
       ["soundFileName"] = "freezing_trap",
       ["spellIconId"] = 135834,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -728,7 +656,6 @@ local spellMetaMap = {
       ["name"] = "Frost Trap",
       ["soundFileName"] = "frost_trap",
       ["spellIconId"] = 135840,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -737,7 +664,6 @@ local spellMetaMap = {
       ["name"] = "Hunter's Mark",
       ["soundFileName"] = "hunters_mark",
       ["spellIconId"] = 132212,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -746,7 +672,6 @@ local spellMetaMap = {
       ["name"] = "Immolation Trap",
       ["soundFileName"] = "immolation_trap",
       ["spellIconId"] = 135813,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -755,7 +680,6 @@ local spellMetaMap = {
       ["name"] = "Mend Pet",
       ["soundFileName"] = "mend_pet",
       ["spellIconId"] = 132179,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -764,7 +688,6 @@ local spellMetaMap = {
       ["name"] = "Mongoose Bite",
       ["soundFileName"] = "mongoose_bite",
       ["spellIconId"] = 132215,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -773,7 +696,6 @@ local spellMetaMap = {
       ["name"] = "Multi-Shot",
       ["soundFileName"] = "multi_shot",
       ["spellIconId"] = 132330,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -782,7 +704,6 @@ local spellMetaMap = {
       ["name"] = "Rapid Fire",
       ["soundFileName"] = "rapid_fire",
       ["spellIconId"] = 132208,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -792,7 +713,6 @@ local spellMetaMap = {
       ["name"] = "Raptor Strike",
       ["soundFileName"] = "raptor_strike",
       ["spellIconId"] = 132223,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -801,7 +721,6 @@ local spellMetaMap = {
       ["name"] = "Revive Pet",
       ["soundFileName"] = "revive_pet",
       ["spellIconId"] = 132163,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -810,7 +729,6 @@ local spellMetaMap = {
       ["name"] = "Scare Beast",
       ["soundFileName"] = "scare_beast",
       ["spellIconId"] = 132118,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -819,7 +737,6 @@ local spellMetaMap = {
       ["name"] = "Scorpid Sting",
       ["soundFileName"] = "scorpid_sting",
       ["spellIconId"] = 132169,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -828,7 +745,6 @@ local spellMetaMap = {
       ["name"] = "Serpent Sting",
       ["soundFileName"] = "serpent_sting",
       ["spellIconId"] = 132204,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -837,7 +753,6 @@ local spellMetaMap = {
       ["name"] = "Snake Trap",
       ["soundFileName"] = "snake_trap",
       ["spellIconId"] = 132211,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -846,7 +761,6 @@ local spellMetaMap = {
       ["name"] = "Track Beasts",
       ["soundFileName"] = "track_beasts",
       ["spellIconId"] = 132328,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -855,7 +769,6 @@ local spellMetaMap = {
       ["name"] = "Track Demons",
       ["soundFileName"] = "track_demons",
       ["spellIconId"] = 136217,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -864,7 +777,6 @@ local spellMetaMap = {
       ["name"] = "Track Dragonkin",
       ["soundFileName"] = "track_dragonkin",
       ["spellIconId"] = 134153,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -873,7 +785,6 @@ local spellMetaMap = {
       ["name"] = "Track Elementals",
       ["soundFileName"] = "track_elementals",
       ["spellIconId"] = 135861,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -882,7 +793,6 @@ local spellMetaMap = {
       ["name"] = "Track Giants",
       ["soundFileName"] = "track_giants",
       ["spellIconId"] = 132275,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -891,7 +801,6 @@ local spellMetaMap = {
       ["name"] = "Track Hidden",
       ["soundFileName"] = "track_hidden",
       ["spellIconId"] = 132320,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -900,7 +809,6 @@ local spellMetaMap = {
       ["name"] = "Track Humanoids",
       ["soundFileName"] = "track_humanoids",
       ["spellIconId"] = 135942,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -909,7 +817,6 @@ local spellMetaMap = {
       ["name"] = "Track Undead",
       ["soundFileName"] = "track_undead",
       ["spellIconId"] = 136142,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -918,7 +825,6 @@ local spellMetaMap = {
       ["name"] = "Viper Sting",
       ["soundFileName"] = "viper_sting",
       ["spellIconId"] = 132157,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -927,7 +833,6 @@ local spellMetaMap = {
       ["name"] = "Volley",
       ["soundFileName"] = "volley",
       ["spellIconId"] = 132222,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -936,7 +841,6 @@ local spellMetaMap = {
       ["name"] = "Wing Clip",
       ["soundFileName"] = "wing_clip",
       ["spellIconId"] = 132309,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -945,7 +849,6 @@ local spellMetaMap = {
       ["name"] = "Aimed Shot",
       ["soundFileName"] = "aimed_shot",
       ["spellIconId"] = 135130,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -954,7 +857,6 @@ local spellMetaMap = {
       ["name"] = "Bestial Wrath",
       ["soundFileName"] = "bestial_wrath",
       ["spellIconId"] = 132127,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -964,7 +866,6 @@ local spellMetaMap = {
       ["name"] = "Counterattack",
       ["soundFileName"] = "counterattack",
       ["spellIconId"] = 132336,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -973,7 +874,6 @@ local spellMetaMap = {
       ["name"] = "Deterrence",
       ["soundFileName"] = "deterrence",
       ["spellIconId"] = 132369,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -983,7 +883,6 @@ local spellMetaMap = {
       ["name"] = "Intimidation",
       ["soundFileName"] = "intimidation",
       ["spellIconId"] = 132111,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -993,7 +892,6 @@ local spellMetaMap = {
       ["name"] = "Readiness",
       ["soundFileName"] = "readiness",
       ["spellIconId"] = 132206,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1002,7 +900,6 @@ local spellMetaMap = {
       ["name"] = "Scatter Shot",
       ["soundFileName"] = "scatter_shot",
       ["spellIconId"] = 132153,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1011,7 +908,6 @@ local spellMetaMap = {
       ["name"] = "Silencing Shot",
       ["soundFileName"] = "silencing_shot",
       ["spellIconId"] = 132323,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1020,7 +916,6 @@ local spellMetaMap = {
       ["name"] = "The Beast Within",
       ["soundFileName"] = "the_beast_within",
       ["spellIconId"] = 132166,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1030,7 +925,6 @@ local spellMetaMap = {
       ["name"] = "Trueshot Aura",
       ["soundFileName"] = "trueshot_aura",
       ["spellIconId"] = 132329,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1040,7 +934,6 @@ local spellMetaMap = {
       ["name"] = "Wyvern Sting",
       ["soundFileName"] = "wyvern_sting",
       ["spellIconId"] = 135125,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1051,7 +944,6 @@ local spellMetaMap = {
       ["name"] = "Amplify Magic",
       ["soundFileName"] = "amplify_magic",
       ["spellIconId"] = 135907,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1062,7 +954,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Blast",
       ["soundFileName"] = "arcane_blast",
       ["spellIconId"] = 135735,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1071,7 +962,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Brilliance",
       ["soundFileName"] = "arcane_brilliance",
       ["spellIconId"] = 135869,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1082,7 +972,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Explosion",
       ["soundFileName"] = "arcane_explosion",
       ["spellIconId"] = 136116,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1091,7 +980,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Intellect",
       ["soundFileName"] = "arcane_intellect",
       ["spellIconId"] = 135932,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1102,7 +990,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Missiles",
       ["soundFileName"] = "arcane_missiles",
       ["spellIconId"] = 136096,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1111,7 +998,6 @@ local spellMetaMap = {
       ["name"] = "Blink",
       ["soundFileName"] = "blink",
       ["spellIconId"] = 135736,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1120,7 +1006,6 @@ local spellMetaMap = {
       ["name"] = "Blizzard",
       ["soundFileName"] = "blizzard",
       ["spellIconId"] = 135857,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1129,7 +1014,6 @@ local spellMetaMap = {
       ["name"] = "Cone of Cold",
       ["soundFileName"] = "cone_of_cold",
       ["spellIconId"] = 135852,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1138,7 +1022,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Food",
       ["soundFileName"] = "conjure_food",
       ["spellIconId"] = 133988,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1147,7 +1030,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Mana Agate",
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134104,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1156,7 +1038,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Mana Citrine",
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134116,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1165,7 +1046,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Mana Emerald",
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134134,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1174,7 +1054,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Mana Jade",
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134105,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1183,7 +1062,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Mana Ruby",
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134128,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1192,7 +1070,6 @@ local spellMetaMap = {
       ["name"] = "Conjure Water",
       ["soundFileName"] = "conjure_water",
       ["spellIconId"] = 132803,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1201,7 +1078,6 @@ local spellMetaMap = {
       ["name"] = "Counterspell",
       ["soundFileName"] = "counterspell",
       ["spellIconId"] = 135856,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1210,7 +1086,6 @@ local spellMetaMap = {
       ["name"] = "Dampen Magic",
       ["soundFileName"] = "dampen_magic",
       ["spellIconId"] = 136006,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1221,7 +1096,6 @@ local spellMetaMap = {
       ["name"] = "Evocation",
       ["soundFileName"] = "evocation",
       ["spellIconId"] = 136075,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1231,7 +1105,6 @@ local spellMetaMap = {
       ["name"] = "Fire Blast",
       ["soundFileName"] = "fire_blast",
       ["spellIconId"] = 135807,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1240,7 +1113,6 @@ local spellMetaMap = {
       ["name"] = "Fire Ward",
       ["soundFileName"] = "fire_ward",
       ["spellIconId"] = 135806,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1251,7 +1123,6 @@ local spellMetaMap = {
       ["name"] = "Fireball",
       ["soundFileName"] = "fireball",
       ["spellIconId"] = 135812,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1260,7 +1131,6 @@ local spellMetaMap = {
       ["name"] = "Flamestrike",
       ["soundFileName"] = "flamestrike",
       ["spellIconId"] = 135826,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1269,7 +1139,6 @@ local spellMetaMap = {
       ["name"] = "Frost Armor",
       ["soundFileName"] = "frost_armor",
       ["spellIconId"] = 135843,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1280,7 +1149,6 @@ local spellMetaMap = {
       ["name"] = "Frost Nova",
       ["soundFileName"] = "frost_nova",
       ["spellIconId"] = 135848,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1289,7 +1157,6 @@ local spellMetaMap = {
       ["name"] = "Frost Ward",
       ["soundFileName"] = "frost_ward",
       ["spellIconId"] = 135850,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1300,7 +1167,6 @@ local spellMetaMap = {
       ["name"] = "Frostbolt",
       ["soundFileName"] = "frostbolt",
       ["spellIconId"] = 135846,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1309,7 +1175,6 @@ local spellMetaMap = {
       ["name"] = "Ice Armor",
       ["soundFileName"] = "ice_armor",
       ["spellIconId"] = 135843,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1320,7 +1185,6 @@ local spellMetaMap = {
       ["name"] = "Ice Block",
       ["soundFileName"] = "ice_block",
       ["spellIconId"] = 135841,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1330,7 +1194,6 @@ local spellMetaMap = {
       ["name"] = "Ice Lance",
       ["soundFileName"] = "ice_lance",
       ["spellIconId"] = 135844,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1339,7 +1202,6 @@ local spellMetaMap = {
       ["name"] = "Invisibility",
       ["soundFileName"] = "invisibility",
       ["spellIconId"] = 132220,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1348,7 +1210,6 @@ local spellMetaMap = {
       ["name"] = "Mage Armor",
       ["soundFileName"] = "mage_armor",
       ["spellIconId"] = 135991,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1359,7 +1220,6 @@ local spellMetaMap = {
       ["name"] = "Mana Shield",
       ["soundFileName"] = "mana_shield",
       ["spellIconId"] = 136153,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1370,7 +1230,6 @@ local spellMetaMap = {
       ["name"] = "Molten Armor",
       ["soundFileName"] = "molten_armor",
       ["spellIconId"] = 135991,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1381,7 +1240,6 @@ local spellMetaMap = {
       ["name"] = "Polymorph",
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 136071,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1390,7 +1248,6 @@ local spellMetaMap = {
       ["name"] = "Polymorph: Pig",
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 135997,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1399,7 +1256,6 @@ local spellMetaMap = {
       ["name"] = "Polymorph: Turtle",
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 132199,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1408,7 +1264,6 @@ local spellMetaMap = {
       ["name"] = "Remove Lesser Curse",
       ["soundFileName"] = "remove_curse",
       ["spellIconId"] = 136082,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1417,7 +1272,6 @@ local spellMetaMap = {
       ["name"] = "Scorch",
       ["soundFileName"] = "scorch",
       ["spellIconId"] = 135827,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1426,7 +1280,6 @@ local spellMetaMap = {
       ["name"] = "Slow Fall",
       ["soundFileName"] = "slow_fall",
       ["spellIconId"] = 135992,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1437,7 +1290,6 @@ local spellMetaMap = {
       ["name"] = "Spellsteal",
       ["soundFileName"] = "spellsteal",
       ["spellIconId"] = 135729,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1446,7 +1298,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Power",
       ["soundFileName"] = "arcane_power",
       ["spellIconId"] = 136048,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1456,7 +1307,6 @@ local spellMetaMap = {
       ["name"] = "Blast Wave",
       ["soundFileName"] = "blast_wave",
       ["spellIconId"] = 135903,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1465,7 +1315,6 @@ local spellMetaMap = {
       ["name"] = "Cold Snap",
       ["soundFileName"] = "cold_snap",
       ["spellIconId"] = 135865,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1474,7 +1323,6 @@ local spellMetaMap = {
       ["name"] = "Combustion",
       ["soundFileName"] = "combustion",
       ["spellIconId"] = 135824,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1484,7 +1332,6 @@ local spellMetaMap = {
       ["name"] = "Dragon's Breath",
       ["soundFileName"] = "dragons_breath",
       ["spellIconId"] = 134153,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1493,7 +1340,6 @@ local spellMetaMap = {
       ["name"] = "Ice Barrier",
       ["soundFileName"] = "ice_barrier",
       ["spellIconId"] = 135988,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1504,7 +1350,6 @@ local spellMetaMap = {
       ["name"] = "Icy Veins",
       ["soundFileName"] = "icy_veins",
       ["spellIconId"] = 135838,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1514,7 +1359,6 @@ local spellMetaMap = {
       ["name"] = "Presence of Mind",
       ["soundFileName"] = "presence_of_mind",
       ["spellIconId"] = 136031,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1524,7 +1368,6 @@ local spellMetaMap = {
       ["name"] = "Pyroblast",
       ["soundFileName"] = "pyroblast",
       ["spellIconId"] = 135808,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1533,7 +1376,6 @@ local spellMetaMap = {
       ["name"] = "Slow",
       ["soundFileName"] = "slow",
       ["spellIconId"] = 136091,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1542,7 +1384,6 @@ local spellMetaMap = {
       ["name"] = "Summon Water Elemental",
       ["soundFileName"] = "summon_water_elemental",
       ["spellIconId"] = 135862,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1553,7 +1394,6 @@ local spellMetaMap = {
       ["name"] = "Avenging Wrath",
       ["soundFileName"] = "avenging_wrath",
       ["spellIconId"] = 135875,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1563,7 +1403,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Freedom",
       ["soundFileName"] = "blessing_of_freedom",
       ["spellIconId"] = 135968,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1573,7 +1412,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Light",
       ["soundFileName"] = "blessing_of_light",
       ["spellIconId"] = 135943,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1584,7 +1422,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Might",
       ["soundFileName"] = "blessing_of_might",
       ["spellIconId"] = 135906,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1595,7 +1432,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Protection",
       ["soundFileName"] = "blessing_of_protection",
       ["spellIconId"] = 135964,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1605,7 +1441,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Sacrifice",
       ["soundFileName"] = "blessing_of_sacrifice",
       ["spellIconId"] = 135966,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1616,7 +1451,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Wisdom",
       ["soundFileName"] = "blessing_of_wisdom",
       ["spellIconId"] = 135970,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1627,7 +1461,6 @@ local spellMetaMap = {
       ["name"] = "Cleanse",
       ["soundFileName"] = "cleanse",
       ["spellIconId"] = 135953,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1636,7 +1469,6 @@ local spellMetaMap = {
       ["name"] = "Concentration Aura",
       ["soundFileName"] = "concentration_aura",
       ["spellIconId"] = 135933,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1645,7 +1477,6 @@ local spellMetaMap = {
       ["name"] = "Consecration",
       ["soundFileName"] = "consecration",
       ["spellIconId"] = 135926,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1654,7 +1485,6 @@ local spellMetaMap = {
       ["name"] = "Crusader Aura",
       ["soundFileName"] = "crusader_aura",
       ["spellIconId"] = 135890,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1663,7 +1493,6 @@ local spellMetaMap = {
       ["name"] = "Devotion Aura",
       ["soundFileName"] = "devotion_aura",
       ["spellIconId"] = 135893,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1672,7 +1501,6 @@ local spellMetaMap = {
       ["name"] = "Divine Intervention",
       ["soundFileName"] = "divine_intervention",
       ["spellIconId"] = 136106,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1681,7 +1509,6 @@ local spellMetaMap = {
       ["name"] = "Divine Protection",
       ["soundFileName"] = "divine_protection",
       ["spellIconId"] = 135954,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1691,7 +1518,6 @@ local spellMetaMap = {
       ["name"] = "Divine Shield",
       ["soundFileName"] = "divine_shield",
       ["spellIconId"] = 135896,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -1701,7 +1527,6 @@ local spellMetaMap = {
       ["name"] = "Fire Resistance Aura",
       ["soundFileName"] = "fire_resistance_aura",
       ["spellIconId"] = 135824,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1710,7 +1535,6 @@ local spellMetaMap = {
       ["name"] = "Flash of Light",
       ["soundFileName"] = "flash_of_light",
       ["spellIconId"] = 135907,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1719,7 +1543,6 @@ local spellMetaMap = {
       ["name"] = "Frost Resistance Aura",
       ["soundFileName"] = "frost_resistance_aura",
       ["spellIconId"] = 135865,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1728,7 +1551,6 @@ local spellMetaMap = {
       ["name"] = "Greater Blessing of Kings",
       ["soundFileName"] = "greater_blessing_of_kings",
       ["spellIconId"] = 135993,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1739,7 +1561,6 @@ local spellMetaMap = {
       ["name"] = "Greater Blessing of Light",
       ["soundFileName"] = "greater_blessing_of_light",
       ["spellIconId"] = 135909,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1750,7 +1571,6 @@ local spellMetaMap = {
       ["name"] = "Greater Blessing of Might",
       ["soundFileName"] = "greater_blessing_of_might",
       ["spellIconId"] = 135908,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1761,7 +1581,6 @@ local spellMetaMap = {
       ["name"] = "Greater Blessing of Wisdom",
       ["soundFileName"] = "greater_blessing_of_wisdom",
       ["spellIconId"] = 135912,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1772,7 +1591,6 @@ local spellMetaMap = {
       ["name"] = "Hammer of Justice",
       ["soundFileName"] = "hammer_of_justice",
       ["spellIconId"] = 135963,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1781,7 +1599,6 @@ local spellMetaMap = {
       ["name"] = "Hammer of Wrath",
       ["soundFileName"] = "hammer_of_wrath",
       ["spellIconId"] = 132326,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1790,7 +1607,6 @@ local spellMetaMap = {
       ["name"] = "Holy Light",
       ["soundFileName"] = "holy_light",
       ["spellIconId"] = 135920,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1799,7 +1615,6 @@ local spellMetaMap = {
       ["name"] = "Judgement",
       ["soundFileName"] = "judgement",
       ["spellIconId"] = 135959,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1808,7 +1623,6 @@ local spellMetaMap = {
       ["name"] = "Lay on Hands",
       ["soundFileName"] = "lay_on_hands",
       ["spellIconId"] = 135928,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1817,7 +1631,6 @@ local spellMetaMap = {
       ["name"] = "Purify",
       ["soundFileName"] = "purify",
       ["spellIconId"] = 135949,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1826,7 +1639,6 @@ local spellMetaMap = {
       ["name"] = "Redemption",
       ["soundFileName"] = "redemption",
       ["spellIconId"] = 135955,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1835,7 +1647,6 @@ local spellMetaMap = {
       ["name"] = "Retribution Aura",
       ["soundFileName"] = "retribution_aura",
       ["spellIconId"] = 135873,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1844,7 +1655,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Blood",
       ["soundFileName"] = "seal_of_blood",
       ["spellIconId"] = 135961,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1853,7 +1663,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Corruption",
       ["soundFileName"] = "seal_of_corruption",
       ["spellIconId"] = 135969,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1862,7 +1671,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Justice",
       ["soundFileName"] = "seal_of_justice",
       ["spellIconId"] = 135971,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1871,7 +1679,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Light",
       ["soundFileName"] = "seal_of_light",
       ["spellIconId"] = 135917,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1880,7 +1687,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Righteousness",
       ["soundFileName"] = "seal_of_righteousness",
       ["spellIconId"] = 132325,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1889,7 +1695,6 @@ local spellMetaMap = {
       ["name"] = "Seal of the Crusader",
       ["soundFileName"] = "seal_of_the_crusader",
       ["spellIconId"] = 135924,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1898,7 +1703,6 @@ local spellMetaMap = {
       ["name"] = "Seal of the Martyr",
       ["soundFileName"] = "seal_of_the_martyr",
       ["spellIconId"] = 135961,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1907,7 +1711,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Vengeance",
       ["soundFileName"] = "seal_of_vengeance",
       ["spellIconId"] = 135969,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1916,7 +1719,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Wisdom",
       ["soundFileName"] = "seal_of_wisdom",
       ["spellIconId"] = 135960,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1925,7 +1727,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Resistance Aura",
       ["soundFileName"] = "shadow_resistance_aura",
       ["spellIconId"] = 136192,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1934,7 +1735,6 @@ local spellMetaMap = {
       ["name"] = "Avenger's Shield",
       ["soundFileName"] = "avengers_shield",
       ["spellIconId"] = 135874,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1943,7 +1743,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Kings",
       ["soundFileName"] = "blessing_of_kings",
       ["spellIconId"] = 135995,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1954,7 +1753,6 @@ local spellMetaMap = {
       ["name"] = "Blessing of Sanctuary",
       ["soundFileName"] = "blessing_of_sanctuary",
       ["spellIconId"] = 136051,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -1965,7 +1763,6 @@ local spellMetaMap = {
       ["name"] = "Crusader Strike",
       ["soundFileName"] = "crusader_strike",
       ["spellIconId"] = 135891,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1974,7 +1771,6 @@ local spellMetaMap = {
       ["name"] = "Divine Favor",
       ["soundFileName"] = "divine_favor",
       ["spellIconId"] = 135915,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1983,7 +1779,6 @@ local spellMetaMap = {
       ["name"] = "Holy Shock",
       ["soundFileName"] = "holy_shock",
       ["spellIconId"] = 135972,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -1992,7 +1787,6 @@ local spellMetaMap = {
       ["name"] = "Repentance",
       ["soundFileName"] = "repentance",
       ["spellIconId"] = 135942,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2001,7 +1795,6 @@ local spellMetaMap = {
       ["name"] = "Seal of Command",
       ["soundFileName"] = "seal_of_command",
       ["spellIconId"] = 132347,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2012,7 +1805,6 @@ local spellMetaMap = {
       ["name"] = "Abolish Disease",
       ["soundFileName"] = "abolish_disease",
       ["spellIconId"] = 136066,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2021,7 +1813,6 @@ local spellMetaMap = {
       ["name"] = "Binding Heal",
       ["soundFileName"] = "binding_heal",
       ["spellIconId"] = 135883,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2030,7 +1821,6 @@ local spellMetaMap = {
       ["name"] = "Chastise",
       ["soundFileName"] = "chastise",
       ["spellIconId"] = 135886,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2039,7 +1829,6 @@ local spellMetaMap = {
       ["name"] = "Consume Magic",
       ["soundFileName"] = "consume_magic",
       ["spellIconId"] = 135754,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2048,7 +1837,6 @@ local spellMetaMap = {
       ["name"] = "Cure Disease",
       ["soundFileName"] = "cure_disease",
       ["spellIconId"] = 135935,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2057,7 +1845,6 @@ local spellMetaMap = {
       ["name"] = "Desperate Prayer",
       ["soundFileName"] = "desperate_prayer",
       ["spellIconId"] = 135954,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2066,7 +1853,6 @@ local spellMetaMap = {
       ["name"] = "Devouring Plague",
       ["soundFileName"] = "devouring_plague",
       ["spellIconId"] = 136123,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2075,7 +1861,6 @@ local spellMetaMap = {
       ["name"] = "Dispel Magic",
       ["soundFileName"] = "dispel_magic",
       ["spellIconId"] = 135894,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2084,7 +1869,6 @@ local spellMetaMap = {
       ["name"] = "Elune's Grace",
       ["soundFileName"] = "elunes_grace",
       ["spellIconId"] = 135900,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2095,7 +1879,6 @@ local spellMetaMap = {
       ["name"] = "Fear Ward",
       ["soundFileName"] = "fear_ward",
       ["spellIconId"] = 135902,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2106,7 +1889,6 @@ local spellMetaMap = {
       ["name"] = "Feedback",
       ["soundFileName"] = "feedback",
       ["spellIconId"] = 136189,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2117,7 +1899,6 @@ local spellMetaMap = {
       ["name"] = "Flash Heal",
       ["soundFileName"] = "flash_heal",
       ["spellIconId"] = 135907,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2126,7 +1907,6 @@ local spellMetaMap = {
       ["name"] = "Greater Heal",
       ["soundFileName"] = "greater_heal",
       ["spellIconId"] = 135913,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2135,7 +1915,6 @@ local spellMetaMap = {
       ["name"] = "Heal",
       ["soundFileName"] = "heal",
       ["spellIconId"] = 135916,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2144,7 +1923,6 @@ local spellMetaMap = {
       ["name"] = "Hex of Weakness",
       ["soundFileName"] = "hex_of_weakness",
       ["spellIconId"] = 136157,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2153,7 +1931,6 @@ local spellMetaMap = {
       ["name"] = "Holy Fire",
       ["soundFileName"] = "holy_fire",
       ["spellIconId"] = 135972,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2162,7 +1939,6 @@ local spellMetaMap = {
       ["name"] = "Inner Fire",
       ["soundFileName"] = "inner_fire",
       ["spellIconId"] = 135926,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2173,7 +1949,6 @@ local spellMetaMap = {
       ["name"] = "Lesser Heal",
       ["soundFileName"] = "lesser_heal",
       ["spellIconId"] = 135929,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2182,7 +1957,6 @@ local spellMetaMap = {
       ["name"] = "Levitate",
       ["soundFileName"] = "levitate",
       ["spellIconId"] = 135928,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2193,7 +1967,6 @@ local spellMetaMap = {
       ["name"] = "Mana Burn",
       ["soundFileName"] = "mana_burn",
       ["spellIconId"] = 136170,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2202,7 +1975,6 @@ local spellMetaMap = {
       ["name"] = "Mass Dispel",
       ["soundFileName"] = "mass_dispel",
       ["spellIconId"] = 135739,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2211,7 +1983,6 @@ local spellMetaMap = {
       ["name"] = "Mind Blast",
       ["soundFileName"] = "mind_blast",
       ["spellIconId"] = 136224,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2220,7 +1991,6 @@ local spellMetaMap = {
       ["name"] = "Mind Control",
       ["soundFileName"] = "mind_control",
       ["spellIconId"] = 136206,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2229,7 +1999,6 @@ local spellMetaMap = {
       ["name"] = "Mind Vision",
       ["soundFileName"] = "mind_vision",
       ["spellIconId"] = 135934,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2238,7 +2007,6 @@ local spellMetaMap = {
       ["name"] = "Power Word: Fortitude",
       ["soundFileName"] = "power_word_fortitude",
       ["spellIconId"] = 135987,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2249,7 +2017,6 @@ local spellMetaMap = {
       ["name"] = "Power Word: Shield",
       ["soundFileName"] = "power_word_shield",
       ["spellIconId"] = 135940,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2260,7 +2027,6 @@ local spellMetaMap = {
       ["name"] = "Prayer of Fortitude",
       ["soundFileName"] = "prayer_of_fortitude",
       ["spellIconId"] = 135941,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2271,7 +2037,6 @@ local spellMetaMap = {
       ["name"] = "Prayer of Healing",
       ["soundFileName"] = "prayer_of_healing",
       ["spellIconId"] = 135943,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2280,7 +2045,6 @@ local spellMetaMap = {
       ["name"] = "Prayer of Mending",
       ["soundFileName"] = "prayer_of_mending",
       ["spellIconId"] = 135944,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2289,7 +2053,6 @@ local spellMetaMap = {
       ["name"] = "Prayer of Shadow Protection",
       ["soundFileName"] = "prayer_of_shadow_protection",
       ["spellIconId"] = 135945,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2300,7 +2063,6 @@ local spellMetaMap = {
       ["name"] = "Prayer of Spirit",
       ["soundFileName"] = "prayer_of_spirit",
       ["spellIconId"] = 135946,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2311,7 +2073,6 @@ local spellMetaMap = {
       ["name"] = "Psychic Scream",
       ["soundFileName"] = "psychic_scream",
       ["spellIconId"] = 136184,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2320,7 +2081,6 @@ local spellMetaMap = {
       ["name"] = "Renew",
       ["soundFileName"] = "renew",
       ["spellIconId"] = 135953,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2329,7 +2089,6 @@ local spellMetaMap = {
       ["name"] = "Resurrection",
       ["soundFileName"] = "resurrection",
       ["spellIconId"] = 135955,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2338,7 +2097,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Protection",
       ["soundFileName"] = "shadow_protection",
       ["spellIconId"] = 136121,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2349,7 +2107,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Word: Death",
       ["soundFileName"] = "shadow_word_death",
       ["spellIconId"] = 136149,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2358,7 +2115,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Word: Pain",
       ["soundFileName"] = "shadow_word_pain",
       ["spellIconId"] = 136207,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2367,7 +2123,6 @@ local spellMetaMap = {
       ["name"] = "Shadowfiend",
       ["soundFileName"] = "shadowfiend",
       ["spellIconId"] = 136199,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2376,7 +2131,6 @@ local spellMetaMap = {
       ["name"] = "Shadowguard",
       ["soundFileName"] = "shadowguard",
       ["spellIconId"] = 136051,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2387,7 +2141,6 @@ local spellMetaMap = {
       ["name"] = "Smite",
       ["soundFileName"] = "smite",
       ["spellIconId"] = 135924,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2396,7 +2149,6 @@ local spellMetaMap = {
       ["name"] = "Starshards",
       ["soundFileName"] = "starshards",
       ["spellIconId"] = 135753,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2405,7 +2157,6 @@ local spellMetaMap = {
       ["name"] = "Symbol of Hope",
       ["soundFileName"] = "symbol_of_hope",
       ["spellIconId"] = 135982,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2414,7 +2165,6 @@ local spellMetaMap = {
       ["name"] = "Touch of Weakness",
       ["soundFileName"] = "touch_of_weakness",
       ["spellIconId"] = 136143,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2425,7 +2175,6 @@ local spellMetaMap = {
       ["name"] = "Blackout",
       ["soundFileName"] = "blackout",
       ["spellIconId"] = 136160,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2434,7 +2183,6 @@ local spellMetaMap = {
       ["name"] = "Circle of Healing",
       ["soundFileName"] = "circle_of_healing",
       ["spellIconId"] = 135887,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2443,7 +2191,6 @@ local spellMetaMap = {
       ["name"] = "Divine Spirit",
       ["soundFileName"] = "divine_spirit",
       ["spellIconId"] = 135898,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2454,7 +2201,6 @@ local spellMetaMap = {
       ["name"] = "Holy Nova",
       ["soundFileName"] = "holy_nova",
       ["spellIconId"] = 135922,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2463,7 +2209,6 @@ local spellMetaMap = {
       ["name"] = "Inner Focus",
       ["soundFileName"] = "inner_focus",
       ["spellIconId"] = 135863,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2473,7 +2218,6 @@ local spellMetaMap = {
       ["name"] = "Mind Flay",
       ["soundFileName"] = "mind_flay",
       ["spellIconId"] = 136208,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2482,7 +2226,6 @@ local spellMetaMap = {
       ["name"] = "Pain Suppression",
       ["soundFileName"] = "pain_suppression",
       ["spellIconId"] = 135936,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2492,7 +2235,6 @@ local spellMetaMap = {
       ["name"] = "Power Infusion",
       ["soundFileName"] = "power_infusion",
       ["spellIconId"] = 135939,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2502,7 +2244,6 @@ local spellMetaMap = {
       ["name"] = "Shadowform",
       ["soundFileName"] = "shadowform",
       ["spellIconId"] = 136200,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2512,7 +2253,6 @@ local spellMetaMap = {
       ["name"] = "Silence",
       ["soundFileName"] = "silence",
       ["spellIconId"] = 136164,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2521,7 +2261,6 @@ local spellMetaMap = {
       ["name"] = "Vampiric Embrace",
       ["soundFileName"] = "vampiric_embrace",
       ["spellIconId"] = 136230,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2530,7 +2269,6 @@ local spellMetaMap = {
       ["name"] = "Vampiric Touch",
       ["soundFileName"] = "vampiric_touch",
       ["spellIconId"] = 135978,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2541,7 +2279,6 @@ local spellMetaMap = {
       ["name"] = "Ambush",
       ["soundFileName"] = "ambush",
       ["spellIconId"] = 132282,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2550,7 +2287,6 @@ local spellMetaMap = {
       ["name"] = "Anesthetic Poison",
       ["soundFileName"] = "anesthetic_poison",
       ["spellIconId"] = 136093,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2559,7 +2295,6 @@ local spellMetaMap = {
       ["name"] = "Backstab",
       ["soundFileName"] = "backstab",
       ["spellIconId"] = 132090,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2568,7 +2303,6 @@ local spellMetaMap = {
       ["name"] = "Blind",
       ["soundFileName"] = "blind",
       ["spellIconId"] = 136175,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2577,7 +2311,6 @@ local spellMetaMap = {
       ["name"] = "Cheap Shot",
       ["soundFileName"] = "cheap_shot",
       ["spellIconId"] = 132092,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2586,7 +2319,6 @@ local spellMetaMap = {
       ["name"] = "Cloak of Shadows",
       ["soundFileName"] = "cloak_of_shadows",
       ["spellIconId"] = 136177,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2596,7 +2328,6 @@ local spellMetaMap = {
       ["name"] = "Crippling Poison",
       ["soundFileName"] = "crippling_poison",
       ["spellIconId"] = 132274,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2605,7 +2336,6 @@ local spellMetaMap = {
       ["name"] = "Deadly Poison",
       ["soundFileName"] = "deadly_poison",
       ["spellIconId"] = 132290,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2614,7 +2344,6 @@ local spellMetaMap = {
       ["name"] = "Deadly Throw",
       ["soundFileName"] = "deadly_throw",
       ["spellIconId"] = 135430,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -2624,7 +2353,6 @@ local spellMetaMap = {
       ["name"] = "Distract",
       ["soundFileName"] = "distract",
       ["spellIconId"] = 132289,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2633,7 +2361,6 @@ local spellMetaMap = {
       ["name"] = "Envenom",
       ["soundFileName"] = "envenom",
       ["spellIconId"] = 132287,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2642,7 +2369,6 @@ local spellMetaMap = {
       ["name"] = "Evasion",
       ["soundFileName"] = "evasion",
       ["spellIconId"] = 136205,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2652,7 +2378,6 @@ local spellMetaMap = {
       ["name"] = "Eviscerate",
       ["soundFileName"] = "eviscerate",
       ["spellIconId"] = 132292,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
         "SPELL_MISSED"
@@ -2662,7 +2387,6 @@ local spellMetaMap = {
       ["name"] = "Expose Armor",
       ["soundFileName"] = "expose_armor",
       ["spellIconId"] = 132354,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2671,7 +2395,6 @@ local spellMetaMap = {
       ["name"] = "Garrote",
       ["soundFileName"] = "garrote",
       ["spellIconId"] = 132297,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2680,7 +2403,6 @@ local spellMetaMap = {
       ["name"] = "Gouge",
       ["soundFileName"] = "gouge",
       ["spellIconId"] = 132155,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2689,7 +2411,6 @@ local spellMetaMap = {
       ["name"] = "Instant Poison",
       ["soundFileName"] = "instant_poison",
       ["spellIconId"] = 132273,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2698,7 +2419,6 @@ local spellMetaMap = {
       ["name"] = "Kick",
       ["soundFileName"] = "kick",
       ["spellIconId"] = 132219,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2707,7 +2427,6 @@ local spellMetaMap = {
       ["name"] = "Kidney Shot",
       ["soundFileName"] = "kidney_shot",
       ["spellIconId"] = 132298,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2716,7 +2435,6 @@ local spellMetaMap = {
       ["name"] = "Mind-numbing Poison",
       ["soundFileName"] = "mind_numbing_poison",
       ["spellIconId"] = 136066,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2725,7 +2443,6 @@ local spellMetaMap = {
       ["name"] = "Rupture",
       ["soundFileName"] = "rupture",
       ["spellIconId"] = 132302,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2734,7 +2451,6 @@ local spellMetaMap = {
       ["name"] = "Sap",
       ["soundFileName"] = "sap",
       ["spellIconId"] = 132310,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2743,7 +2459,6 @@ local spellMetaMap = {
       ["name"] = "Shiv",
       ["soundFileName"] = "shiv",
       ["spellIconId"] = 135428,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2752,7 +2467,6 @@ local spellMetaMap = {
       ["name"] = "Sinister Strike",
       ["soundFileName"] = "sinister_strike",
       ["spellIconId"] = 136189,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2761,7 +2475,6 @@ local spellMetaMap = {
       ["name"] = "Slice and Dice",
       ["soundFileName"] = "slice_and_dice",
       ["spellIconId"] = 132306,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2772,7 +2485,6 @@ local spellMetaMap = {
       ["name"] = "Sprint",
       ["soundFileName"] = "sprint",
       ["spellIconId"] = 132307,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2783,7 +2495,6 @@ local spellMetaMap = {
       ["name"] = "Stealth",
       ["soundFileName"] = "stealth",
       ["spellIconId"] = 132320,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2792,7 +2503,6 @@ local spellMetaMap = {
       ["name"] = "Vanish",
       ["soundFileName"] = "vanish",
       ["spellIconId"] = 132331,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2801,7 +2511,6 @@ local spellMetaMap = {
       ["name"] = "Wound Poison",
       ["soundFileName"] = "wound_poison",
       ["spellIconId"] = 134197,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2810,7 +2519,6 @@ local spellMetaMap = {
       ["name"] = "Adrenaline Rush",
       ["soundFileName"] = "adrenaline_rush",
       ["spellIconId"] = 136206,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2820,7 +2528,6 @@ local spellMetaMap = {
       ["name"] = "Blade Flurry",
       ["soundFileName"] = "blade_flurry",
       ["spellIconId"] = 132350,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2830,7 +2537,6 @@ local spellMetaMap = {
       ["name"] = "Cheat Death",
       ["soundFileName"] = "cheat_death",
       ["spellIconId"] = 132285,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2839,7 +2545,6 @@ local spellMetaMap = {
       ["name"] = "Cold Blood",
       ["soundFileName"] = "cold_blood",
       ["spellIconId"] = 135988,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2849,7 +2554,6 @@ local spellMetaMap = {
       ["name"] = "Ghostly Strike",
       ["soundFileName"] = "ghostly_strike",
       ["spellIconId"] = 136136,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -2859,7 +2563,6 @@ local spellMetaMap = {
       ["name"] = "Hemorrhage",
       ["soundFileName"] = "hemorrhage",
       ["spellIconId"] = 136168,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2868,7 +2571,6 @@ local spellMetaMap = {
       ["name"] = "Mutilate",
       ["soundFileName"] = "mutilate",
       ["spellIconId"] = 132304,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2877,7 +2579,6 @@ local spellMetaMap = {
       ["name"] = "Premeditation",
       ["soundFileName"] = "premeditation",
       ["spellIconId"] = 136183,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2886,7 +2587,6 @@ local spellMetaMap = {
       ["name"] = "Preparation",
       ["soundFileName"] = "preparation",
       ["spellIconId"] = 136121,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2895,7 +2595,6 @@ local spellMetaMap = {
       ["name"] = "Riposte",
       ["soundFileName"] = "riposte",
       ["spellIconId"] = 132336,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2904,7 +2603,6 @@ local spellMetaMap = {
       ["name"] = "Shadowstep",
       ["soundFileName"] = "shadowstep",
       ["spellIconId"] = 132303,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2915,7 +2613,6 @@ local spellMetaMap = {
       ["name"] = "Ancestral Spirit",
       ["soundFileName"] = "ancestral_spirit",
       ["spellIconId"] = 136077,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2924,7 +2621,6 @@ local spellMetaMap = {
       ["name"] = "Bloodlust",
       ["soundFileName"] = "bloodlust",
       ["spellIconId"] = 136012,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -2935,7 +2631,6 @@ local spellMetaMap = {
       ["name"] = "Chain Heal",
       ["soundFileName"] = "chain_heal",
       ["spellIconId"] = 136042,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2944,7 +2639,6 @@ local spellMetaMap = {
       ["name"] = "Chain Lightning",
       ["soundFileName"] = "chain_lightning",
       ["spellIconId"] = 136015,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2953,7 +2647,6 @@ local spellMetaMap = {
       ["name"] = "Cure Disease",
       ["soundFileName"] = "cure_disease",
       ["spellIconId"] = 136083,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2962,7 +2655,6 @@ local spellMetaMap = {
       ["name"] = "Cure Poison",
       ["soundFileName"] = "cure_poison",
       ["spellIconId"] = 136067,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2971,7 +2663,6 @@ local spellMetaMap = {
       ["name"] = "Disease Cleansing Totem",
       ["soundFileName"] = "disease_cleansing_totem",
       ["spellIconId"] = 136019,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2980,7 +2671,6 @@ local spellMetaMap = {
       ["name"] = "Earth Elemental Totem",
       ["soundFileName"] = "earth_elemental_totem",
       ["spellIconId"] = 136024,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2989,7 +2679,6 @@ local spellMetaMap = {
       ["name"] = "Earth Shock",
       ["soundFileName"] = "earth_shock",
       ["spellIconId"] = 136026,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -2998,7 +2687,6 @@ local spellMetaMap = {
       ["name"] = "Earthbind Totem",
       ["soundFileName"] = "earthbind_totem",
       ["spellIconId"] = 136102,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3007,7 +2695,6 @@ local spellMetaMap = {
       ["name"] = "Fire  Elemental Totem",
       ["soundFileName"] = "fire_elemental_totem",
       ["spellIconId"] = 135790,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3016,7 +2703,6 @@ local spellMetaMap = {
       ["name"] = "Fire Nova Totem",
       ["soundFileName"] = "fire_nova_totem",
       ["spellIconId"] = 135824,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3025,7 +2711,6 @@ local spellMetaMap = {
       ["name"] = "Fire Resistance Totem",
       ["soundFileName"] = "fire_resistance_totem",
       ["spellIconId"] = 135832,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3034,7 +2719,6 @@ local spellMetaMap = {
       ["name"] = "Flame Shock",
       ["soundFileName"] = "flame_shock",
       ["spellIconId"] = 135813,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3043,7 +2727,6 @@ local spellMetaMap = {
       ["name"] = "Flametongue Totem",
       ["soundFileName"] = "flametongue_totem",
       ["spellIconId"] = 136040,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3052,7 +2735,6 @@ local spellMetaMap = {
       ["name"] = "Flametongue Weapon",
       ["soundFileName"] = "flametongue_weapon",
       ["spellIconId"] = 135814,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3061,7 +2743,6 @@ local spellMetaMap = {
       ["name"] = "Frost Resistance Totem",
       ["soundFileName"] = "frost_resistance_totem",
       ["spellIconId"] = 135866,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3070,7 +2751,6 @@ local spellMetaMap = {
       ["name"] = "Frost Shock",
       ["soundFileName"] = "frost_shock",
       ["spellIconId"] = 135849,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3079,7 +2759,6 @@ local spellMetaMap = {
       ["name"] = "Frostbrand Weapon",
       ["soundFileName"] = "frostbrand_weapon",
       ["spellIconId"] = 135847,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3088,7 +2767,6 @@ local spellMetaMap = {
       ["name"] = "Ghost Wolf",
       ["soundFileName"] = "ghost_wolf",
       ["spellIconId"] = 136095,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3098,7 +2776,6 @@ local spellMetaMap = {
       ["name"] = "Grace of Air Totem",
       ["soundFileName"] = "grace_of_air_totem",
       ["spellIconId"] = 136046,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3107,7 +2784,6 @@ local spellMetaMap = {
       ["name"] = "Grounding Totem",
       ["soundFileName"] = "grounding_totem",
       ["spellIconId"] = 136039,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3116,7 +2792,6 @@ local spellMetaMap = {
       ["name"] = "Healing Stream Totem",
       ["soundFileName"] = "healing_stream_totem",
       ["spellIconId"] = 135127,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3125,7 +2800,6 @@ local spellMetaMap = {
       ["name"] = "Healing Wave",
       ["soundFileName"] = "healing_wave",
       ["spellIconId"] = 136052,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3134,7 +2808,6 @@ local spellMetaMap = {
       ["name"] = "Heroism",
       ["soundFileName"] = "heroism",
       ["spellIconId"] = 132313,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3145,7 +2818,6 @@ local spellMetaMap = {
       ["name"] = "Lesser Healing Wave",
       ["soundFileName"] = "lesser_healing_wave",
       ["spellIconId"] = 136043,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3154,7 +2826,6 @@ local spellMetaMap = {
       ["name"] = "Lightning Bolt",
       ["soundFileName"] = "lightning_bolt",
       ["spellIconId"] = 136048,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3163,7 +2834,6 @@ local spellMetaMap = {
       ["name"] = "Lightning Shield",
       ["soundFileName"] = "lightning_shield",
       ["spellIconId"] = 136051,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3174,7 +2844,6 @@ local spellMetaMap = {
       ["name"] = "Magma Totem",
       ["soundFileName"] = "magma_totem",
       ["spellIconId"] = 135826,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3183,7 +2852,6 @@ local spellMetaMap = {
       ["name"] = "Mana Spring Totem",
       ["soundFileName"] = "mana_spring_totem",
       ["spellIconId"] = 136053,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3192,7 +2860,6 @@ local spellMetaMap = {
       ["name"] = "Nature Resistance Totem",
       ["soundFileName"] = "nature_resistance_totem",
       ["spellIconId"] = 136061,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3201,7 +2868,6 @@ local spellMetaMap = {
       ["name"] = "Poison Cleansing Totem",
       ["soundFileName"] = "poison_cleansing_totem",
       ["spellIconId"] = 136070,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3210,7 +2876,6 @@ local spellMetaMap = {
       ["name"] = "Purge",
       ["soundFileName"] = "purge",
       ["spellIconId"] = 136075,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3219,7 +2884,6 @@ local spellMetaMap = {
       ["name"] = "Reincarnation",
       ["soundFileName"] = "reincarnation",
       ["spellIconId"] = 136080,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3228,7 +2892,6 @@ local spellMetaMap = {
       ["name"] = "Rockbiter Weapon",
       ["soundFileName"] = "rockbiter_weapon",
       ["spellIconId"] = 136086,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3237,7 +2900,6 @@ local spellMetaMap = {
       ["name"] = "Searing Totem",
       ["soundFileName"] = "searing_totem",
       ["spellIconId"] = 135825,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3246,7 +2908,6 @@ local spellMetaMap = {
       ["name"] = "Stoneclaw Totem",
       ["soundFileName"] = "stoneclaw_totem",
       ["spellIconId"] = 136097,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3255,7 +2916,6 @@ local spellMetaMap = {
       ["name"] = "Stoneskin Totem",
       ["soundFileName"] = "stoneskin_totem",
       ["spellIconId"] = 136098,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3264,7 +2924,6 @@ local spellMetaMap = {
       ["name"] = "Strength of Earth Totem",
       ["soundFileName"] = "strength_of_earth_totem",
       ["spellIconId"] = 136023,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3273,7 +2932,6 @@ local spellMetaMap = {
       ["name"] = "Tremor Totem",
       ["soundFileName"] = "tremor_totem",
       ["spellIconId"] = 136108,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3282,7 +2940,6 @@ local spellMetaMap = {
       ["name"] = "Water Breathing",
       ["soundFileName"] = "water_breathing",
       ["spellIconId"] = 136148,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3293,7 +2950,6 @@ local spellMetaMap = {
       ["name"] = "Water Shield",
       ["soundFileName"] = "water_shield",
       ["spellIconId"] = 132315,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3304,7 +2960,6 @@ local spellMetaMap = {
       ["name"] = "Windfury Totem",
       ["soundFileName"] = "windfury_totem",
       ["spellIconId"] = 136114,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3313,7 +2968,6 @@ local spellMetaMap = {
       ["name"] = "Windfury Weapon",
       ["soundFileName"] = "windfury_weapon",
       ["spellIconId"] = 136018,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3322,7 +2976,6 @@ local spellMetaMap = {
       ["name"] = "Windwall Totem",
       ["soundFileName"] = "windwall_totem",
       ["spellIconId"] = 136022,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3331,7 +2984,6 @@ local spellMetaMap = {
       ["name"] = "Wrath of Air Totem",
       ["soundFileName"] = "wrath_of_air_totem",
       ["spellIconId"] = 136092,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3340,7 +2992,6 @@ local spellMetaMap = {
       ["name"] = "Earth Shield",
       ["soundFileName"] = "earth_shield",
       ["spellIconId"] = 136089,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3351,7 +3002,6 @@ local spellMetaMap = {
       ["name"] = "Elemental Mastery",
       ["soundFileName"] = "elemental_mastery",
       ["spellIconId"] = 136115,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3361,7 +3011,6 @@ local spellMetaMap = {
       ["name"] = "Mana Tide Totem",
       ["soundFileName"] = "mana_tide_totem",
       ["spellIconId"] = 135861,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3370,7 +3019,6 @@ local spellMetaMap = {
       ["name"] = "Nature's Swiftness",
       ["soundFileName"] = "natures_swiftness",
       ["spellIconId"] = 136076,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3380,7 +3028,6 @@ local spellMetaMap = {
       ["name"] = "Shamanistic Rage",
       ["soundFileName"] = "shamanistic_rage",
       ["spellIconId"] = 136088,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3390,7 +3037,6 @@ local spellMetaMap = {
       ["name"] = "Stormstrike",
       ["soundFileName"] = "stormstrike",
       ["spellIconId"] = 132314,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3399,7 +3045,6 @@ local spellMetaMap = {
       ["name"] = "Totem of Wrath",
       ["soundFileName"] = "totem_of_wrath",
       ["spellIconId"] = 135829,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3410,7 +3055,6 @@ local spellMetaMap = {
       ["name"] = "Banish",
       ["soundFileName"] = "banish",
       ["spellIconId"] = 136135,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3419,7 +3063,6 @@ local spellMetaMap = {
       ["name"] = "Corruption",
       ["soundFileName"] = "corruption",
       ["spellIconId"] = 136118,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3428,7 +3071,6 @@ local spellMetaMap = {
       ["name"] = "Create Firestone",
       ["soundFileName"] = "create_firestone",
       ["spellIconId"] = 134085,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3437,7 +3079,6 @@ local spellMetaMap = {
       ["name"] = "Create Soulstone",
       ["soundFileName"] = "create_soulstone",
       ["spellIconId"] = 134336,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3446,7 +3087,6 @@ local spellMetaMap = {
       ["name"] = "Soulstone Resurrection",
       ["soundFileName"] = "soulstone_resurrection",
       ["spellIconId"] = 136210,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3455,7 +3095,6 @@ local spellMetaMap = {
       ["name"] = "Create Spellstone",
       ["soundFileName"] = "create_spellstone",
       ["spellIconId"] = 134336,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3464,7 +3103,6 @@ local spellMetaMap = {
       ["name"] = "Spellstone",
       ["soundFileName"] = "spellstone",
       ["spellIconId"] = 134131,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3473,7 +3111,6 @@ local spellMetaMap = {
       ["name"] = "Curse of Agony",
       ["soundFileName"] = "curse_of_agony",
       ["spellIconId"] = 136139,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3482,7 +3119,6 @@ local spellMetaMap = {
       ["name"] = "Curse of Recklessness",
       ["soundFileName"] = "curse_of_recklessness",
       ["spellIconId"] = 136225,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3491,7 +3127,6 @@ local spellMetaMap = {
       ["name"] = "Curse of the Elements",
       ["soundFileName"] = "curse_of_the_elements",
       ["spellIconId"] = 136130,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3500,7 +3135,6 @@ local spellMetaMap = {
       ["name"] = "Curse of Tongues",
       ["soundFileName"] = "curse_of_tongues",
       ["spellIconId"] = 136140,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3509,7 +3143,6 @@ local spellMetaMap = {
       ["name"] = "Curse of Weakness",
       ["soundFileName"] = "curse_of_weakness",
       ["spellIconId"] = 136138,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3518,7 +3151,6 @@ local spellMetaMap = {
       ["name"] = "Death Coil",
       ["soundFileName"] = "death_coil",
       ["spellIconId"] = 136145,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3527,7 +3159,6 @@ local spellMetaMap = {
       ["name"] = "Demon Armor",
       ["soundFileName"] = "demon_armor",
       ["spellIconId"] = 136185,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3538,7 +3169,6 @@ local spellMetaMap = {
       ["name"] = "Demon Skin",
       ["soundFileName"] = "demon_skin",
       ["spellIconId"] = 136185,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3549,7 +3179,6 @@ local spellMetaMap = {
       ["name"] = "Detect Invisibility",
       ["soundFileName"] = "detect_invisibility",
       ["spellIconId"] = 136153,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3560,7 +3189,6 @@ local spellMetaMap = {
       ["name"] = "Drain Life",
       ["soundFileName"] = "drain_life",
       ["spellIconId"] = 136169,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3569,7 +3197,6 @@ local spellMetaMap = {
       ["name"] = "Drain Mana",
       ["soundFileName"] = "drain_mana",
       ["spellIconId"] = 136208,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3578,7 +3205,6 @@ local spellMetaMap = {
       ["name"] = "Drain Soul",
       ["soundFileName"] = "drain_soul",
       ["spellIconId"] = 136163,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3587,7 +3213,6 @@ local spellMetaMap = {
       ["name"] = "Eye of Kilrogg",
       ["soundFileName"] = "eye_of_kilrogg",
       ["spellIconId"] = 136155,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3596,7 +3221,6 @@ local spellMetaMap = {
       ["name"] = "Fear",
       ["soundFileName"] = "fear",
       ["spellIconId"] = 136183,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3605,7 +3229,6 @@ local spellMetaMap = {
       ["name"] = "Fel Armor",
       ["soundFileName"] = "fel_armor",
       ["spellIconId"] = 136156,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3616,7 +3239,6 @@ local spellMetaMap = {
       ["name"] = "Health Funnel",
       ["soundFileName"] = "health_funnel",
       ["spellIconId"] = 136168,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3625,7 +3247,6 @@ local spellMetaMap = {
       ["name"] = "Hellfire",
       ["soundFileName"] = "hellfire",
       ["spellIconId"] = 135818,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3634,7 +3255,6 @@ local spellMetaMap = {
       ["name"] = "Howl of Terror",
       ["soundFileName"] = "howl_of_terror",
       ["spellIconId"] = 136147,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3643,7 +3263,6 @@ local spellMetaMap = {
       ["name"] = "Immolate",
       ["soundFileName"] = "immolate",
       ["spellIconId"] = 135817,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3652,7 +3271,6 @@ local spellMetaMap = {
       ["name"] = "Incinerate",
       ["soundFileName"] = "incinerate",
       ["spellIconId"] = 135789,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3661,7 +3279,6 @@ local spellMetaMap = {
       ["name"] = "Life Tap",
       ["soundFileName"] = "life_tap",
       ["spellIconId"] = 136126,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3670,7 +3287,6 @@ local spellMetaMap = {
       ["name"] = "Rain of Fire",
       ["soundFileName"] = "rain_of_fire",
       ["spellIconId"] = 136186,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3679,7 +3295,6 @@ local spellMetaMap = {
       ["name"] = "Ritual of Souls",
       ["soundFileName"] = "ritual_of_souls",
       ["spellIconId"] = 136194,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3688,7 +3303,6 @@ local spellMetaMap = {
       ["name"] = "Ritual of Summoning",
       ["soundFileName"] = "ritual_of_summoning",
       ["spellIconId"] = 136223,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3697,7 +3311,6 @@ local spellMetaMap = {
       ["name"] = "Searing Pain",
       ["soundFileName"] = "searing_pain",
       ["spellIconId"] = 135827,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3706,7 +3319,6 @@ local spellMetaMap = {
       ["name"] = "Seed of Corruption",
       ["soundFileName"] = "seed_of_corruption",
       ["spellIconId"] = 136193,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3715,7 +3327,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Bolt",
       ["soundFileName"] = "shadow_bolt",
       ["spellIconId"] = 136197,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3724,7 +3335,6 @@ local spellMetaMap = {
       ["name"] = "Shadow Ward",
       ["soundFileName"] = "shadow_ward",
       ["spellIconId"] = 136121,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3735,7 +3345,6 @@ local spellMetaMap = {
       ["name"] = "Soul Fire",
       ["soundFileName"] = "soul_fire",
       ["spellIconId"] = 135808,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3744,7 +3353,6 @@ local spellMetaMap = {
       ["name"] = "Summon Felhunter",
       ["soundFileName"] = "summon_felhunter",
       ["spellIconId"] = 136217,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3753,7 +3361,6 @@ local spellMetaMap = {
       ["name"] = "Summon Imp",
       ["soundFileName"] = "summon_imp",
       ["spellIconId"] = 136218,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3762,7 +3369,6 @@ local spellMetaMap = {
       ["name"] = "Summon Succubus",
       ["soundFileName"] = "summon_succubus",
       ["spellIconId"] = 136220,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3771,7 +3377,6 @@ local spellMetaMap = {
       ["name"] = "Summon Voidwalker",
       ["soundFileName"] = "summon_voidwalker",
       ["spellIconId"] = 136221,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3780,7 +3385,6 @@ local spellMetaMap = {
       ["name"] = "Unending Breath",
       ["soundFileName"] = "unending_breath",
       ["spellIconId"] = 136148,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3791,7 +3395,6 @@ local spellMetaMap = {
       ["name"] = "Amplify Curse",
       ["soundFileName"] = "amplify_curse",
       ["spellIconId"] = 136132,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3801,7 +3404,6 @@ local spellMetaMap = {
       ["name"] = "Conflagrate",
       ["soundFileName"] = "conflagrate",
       ["spellIconId"] = 135807,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3810,7 +3412,6 @@ local spellMetaMap = {
       ["name"] = "Curse of Exhaustion",
       ["soundFileName"] = "curse_of_exhaustion",
       ["spellIconId"] = 136162,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3819,7 +3420,6 @@ local spellMetaMap = {
       ["name"] = "Dark Pact",
       ["soundFileName"] = "dark_pact",
       ["spellIconId"] = 136141,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3828,7 +3428,6 @@ local spellMetaMap = {
       ["name"] = "Demonic Sacrifice",
       ["soundFileName"] = "demonic_sacrifice",
       ["spellIconId"] = 136184,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3837,7 +3436,6 @@ local spellMetaMap = {
       ["name"] = "Fel Domination",
       ["soundFileName"] = "fel_domination",
       ["spellIconId"] = 136082,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3847,7 +3445,6 @@ local spellMetaMap = {
       ["name"] = "Nether Protection",
       ["soundFileName"] = "nether_protection",
       ["spellIconId"] = 136178,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3858,7 +3455,6 @@ local spellMetaMap = {
       ["name"] = "Nightfall",
       ["soundFileName"] = "nightfall",
       ["spellIconId"] = 136223,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED",
@@ -3869,7 +3465,6 @@ local spellMetaMap = {
       ["name"] = "Shadowburn",
       ["soundFileName"] = "shadowburn",
       ["spellIconId"] = 136191,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3878,7 +3473,6 @@ local spellMetaMap = {
       ["name"] = "Shadowfury",
       ["soundFileName"] = "shadowfury",
       ["spellIconId"] = 136201,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3887,7 +3481,6 @@ local spellMetaMap = {
       ["name"] = "Siphon Life",
       ["soundFileName"] = "siphon_life",
       ["spellIconId"] = 136188,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3896,7 +3489,6 @@ local spellMetaMap = {
       ["name"] = "Soul Link",
       ["soundFileName"] = "soul_link",
       ["spellIconId"] = 136160,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3906,7 +3498,6 @@ local spellMetaMap = {
       ["name"] = "Summon Felguard",
       ["soundFileName"] = "summon_felguard",
       ["spellIconId"] = 136216,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3915,7 +3506,6 @@ local spellMetaMap = {
       ["name"] = "Unstable Affliction",
       ["soundFileName"] = "unstable_affliction",
       ["spellIconId"] = 136228,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3926,7 +3516,6 @@ local spellMetaMap = {
       ["name"] = "Battle Stance",
       ["soundFileName"] = "battle_stance",
       ["spellIconId"] = 132349,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3935,7 +3524,6 @@ local spellMetaMap = {
       ["name"] = "Berserker Rage",
       ["soundFileName"] = "berserker_rage",
       ["spellIconId"] = 136009,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3945,7 +3533,6 @@ local spellMetaMap = {
       ["name"] = "Berserker Stance",
       ["soundFileName"] = "berserker_stance",
       ["spellIconId"] = "132275",
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3954,7 +3541,6 @@ local spellMetaMap = {
       ["name"] = "Bloodrage",
       ["soundFileName"] = "bloodrage",
       ["spellIconId"] = 132277,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -3964,7 +3550,6 @@ local spellMetaMap = {
       ["name"] = "Charge",
       ["soundFileName"] = "charge",
       ["spellIconId"] = 132337,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3973,7 +3558,6 @@ local spellMetaMap = {
       ["name"] = "Defensive Stance",
       ["soundFileName"] = "defensive_stance",
       ["spellIconId"] = 132341,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3982,7 +3566,6 @@ local spellMetaMap = {
       ["name"] = "Demoralizing Shout",
       ["soundFileName"] = "demoralizing_shout",
       ["spellIconId"] = 132366,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -3991,7 +3574,6 @@ local spellMetaMap = {
       ["name"] = "Disarm",
       ["soundFileName"] = "disarm",
       ["spellIconId"] = 132343,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4000,7 +3582,6 @@ local spellMetaMap = {
       ["name"] = "Hamstring",
       ["soundFileName"] = "hamstring",
       ["spellIconId"] = 132316,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4009,7 +3590,6 @@ local spellMetaMap = {
       ["name"] = "Intercept",
       ["soundFileName"] = "intercept",
       ["spellIconId"] = 132307,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4018,7 +3598,6 @@ local spellMetaMap = {
       ["name"] = "Intervene",
       ["soundFileName"] = "intervene",
       ["spellIconId"] = 132365,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4027,7 +3606,6 @@ local spellMetaMap = {
       ["name"] = "Intimidating Shout",
       ["soundFileName"] = "intimidating_shout",
       ["spellIconId"] = 132154,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4036,7 +3614,6 @@ local spellMetaMap = {
       ["name"] = "Overpower",
       ["soundFileName"] = "overpower",
       ["spellIconId"] = 132223,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4045,7 +3622,6 @@ local spellMetaMap = {
       ["name"] = "Pummel",
       ["soundFileName"] = "pummel",
       ["spellIconId"] = 132938,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4054,7 +3630,6 @@ local spellMetaMap = {
       ["name"] = "Recklessness",
       ["soundFileName"] = "recklessness",
       ["spellIconId"] = 132109,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4064,7 +3639,6 @@ local spellMetaMap = {
       ["name"] = "Retaliation",
       ["soundFileName"] = "retaliation",
       ["spellIconId"] = 132336,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4074,7 +3648,6 @@ local spellMetaMap = {
       ["name"] = "Shield Bash",
       ["soundFileName"] = "shield_bash",
       ["spellIconId"] = 132357,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4083,7 +3656,6 @@ local spellMetaMap = {
       ["name"] = "Shield Block",
       ["soundFileName"] = "shield_block",
       ["spellIconId"] = 132110,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4093,7 +3665,6 @@ local spellMetaMap = {
       ["name"] = "Shield Wall",
       ["soundFileName"] = "shield_wall",
       ["spellIconId"] = 132362,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4103,7 +3674,6 @@ local spellMetaMap = {
       ["name"] = "Spell Reflection",
       ["soundFileName"] = "spell_reflection",
       ["spellIconId"] = 132361,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4113,7 +3683,6 @@ local spellMetaMap = {
       ["name"] = "Sunder Armor",
       ["soundFileName"] = "sunder_armor",
       ["spellIconId"] = 132363,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4122,7 +3691,6 @@ local spellMetaMap = {
       ["name"] = "Whirlwind",
       ["soundFileName"] = "whirlwind",
       ["spellIconId"] = 132369,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4131,7 +3699,6 @@ local spellMetaMap = {
       ["name"] = "Concussion Blow",
       ["soundFileName"] = "concussion_blow",
       ["spellIconId"] = 132325,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4140,7 +3707,6 @@ local spellMetaMap = {
       ["name"] = "Death Wish",
       ["soundFileName"] = "death_wish",
       ["spellIconId"] = 136146,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4150,7 +3716,6 @@ local spellMetaMap = {
       ["name"] = "Last Stand",
       ["soundFileName"] = "last_stand",
       ["spellIconId"] = 135871,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4160,7 +3725,6 @@ local spellMetaMap = {
       ["name"] = "Mortal Strike",
       ["soundFileName"] = "mortal_strike",
       ["spellIconId"] = 132355,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4169,7 +3733,6 @@ local spellMetaMap = {
       ["name"] = "Piercing Howl",
       ["soundFileName"] = "piercing_howl",
       ["spellIconId"] = 136147,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4178,7 +3741,6 @@ local spellMetaMap = {
       ["name"] = "Rampage",
       ["soundFileName"] = "rampage",
       ["spellIconId"] = 132352,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4188,7 +3750,6 @@ local spellMetaMap = {
       ["name"] = "Second Wind",
       ["soundFileName"] = "second_wind",
       ["spellIconId"] = 132175,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4198,7 +3759,6 @@ local spellMetaMap = {
       ["name"] = "Shield Slam",
       ["soundFileName"] = "shield_slam",
       ["spellIconId"] = 134951,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4207,7 +3767,6 @@ local spellMetaMap = {
       ["name"] = "Sweeping Strikes",
       ["soundFileName"] = "sweeping_strikes",
       ["spellIconId"] = 132306,
-      ["hasFade"] = true,
       ["active"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
@@ -4220,7 +3779,6 @@ local spellMetaMap = {
       ["name"] = "Gift of the Naaru",
       ["soundFileName"] = "gift_of_the_naaru",
       ["spellIconId"] = 135923,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4230,7 +3788,6 @@ local spellMetaMap = {
       ["name"] = "Stoneform",
       ["soundFileName"] = "stoneform",
       ["spellIconId"] = 136225,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4240,7 +3797,6 @@ local spellMetaMap = {
       ["name"] = "Escape Artist",
       ["soundFileName"] = "escape_artist",
       ["spellIconId"] = 132309,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4249,7 +3805,6 @@ local spellMetaMap = {
       ["name"] = "Perception",
       ["soundFileName"] = "perception",
       ["spellIconId"] = 136090,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4259,7 +3814,6 @@ local spellMetaMap = {
       ["name"] = "Shadowmeld",
       ["soundFileName"] = "shadowmeld",
       ["spellIconId"] = 132089,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4268,7 +3822,6 @@ local spellMetaMap = {
       ["name"] = "Arcane Torrent",
       ["soundFileName"] = "arcane_torrent",
       ["spellIconId"] = 136222,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4277,7 +3830,6 @@ local spellMetaMap = {
       ["name"] = "Mana Tap",
       ["soundFileName"] = "mana_tap",
       ["spellIconId"] = 135738,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4286,7 +3838,6 @@ local spellMetaMap = {
       ["name"] = "Blood Fury",
       ["soundFileName"] = "blood_fury",
       ["spellIconId"] = 135726,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4296,7 +3847,6 @@ local spellMetaMap = {
       ["name"] = "War Stomp",
       ["soundFileName"] = "war_stomp",
       ["spellIconId"] = 132368,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4305,7 +3855,6 @@ local spellMetaMap = {
       ["name"] = "Berserking",
       ["soundFileName"] = "berserking",
       ["spellIconId"] = 135727,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4315,7 +3864,6 @@ local spellMetaMap = {
       ["name"] = "Cannibalize",
       ["soundFileName"] = "cannibalize",
       ["spellIconId"] = 132278,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4324,7 +3872,6 @@ local spellMetaMap = {
       ["name"] = "Will of the Forsaken",
       ["soundFileName"] = "will_of_the_forsaken",
       ["spellIconId"] = 136187,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4336,7 +3883,6 @@ local spellMetaMap = {
       ["name"] = "Abacus of Violent Odds",
       ["soundFileName"] = "abacus_of_violent_odds",
       ["spellIconId"] = 133876,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4346,7 +3892,6 @@ local spellMetaMap = {
       ["name"] = "Adamantine Figurine",
       ["soundFileName"] = "adamantine_figurine",
       ["spellIconId"] = 134907,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4356,7 +3901,6 @@ local spellMetaMap = {
       ["name"] = "Ancient Aqir Artifact",
       ["soundFileName"] = "ancient_aqir_artifact",
       ["spellIconId"] = 135443,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4366,7 +3910,6 @@ local spellMetaMap = {
       ["name"] = "Battlemaster Trinket",
       ["soundFileName"] = "battlemaster_trinket",
       ["spellIconId"] = 136035,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4376,7 +3919,6 @@ local spellMetaMap = {
       ["name"] = "Berserker's Call",
       ["soundFileName"] = "berserkers_call",
       ["spellIconId"] = 135727,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4386,7 +3928,6 @@ local spellMetaMap = {
       ["name"] = "Bloodlust Brooch",
       ["soundFileName"] = "bloodlust_brooch",
       ["spellIconId"] = 134317,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4396,7 +3937,6 @@ local spellMetaMap = {
       ["name"] = "Dark Iron Smoking Pipe",
       ["soundFileName"] = "dark_iron_smoking_pipe",
       ["spellIconId"] = 134374,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4406,7 +3946,6 @@ local spellMetaMap = {
       ["name"] = "Dimensional Ripper - Area 52",
       ["soundFileName"] = "dimensional_ripper_area_52",
       ["spellIconId"] = 133865,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4415,7 +3954,6 @@ local spellMetaMap = {
       ["name"] = "Dimensional Ripper - Everlook",
       ["soundFileName"] = "dimensional_ripper_everlook",
       ["spellIconId"] = 133865,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4424,7 +3962,6 @@ local spellMetaMap = {
       ["name"] = "Direbrew Hops",
       ["soundFileName"] = "direbrew_hops",
       ["spellIconId"] = 134188,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4434,7 +3971,6 @@ local spellMetaMap = {
       ["name"] = "Dragonspine Trophy",
       ["soundFileName"] = "dragonspine_trophy",
       ["spellIconId"] = 133720,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4444,7 +3980,6 @@ local spellMetaMap = {
       ["name"] = "Empty Mug of Direbrew",
       ["soundFileName"] = "empty_mug_of_direbrew",
       ["spellIconId"] = 132790,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4454,7 +3989,6 @@ local spellMetaMap = {
       ["name"] = "Essence of the Martyr",
       ["soundFileName"] = "essence_of_the_martyr",
       ["spellIconId"] = 135447,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4464,7 +3998,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Crimson Serpent",
       ["soundFileName"] = "figurine_crimson_serpent",
       ["spellIconId"] = 133262,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4474,7 +4007,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Empyrean Tortoise",
       ["soundFileName"] = "figurine_empyrean_tortoise",
       ["spellIconId"] = 132199,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4484,7 +4016,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Felsteel Boar",
       ["soundFileName"] = "figurine_felsteel_boar",
       ["spellIconId"] = 133274,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4493,7 +4024,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Khorium Boar",
       ["soundFileName"] = "figurine_khorium_boar",
       ["spellIconId"] = 133274,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4502,7 +4032,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Living Ruby Serpent",
       ["soundFileName"] = "figurine_living_ruby_serpent",
       ["spellIconId"] = 133262,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4512,7 +4041,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Nightseye Panther",
       ["soundFileName"] = "figurine_nightseye_panther",
       ["spellIconId"] = 133236,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4522,7 +4050,6 @@ local spellMetaMap = {
       ["name"] = "Figurine - Shadowsong Panther",
       ["soundFileName"] = "figurine_shadowsong_panther",
       ["spellIconId"] = 133236,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4532,7 +4059,6 @@ local spellMetaMap = {
       ["name"] = "Gnomish Poultryizer",
       ["soundFileName"] = "gnomish_poultryizer",
       ["spellIconId"] = 133864,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4541,7 +4067,6 @@ local spellMetaMap = {
       ["name"] = "Goblin Rocket Launcher",
       ["soundFileName"] = "goblin_rocket_launcher",
       ["spellIconId"] = 133032,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4550,7 +4075,6 @@ local spellMetaMap = {
       ["name"] = "Hex Shrunken Head",
       ["soundFileName"] = "hex_shrunken_head",
       ["spellIconId"] = 134177,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4560,7 +4084,6 @@ local spellMetaMap = {
       ["name"] = "Icon of the Silver Crescent",
       ["soundFileName"] = "icon_of_the_silver_crescent",
       ["spellIconId"] = 135659,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4590,7 +4113,6 @@ local spellMetaMap = {
 
         return nil
       end)(),
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4599,7 +4121,6 @@ local spellMetaMap = {
       ["name"] = "Mind Quickening Gem",
       ["soundFileName"] = "mind_quickening_gem",
       ["spellIconId"] = 136115,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4609,7 +4130,6 @@ local spellMetaMap = {
       ["name"] = "Moroes' Lucky Pocket Watch",
       ["soundFileName"] = "moroes_lucky_pocket_watch",
       ["spellIconId"] = 134377,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4619,7 +4139,6 @@ local spellMetaMap = {
       ["name"] = "Ribbon of Sacrifice",
       ["soundFileName"] = "ribbon_of_sacrifice",
       ["spellIconId"] = 133686,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4629,7 +4148,6 @@ local spellMetaMap = {
       ["name"] = "Shadowmoon Insignia",
       ["soundFileName"] = "shadowmoon_insignia",
       ["spellIconId"] = 133265,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4639,7 +4157,6 @@ local spellMetaMap = {
       ["name"] = "Shard of Contempt",
       ["soundFileName"] = "shard_of_contempt",
       ["spellIconId"] = 134417,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4649,7 +4166,6 @@ local spellMetaMap = {
       ["name"] = "Spyglass of the Hidden Fleet",
       ["soundFileName"] = "spyglass_of_the_hidden_fleet",
       ["spellIconId"] = 134441,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4659,7 +4175,6 @@ local spellMetaMap = {
       ["name"] = "Steely Naaru Sliver",
       ["soundFileName"] = "steely_naaru_sliver",
       ["spellIconId"] = 133451,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4689,7 +4204,6 @@ local spellMetaMap = {
 
         return nil
       end)(),
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4698,7 +4212,6 @@ local spellMetaMap = {
       ["name"] = "The Skull of Gul'dan",
       ["soundFileName"] = "the_skull_of_guldan",
       ["spellIconId"] = 133729,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4708,7 +4221,6 @@ local spellMetaMap = {
       ["name"] = "Tiny Voodoo Mask",
       ["soundFileName"] = "tiny_voodoo_mask",
       ["spellIconId"] = 133067,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4717,7 +4229,6 @@ local spellMetaMap = {
       ["name"] = "Tome of Diabolic Remedy",
       ["soundFileName"] = "tome_of_diabolic_remedy",
       ["spellIconId"] = 134554,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4727,7 +4238,6 @@ local spellMetaMap = {
       ["name"] = "Tsunami Talisman",
       ["soundFileName"] = "tsunami_talisman",
       ["spellIconId"] = 136111,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4737,7 +4247,6 @@ local spellMetaMap = {
       ["name"] = "Ultrasafe Transporter: Gadgetzan",
       ["soundFileName"] = "ultrasafe_transporter_gadgetzan",
       ["spellIconId"] = 133870,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4746,7 +4255,6 @@ local spellMetaMap = {
       ["name"] = "Ultrasafe Transporter: Toshley's Station",
       ["soundFileName"] = "ultrasafe_transporter_toshleys_station",
       ["spellIconId"] = 133870,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4755,7 +4263,6 @@ local spellMetaMap = {
       ["name"] = "Vial of the Sunwell",
       ["soundFileName"] = "vial_of_the_sunwell",
       ["spellIconId"] = 134728,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -4764,7 +4271,6 @@ local spellMetaMap = {
       ["name"] = "Hyper-Vision Goggles",
       ["soundFileName"] = "hyper_vision_goggles",
       ["spellIconId"] = 133023,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4774,7 +4280,6 @@ local spellMetaMap = {
       ["name"] = "Nigh-Invulnerability Belt",
       ["soundFileName"] = "nigh_invulnerability_belt",
       ["spellIconId"] = 132516,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4784,7 +4289,6 @@ local spellMetaMap = {
       ["name"] = "Nigh-Invulnerability Belt (Backfire)",
       ["soundFileName"] = "nigh_invulnerability_belt_backfire",
       ["spellIconId"] = 132516,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4794,7 +4298,6 @@ local spellMetaMap = {
       ["name"] = "Rocket Boots Xtreme",
       ["soundFileName"] = "rocket_boots_xtreme",
       ["spellIconId"] = 133029,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4804,7 +4307,6 @@ local spellMetaMap = {
       ["name"] = "Skull of Impending Doom",
       ["soundFileName"] = "flee",
       ["spellIconId"] = 133729,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4814,7 +4316,6 @@ local spellMetaMap = {
       ["name"] = "Freedom (Spider Belt / Ornate Mithril Boots)",
       ["soundFileName"] = "immune_root",
       ["spellIconId"] = 136115,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4826,7 +4327,6 @@ local spellMetaMap = {
       ["name"] = "Catseye Elixir",
       ["soundFileName"] = "catseye_elixir",
       ["spellIconId"] = 134816,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4836,7 +4336,6 @@ local spellMetaMap = {
       ["name"] = "Destruction Potion",
       ["soundFileName"] = "destruction_potion",
       ["spellIconId"] = 134729,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4846,7 +4345,6 @@ local spellMetaMap = {
       ["name"] = "Free Action Potion",
       ["soundFileName"] = "free_action_potion",
       ["spellIconId"] = 134715,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4856,7 +4354,6 @@ local spellMetaMap = {
       ["name"] = "Haste Potion",
       ["soundFileName"] = "haste_potion",
       ["spellIconId"] = 134730,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4866,7 +4363,6 @@ local spellMetaMap = {
       ["name"] = "Heroic Potion",
       ["soundFileName"] = "heroic_potion",
       ["spellIconId"] = 134728,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4876,7 +4372,6 @@ local spellMetaMap = {
       ["name"] = "Insane Strength Potion",
       ["soundFileName"] = "insane_strength_potion",
       ["spellIconId"] = 134731,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4886,7 +4381,6 @@ local spellMetaMap = {
       ["name"] = "Invisibility Potion",
       ["soundFileName"] = "invisibility_potion",
       ["spellIconId"] = 134805,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4896,7 +4390,6 @@ local spellMetaMap = {
       ["name"] = "Ironshield Potion",
       ["soundFileName"] = "ironshield_potion",
       ["spellIconId"] = 134758,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4906,7 +4399,6 @@ local spellMetaMap = {
       ["name"] = "Lesser Invisibility Potion",
       ["soundFileName"] = "lesser_invisibility_potion",
       ["spellIconId"] = 134798,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4916,7 +4408,6 @@ local spellMetaMap = {
       ["name"] = "Living Action Potion",
       ["soundFileName"] = "living_action_potion",
       ["spellIconId"] = 134718,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4926,7 +4417,6 @@ local spellMetaMap = {
       ["name"] = "Major Arcane Protection Potion",
       ["soundFileName"] = "arcane_protection",
       ["spellIconId"] = 134752,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4936,7 +4426,6 @@ local spellMetaMap = {
       ["name"] = "Major Fire Protection Potion",
       ["soundFileName"] = "fire_protection",
       ["spellIconId"] = 134748,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4946,7 +4435,6 @@ local spellMetaMap = {
       ["name"] = "Major Frost Protection Potion",
       ["soundFileName"] = "frost_protection",
       ["spellIconId"] = 134750,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4956,7 +4444,6 @@ local spellMetaMap = {
       ["name"] = "Major Holy Protection Potion",
       ["soundFileName"] = "holy_protection",
       ["spellIconId"] = 134749,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4966,7 +4453,6 @@ local spellMetaMap = {
       ["name"] = "Major Nature Protection Potion",
       ["soundFileName"] = "nature_protection",
       ["spellIconId"] = 134751,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4976,7 +4462,6 @@ local spellMetaMap = {
       ["name"] = "Major Shadow Protection Potion",
       ["soundFileName"] = "shadow_protection",
       ["spellIconId"] = 134747,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4986,7 +4471,6 @@ local spellMetaMap = {
       ["name"] = "Mighty Rage Potion",
       ["soundFileName"] = "mighty_rage_potion",
       ["spellIconId"] = 134821,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -4996,7 +4480,6 @@ local spellMetaMap = {
       ["name"] = "Rage Potion",
       ["soundFileName"] = "rage_potion",
       ["spellIconId"] = 134804,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5005,7 +4488,6 @@ local spellMetaMap = {
       ["name"] = "Restorative Potion",
       ["soundFileName"] = "restorative_potion",
       ["spellIconId"] = 134712,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -5015,7 +4497,6 @@ local spellMetaMap = {
       ["name"] = "Sneaking Potion",
       ["soundFileName"] = "sneaking_potion",
       ["spellIconId"] = 134733,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -5025,7 +4506,6 @@ local spellMetaMap = {
       ["name"] = "Super Healing Potion",
       ["soundFileName"] = "super_healing_potion",
       ["spellIconId"] = 134756,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5034,7 +4514,6 @@ local spellMetaMap = {
       ["name"] = "Super Mana Potion",
       ["soundFileName"] = "super_mana_potion",
       ["spellIconId"] = 134762,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5043,7 +4522,6 @@ local spellMetaMap = {
       ["name"] = "Super Rejuvenation Potion",
       ["soundFileName"] = "super_rejuvenation_potion",
       ["spellIconId"] = 134759,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5052,7 +4530,6 @@ local spellMetaMap = {
       ["name"] = "Adamantite Grenade",
       ["soundFileName"] = "adamantite_grenade",
       ["spellIconId"] = 133716,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5061,7 +4538,6 @@ local spellMetaMap = {
       ["name"] = "Fel Iron Bomb",
       ["soundFileName"] = "fel_iron_bomb",
       ["spellIconId"] = 133009,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5070,7 +4546,6 @@ local spellMetaMap = {
       ["name"] = "Frost Grenade",
       ["soundFileName"] = "frost_grenade",
       ["spellIconId"] = 135851,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5079,7 +4554,6 @@ local spellMetaMap = {
       ["name"] = "Super Sapper Charge",
       ["soundFileName"] = "super_sapper_charge",
       ["spellIconId"] = 133035,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5088,7 +4562,6 @@ local spellMetaMap = {
       ["name"] = "Fel Blossom",
       ["soundFileName"] = "fel_blossom",
       ["spellIconId"] = 134206,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -5098,7 +4571,6 @@ local spellMetaMap = {
       ["name"] = "Nightmare Seed",
       ["soundFileName"] = "nightmare_seed",
       ["spellIconId"] = 134217,
-      ["hasFade"] = true,
       ["trackedEvents"] = {
         "SPELL_AURA_APPLIED",
         "SPELL_AURA_REMOVED"
@@ -5108,7 +4580,6 @@ local spellMetaMap = {
       ["name"] = "Thistle Tea",
       ["soundFileName"] = "thistle_tea",
       ["spellIconId"] = 132819,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5117,7 +4588,6 @@ local spellMetaMap = {
       ["name"] = "Netherweave Net",
       ["soundFileName"] = "netherweave_net",
       ["spellIconId"] = 134325,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
@@ -5126,7 +4596,6 @@ local spellMetaMap = {
       ["name"] = "First Aid",
       ["soundFileName"] = "first_aid",
       ["spellIconId"] = 135966,
-      ["hasFade"] = false,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS"
       }
