@@ -24,11 +24,11 @@
 
 local mod = rgpvpw
 local me = {}
-mod.testSoundEnemyAvoidDruid = me
+mod.testSoundEnemyAvoidDruidEn = me
 
-me.tag = "TestSoundEnemyAvoidDruid"
+me.tag = "TestSoundEnemyAvoidDruidEn"
 
-local testGroupName = "SoundEnemyAvoidDruid"
+local testGroupName = "SoundEnemyAvoidDruidEn"
 local testCategory = RGPVPW_CONSTANTS.CATEGORIES.DRUID.id
 
 function me.Test()
