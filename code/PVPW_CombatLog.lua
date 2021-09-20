@@ -44,10 +44,12 @@ function me.ProcessUnfilteredCombatLogEvent(callback, ...)
   if RGPVPW_ENVIRONMENT.DEBUG then
     mod.debug.TrackLogEvent(...)
   end
-
   --[[
     Differentiate between combat logs from hostile players and entries that where caused
     by the players spellcasts
+
+    COMBATLOG_FILTER_HOSTILE_PLAYERS - filters for logs that where triggered by the enemy
+    COMBATLOG_FILTER_MINE - filters for events that where triggered by the player(mine) himself
   ]]--
   if CombatLog_Object_IsA(sourceFlags, COMBATLOG_FILTER_HOSTILE_PLAYERS) then
     me.ProcessEventHostilePlayers(event, callback, ...)
@@ -91,8 +93,6 @@ end
   @param {vararg} ...
 ]]--
 function me.ProcessEventMine(event, callback, ...)
-  if true then return end -- TODO
-
   if event == "SPELL_MISSED" then
     me.ProcessMissed(event, RGPVPW_CONSTANTS.TARGET_ENEMY, callback, ...)
   end
@@ -133,7 +133,7 @@ function me.ProcessNormal(event, callback, ...)
   end
 
   mod.warn.PlayWarning(
-    mod.common.GetCategoryById(spell.category).categoryName, spellType, spellMetaData, callback, playSound, playVisual)
+    spell.category, spellType, spellMetaData, callback, playSound, playVisual)
 end
 
 --[[
@@ -152,7 +152,6 @@ function me.ProcessMissed(event, spellMissedTarget, callback, ...)
   local spellId, _, _, missType = select(12, ...)
   local playSound
   local playVisual
-
   if not me.IsSupportedMissType(missType) then
     mod.logger.LogDebug(me.tag, "ProcessMissed ignore unsupported missType: " .. missType)
     return
@@ -184,7 +183,7 @@ function me.ProcessMissed(event, spellMissedTarget, callback, ...)
   end
 
   mod.warn.PlayWarning(
-    mod.common.GetCategoryById(spell.category).categoryName, spellType, spellMetaData, callback, playSound, playVisual)
+    spell.category, spellType, spellMetaData, callback, playSound, playVisual)
 end
 
 --[[
@@ -333,6 +332,10 @@ end
     false - if the missType is not supported
 ]]--
 function me.IsSupportedMissType(missType)
+  if RGPVPW_ENVIRONMENT.TEST then
+    return true
+  end
+
   if RGPVPW_CONSTANTS.MISS_TYPES[missType] ~= nil then
     return true
   end

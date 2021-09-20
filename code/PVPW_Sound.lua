@@ -44,7 +44,7 @@ local FILE_TYPE = ".mp3"
 
 --[[
   Play a sound from the assets-folder
-  @param {string} categoryName
+  @param {number} categoryId
     RGPVPW_CONSTANTS.CATEGORIES
   @param {number} spellType
     see constants SPELL_TYPES
@@ -54,9 +54,9 @@ local FILE_TYPE = ".mp3"
     0 if there was a problem
     1 if sound was played
 ]]--
-function me.PlaySound(categoryName, spellType, soundFileName)
-  assert(type(categoryName) == "string",
-    string.format("bad argument #1 to `PlaySound` (expected string got %s)", type(categoryName)))
+function me.PlaySound(categoryId, spellType, soundFileName)
+  assert(type(categoryId) == "number",
+    string.format("bad argument #1 to `PlaySound` (expected number got %s)", type(categoryId)))
 
   assert(type(spellType) == "number",
     string.format("bad argument #2 to `PlaySound` (expected number got %s)", type(spellType)))
@@ -64,6 +64,7 @@ function me.PlaySound(categoryName, spellType, soundFileName)
   assert(type(soundFileName) == "string",
     string.format("bad argument #3 to `PlaySound` (expected string got %s)", type(soundFileName)))
 
+  local categoryName = mod.common.GetCategoryById(categoryId).categoryName
   local status = 0
   local soundPath = BASE_PATH .. categoryName .. "\\"
   local spellTypes = RGPVPW_CONSTANTS.SPELL_TYPES

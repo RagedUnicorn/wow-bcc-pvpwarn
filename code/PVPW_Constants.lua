@@ -149,9 +149,19 @@ RGPVPW_CONSTANTS = {
     ["SELF_AVOID"] = 1,
     ["ENEMY_AVOID"] = 2
   },
-  SPELL_AVOID_MAP = "spellAvoidMap",
-  SPELL_MAP = "spellMetaMap",
+  --[[
+    Meaning the player was the target of the spell and thus avoided an enemy spell
+    E.g. You avoid FrostBolt
+
+    Matches to RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  ]]--
   TARGET_SELF = 1,
+  --[[
+    Meaning an enemy was the target of the spell and thus avoided a spell of the player himself
+    E.g. PlayerXY avoided your Silence
+
+    Matches to RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  ]]--
   TARGET_ENEMY = 2,
   --[[
     Max age in seconds of a warn message before it is considered to old. Messages

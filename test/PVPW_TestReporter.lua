@@ -194,30 +194,30 @@ end
 --[[
   Report a test as failed
 
-  @param {string} category
+  @param {number} categoryId
   @param {string} testName
   @param {string} reason
     Option reason why a failure is getting reported
 ]]--
-function me.ReportFailureTestRun(category, testName, reason)
+function me.ReportFailureTestRun(categoryId, testName, reason)
   if testManager.currentTest == nil then
     mod.logger.LogError(me.tag, "Cannot report test status because there was no test started")
     return
   end
 
+  local categoryName = mod.testHelper.FirstToUpper(mod.common.GetCategoryById(categoryId).categoryName)
   local logMessage = string.format("Test with name %s finished with status FAILURE", testManager.currentTest)
   me.LogTestMessage(logMessage)
 
   if reason then
-    me.LogTestMessage(category .. " : " .. testName .. " - " .. reason)
+    me.LogTestMessage(categoryName .. " : " .. testName .. " - " .. reason)
   end
 
   PVPWarnTestLog[testManager.currentTestGroup].testFailure =
     PVPWarnTestLog[testManager.currentTestGroup].testFailure + 1
   PVPWarnTestLog[testManager.currentTestGroup][testManager.currentTest].status = "FAILURE"
   table.insert(PVPWarnTestLog[testManager.currentTestGroup][testManager.currentTest], logMessage)
-
-  table.insert(testManager.currentFailedTests, category .. " - " .. testName)
+  table.insert(testManager.currentFailedTests, categoryName .. " - " .. testName)
 
   -- reset
   testManager.currentTest = nil

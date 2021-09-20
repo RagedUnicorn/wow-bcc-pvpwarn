@@ -52,6 +52,37 @@ mod.testHelper.missingCombatEventTest = "Did not find a combat event test for %s
 mod.testHelper.missingCombatEventAvoidTest = "Did not find a combat avoid event test for %s - %s"
 
 --[[
+  All events that are considered basic/normal combat events
+]]--
+local combatEvents = {
+  RGPVPW_CONSTANTS.EVENT_SPELL_CAST_START,
+  RGPVPW_CONSTANTS.EVENT_SPELL_AURA_APPLIED,
+  RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED,
+  RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REFRESH
+}
+
+--[[
+  @return {table}
+]]--
+function me.GetCombatEvents()
+  return combatEvents
+end
+
+--[[
+  All events that are considered avoid events
+]]--
+local avoidCombatEvents = {
+  RGPVPW_CONSTANTS.EVENT_SPELL_MISSED
+}
+
+--[[
+  @return {table}
+]]--
+function me.GetAvoidCombatEvents()
+  return avoidCombatEvents
+end
+
+--[[
   Returns a matched language to a locale string
 
   @return {string | nil}
@@ -81,36 +112,12 @@ function me.MappEventToName(event)
     ["SPELL_CAST_START"] = "Start",
     ["SPELL_AURA_APPLIED"] = "Applied",
     ["SPELL_AURA_REMOVED"] = "Removed",
-    ["SPELL_AURA_REFRESH"] = "Refresh"
+    ["SPELL_AURA_REFRESH"] = "Refresh",
+    ["SPELL_MISSED"] = "Missed"
   }
 
   return eventMap[event]
 end
-
-
---[[
-  Determines the correct spellMap based on the spellType
-
-  @param {number} spellType
-]]
-function me.GetSpellMap(spellType)
-  if spellType == RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL or
-      spellType == RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED or
-      spellType == RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED or
-      spellType == RGPVPW_CONSTANTS.SPELL_TYPES.START or
-      spellType == RGPVPW_CONSTANTS.SPELL_TYPES.REFRESH then
-    return RGPVPW_CONSTANTS.SPELL_MAP
-  end
-
-  if spellType == RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF or
-      spellType == RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY then
-    return RGPVPW_CONSTANTS.SPELL_AVOID_MAP
-  end
-
-  mod.logger.LogError(me.tag, "Invalid spellType: " .. spellType)
-  return nil
-end
-
 
 --[[
   Normalize a spellName so it can be matched against a functionname
@@ -234,24 +241,6 @@ function me.GetEnemyPlayerSourceFlags()
 end
 
 --[[
-  @param {number} missTypeId
-    RGPVPW_CONSTANTS.MISS_TYPES
-
-  @return {string | nil}
-    string - the textual representation of the missTypeId
-    nil - if no matching missType could be found
-]]--
-function me.GetMissTypeNameById(missTypeId)
-  for missTypeName, id in pairs(RGPVPW_CONSTANTS.MISS_TYPES) do
-    if missTypeId == id then
-      return missTypeName
-    end
-  end
-
-  return nil
-end
-
---[[
   @return {number}
 ]]--
 function me.GetSelfPlayerSourceFlags()
@@ -262,15 +251,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_AURA_APPLIED event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundApplied(testName, testCategory, spellName)
+function me.TestSoundApplied(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_AURA_APPLIED,
     RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL
   )
@@ -278,7 +267,7 @@ function me.TestSoundApplied(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -286,15 +275,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_AURA_REMOVED event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundRemoved(testName, testCategory, spellName)
+function me.TestSoundRemoved(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED,
     RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED
   )
@@ -302,7 +291,7 @@ function me.TestSoundRemoved(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -310,15 +299,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_CAST_SUCCESS event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundSuccess(testName, testCategory, spellName)
+function me.TestSoundSuccess(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_CAST_SUCCESS,
     RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL
   )
@@ -326,7 +315,7 @@ function me.TestSoundSuccess(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -334,15 +323,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_CAST_START event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundStart(testName, testCategory, spellName)
+function me.TestSoundStart(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_CAST_START,
     RGPVPW_CONSTANTS.SPELL_TYPES.START
   )
@@ -350,7 +339,7 @@ function me.TestSoundStart(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -358,15 +347,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_MISSED event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundSpellMissedSelf(testName, testCategory, spellName)
+function me.TestSoundSpellMissedSelf(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_MISSED,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
@@ -374,7 +363,7 @@ function me.TestSoundSpellMissedSelf(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -382,15 +371,15 @@ end
   Tests whether a sound can be played for a certain category, spellName and the SPELL_MISSED event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestSoundSpellMissedEnemy(testName, testCategory, spellName)
+function me.TestSoundSpellMissedEnemy(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local status = me.TestSound(
     spellName,
-    testCategory,
+    testCategoryId,
     RGPVPW_CONSTANTS.EVENT_SPELL_MISSED,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
@@ -398,7 +387,7 @@ function me.TestSoundSpellMissedEnemy(testName, testCategory, spellName)
   if status then
     mod.testReporter.ReportSuccessTestRun()
   else
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToPlay)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToPlay)
   end
 end
 
@@ -407,7 +396,7 @@ end
   considers that for certain spellTypes a different spellMap needs to be usedw
 
   @param {string} spellName
-  @param {number} testCategory
+  @param {number} testCategoryId
   @param {string} event
   @param {string} spellType
 
@@ -415,22 +404,15 @@ end
     true - If the sound could be played
     false - If the sound could not be played
 ]]--
-function me.TestSound(spellName, testCategory, event, spellType)
-  local spellMap = me.GetSpellMap(spellType)
-
-  if spellMap == nil then
-    mod.logger.LogError(me.tag, "Failed to retrieve spellMap")
-    return false
-  end
-
+function me.TestSound(spellName, testCategoryId, event, spellType)
   local spell = {
-    ["category"] = testCategory,
+    ["category"] = testCategoryId,
     ["name"] = spellName
   }
 
-  local spellMetaData = mod[spellMap].GetSpellMetaDataForSupportedEvent(spell, event)
+  local spellMetaData = mod.spellMetaMap.GetSpellMetaDataForSupportedEvent(spell, event)
   local status = mod.sound.PlaySound(
-    testCategory,
+    testCategoryId,
     spellType,
     spellMetaData.soundFileName
   )
@@ -442,10 +424,10 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_AURA_APPLIED event
 
   @param {string} testName
-  @param {number} testCategory
+  @param {number} testCategoryId
   @param {number} spellId
 ]]--
-function me.TestCombatEventApplied(testName, testCategory, spellId)
+function me.TestCombatEventApplied(testName, testCategoryId, spellId)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
@@ -456,12 +438,12 @@ function me.TestCombatEventApplied(testName, testCategory, spellId)
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
-  if testCategory ~= category then
-    failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+  if testCategoryId ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
   end
 
   if RGPVPW_CONSTANTS.SPELL_TYPES.APPLIED ~= spellType then
@@ -469,7 +451,7 @@ function me.TestCombatEventApplied(testName, testCategory, spellId)
   end
 
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -479,10 +461,10 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_AURA_REMOVED event
 
   @param {string} testName
-  @param {number} testCategory
+  @param {number} testCategoryId
   @param {number} spellId
 ]]--
-function me.TestCombatEventRemoved(testName, testCategory, spellId)
+function me.TestCombatEventRemoved(testName, testCategoryId, spellId)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
@@ -493,12 +475,12 @@ function me.TestCombatEventRemoved(testName, testCategory, spellId)
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
-  if testCategory ~= category then
-    failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+  if testCategoryId ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
   end
 
   if RGPVPW_CONSTANTS.SPELL_TYPES.REMOVED ~= spellType then
@@ -506,7 +488,7 @@ function me.TestCombatEventRemoved(testName, testCategory, spellId)
   end
 
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -516,10 +498,10 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_AURA_REFRESH event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestCombatEventRefresh(testName, testCategory, spellName)
+function me.TestCombatEventRefresh(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
@@ -530,28 +512,20 @@ function me.TestCombatEventRefresh(testName, testCategory, spellName)
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
-  if spell.links ~= nil then
-    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategory, category, spell)
+  if testCategoryId ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
+  end
 
-    if linkedSpell == nil then
-      failureReason = string.format("No matching category %s for linked spell found", testCategory)
-    end
-  else
-    if testCategory ~= category then
-      failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
-    end
-
-    if RGPVPW_CONSTANTS.SPELL_TYPES.REFRESH ~= spellType then
-      failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.REFRESH, spellType)
-    end
+  if RGPVPW_CONSTANTS.SPELL_TYPES.REFRESH ~= spellType then
+    failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.REFRESH, spellType)
   end
 
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -561,10 +535,10 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_CAST_SUCCESS event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestCombatEventSuccess(testName, testCategory, spellName)
+function me.TestCombatEventSuccess(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
@@ -575,28 +549,20 @@ function me.TestCombatEventSuccess(testName, testCategory, spellName)
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
-  if spell.links ~= nil then
-    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategory, category, spell)
-
-    if linkedSpell == nil then
-      failureReason = string.format("No matching category %s for linked spell found", testCategory)
-    end
-  else
-    if testCategory ~= category then
-      failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
-    end
-
-    if RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL ~= spellType then
-      failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL, spellType)
-    end
+  if testCategoryId ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
   end
 
+  if RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL ~= spellType then
+    failureReason = string.format("Expected spellType %i but got %i", RGPVPW_CONSTANTS.SPELL_TYPES.NORMAL, spellType)
+    end
+
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -606,10 +572,10 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_CAST_START event
 
   @param {string} testName
-  @param {string} testCategory
+  @param {number} testCategoryId
   @param {string} spellName
 ]]--
-function me.TestCombatEventStart(testName, testCategory, spellName)
+function me.TestCombatEventStart(testName, testCategoryId, spellName)
   mod.testReporter.StartTestRun(testName)
 
   local failureReason
@@ -620,19 +586,19 @@ function me.TestCombatEventStart(testName, testCategory, spellName)
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
   if spell.links ~= nil then
-    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategory, category, spell)
+    local linkedSpell = me.SearchLinkedSpellWithCategory(testCategoryId, category, spell)
 
     if linkedSpell == nil then
-      failureReason = string.format("No matching category %s for linked spell found", testCategory)
+      failureReason = string.format("No matching category %s for linked spell found", testCategoryId)
     end
   else
-    if testCategory ~= category then
-      failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+    if testCategoryId ~= category then
+      failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
     end
 
     if RGPVPW_CONSTANTS.SPELL_TYPES.START ~= spellType then
@@ -641,7 +607,7 @@ function me.TestCombatEventStart(testName, testCategory, spellName)
   end
 
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -651,14 +617,12 @@ end
   Tests whether a combatevent can be processed for a certain category, spellName and the SPELL_MISSED event
 
   @param {string} testName
-  @param {string} testCategory
-  @param {string} spellName
+  @param {number} testCategoryId
+  @param {number} spellId
   @param {string} expectedSpellType
     One of RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF or RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
-  @param {number} missType
-    RGPVPW_CONSTANTS.MISS_TYPES
 ]]--
-function me.TestCombatEventSpellMissed(testName, testCategory, spellName, expectedSpellType, missType)
+function me.TestCombatEventSpellMissed(testName, testCategoryId, spellId, expectedSpellType)
   mod.testReporter.StartTestRun(testName)
 
   local sourceFlags
@@ -673,19 +637,18 @@ function me.TestCombatEventSpellMissed(testName, testCategory, spellName, expect
 
   local failureReason
   local category, spellType, spell = me.TestCombatEventAvoid(
-    spellName,
+    spellId,
     RGPVPW_CONSTANTS.EVENT_SPELL_MISSED,
-    sourceFlags,
-    missType
+    sourceFlags
   )
 
   if not spell then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, mod.testHelper.unableToGetMetadata)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, mod.testHelper.unableToGetMetadata)
     return
   end
 
-  if testCategory ~= category then
-    failureReason = string.format("Expected category %s but got %s", testCategory, tostring(category))
+  if testCategoryId ~= category then
+    failureReason = string.format("Expected category %s but got %s", testCategoryId, tostring(category))
   end
 
   if expectedSpellType ~= spellType then
@@ -695,7 +658,7 @@ function me.TestCombatEventSpellMissed(testName, testCategory, spellName, expect
   end
 
   if failureReason ~= nil then
-    mod.testReporter.ReportFailureTestRun(testCategory, testName, failureReason)
+    mod.testReporter.ReportFailureTestRun(testCategoryId, testName, failureReason)
   else
     mod.testReporter.ReportSuccessTestRun()
   end
@@ -735,26 +698,29 @@ function me.TestCombatEvent(spellId, event, sourceFlags)
 end
 
 --[[
-  @param {string} spellName
+  @param {number} spellId
   @param {string} event
   @param {number} sourceFlags
     Sourceflags to determine the source of the combatlog event
-  @param {number} missTypeId
-    RGPVPW_CONSTANTS.MISS_TYPES
 
   @return {string}, {string}, {table}
 ]]--
-function me.TestCombatEventAvoid(spellName, event, sourceFlags, missType)
+function me.TestCombatEventAvoid(spellId, event, sourceFlags)
   local target = me.GetGenericEnemyId()
   local targetName = me.GetGenericEnemyName()
-  local missTypeName = me.GetMissTypeNameById(missType)
   local actualCategory
   local actualSpellType
   local actualSpell
+  --[[
+    A dummy misstype that is accepted as a valid misstype during testing. We are mostly not
+    interested in what the exactmisstype was other than filtering some of them out. But whether
+    a spell was dodged or missed doesn't matter to PVPWarn
+  ]]--
+  local dummyMissType = "DUMMY_MISS_TYPE"
 
   -- luacheck: ignore _
   local fakeSpellCastCombatEvent = function()
-    return  _, event, _, _, _, sourceFlags, _, target, targetName, _, _, _, spellName, _, missTypeName
+    return  _, event, _, _, _, sourceFlags, _, target, targetName, _, _, spellId, _, _, dummyMissType
   end
 
   me.HookCombatLogGetCurrentEventInfo(fakeSpellCastCombatEvent)

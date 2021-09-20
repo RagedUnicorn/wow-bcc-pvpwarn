@@ -82,8 +82,8 @@ test/PVPW_TestSoundDruidEn.lua
 test/PVPW_TestSoundSelfAvoidDruidEn.lua
 test/PVPW_TestSoundEnemyAvoidDruidEn.lua
 test/PVPW_TestCombatEventsDruid.lua
-test/PVPW_TestCombatEventsSelfAvoidDruidEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidDruidEn.lua
+test/PVPW_TestCombatEventsSelfAvoidDruid.lua
+test/PVPW_TestCombatEventsEnemyAvoidDruid.lua
 
 # hunter
 test/PVPW_TestSoundHunterEn.lua

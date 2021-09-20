@@ -70,7 +70,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132114,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["bear_form"] = {
@@ -97,7 +98,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132140,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["cower"] = {
@@ -126,7 +128,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136022,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["dash"] = {
@@ -145,7 +148,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132121,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["dire_bear_form"] = {
@@ -173,7 +177,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136100,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["faerie_fire"] = {
@@ -192,7 +197,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132127,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["flight_form"] = {
@@ -238,7 +244,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136090,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["hurricane"] = {
@@ -266,7 +273,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132131,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["lifebloom"] = {
@@ -284,7 +292,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132134,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mangle_bear"] = {
@@ -293,7 +302,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132135,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mangle_cat"] = {
@@ -302,7 +312,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132135,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mark_of_the_wild"] = {
@@ -320,7 +331,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136096,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["pounce"] = {
@@ -329,7 +341,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132142,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["prowl"] = {
@@ -347,7 +360,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132122,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["ravage"] = {
@@ -356,7 +370,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132141,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["rebirth"] = {
@@ -401,7 +416,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132152,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shred"] = {
@@ -410,7 +426,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136231,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["starfire"] = {
@@ -419,7 +436,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135753,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["swift_flight_form"] = {
@@ -437,7 +455,8 @@ local spellMetaMap = {
       ["spellIconId"] = 134296,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["thorns"] = {
@@ -486,7 +505,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136006,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["faerie_fire_feral"] = {
@@ -495,7 +515,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136033,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["feral_charge"] = {
@@ -504,7 +525,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132183,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["force_of_nature"] = {
@@ -522,7 +544,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136045,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["moonkin_form"] = {
@@ -2631,7 +2654,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132292,
       ["hasFade"] = false,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["expose_armor"] = {

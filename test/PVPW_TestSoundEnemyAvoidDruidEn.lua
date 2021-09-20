@@ -24,12 +24,12 @@
 
 local mod = rgpvpw
 local me = {}
-mod.testSoundEnemyAvoidDruidEn = me
+mod.testSoundEnemyAvoidDruid = me
 
-me.tag = "TestSoundEnemyAvoidDruidEn"
+me.tag = "TestSoundEnemyAvoidDruid"
 
-local testGroupName = "SoundEnemyAvoidDruidEn"
-local testCategory = "druid"
+local testGroupName = "SoundEnemyAvoidDruid"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.DRUID.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,34 +42,39 @@ function me.Test()
 end
 
 function me.CollectTestCases()
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidEntanglingRoot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidClaw)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidCyclone)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDemoralizingRoar)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidEntanglingRoots)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFaerieFire)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFerociousBite)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidHibernate)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidLacerate)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMaim)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMangleBear)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMangleCat)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMoonfire)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidPounce)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRake)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRavage)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRip)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidShred)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidStarfire)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidSwipe)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidWrath)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFaerieFireFeral)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidBash)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFeralChargeEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFeralCharge)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidInsectSwarm)
 end
 
-function me.TestSoundEnemyAvoidEntanglingRoots()
+function me.TestSoundEnemyAvoidBash()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidEntanglingRoots",
+    "TestSoundEnemyAvoidBash",
     testCategory,
-    "Entangling Roots"
-  )
-end
-
-function me.TestSoundEnemyAvoidFaerieFire()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidFaerieFire",
-    testCategory,
-    "Faerie Fire"
-  )
-end
-
-function me.TestSoundEnemyAvoidFaerieFireFeral()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidFaerieFireFeral",
-    testCategory,
-    "Faerie Fire (Feral)"
+    "bash"
   )
 end
 
@@ -77,14 +82,190 @@ function me.TestSoundEnemyAvoidBash()
   mod.testHelper.TestSoundSpellMissedEnemy(
     "TestSoundEnemyAvoidBash",
     testCategory,
-    "Bash"
+    "bash"
   )
 end
 
-function me.TestSoundEnemyAvoidFeralChargeEffect()
+function me.TestSoundEnemyAvoidClaw()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidFeralChargeEffect",
+    "TestSoundEnemyAvoidClaw",
     testCategory,
-    "Feral Charge Effect"
+    "claw"
+  )
+end
+
+function me.TestSoundEnemyAvoidCyclone()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidCyclone",
+    testCategory,
+    "cyclone"
+  )
+end
+
+function me.TestSoundEnemyAvoidDemoralizingRoar()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidDemoralizingRoar",
+    testCategory,
+    "demoralizing_roar"
+  )
+end
+
+function me.TestSoundEnemyAvoidEntanglingRoots()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidEntanglingRoots",
+    testCategory,
+    "entangling_roots"
+  )
+end
+
+function me.TestSoundEnemyAvoidFaerieFire()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidFaerieFire",
+    testCategory,
+    "faerie_fire"
+  )
+end
+
+function me.TestSoundEnemyAvoidFerociousBite()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidFerociousBite",
+    testCategory,
+    "ferocious_bite"
+  )
+end
+
+function me.TestSoundEnemyAvoidHibernate()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidHibernate",
+    testCategory,
+    "hibernate"
+  )
+end
+
+function me.TestSoundEnemyAvoidLacerate()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidLacerate",
+    testCategory,
+    "lacerate"
+  )
+end
+
+function me.TestSoundEnemyAvoidMaim()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidMaim",
+    testCategory,
+    "maim"
+  )
+end
+
+function me.TestSoundEnemyAvoidMangleBear()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidMangleBear",
+    testCategory,
+    "mangle_bear"
+  )
+end
+
+function me.TestSoundEnemyAvoidMangleCat()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidMangleCat",
+    testCategory,
+    "mangle_cat"
+  )
+end
+
+function me.TestSoundEnemyAvoidMoonfire()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidMoonfire",
+    testCategory,
+    "moonfire"
+  )
+end
+
+function me.TestSoundEnemyAvoidPounce()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidPounce",
+    testCategory,
+    "pounce"
+  )
+end
+
+function me.TestSoundEnemyAvoidRake()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidRake",
+    testCategory,
+    "rake"
+  )
+end
+
+function me.TestSoundEnemyAvoidRavage()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidRavage",
+    testCategory,
+    "ravage"
+  )
+end
+
+function me.TestSoundEnemyAvoidRip()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidRip",
+    testCategory,
+    "rip"
+  )
+end
+
+function me.TestSoundEnemyAvoidShred()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidShred",
+    testCategory,
+    "shred"
+  )
+end
+
+function me.TestSoundEnemyAvoidStarfire()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidStarfire",
+    testCategory,
+    "starfire"
+  )
+end
+
+function me.TestSoundEnemyAvoidSwipe()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidSwipe",
+    testCategory,
+    "swipe"
+  )
+end
+
+function me.TestSoundEnemyAvoidWrath()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidWrath",
+    testCategory,
+    "wrath"
+  )
+end
+
+function me.TestSoundEnemyAvoidFaerieFireFeral()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidFaerieFireFeral",
+    testCategory,
+    "faerie_fire_feral"
+  )
+end
+
+function me.TestSoundEnemyAvoidFeralCharge()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidFeralCharge",
+    testCategory,
+    "feral_charge"
+  )
+end
+
+function me.TestSoundEnemyAvoidInsectSwarm()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidInsectSwarm",
+    testCategory,
+    "insect_swarm"
   )
 end
