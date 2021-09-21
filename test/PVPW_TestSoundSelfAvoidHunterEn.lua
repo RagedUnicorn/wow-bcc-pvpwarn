@@ -29,7 +29,7 @@ mod.testSoundSelfAvoidHunterEn = me
 me.tag = "TestSoundSelfAvoidHunterEn"
 
 local testGroupName = "SoundSelfAvoidHunterEn"
-local testCategory = "hunter"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.HUNTER.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,27 +42,130 @@ function me.Test()
 end
 
 function me.CollectTestCases()
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidArcaneShot)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidConcussiveShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidScatterShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidExplosiveTrap)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFlare)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFreezingTrap)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFrostTrap)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHuntersMark)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidImmolationTrap)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMongooseBite)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMultiShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidRaptorStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidScareBeast)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidScorpidSting)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSerpentSting)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidViperSting)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFreezingTrapEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidWingClip)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidAimedShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCounterattack)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidScatterShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSilencingShot)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidWyvernSting)
+end
+
+function me.TestSoundSelfAvoidArcaneShot()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidArcaneShot",
+    testCategory,
+    "arcane_shot"
+  )
 end
 
 function me.TestSoundSelfAvoidConcussiveShot()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidConcussiveShot",
     testCategory,
-    "Concussive Shot"
+    "concussive_shot"
   )
 end
 
-function me.TestSoundSelfAvoidScatterShot()
+function me.TestSoundSelfAvoidExplosiveTrap()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidScatterShot",
+    "TestSoundSelfAvoidExplosiveTrap",
     testCategory,
-    "Scatter Shot"
+    "explosive_trap"
+  )
+end
+
+function me.TestSoundSelfAvoidFlare()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFlare",
+    testCategory,
+    "flare"
+  )
+end
+
+function me.TestSoundSelfAvoidFreezingTrap()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFreezingTrap",
+    testCategory,
+    "freezing_trap"
+  )
+end
+
+function me.TestSoundSelfAvoidFrostTrap()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFrostTrap",
+    testCategory,
+    "frost_trap"
+  )
+end
+
+function me.TestSoundSelfAvoidHuntersMark()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidHuntersMark",
+    testCategory,
+    "hunters_mark"
+  )
+end
+
+function me.TestSoundSelfAvoidImmolationTrap()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidImmolationTrap",
+    testCategory,
+    "immolation_trap"
+  )
+end
+
+function me.TestSoundSelfAvoidMongooseBite()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidMongooseBite",
+    testCategory,
+    "mongoose_bite"
+  )
+end
+
+function me.TestSoundSelfAvoidMultiShot()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidMultiShot",
+    testCategory,
+    "multi_shot"
+  )
+end
+
+function me.TestSoundSelfAvoidRaptorStrike()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidRaptorStrike",
+    testCategory,
+    "raptor_strike"
+  )
+end
+
+function me.TestSoundSelfAvoidScareBeast()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidScareBeast",
+    testCategory,
+    "scare_beast"
+  )
+end
+
+function me.TestSoundSelfAvoidScorpidSting()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidScorpidSting",
+    testCategory,
+    "scorpid_sting"
   )
 end
 
@@ -70,7 +173,7 @@ function me.TestSoundSelfAvoidSerpentSting()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidSerpentSting",
     testCategory,
-    "Serpent Sting"
+    "serpent_sting"
   )
 end
 
@@ -78,15 +181,7 @@ function me.TestSoundSelfAvoidViperSting()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidViperSting",
     testCategory,
-    "Viper Sting"
-  )
-end
-
-function me.TestSoundSelfAvoidFreezingTrapEffect()
-  mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidFreezingTrapEffect",
-    testCategory,
-    "Freezing Trap Effect"
+    "viper_sting"
   )
 end
 
@@ -94,6 +189,46 @@ function me.TestSoundSelfAvoidWingClip()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidWingClip",
     testCategory,
-    "Wing Clip"
+    "wing_clip"
+  )
+end
+
+function me.TestSoundSelfAvoidAimedShot()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidAimedShot",
+    testCategory,
+    "aimed_shot"
+  )
+end
+
+function me.TestSoundSelfAvoidCounterattack()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidCounterattack",
+    testCategory,
+    "counterattack"
+  )
+end
+
+function me.TestSoundSelfAvoidScatterShot()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidScatterShot",
+    testCategory,
+    "scatter_shot"
+  )
+end
+
+function me.TestSoundSelfAvoidSilencingShot()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidSilencingShot",
+    testCategory,
+    "silencing_shot"
+  )
+end
+
+function me.TestSoundSelfAvoidWyvernSting()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidWyvernSting",
+    testCategory,
+    "wyvern_sting"
   )
 end

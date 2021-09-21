@@ -90,8 +90,8 @@ test/PVPW_TestSoundHunterEn.lua
 test/PVPW_TestSoundSelfAvoidHunterEn.lua
 test/PVPW_TestSoundEnemyAvoidHunterEn.lua
 test/PVPW_TestCombatEventsHunter.lua
-test/PVPW_TestCombatEventsSelfAvoidHunterEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidHunterEn.lua
+test/PVPW_TestCombatEventsSelfAvoidHunter.lua
+test/PVPW_TestCombatEventsEnemyAvoidHunter.lua
 
 # mage
 test/PVPW_TestSoundMageEn.lua

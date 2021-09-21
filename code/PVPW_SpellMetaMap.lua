@@ -553,7 +553,8 @@ local spellMetaMap = {
       ["soundFileName"] = "arcane_shot",
       ["spellIconId"] = 132218,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["aspect_of_the_beast"] = {
@@ -617,7 +618,8 @@ local spellMetaMap = {
       ["soundFileName"] = "concussive_shot",
       ["spellIconId"] = 135860,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["disengage"] = {
@@ -633,7 +635,8 @@ local spellMetaMap = {
       ["soundFileName"] = "explosive_trap",
       ["spellIconId"] = 135826,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["flare"] = {
@@ -641,7 +644,8 @@ local spellMetaMap = {
       ["soundFileName"] = "flare",
       ["spellIconId"] = 135815,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["freezing_trap"] = {
@@ -649,7 +653,8 @@ local spellMetaMap = {
       ["soundFileName"] = "freezing_trap",
       ["spellIconId"] = 135834,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["frost_trap"] = {
@@ -657,7 +662,8 @@ local spellMetaMap = {
       ["soundFileName"] = "frost_trap",
       ["spellIconId"] = 135840,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["hunters_mark"] = {
@@ -665,7 +671,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hunters_mark",
       ["spellIconId"] = 132212,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["immolation_trap"] = {
@@ -673,7 +680,8 @@ local spellMetaMap = {
       ["soundFileName"] = "immolation_trap",
       ["spellIconId"] = 135813,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mend_pet"] = {
@@ -689,7 +697,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mongoose_bite",
       ["spellIconId"] = 132215,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["multi_shot"] = {
@@ -697,7 +706,8 @@ local spellMetaMap = {
       ["soundFileName"] = "multi_shot",
       ["spellIconId"] = 132330,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["rapid_fire"] = {
@@ -714,7 +724,8 @@ local spellMetaMap = {
       ["soundFileName"] = "raptor_strike",
       ["spellIconId"] = 132223,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["revive_pet"] = {
@@ -730,7 +741,8 @@ local spellMetaMap = {
       ["soundFileName"] = "scare_beast",
       ["spellIconId"] = 132118,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["scorpid_sting"] = {
@@ -738,7 +750,8 @@ local spellMetaMap = {
       ["soundFileName"] = "scorpid_sting",
       ["spellIconId"] = 132169,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["serpent_sting"] = {
@@ -746,7 +759,8 @@ local spellMetaMap = {
       ["soundFileName"] = "serpent_sting",
       ["spellIconId"] = 132204,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["snake_trap"] = {
@@ -826,7 +840,8 @@ local spellMetaMap = {
       ["soundFileName"] = "viper_sting",
       ["spellIconId"] = 132157,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["volley"] = {
@@ -842,7 +857,8 @@ local spellMetaMap = {
       ["soundFileName"] = "wing_clip",
       ["spellIconId"] = 132309,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["aimed_shot"] = {
@@ -850,7 +866,8 @@ local spellMetaMap = {
       ["soundFileName"] = "aimed_shot",
       ["spellIconId"] = 135130,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["bestial_wrath"] = {
@@ -867,7 +884,8 @@ local spellMetaMap = {
       ["soundFileName"] = "counterattack",
       ["spellIconId"] = 132336,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["deterrence"] = {
@@ -901,7 +919,8 @@ local spellMetaMap = {
       ["soundFileName"] = "scatter_shot",
       ["spellIconId"] = 132153,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["silencing_shot"] = {
@@ -909,7 +928,8 @@ local spellMetaMap = {
       ["soundFileName"] = "silencing_shot",
       ["spellIconId"] = 132323,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["the_beast_within"] = {
@@ -935,7 +955,8 @@ local spellMetaMap = {
       ["soundFileName"] = "wyvern_sting",
       ["spellIconId"] = 135125,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     }
   },
