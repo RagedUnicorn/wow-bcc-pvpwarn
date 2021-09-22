@@ -98,8 +98,8 @@ test/PVPW_TestSoundMageEn.lua
 test/PVPW_TestSoundSelfAvoidMageEn.lua
 test/PVPW_TestSoundEnemyAvoidMageEn.lua
 test/PVPW_TestCombatEventsMage.lua
-test/PVPW_TestCombatEventsSelfAvoidMageEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidMageEn.lua
+test/PVPW_TestCombatEventsSelfAvoidMage.lua
+test/PVPW_TestCombatEventsEnemyAvoidMage.lua
 
 # paladin
 test/PVPW_TestSoundPaladinEn.lua

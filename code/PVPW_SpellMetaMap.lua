@@ -976,7 +976,8 @@ local spellMetaMap = {
       ["soundFileName"] = "arcane_blast",
       ["spellIconId"] = 135735,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["arcane_brilliance"] = {
@@ -994,7 +995,8 @@ local spellMetaMap = {
       ["soundFileName"] = "arcane_explosion",
       ["spellIconId"] = 136116,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["arcane_intellect"] = {
@@ -1012,7 +1014,8 @@ local spellMetaMap = {
       ["soundFileName"] = "arcane_missiles",
       ["spellIconId"] = 136096,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["blink"] = {
@@ -1036,7 +1039,8 @@ local spellMetaMap = {
       ["soundFileName"] = "cone_of_cold",
       ["spellIconId"] = 135852,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["conjure_food"] = {
@@ -1100,7 +1104,8 @@ local spellMetaMap = {
       ["soundFileName"] = "counterspell",
       ["spellIconId"] = 135856,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["dampen_magic"] = {
@@ -1127,7 +1132,8 @@ local spellMetaMap = {
       ["soundFileName"] = "fire_blast",
       ["spellIconId"] = 135807,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["fire_ward"] = {
@@ -1145,7 +1151,8 @@ local spellMetaMap = {
       ["soundFileName"] = "fireball",
       ["spellIconId"] = 135812,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["flamestrike"] = {
@@ -1171,7 +1178,8 @@ local spellMetaMap = {
       ["soundFileName"] = "frost_nova",
       ["spellIconId"] = 135848,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["frost_ward"] = {
@@ -1189,7 +1197,8 @@ local spellMetaMap = {
       ["soundFileName"] = "frostbolt",
       ["spellIconId"] = 135846,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["ice_armor"] = {
@@ -1216,7 +1225,8 @@ local spellMetaMap = {
       ["soundFileName"] = "ice_lance",
       ["spellIconId"] = 135844,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["invisibility"] = {
@@ -1262,7 +1272,8 @@ local spellMetaMap = {
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 136071,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["polymorph_pig"] = {
@@ -1270,7 +1281,8 @@ local spellMetaMap = {
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 135997,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["polymorph_turtle"] = {
@@ -1278,7 +1290,8 @@ local spellMetaMap = {
       ["soundFileName"] = "polymorph",
       ["spellIconId"] = 132199,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["remove_lesser_curse"] = {
@@ -1294,7 +1307,8 @@ local spellMetaMap = {
       ["soundFileName"] = "scorch",
       ["spellIconId"] = 135827,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["slow_fall"] = {
@@ -1312,7 +1326,8 @@ local spellMetaMap = {
       ["soundFileName"] = "spellsteal",
       ["spellIconId"] = 135729,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["arcane_power"] = {
@@ -1329,7 +1344,8 @@ local spellMetaMap = {
       ["soundFileName"] = "blast_wave",
       ["spellIconId"] = 135903,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["cold_snap"] = {
@@ -1354,7 +1370,8 @@ local spellMetaMap = {
       ["soundFileName"] = "dragons_breath",
       ["spellIconId"] = 134153,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["ice_barrier"] = {
@@ -1390,7 +1407,8 @@ local spellMetaMap = {
       ["soundFileName"] = "pyroblast",
       ["spellIconId"] = 135808,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["slow"] = {
@@ -1398,7 +1416,8 @@ local spellMetaMap = {
       ["soundFileName"] = "slow",
       ["spellIconId"] = 136091,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["summon_water_elemental"] = {

@@ -29,7 +29,7 @@ mod.testSoundSelfAvoidMageEn = me
 me.tag = "TestSoundSelfAvoidMageEn"
 
 local testGroupName = "SoundSelfAvoidMageEn"
-local testCategory = "mage"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.MAGE.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,42 +42,48 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCounterspell)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCounterspellSilenced)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPolymorph)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFrostNova)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidArcaneBlast)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidArcaneExplosion)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidArcaneMissiles)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidConeOfCold)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCounterspell)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFireBlast)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFireball)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFrostNova)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidFrostbolt)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidIceLance)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPolymorph)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPolymorphPig)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPolymorphTurtle)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidScorch)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSpellsteal)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidBlastWave)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDragonsBreath)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPyroblast)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSlow)
 end
 
-function me.TestSoundSelfAvoidCounterspell()
+function me.TestSoundSelfAvoidArcaneBlast()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidCounterspell",
+    "TestSoundSelfAvoidArcaneBlast",
     testCategory,
-    "Counterspell"
+    "arcane_blast"
   )
 end
 
-function me.TestSoundSelfAvoidCounterspellSilenced()
+function me.TestSoundSelfAvoidArcaneExplosion()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidCounterspellSilenced",
+    "TestSoundSelfAvoidArcaneExplosion",
     testCategory,
-    "Counterspell - Silenced"
+    "arcane_explosion"
   )
 end
 
-function me.TestSoundSelfAvoidPolymorph()
+function me.TestSoundSelfAvoidArcaneMissiles()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidPolymorph",
+    "TestSoundSelfAvoidArcaneMissiles",
     testCategory,
-    "Polymorph"
-  )
-end
-
-function me.TestSoundSelfAvoidFrostNova()
-  mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidFrostNova",
-    testCategory,
-    "Frost Nova"
+    "arcane_missiles"
   )
 end
 
@@ -85,6 +91,126 @@ function me.TestSoundSelfAvoidConeOfCold()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidConeOfCold",
     testCategory,
-    "Cone of Cold"
+    "cone_of_cold"
+  )
+end
+
+function me.TestSoundSelfAvoidCounterspell()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidCounterspell",
+    testCategory,
+    "counterspell"
+  )
+end
+
+function me.TestSoundSelfAvoidFireBlast()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFireBlast",
+    testCategory,
+    "fire_blast"
+  )
+end
+
+function me.TestSoundSelfAvoidFireball()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFireball",
+    testCategory,
+    "fireball"
+  )
+end
+
+function me.TestSoundSelfAvoidFrostNova()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFrostNova",
+    testCategory,
+    "frost_nova"
+  )
+end
+
+function me.TestSoundSelfAvoidFrostbolt()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidFrostbolt",
+    testCategory,
+    "frostbolt"
+  )
+end
+
+function me.TestSoundSelfAvoidIceLance()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidIceLance",
+    testCategory,
+    "ice_lance"
+  )
+end
+
+function me.TestSoundSelfAvoidPolymorph()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidPolymorph",
+    testCategory,
+    "polymorph"
+  )
+end
+
+function me.TestSoundSelfAvoidPolymorphPig()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidPolymorphPig",
+    testCategory,
+    "polymorph_pig"
+  )
+end
+
+function me.TestSoundSelfAvoidPolymorphTurtle()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidPolymorphTurtle",
+    testCategory,
+    "polymorph_turtle"
+  )
+end
+
+function me.TestSoundSelfAvoidScorch()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidScorch",
+    testCategory,
+    "scorch"
+  )
+end
+
+function me.TestSoundSelfAvoidSpellsteal()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidSpellsteal",
+    testCategory,
+    "spellsteal"
+  )
+end
+
+function me.TestSoundSelfAvoidBlastWave()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidBlastWave",
+    testCategory,
+    "blast_wave"
+  )
+end
+
+function me.TestSoundSelfAvoidDragonsBreath()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidDragonsBreath",
+    testCategory,
+    "dragons_breath"
+  )
+end
+
+function me.TestSoundSelfAvoidPyroblast()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidPyroblast",
+    testCategory,
+    "pyroblast"
+  )
+end
+
+function me.TestSoundSelfAvoidSlow()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidSlow",
+    testCategory,
+    "slow"
   )
 end
