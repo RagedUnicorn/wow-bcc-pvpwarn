@@ -1632,7 +1632,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hammer_of_justice",
       ["spellIconId"] = 135963,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["hammer_of_wrath"] = {
@@ -1640,7 +1641,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hammer_of_wrath",
       ["spellIconId"] = 132326,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["holy_light"] = {
@@ -1776,7 +1778,8 @@ local spellMetaMap = {
       ["soundFileName"] = "avengers_shield",
       ["spellIconId"] = 135874,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["blessing_of_kings"] = {
@@ -1828,7 +1831,8 @@ local spellMetaMap = {
       ["soundFileName"] = "repentance",
       ["spellIconId"] = 135942,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["seal_of_command"] = {

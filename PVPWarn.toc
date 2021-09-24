@@ -106,8 +106,8 @@ test/PVPW_TestSoundPaladinEn.lua
 test/PVPW_TestSoundSelfAvoidPaladinEn.lua
 test/PVPW_TestSoundEnemyAvoidPaladinEn.lua
 test/PVPW_TestCombatEventsPaladin.lua
-test/PVPW_TestCombatEventsSelfAvoidPaladinEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidPaladinEn.lua
+test/PVPW_TestCombatEventsSelfAvoidPaladin.lua
+test/PVPW_TestCombatEventsEnemyAvoidPaladin.lua
 
 # priest
 test/PVPW_TestSoundPriestEn.lua

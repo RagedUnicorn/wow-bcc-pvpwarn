@@ -39,7 +39,7 @@ function me.TestAllEn()
   local language = mod.testHelper.GetLanguage("enUS")
 
   mod.testReporter.StartTestGroup(testGroupName)
-
+  -- TODO no longer working
   mod.testSound.ShouldHaveSoundTestForAllSpells(language)
   mod.testSound.ShouldHaveSoundDownTestForAllSpells(language)
   mod.testCombatEvent.ShouldHaveCombatEventTestForAllTrackedEvents(language)

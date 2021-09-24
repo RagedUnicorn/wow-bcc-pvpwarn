@@ -29,7 +29,7 @@ mod.testSoundSelfAvoidPaladinEn = me
 me.tag = "TestSoundSelfAvoidPaladinEn"
 
 local testGroupName = "SoundSelfAvoidPaladinEn"
-local testCategory = "paladin"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,22 +42,40 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHammerOfWrath)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHammerOfJustice)
-end
-
-function me.TestSoundSelfAvoidHammerOfWrath()
-  mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidHammerOfWrath",
-    testCategory,
-    "Hammer of Wrath"
-  )
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHammerOfWrath)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidAvengersShield)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidRepentance)
 end
 
 function me.TestSoundSelfAvoidHammerOfJustice()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidHammerOfJustice",
     testCategory,
-    "Hammer of Justice"
+    "hammer_of_justice"
+  )
+end
+
+function me.TestSoundSelfAvoidHammerOfWrath()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidHammerOfWrath",
+    testCategory,
+    "hammer_of_wrath"
+  )
+end
+
+function me.TestSoundSelfAvoidAvengersShield()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidAvengersShield",
+    testCategory,
+    "avengers_shield"
+  )
+end
+
+function me.TestSoundSelfAvoidRepentance()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidRepentance",
+    testCategory,
+    "repentance"
   )
 end
