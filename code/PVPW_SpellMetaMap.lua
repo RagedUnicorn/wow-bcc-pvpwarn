@@ -2339,7 +2339,8 @@ local spellMetaMap = {
       ["soundFileName"] = "ambush",
       ["spellIconId"] = 132282,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["anesthetic_poison"] = {
@@ -2347,7 +2348,8 @@ local spellMetaMap = {
       ["soundFileName"] = "anesthetic_poison",
       ["spellIconId"] = 136093,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["backstab"] = {
@@ -2355,7 +2357,8 @@ local spellMetaMap = {
       ["soundFileName"] = "backstab",
       ["spellIconId"] = 132090,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["blind"] = {
@@ -2363,7 +2366,8 @@ local spellMetaMap = {
       ["soundFileName"] = "blind",
       ["spellIconId"] = 136175,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["cheap_shot"] = {
@@ -2371,7 +2375,8 @@ local spellMetaMap = {
       ["soundFileName"] = "cheap_shot",
       ["spellIconId"] = 132092,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["cloak_of_shadows"] = {
@@ -2388,7 +2393,8 @@ local spellMetaMap = {
       ["soundFileName"] = "crippling_poison",
       ["spellIconId"] = 132274,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["deadly_poison"] = {
@@ -2396,7 +2402,8 @@ local spellMetaMap = {
       ["soundFileName"] = "deadly_poison",
       ["spellIconId"] = 132290,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["deadly_throw"] = {
@@ -2413,7 +2420,8 @@ local spellMetaMap = {
       ["soundFileName"] = "distract",
       ["spellIconId"] = 132289,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["envenom"] = {
@@ -2421,7 +2429,8 @@ local spellMetaMap = {
       ["soundFileName"] = "envenom",
       ["spellIconId"] = 132287,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["evasion"] = {
@@ -2447,7 +2456,8 @@ local spellMetaMap = {
       ["soundFileName"] = "expose_armor",
       ["spellIconId"] = 132354,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["garrote"] = {
@@ -2455,7 +2465,8 @@ local spellMetaMap = {
       ["soundFileName"] = "garrote",
       ["spellIconId"] = 132297,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["gouge"] = {
@@ -2463,7 +2474,8 @@ local spellMetaMap = {
       ["soundFileName"] = "gouge",
       ["spellIconId"] = 132155,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["instant_poison"] = {
@@ -2471,7 +2483,8 @@ local spellMetaMap = {
       ["soundFileName"] = "instant_poison",
       ["spellIconId"] = 132273,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["kick"] = {
@@ -2479,7 +2492,8 @@ local spellMetaMap = {
       ["soundFileName"] = "kick",
       ["spellIconId"] = 132219,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["kidney_shot"] = {
@@ -2487,7 +2501,8 @@ local spellMetaMap = {
       ["soundFileName"] = "kidney_shot",
       ["spellIconId"] = 132298,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mind_numbing_poison"] = {
@@ -2495,7 +2510,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mind_numbing_poison",
       ["spellIconId"] = 136066,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["rupture"] = {
@@ -2503,7 +2519,8 @@ local spellMetaMap = {
       ["soundFileName"] = "rupture",
       ["spellIconId"] = 132302,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["sap"] = {
@@ -2511,7 +2528,8 @@ local spellMetaMap = {
       ["soundFileName"] = "sap",
       ["spellIconId"] = 132310,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shiv"] = {
@@ -2519,7 +2537,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shiv",
       ["spellIconId"] = 135428,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["sinister_strike"] = {
@@ -2527,7 +2546,8 @@ local spellMetaMap = {
       ["soundFileName"] = "sinister_strike",
       ["spellIconId"] = 136189,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["slice_and_dice"] = {
@@ -2571,7 +2591,8 @@ local spellMetaMap = {
       ["soundFileName"] = "wound_poison",
       ["spellIconId"] = 134197,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["adrenaline_rush"] = {
@@ -2623,7 +2644,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hemorrhage",
       ["spellIconId"] = 136168,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mutilate"] = {
@@ -2631,7 +2653,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mutilate",
       ["spellIconId"] = 132304,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["premeditation"] = {
@@ -2655,7 +2678,8 @@ local spellMetaMap = {
       ["soundFileName"] = "riposte",
       ["spellIconId"] = 132336,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadowstep"] = {

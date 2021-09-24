@@ -122,8 +122,8 @@ test/PVPW_TestSoundRogueEn.lua
 test/PVPW_TestSoundSelfAvoidRogueEn.lua
 test/PVPW_TestSoundEnemyAvoidRogueEn.lua
 test/PVPW_TestCombatEventsRogue.lua
-test/PVPW_TestCombatEventsSelfAvoidRogueEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidRogueEn.lua
+test/PVPW_TestCombatEventsSelfAvoidRogue.lua
+test/PVPW_TestCombatEventsEnemyAvoidRogue.lua
 
 # shaman
 test/PVPW_TestSoundShamanEn.lua
