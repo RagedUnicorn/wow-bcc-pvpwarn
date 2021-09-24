@@ -29,7 +29,7 @@ mod.testSoundSelfAvoidPriestEn = me
 me.tag = "TestSoundSelfAvoidPriestEn"
 
 local testGroupName = "SoundSelfAvoidPriestEn"
-local testCategory = "priest"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.PRIEST.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,29 +42,52 @@ function me.Test()
 end
 
 function me.CollectTestCases()
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidChastise)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDevouringPlague)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidBlackout)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHexOfWeakness)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHolyFire)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidManaBurn)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMindBlast)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMindControl)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPsychicScream)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidShadowWordDeath)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidShadowWordPain)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSmite)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidBlackout)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMindFlay)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSilence)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidVampiricEmbrace)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidVampiricTouch)
+end
+
+function me.TestSoundSelfAvoidChastise()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidChastise",
+    testCategory,
+    "chastise"
+  )
 end
 
 function me.TestSoundSelfAvoidDevouringPlague()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidDevouringPlague",
     testCategory,
-    "Devouring Plague"
+    "devouring_plague"
   )
 end
 
-function me.TestSoundSelfAvoidBlackout()
+function me.TestSoundSelfAvoidHexOfWeakness()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidBlackout",
+    "TestSoundSelfAvoidHexOfWeakness",
     testCategory,
-    "Blackout"
+    "hex_of_weakness"
+  )
+end
+
+function me.TestSoundSelfAvoidHolyFire()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidHolyFire",
+    testCategory,
+    "holy_fire"
   )
 end
 
@@ -72,7 +95,15 @@ function me.TestSoundSelfAvoidManaBurn()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidManaBurn",
     testCategory,
-    "Mana Burn"
+    "mana_burn"
+  )
+end
+
+function me.TestSoundSelfAvoidMindBlast()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidMindBlast",
+    testCategory,
+    "mind_blast"
   )
 end
 
@@ -80,7 +111,7 @@ function me.TestSoundSelfAvoidMindControl()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidMindControl",
     testCategory,
-    "Mind Control"
+    "mind_control"
   )
 end
 
@@ -88,7 +119,15 @@ function me.TestSoundSelfAvoidPsychicScream()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidPsychicScream",
     testCategory,
-    "Psychic Scream"
+    "psychic_scream"
+  )
+end
+
+function me.TestSoundSelfAvoidShadowWordDeath()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidShadowWordDeath",
+    testCategory,
+    "shadow_word_death"
   )
 end
 
@@ -96,7 +135,31 @@ function me.TestSoundSelfAvoidShadowWordPain()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidShadowWordPain",
     testCategory,
-    "Shadow Word: Pain"
+    "shadow_word_pain"
+  )
+end
+
+function me.TestSoundSelfAvoidSmite()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidSmite",
+    testCategory,
+    "smite"
+  )
+end
+
+function me.TestSoundSelfAvoidBlackout()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidBlackout",
+    testCategory,
+    "blackout"
+  )
+end
+
+function me.TestSoundSelfAvoidMindFlay()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidMindFlay",
+    testCategory,
+    "mind_flay"
   )
 end
 
@@ -104,14 +167,14 @@ function me.TestSoundSelfAvoidSilence()
   mod.testHelper.TestSoundSpellMissedSelf(
     "TestSoundSelfAvoidSilence",
     testCategory,
-    "Silence"
+    "silence"
   )
 end
 
-function me.TestSoundSelfAvoidVampiricEmbrace()
+function me.TestSoundSelfAvoidVampiricTouch()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidVampiricEmbrace",
+    "TestSoundSelfAvoidVampiricTouch",
     testCategory,
-    "Vampiric Embrace"
+    "vampiric_touch"
   )
 end

@@ -1866,7 +1866,8 @@ local spellMetaMap = {
       ["soundFileName"] = "chastise",
       ["spellIconId"] = 135886,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["consume_magic"] = {
@@ -1898,7 +1899,8 @@ local spellMetaMap = {
       ["soundFileName"] = "devouring_plague",
       ["spellIconId"] = 136123,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["dispel_magic"] = {
@@ -1968,7 +1970,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hex_of_weakness",
       ["spellIconId"] = 136157,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["holy_fire"] = {
@@ -1976,7 +1979,8 @@ local spellMetaMap = {
       ["soundFileName"] = "holy_fire",
       ["spellIconId"] = 135972,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["inner_fire"] = {
@@ -2012,7 +2016,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mana_burn",
       ["spellIconId"] = 136170,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mass_dispel"] = {
@@ -2028,7 +2033,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mind_blast",
       ["spellIconId"] = 136224,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mind_control"] = {
@@ -2036,7 +2042,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mind_control",
       ["spellIconId"] = 136206,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["mind_vision"] = {
@@ -2118,7 +2125,8 @@ local spellMetaMap = {
       ["soundFileName"] = "psychic_scream",
       ["spellIconId"] = 136184,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["renew"] = {
@@ -2152,7 +2160,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shadow_word_death",
       ["spellIconId"] = 136149,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadow_word_pain"] = {
@@ -2160,7 +2169,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shadow_word_pain",
       ["spellIconId"] = 136207,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadowfiend"] = {
@@ -2186,7 +2196,8 @@ local spellMetaMap = {
       ["soundFileName"] = "smite",
       ["spellIconId"] = 135924,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["starshards"] = {
@@ -2220,7 +2231,8 @@ local spellMetaMap = {
       ["soundFileName"] = "blackout",
       ["spellIconId"] = 136160,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["circle_of_healing"] = {
@@ -2263,7 +2275,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mind_flay",
       ["spellIconId"] = 136208,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["pain_suppression"] = {
@@ -2298,7 +2311,8 @@ local spellMetaMap = {
       ["soundFileName"] = "silence",
       ["spellIconId"] = 136164,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["vampiric_embrace"] = {
@@ -2314,7 +2328,8 @@ local spellMetaMap = {
       ["soundFileName"] = "vampiric_touch",
       ["spellIconId"] = 135978,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     }
   },
