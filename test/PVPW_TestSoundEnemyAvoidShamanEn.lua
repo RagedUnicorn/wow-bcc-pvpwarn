@@ -29,7 +29,7 @@ mod.testSoundEnemyAvoidShamanEn = me
 me.tag = "TestSoundEnemyAvoidShamanEn"
 
 local testGroupName = "SoundEnemyAvoidShamanEn"
-local testCategory = "shaman"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.SHAMAN.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,16 +42,26 @@ function me.Test()
 end
 
 function me.CollectTestCases()
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidChainLightning)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidEarthShock)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFlameShock)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidFrostShock)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidLightningBolt)
+end
+
+function me.TestSoundEnemyAvoidChainLightning()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidChainLightning",
+    testCategory,
+    "chain_lightning"
+  )
 end
 
 function me.TestSoundEnemyAvoidEarthShock()
   mod.testHelper.TestSoundSpellMissedEnemy(
     "TestSoundEnemyAvoidEarthShock",
     testCategory,
-    "Earth Shock"
+    "earth_shock"
   )
 end
 
@@ -59,7 +69,7 @@ function me.TestSoundEnemyAvoidFlameShock()
   mod.testHelper.TestSoundSpellMissedEnemy(
     "TestSoundEnemyAvoidFlameShock",
     testCategory,
-    "Flame Shock"
+    "flame_shock"
   )
 end
 
@@ -67,6 +77,14 @@ function me.TestSoundEnemyAvoidFrostShock()
   mod.testHelper.TestSoundSpellMissedEnemy(
     "TestSoundEnemyAvoidFrostShock",
     testCategory,
-    "Frost Shock"
+    "frost_shock"
+  )
+end
+
+function me.TestSoundEnemyAvoidLightningBolt()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidLightningBolt",
+    testCategory,
+    "lightning_bolt"
   )
 end

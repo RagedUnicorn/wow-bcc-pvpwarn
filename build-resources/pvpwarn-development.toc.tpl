@@ -130,8 +130,8 @@ test/PVPW_TestSoundShamanEn.lua
 test/PVPW_TestSoundSelfAvoidShamanEn.lua
 test/PVPW_TestSoundEnemyAvoidShamanEn.lua
 test/PVPW_TestCombatEventsShaman.lua
-test/PVPW_TestCombatEventsSelfAvoidShamanEn.lua
-test/PVPW_TestCombatEventsEnemyAvoidShamanEn.lua
+test/PVPW_TestCombatEventsSelfAvoidShaman.lua
+test/PVPW_TestCombatEventsEnemyAvoidShaman.lua
 
 # warlock
 test/PVPW_TestSoundWarlockEn.lua

@@ -2723,7 +2723,8 @@ local spellMetaMap = {
       ["soundFileName"] = "chain_lightning",
       ["spellIconId"] = 136015,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["cure_disease"] = {
@@ -2763,7 +2764,8 @@ local spellMetaMap = {
       ["soundFileName"] = "earth_shock",
       ["spellIconId"] = 136026,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["earthbind_totem"] = {
@@ -2803,7 +2805,8 @@ local spellMetaMap = {
       ["soundFileName"] = "flame_shock",
       ["spellIconId"] = 135813,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["flametongue_totem"] = {
@@ -2835,7 +2838,8 @@ local spellMetaMap = {
       ["soundFileName"] = "frost_shock",
       ["spellIconId"] = 135849,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["frostbrand_weapon"] = {
@@ -2910,7 +2914,8 @@ local spellMetaMap = {
       ["soundFileName"] = "lightning_bolt",
       ["spellIconId"] = 136048,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["lightning_shield"] = {
