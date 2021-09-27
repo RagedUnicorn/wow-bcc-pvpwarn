@@ -39,10 +39,10 @@ local spellMetaMap = {
       ["soundFileName"] = "abolish_poison",
       ["spellIconId"] = 136068,
       ["trackedEvents"] = {
-          "SPELL_AURA_APPLIED",
-          "SPELL_AURA_REMOVED",
-          "SPELL_AURA_REFRESH"
-        }
+        "SPELL_AURA_APPLIED",
+        "SPELL_AURA_REMOVED",
+        "SPELL_AURA_REFRESH"
+      }
     },
     ["aquatic_form"] = {
       ["name"] = "Aquatic Form",
@@ -3144,7 +3144,8 @@ local spellMetaMap = {
       ["soundFileName"] = "banish",
       ["spellIconId"] = 136135,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["corruption"] = {
@@ -3152,7 +3153,8 @@ local spellMetaMap = {
       ["soundFileName"] = "corruption",
       ["spellIconId"] = 136118,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["create_firestone"] = {
@@ -3200,7 +3202,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_agony",
       ["spellIconId"] = 136139,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["curse_of_recklessness"] = {
@@ -3208,7 +3211,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_recklessness",
       ["spellIconId"] = 136225,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["curse_of_the_elements"] = {
@@ -3216,7 +3220,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_the_elements",
       ["spellIconId"] = 136130,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["curse_of_tongues"] = {
@@ -3224,7 +3229,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_tongues",
       ["spellIconId"] = 136140,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["curse_of_weakness"] = {
@@ -3232,7 +3238,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_weakness",
       ["spellIconId"] = 136138,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["death_coil"] = {
@@ -3240,7 +3247,8 @@ local spellMetaMap = {
       ["soundFileName"] = "death_coil",
       ["spellIconId"] = 136145,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["demon_armor"] = {
@@ -3278,7 +3286,8 @@ local spellMetaMap = {
       ["soundFileName"] = "drain_life",
       ["spellIconId"] = 136169,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["drain_mana"] = {
@@ -3286,7 +3295,8 @@ local spellMetaMap = {
       ["soundFileName"] = "drain_mana",
       ["spellIconId"] = 136208,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["drain_soul"] = {
@@ -3294,7 +3304,8 @@ local spellMetaMap = {
       ["soundFileName"] = "drain_soul",
       ["spellIconId"] = 136163,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["eye_of_kilrogg"] = {
@@ -3310,7 +3321,8 @@ local spellMetaMap = {
       ["soundFileName"] = "fear",
       ["spellIconId"] = 136183,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["fel_armor"] = {
@@ -3344,7 +3356,8 @@ local spellMetaMap = {
       ["soundFileName"] = "howl_of_terror",
       ["spellIconId"] = 136147,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["immolate"] = {
@@ -3352,7 +3365,8 @@ local spellMetaMap = {
       ["soundFileName"] = "immolate",
       ["spellIconId"] = 135817,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["incinerate"] = {
@@ -3360,7 +3374,8 @@ local spellMetaMap = {
       ["soundFileName"] = "incinerate",
       ["spellIconId"] = 135789,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["life_tap"] = {
@@ -3400,7 +3415,8 @@ local spellMetaMap = {
       ["soundFileName"] = "searing_pain",
       ["spellIconId"] = 135827,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["seed_of_corruption"] = {
@@ -3408,7 +3424,8 @@ local spellMetaMap = {
       ["soundFileName"] = "seed_of_corruption",
       ["spellIconId"] = 136193,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadow_bolt"] = {
@@ -3416,7 +3433,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shadow_bolt",
       ["spellIconId"] = 136197,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadow_ward"] = {
@@ -3434,7 +3452,8 @@ local spellMetaMap = {
       ["soundFileName"] = "soul_fire",
       ["spellIconId"] = 135808,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["summon_felhunter"] = {
@@ -3493,7 +3512,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conflagrate",
       ["spellIconId"] = 135807,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["curse_of_exhaustion"] = {
@@ -3501,7 +3521,8 @@ local spellMetaMap = {
       ["soundFileName"] = "curse_of_exhaustion",
       ["spellIconId"] = 136162,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["dark_pact"] = {
@@ -3554,7 +3575,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shadowburn",
       ["spellIconId"] = 136191,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shadowfury"] = {
@@ -3562,7 +3584,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shadowfury",
       ["spellIconId"] = 136201,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["siphon_life"] = {
@@ -3570,7 +3593,8 @@ local spellMetaMap = {
       ["soundFileName"] = "siphon_life",
       ["spellIconId"] = 136188,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["soul_link"] = {
@@ -3595,7 +3619,8 @@ local spellMetaMap = {
       ["soundFileName"] = "unstable_affliction",
       ["spellIconId"] = 136228,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     }
   },
