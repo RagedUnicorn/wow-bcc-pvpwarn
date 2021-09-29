@@ -3680,7 +3680,8 @@ local spellMetaMap = {
       ["soundFileName"] = "demoralizing_shout",
       ["spellIconId"] = 132366,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["disarm"] = {
@@ -3688,7 +3689,8 @@ local spellMetaMap = {
       ["soundFileName"] = "disarm",
       ["spellIconId"] = 132343,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["hamstring"] = {
@@ -3696,7 +3698,8 @@ local spellMetaMap = {
       ["soundFileName"] = "hamstring",
       ["spellIconId"] = 132316,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["intercept"] = {
@@ -3720,7 +3723,8 @@ local spellMetaMap = {
       ["soundFileName"] = "intimidating_shout",
       ["spellIconId"] = 132154,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["overpower"] = {
@@ -3728,7 +3732,8 @@ local spellMetaMap = {
       ["soundFileName"] = "overpower",
       ["spellIconId"] = 132223,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["pummel"] = {
@@ -3736,7 +3741,8 @@ local spellMetaMap = {
       ["soundFileName"] = "pummel",
       ["spellIconId"] = 132938,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["recklessness"] = {
@@ -3762,7 +3768,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shield_bash",
       ["spellIconId"] = 132357,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["shield_block"] = {
@@ -3797,7 +3804,8 @@ local spellMetaMap = {
       ["soundFileName"] = "sunder_armor",
       ["spellIconId"] = 132363,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["whirlwind"] = {
@@ -3805,7 +3813,8 @@ local spellMetaMap = {
       ["soundFileName"] = "whirlwind",
       ["spellIconId"] = 132369,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["concussion_blow"] = {
@@ -3813,7 +3822,8 @@ local spellMetaMap = {
       ["soundFileName"] = "concussion_blow",
       ["spellIconId"] = 132325,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["death_wish"] = {
@@ -3839,7 +3849,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mortal_strike",
       ["spellIconId"] = 132355,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["piercing_howl"] = {
@@ -3847,7 +3858,8 @@ local spellMetaMap = {
       ["soundFileName"] = "piercing_howl",
       ["spellIconId"] = 136147,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["rampage"] = {
@@ -3873,7 +3885,8 @@ local spellMetaMap = {
       ["soundFileName"] = "shield_slam",
       ["spellIconId"] = 134951,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
       }
     },
     ["sweeping_strikes"] = {

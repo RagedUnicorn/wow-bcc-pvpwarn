@@ -29,7 +29,7 @@ mod.testSoundEnemyAvoidWarriorEn = me
 me.tag = "TestSoundEnemyAvoidWarriorEn"
 
 local testGroupName = "SoundEnemyAvoidWarriorEn"
-local testCategory = "warrior"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.WARRIOR.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,60 +42,26 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidChargeStun)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidInterceptStun)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidHamstring)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMortalStrike)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidIntimidatingShout)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidPummel)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDemoralizingShout)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDisarm)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidHamstring)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidIntimidatingShout)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidOverpower)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidPummel)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidShieldBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidSunderArmor)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidWhirlwind)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidConcussionBlow)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMortalStrike)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidPiercingHowl)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidShieldSlam)
 end
 
-function me.TestSoundEnemyAvoidChargeStun()
+function me.TestSoundEnemyAvoidDemoralizingShout()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidChargeStun",
+    "TestSoundEnemyAvoidDemoralizingShout",
     testCategory,
-    "Charge Stun"
-  )
-end
-
-function me.TestSoundEnemyAvoidInterceptStun()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidInterceptStun",
-    testCategory,
-    "Intercept Stun"
-  )
-end
-
-function me.TestSoundEnemyAvoidHamstring()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidHamstring",
-    testCategory,
-    "Hamstring"
-  )
-end
-
-function me.TestSoundEnemyAvoidMortalStrike()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidMortalStrike",
-    testCategory,
-    "Mortal Strike"
-  )
-end
-
-function me.TestSoundEnemyAvoidIntimidatingShout()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidIntimidatingShout",
-    testCategory,
-    "Intimidating Shout"
-  )
-end
-
-function me.TestSoundEnemyAvoidPummel()
-  mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidPummel",
-    testCategory,
-    "Pummel"
+    "demoralizing_shout"
   )
 end
 
@@ -103,6 +69,94 @@ function me.TestSoundEnemyAvoidDisarm()
   mod.testHelper.TestSoundSpellMissedEnemy(
     "TestSoundEnemyAvoidDisarm",
     testCategory,
-    "Disarm"
+    "disarm"
+  )
+end
+
+function me.TestSoundEnemyAvoidHamstring()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidHamstring",
+    testCategory,
+    "hamstring"
+  )
+end
+
+function me.TestSoundEnemyAvoidIntimidatingShout()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidIntimidatingShout",
+    testCategory,
+    "intimidating_shout"
+  )
+end
+
+function me.TestSoundEnemyAvoidOverpower()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidOverpower",
+    testCategory,
+    "overpower"
+  )
+end
+
+function me.TestSoundEnemyAvoidPummel()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidPummel",
+    testCategory,
+    "pummel"
+  )
+end
+
+function me.TestSoundEnemyAvoidShieldBash()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidShieldBash",
+    testCategory,
+    "shield_bash"
+  )
+end
+
+function me.TestSoundEnemyAvoidSunderArmor()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidSunderArmor",
+    testCategory,
+    "sunder_armor"
+  )
+end
+
+function me.TestSoundEnemyAvoidWhirlwind()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidWhirlwind",
+    testCategory,
+    "whirlwind"
+  )
+end
+
+function me.TestSoundEnemyAvoidConcussionBlow()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidConcussionBlow",
+    testCategory,
+    "concussion_blow"
+  )
+end
+
+function me.TestSoundEnemyAvoidMortalStrike()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidMortalStrike",
+    testCategory,
+    "mortal_strike"
+  )
+end
+
+function me.TestSoundEnemyAvoidPiercingHowl()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidPiercingHowl",
+    testCategory,
+    "piercing_howl"
+  )
+end
+
+function me.TestSoundEnemyAvoidShieldSlam()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidShieldSlam",
+    testCategory,
+    "shield_slam"
   )
 end

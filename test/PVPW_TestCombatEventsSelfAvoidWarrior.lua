@@ -29,7 +29,7 @@ mod.testCombatEventsSelfAvoidWarrior = me
 me.tag = "TestCombatEventsSelfAvoidWarrior"
 
 local testGroupName = "CombatEventsSelfAvoidWarrior"
-local testCategory = "warrior"
+local testCategory = RGPVPW_CONSTANTS.CATEGORIES.WARRIOR.id
 
 function me.Test()
   mod.testReporter.StartTestGroup(testGroupName)
@@ -42,260 +42,111 @@ function me.Test()
 end
 
 function me.CollectTestCases()
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidChargeStunImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidChargeStunResisted)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInterceptStunImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInterceptStunResisted)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringDodged)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringParried)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringBlocked)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeDodged)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeParried)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidIntimidatingShoutImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidIntimidatingShoutResisted)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelDodged)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelParried)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelImmune)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelBlocked)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDisarmDodged)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDisarmParried)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDisarmImmune)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDemoralizingShoutRank7Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDisarmMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDisarmBlocked)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHamstringRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidIntimidatingShoutMissed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidOverpowerRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidOverpowerRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidOverpowerRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidOverpowerRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPummelRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWhirlwindMissed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidConcussionBlowMissed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMortalStrikeRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidPiercingHowlMissed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldSlamRank6Missed)
 end
 
-function me.TestCombatEventSelfAvoidChargeStunImmune()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidChargeStunImmune",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank1Missed",
     testCategory,
-    "Charge Stun",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
+    1160,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidChargeStunResisted()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidChargeStunResisted",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank2Missed",
     testCategory,
-    "Charge Stun",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.RESIST
+    6190,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInterceptStunImmune()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInterceptStunImmune",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank3Missed",
     testCategory,
-    "Intercept Stun",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
+    11554,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInterceptStunResisted()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInterceptStunResisted",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank4Missed",
     testCategory,
-    "Intercept Stun",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.RESIST
+    11555,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidHamstringDodged()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidHamstringDodged",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank5Missed",
     testCategory,
-    "Hamstring",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.DODGE
+    11556,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidHamstringParried()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank6Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidHamstringParried",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank6Missed",
     testCategory,
-    "Hamstring",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.PARRY
+    25202,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidHamstringImmune()
+function me.TestCombatEventSelfAvoidDemoralizingShoutRank7Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidHamstringImmune",
+    "TestCombatEventSelfAvoidDemoralizingShoutRank7Missed",
     testCategory,
-    "Hamstring",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
-  )
-end
-
-function me.TestCombatEventSelfAvoidHamstringMissed()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidHamstringMissed",
-    testCategory,
-    "Hamstring",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.MISS
-  )
-end
-
-function me.TestCombatEventSelfAvoidHamstringBlocked()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidHamstringBlocked",
-    testCategory,
-    "Hamstring",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.BLOCK
-  )
-end
-
-function me.TestCombatEventSelfAvoidMortalStrikeDodged()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMortalStrikeDodged",
-    testCategory,
-    "Mortal Strike",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.DODGE
-  )
-end
-
-function me.TestCombatEventSelfAvoidMortalStrikeParried()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMortalStrikeParried",
-    testCategory,
-    "Mortal Strike",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.PARRY
-  )
-end
-
-function me.TestCombatEventSelfAvoidMortalStrikeImmune()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMortalStrikeImmune",
-    testCategory,
-    "Mortal Strike",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
-  )
-end
-
-function me.TestCombatEventSelfAvoidMortalStrikeMissed()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMortalStrikeMissed",
-    testCategory,
-    "Mortal Strike",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.MISS
-  )
-end
-
-function me.TestCombatEventSelfAvoidIntimidatingShoutImmune()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidIntimidatingShoutImmune",
-    testCategory,
-    "Intimidating Shout",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
-  )
-end
-
-function me.TestCombatEventSelfAvoidIntimidatingShoutResisted()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidIntimidatingShoutResisted",
-    testCategory,
-    "Intimidating Shout",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.RESIST
-  )
-end
-
-function me.TestCombatEventSelfAvoidPummelDodged()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidPummelDodged",
-    testCategory,
-    "Pummel",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.DODGE
-  )
-end
-
-function me.TestCombatEventSelfAvoidPummelParried()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidPummelParried",
-    testCategory,
-    "Pummel",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.PARRY
-  )
-end
-
-function me.TestCombatEventSelfAvoidPummelImmune()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidPummelImmune",
-    testCategory,
-    "Pummel",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
-  )
-end
-
-function me.TestCombatEventSelfAvoidPummelMissed()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidPummelMissed",
-    testCategory,
-    "Pummel",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.MISS
-  )
-end
-
-function me.TestCombatEventSelfAvoidPummelBlocked()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidPummelBlocked",
-    testCategory,
-    "Pummel",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.BLOCK
-  )
-end
-
-function me.TestCombatEventSelfAvoidDisarmDodged()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDisarmDodged",
-    testCategory,
-    "Disarm",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.DODGE
-  )
-end
-
-function me.TestCombatEventSelfAvoidDisarmParried()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDisarmParried",
-    testCategory,
-    "Disarm",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.PARRY
-  )
-end
-
-function me.TestCombatEventSelfAvoidDisarmImmune()
-  mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDisarmImmune",
-    testCategory,
-    "Disarm",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.IMMUNE
+    25203,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
@@ -303,18 +154,322 @@ function me.TestCombatEventSelfAvoidDisarmMissed()
   mod.testHelper.TestCombatEventSpellMissed(
     "TestCombatEventSelfAvoidDisarmMissed",
     testCategory,
-    "Disarm",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.MISS
+    676,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDisarmBlocked()
+function me.TestCombatEventSelfAvoidHamstringRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDisarmBlocked",
+    "TestCombatEventSelfAvoidHamstringRank1Missed",
     testCategory,
-    "Disarm",
-    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF,
-    RGPVPW_CONSTANTS.MISS_TYPES.BLOCK
+    1715,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidHamstringRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidHamstringRank2Missed",
+    testCategory,
+    7372,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidHamstringRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidHamstringRank3Missed",
+    testCategory,
+    7373,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidHamstringRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidHamstringRank4Missed",
+    testCategory,
+    25212,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidIntimidatingShoutMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidIntimidatingShoutMissed",
+    testCategory,
+    5246,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidOverpowerRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidOverpowerRank1Missed",
+    testCategory,
+    7384,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidOverpowerRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidOverpowerRank2Missed",
+    testCategory,
+    7887,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidOverpowerRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidOverpowerRank3Missed",
+    testCategory,
+    11584,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidOverpowerRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidOverpowerRank4Missed",
+    testCategory,
+    11585,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidPummelRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidPummelRank1Missed",
+    testCategory,
+    6552,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidPummelRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidPummelRank2Missed",
+    testCategory,
+    6554,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldBashRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldBashRank1Missed",
+    testCategory,
+    72,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldBashRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldBashRank2Missed",
+    testCategory,
+    1671,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldBashRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldBashRank3Missed",
+    testCategory,
+    1672,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldBashRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldBashRank4Missed",
+    testCategory,
+    29704,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSunderArmorRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSunderArmorRank1Missed",
+    testCategory,
+    7386,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSunderArmorRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSunderArmorRank2Missed",
+    testCategory,
+    7405,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSunderArmorRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSunderArmorRank3Missed",
+    testCategory,
+    8380,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSunderArmorRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSunderArmorRank4Missed",
+    testCategory,
+    11596,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSunderArmorRank5Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSunderArmorRank5Missed",
+    testCategory,
+    11597,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidWhirlwindMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidWhirlwindMissed",
+    testCategory,
+    1680,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidConcussionBlowMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidConcussionBlowMissed",
+    testCategory,
+    12809,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank1Missed",
+    testCategory,
+    12294,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank2Missed",
+    testCategory,
+    21551,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank3Missed",
+    testCategory,
+    21552,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank4Missed",
+    testCategory,
+    21553,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank5Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank5Missed",
+    testCategory,
+    25248,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidMortalStrikeRank6Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidMortalStrikeRank6Missed",
+    testCategory,
+    30330,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidPiercingHowlMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidPiercingHowlMissed",
+    testCategory,
+    12323,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank1Missed",
+    testCategory,
+    23922,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank2Missed",
+    testCategory,
+    23923,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank3Missed",
+    testCategory,
+    23924,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank4Missed",
+    testCategory,
+    23925,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank5Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank5Missed",
+    testCategory,
+    25258,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidShieldSlamRank6Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidShieldSlamRank6Missed",
+    testCategory,
+    30356,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
