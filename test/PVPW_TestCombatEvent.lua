@@ -27,16 +27,6 @@
 --[[
   Run all tests:
     /run rgpvpw.testCombatEvent.Test([category])
-  Run combat event tests:
-    /run rgpvpw.testCombatEvent.ShouldHaveCombatEventTestForAllTrackedEvents([category])
-  Run combat event self avoid tests:
-    /run rgpvpw.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(
-      RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID [, categoryName]
-    )
-  Run combat event enemy avoid tests:
-    /run rgpvpw.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(
-      RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID [, categoryName]
-    )
 ]]--
 
 local mod = rgpvpw
@@ -45,7 +35,7 @@ mod.testCombatEvent = me
 
 me.tag = "TestCombatEvent"
 
-local testGroupName = "ShouldHaveCombatEventTestForAllTrackedEvents"
+local testGroupName = "ShouldHaveCombatEventTestForAllSpells"
 
 --[[
   @param {number} category
@@ -54,9 +44,10 @@ local testGroupName = "ShouldHaveCombatEventTestForAllTrackedEvents"
 function me.Test(category)
   mod.testReporter.StartTestGroup(testGroupName)
 
-  me.ShouldHaveCombatEventTestForAllTrackedEvents(category)
-  me.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
-  me.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  me.ShouldHaveCombatEventTestForAllSpells(category)
+  me.ShouldHaveCombatEventCastTestForAllSpells(category)
+  me.ShouldHaveCombatEventAvoidTestForAllSpells(category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  me.ShouldHaveCombatEventAvoidTestForAllSpells(category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
 
   mod.testReporter.StopTestGroup()
 end
@@ -67,7 +58,7 @@ end
   @param {table} category
     A valid category see RGPVPW_CONSTANTS.CATEGORIES
 ]]--
-function me.ShouldHaveCombatEventTestForAllTrackedEvents(category)
+function me.ShouldHaveCombatEventTestForAllSpells(category)
   local spellMap
 
   spellMap = mod.spellMap.SearchByCategory(category.id)
@@ -144,6 +135,89 @@ function me.CombatEventTest(category, spellMap)
 end
 
 --[[
+  Tests whether there is an appropriate testcase for every spell found in the spellMap
+
+  @param {table} category
+    A valid category see RGPVPW_CONSTANTS.CATEGORIES
+]]--
+function me.ShouldHaveCombatEventCastTestForAllSpells(category)
+  local spellMap
+
+  spellMap = mod.spellMap.SearchByCategory(category.id)
+
+  if spellMap == nil then
+    mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
+    return
+  end
+
+  me.CombatEventCastTest(category, spellMap)
+end
+
+--[[
+  Do the actual test whether the expected function is present or not
+
+  @param {table} category
+    A valid category see RGPVPW_CONSTANTS.CATEGORIES
+  @param {table} spellMap
+]]--
+function me.CombatEventCastTest(category, spellMap)
+  local module = mod["testCombatEventsCast"
+    .. mod.testHelper.FirstToUpper(category.categoryName)]
+
+  for _, spellData in pairs(spellMap) do
+    local spellMetaData = mod.spellMetaMap.GetSpellMetaDataByCategoryAndName(category.id, spellData.name)
+    local spellName = mod.testHelper.NormalizeSpellName(spellMetaData.name)
+    local trackedEvents = spellMetaData.trackedEvents
+    local func
+
+    for _, trackedEvent in pairs(trackedEvents) do
+      if tContains(mod.testHelper.GetCastEvents(), trackedEvent) then
+        local testName
+
+        if spellData.rank ~= 0 then
+          testName = "CombatEventTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) ..
+            spellName .. "Rank" .. spellData.rank .. "_" .. trackedEvent
+        else
+          testName = "CombatEventTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) ..
+            spellName .. "_" .. trackedEvent
+        end
+
+        mod.testReporter.StartTestRun(testName)
+
+        local eventName = mod.testHelper.MappEventToName(trackedEvent)
+
+        if eventName == nil then
+          mod.testReporter.ReportFailureTestRun(
+            category.id,
+            testName,
+            string.format(mod.testHelper.invalidEvent, spellData.name, trackedEvent)
+          )
+
+          return
+        end
+
+        if spellData.rank ~= 0 then
+          func = module["TestCombatEvent" .. spellName .. "Rank" .. spellData.rank .. eventName]
+        else
+          func = module["TestCombatEvent" .. spellName .. eventName]
+        end
+
+        if type(func) ~= "function" then
+          mod.testReporter.ReportFailureTestRun(
+            category.id,
+            testName,
+            string.format(mod.testHelper.missingCombatEventCastTest, spellName, trackedEvent)
+          )
+        else
+          mod.testReporter.ReportSuccessTestRun()
+        end
+      end
+    end
+  end
+end
+
+
+--[[
   Tests whether there is an appropriate testcase for every spell found in the spellAvoidMap
 
   @param {table} category
@@ -151,7 +225,7 @@ end
   @param {number} spellAvoidType
     RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID or RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID
 ]]--
-function me.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(category, spellAvoidType)
+function me.ShouldHaveCombatEventAvoidTestForAllSpells(category, spellAvoidType)
   local spellMap
 
   spellMap = mod.spellMap.SearchByCategory(category.id)
