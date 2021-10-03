@@ -67,6 +67,7 @@ function me.Test(language, category)
 
   me.ShouldHaveSoundTestForAllSpells(language, category)
   me.ShouldHaveSoundDownTestForAllSpells(language, category)
+  me.ShouldHaveSoundCastTestForAllSpells(language, category)
   me.ShouldHaveSoundAvoidTestForAllSpells(language, category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
   me.ShouldHaveSoundAvoidTestForAllSpells(language, category, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
 
@@ -120,7 +121,7 @@ function me.SoundTest(category, spellMap, language)
 
     if type(func) ~= "function" then
       mod.testReporter.ReportFailureTestRun(
-        category.categoryName,
+        category.id,
         testName,
         string.format(mod.testHelper.missingSoundTest, category.categoryName, spellName)
       )
@@ -184,9 +185,75 @@ function me.SoundDownTest(category, spellMap, language)
 
         if type(func) ~= "function" then
           mod.testReporter.ReportFailureTestRun(
-            category.Name,
+            category.id,
             testName,
-            string.format(mod.testHelper.missingSoundDownTest, category.Name, spellName)
+            string.format(mod.testHelper.missingSoundDownTest, category.categoryName, spellName)
+          )
+        else
+          mod.testReporter.ReportSuccessTestRun()
+        end
+      end
+    end
+  end
+end
+
+--[[
+  Tests whether there is an appropriate sound cast testcase for every spell found in the spellmap
+
+  @param {string} language
+    A supported language such as en, de etc.
+  @param {string} category
+    A valid category see RGPVPW_CONSTANTS.CATEGORIES
+]]--
+function me.ShouldHaveSoundCastTestForAllSpells(language, category)
+  local spellMap
+
+  if language == nil then
+    mod.logger.LogError(me.tag, "Missing language - aborting...")
+    return
+  end
+
+  spellMap = mod.spellMap.SearchByCategory(category.id)
+
+  if spellMap == nil then
+    mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
+    return
+  end
+
+  me.SoundCastTest(category, spellMap, language)
+end
+
+--[[
+  Do the actual test whether the expected function is present or not
+
+  @param {string} category
+    A valid category see RGPVPW_CONSTANTS.CATEGORIES
+  @param {table} spellMap
+  @param {string} language
+]]--
+function me.SoundCastTest(category, spellMap, language)
+  for _, spellData in pairs (spellMap) do
+    local spellMetaData = mod.spellMetaMap.GetSpellMetaDataByCategoryAndName(category.id, spellData.name)
+    local trackedEvents = spellMetaData.trackedEvents
+
+    --[[
+      Only spells that track SPELL_AURA_REMOVED are expected to have a sound down test
+    ]]--
+    for _, trackedEvent in pairs(trackedEvents) do
+      if tContains(mod.testHelper.GetCastEvents(), trackedEvent) then
+        local spellName = mod.testHelper.NormalizeSpellName(spellMetaData.name)
+        local testName = "SoundTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) .. spellName
+
+        mod.testReporter.StartTestRun(testName)
+
+        local func = mod["testSoundCast" .. mod.testHelper.FirstToUpper(category.categoryName)
+          .. mod.testHelper.FirstToUpper(language)]["TestSoundCast" .. spellName]
+
+        if type(func) ~= "function" then
+          mod.testReporter.ReportFailureTestRun(
+            category.id,
+            testName,
+            string.format(mod.testHelper.missingSoundCastTest, category.categoryName, spellName)
           )
         else
           mod.testReporter.ReportSuccessTestRun()

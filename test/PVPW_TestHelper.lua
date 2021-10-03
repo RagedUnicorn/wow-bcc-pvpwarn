@@ -47,6 +47,7 @@ mod.testHelper.unableToGetMetadata = "Did not get any spell metadata"
 mod.testHelper.missingSoundTest = "Did not find a sound test for %s - %s"
 mod.testHelper.missingSoundAvoidTest = "Did not find a sound avoid test for %s - %s"
 mod.testHelper.missingSoundDownTest = "Did not find a sound down test for %s - %s"
+mod.testHelper.missingSoundCastTest = "Did not find a sound cast test for %s - %s"
 mod.testHelper.invalidEvent = "Invalid event for %s - %s"
 mod.testHelper.missingCombatEventTest = "Did not find a combat event test for %s - %s"
 mod.testHelper.missingCombatEventAvoidTest = "Did not find a combat avoid event test for %s - %s"
@@ -91,6 +92,20 @@ local avoidCombatEvents = {
 ]]--
 function me.GetAvoidCombatEvents()
   return avoidCombatEvents
+end
+
+--[[
+  All event that are considered spell cast start events
+]]--
+local castEvents = {
+  RGPVPW_CONSTANTS.EVENT_SPELL_CAST_START
+}
+
+--[[
+  @return {table}
+]]--
+function me.GetCastEvents()
+  return castEvents
 end
 
 --[[
