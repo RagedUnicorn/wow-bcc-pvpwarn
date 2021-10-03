@@ -175,27 +175,30 @@ end
 function me.SoundDownTest(category, spellMap, language)
   for _, spellData in pairs (spellMap) do
     local spellMetaData = mod.spellMetaMap.GetSpellMetaDataByCategoryAndName(category.id, spellData.name)
+    local trackedEvents = spellMetaData.trackedEvents
 
     --[[
       Only spells that track SPELL_AURA_REMOVED are expected to have a sound down test
     ]]--
-    if tContains(mod.testHelper.GetFadeEvents(), spellMetaData.trackedEvents) then
-      local spellName = mod.testHelper.NormalizeSpellName(spellMetaData.name)
-      local testName = "SoundTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) .. spellName
+    for _, trackedEvent in pairs(trackedEvents) do
+      if tContains(mod.testHelper.GetFadeEvents(), trackedEvent) then
+        local spellName = mod.testHelper.NormalizeSpellName(spellMetaData.name)
+        local testName = "SoundTestPresent" .. mod.testHelper.FirstToUpper(category.categoryName) .. spellName
 
-      mod.testReporter.StartTestRun(testName)
+        mod.testReporter.StartTestRun(testName)
 
-      local func = mod["testSound" .. mod.testHelper.FirstToUpper(category.categoryName)
-        .. mod.testHelper.FirstToUpper(language)]["TestSoundDown" .. spellName]
+        local func = mod["testSound" .. mod.testHelper.FirstToUpper(category.categoryName)
+          .. mod.testHelper.FirstToUpper(language)]["TestSoundDown" .. spellName]
 
-      if type(func) ~= "function" then
-        mod.testReporter.ReportFailureTestRun(
-          category.Name,
-          testName,
-          string.format(mod.testHelper.missingSoundDownTest, category.Name, spellName)
-        )
-      else
-        mod.testReporter.ReportSuccessTestRun()
+        if type(func) ~= "function" then
+          mod.testReporter.ReportFailureTestRun(
+            category.Name,
+            testName,
+            string.format(mod.testHelper.missingSoundDownTest, category.Name, spellName)
+          )
+        else
+          mod.testReporter.ReportSuccessTestRun()
+        end
       end
     end
   end
