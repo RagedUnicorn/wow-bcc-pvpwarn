@@ -89,11 +89,7 @@ function me.ShouldHaveSoundTestForAllSpells(language, category)
     return
   end
 
-  if category ~= nil then
-    spellMap = mod.spellMap.SearchByCategory(category.id)
-  else
-    spellMap = mod.spellMap.GetSpellMap()
-  end
+  spellMap = mod.spellMap.SearchByCategory(category.id)
 
   if spellMap == nil then
     mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
@@ -150,11 +146,7 @@ function me.ShouldHaveSoundDownTestForAllSpells(language, category)
     return
   end
 
-  if category ~= nil then
-    spellMap = mod.spellMap.SearchByCategory(category.id)
-  else
-    spellMap = mod.spellMap.GetSpellMap()
-  end
+  spellMap = mod.spellMap.SearchByCategory(category.id)
 
   if spellMap == nil then
     mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
@@ -221,11 +213,7 @@ function me.ShouldHaveSoundAvoidTestForAllSpells(language, category, spellAvoidT
     return
   end
 
-  if category ~= nil then
-    spellMap = mod.spellMap.SearchByCategory(category.id)
-  else
-    spellMap = mod.spellMap.GetSpellMap()
-  end
+  spellMap = mod.spellMap.SearchByCategory(category.id)
 
   if spellMap == nil then
     mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
