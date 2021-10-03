@@ -32,6 +32,25 @@ me.tag = "SpellMetaMap"
 
 local categories = RGPVPW_CONSTANTS.CATEGORIES
 
+--[[
+  ["normalized_spell_name"] = { -- string
+    ["name"] = "spell_name", -- string
+    ["soundFileName"] = "sound_file_name", -- string
+    ["spellIcon"] =  00000, -- number
+    ["trackedEvents"] = {
+      A list of events that are relevant for this spell
+
+      SPELL_CAST_SUCCESS -- a spell that was casted
+      SPELL_AURA_APPLIED -- a buff that was applied
+      SPELL_AURA_REMOVED -- a buff that was removed or ran out
+      SPELL_MISSED -- a spell was missed/avoided
+      SPELL_CAST_START -- started to cast a spell
+
+      Note: A spell cannot support both SPELL_CAST_START and SPELL_AURA_REMOVED
+    }
+  }
+}
+]]--
 local spellMetaMap = {
   [categories.DRUID.id] = {
     ["abolish_poison"] = {
@@ -119,7 +138,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136022,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["dash"] = {
@@ -163,7 +183,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136100,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["faerie_fire"] = {
@@ -214,7 +235,8 @@ local spellMetaMap = {
       ["soundFileName"] = "healing_touch",
       ["spellIconId"] = 136041,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["hibernate"] = {
@@ -223,7 +245,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136090,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["hurricane"] = {
@@ -344,7 +367,8 @@ local spellMetaMap = {
       ["soundFileName"] = "rebirth",
       ["spellIconId"] = 136080,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["regrowth"] = {
@@ -352,7 +376,8 @@ local spellMetaMap = {
       ["soundFileName"] = "regrowth",
       ["spellIconId"] = 136085,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["rejuvenation"] = {
@@ -395,7 +420,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135753,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["swift_flight_form"] = {
@@ -457,7 +483,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136006,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["faerie_fire_feral"] = {

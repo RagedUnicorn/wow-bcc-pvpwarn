@@ -37,9 +37,10 @@ local BASE_PATH = "Interface\\AddOns\\PVPWarn\\assets\\sounds\\en\\"
 local FILE_NAME_DOWN = "_down"
 local PATH_SELF_AVOID = "self_avoid\\"
 local PATH_ENEMY_AVOID = "enemy_avoid\\"
+local PATH_CAST = "cast\\"
 local FILE_NAME_SELF_AVOID = "you_avoided_"
 local FILE_NAME_ENEMY_AVOID = "enemy_avoided_"
-local FILE_NAME_START = "_cast"
+local FILE_NAME_START = "cast_"
 local FILE_TYPE = ".mp3"
 
 --[[
@@ -74,7 +75,7 @@ function me.PlaySound(categoryId, spellType, soundFileName)
   elseif spellType == spellTypes.REMOVED then
     soundPath = soundPath .. soundFileName .. FILE_NAME_DOWN .. FILE_TYPE
   elseif spellType == spellTypes.START then
-    soundPath = soundPath .. soundFileName .. FILE_NAME_START .. FILE_TYPE
+    soundPath = soundPath .. PATH_CAST .. FILE_NAME_START .. soundFileName .. FILE_TYPE
   elseif spellType == spellTypes.MISSED_SELF then
     soundPath = soundPath .. PATH_SELF_AVOID .. FILE_NAME_SELF_AVOID .. soundFileName.. FILE_TYPE
   elseif spellType == spellTypes.MISSED_ENEMY then

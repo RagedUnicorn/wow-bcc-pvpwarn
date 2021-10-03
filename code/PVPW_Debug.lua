@@ -117,6 +117,28 @@ _G["__PVPW__DEBUG__COMBATEVENT_MISS_ENEMY_AVOIDED"] = function()
   mod.combatLog.ProcessUnfilteredCombatLogEvent(nil, unpack(event))
 end
 
+-- /run _G["__PVPW__DEBUG__COMBATEVENT_CAST_START"]()
+_G["__PVPW__DEBUG__COMBATEVENT_CAST_START"] = function()
+  local event = {
+    1626123629.151,
+    "SPELL_CAST_START",
+    false,
+    "EnemyPlayerId",
+    "EnemyPlayerName",
+    1352, -- fullfills COMBATLOG_FILTER_HOSTILE_PLAYERS
+    0,
+    "", -- wow does not disclose the target of an enemy spell
+    nil,
+    -2147483648,
+    -2147483648,
+    33786, -- spellId
+    "Cyclone", -- spellName
+    1
+  }
+
+  mod.combatLog.ProcessUnfilteredCombatLogEvent(nil, unpack(event))
+end
+
 --[[
   Take an event from CombatLogGetCurrentEventInfo and store it in a savedVariable. This allows to read a textfile with
   all the logs after a reload.

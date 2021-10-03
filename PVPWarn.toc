@@ -79,9 +79,11 @@ test/PVPW_TestCombatEvent.lua
 
 # druid
 test/PVPW_TestSoundDruidEn.lua
+test/PVPW_TestSoundCastDruidEn.lua
 test/PVPW_TestSoundSelfAvoidDruidEn.lua
 test/PVPW_TestSoundEnemyAvoidDruidEn.lua
 test/PVPW_TestCombatEventsDruid.lua
+test/PVPW_TestCombatEventsCastDruid.lua
 test/PVPW_TestCombatEventsSelfAvoidDruid.lua
 test/PVPW_TestCombatEventsEnemyAvoidDruid.lua
 

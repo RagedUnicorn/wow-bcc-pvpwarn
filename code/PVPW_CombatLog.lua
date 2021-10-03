@@ -68,7 +68,7 @@ function me.ProcessEventHostilePlayers(event, callback, ...)
   if event == "SPELL_CAST_SUCCESS" then
     me.ProcessNormal(event, callback, ...)
   elseif event == "SPELL_CAST_START" then
-    -- me.ProcessStart(event, callback, ...) -- TODO
+    me.ProcessStart(event, callback, ...)
   elseif event == "SPELL_AURA_REMOVED" then
     me.ProcessNormal(event, callback, ...)
   elseif event == "SPELL_AURA_REFRESH" then
@@ -182,8 +182,39 @@ function me.ProcessMissed(event, spellMissedTarget, callback, ...)
     spell.visualWarningColor = visualWarningColor
   end
 
-  mod.warn.PlayWarning(
-    spell.category, spellType, spellMetaData, callback, playSound, playVisual)
+  mod.warn.PlayWarning(spell.category, spellType, spellMetaData, callback, playSound, playVisual)
+end
+
+--[[
+  @param {string} event
+  @param {function} callback
+    Optional function that is invoked with status infos. Currently only used for testing
+  @param {vararg} ...
+]]--
+function me.ProcessStart(event, callback, ...)
+  local spellId = select(12, ...)
+  local playSound
+  local playVisual
+  local spellType = mod.common.GetSpellType(event)
+  local spellMap = mod.common.GetSpellMap(spellType)
+
+  local spell = mod.spellMap.SearchSpellById(spellId)
+
+  if not me.HasFoundSpell(spell, spellId) then return end
+  if not me.IsSpellActive(spellMap, spell.category, spell.name) then return end
+
+  local spellMetaData = mod.spellMetaMap.GetSpellMetaDataForSupportedEvent(spell, event)
+
+  if not me.HasFoundSupportedSpell(spellMetaData, spellId) then return end
+
+  local visualWarningColor = mod.spellConfiguration.GetVisualWarningColor(
+    spellMap, spell.category, spell.name
+  )
+
+  playSound = me.IsSoundWarningActive(spellMap, spell.category, spell.name)
+  playVisual = me.IsVisualWarningActive(spell.category, spell.name, visualWarningColor)
+
+  mod.warn.PlayWarning(spell.category, spellType, spellMetaData, callback, playSound, playVisual)
 end
 
 --[[
