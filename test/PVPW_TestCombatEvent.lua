@@ -70,11 +70,7 @@ end
 function me.ShouldHaveCombatEventTestForAllTrackedEvents(category)
   local spellMap
 
-  if category ~= nil then
-    spellMap = mod.spellMap.SearchByCategory(category.id)
-  else
-    spellMap = mod.spellMap.GetSpellMap()
-  end
+  spellMap = mod.spellMap.SearchByCategory(category.id)
 
   if spellMap == nil then
     mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
@@ -158,11 +154,7 @@ end
 function me.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(category, spellAvoidType)
   local spellMap
 
-  if category ~= nil then
-    spellMap = mod.spellMap.SearchByCategory(category.id)
-  else
-    spellMap = mod.spellMap.GetSpellMap()
-  end
+  spellMap = mod.spellMap.SearchByCategory(category.id)
 
   if spellMap == nil then
     mod.logger.LogError(me.tag, "Unable to get spellMap for category: " .. category.categoryName)
