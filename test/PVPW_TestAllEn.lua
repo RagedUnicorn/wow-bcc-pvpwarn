@@ -39,26 +39,213 @@ function me.TestAllEn()
   local language = mod.testHelper.GetLanguage("enUS")
 
   mod.testReporter.StartTestGroup(testGroupName)
-  -- TODO no longer working
-  mod.testSound.ShouldHaveSoundTestForAllSpells(language)
-  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language)
-  mod.testCombatEvent.ShouldHaveCombatEventTestForAllTrackedEvents(language)
-  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(
-    language, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
-  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllTrackedEvents(
-    language, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
 
-  me.TestAllCombatEventsEn()
-  me.TestAllCombatSelfAvoidEventsEn()
-  me.TestAllCombatEnemyAvoidEventsEn()
+  me.TestAllSoundTestsPresent(language)
+  me.TestAllSoundDownTestsPresent(language)
+  me.TestAllSoundCastTestsPresent(language)
+  me.TestAllSoundSelfAvoidTestsPresent(language)
+  me.TestAllSoundEnemyAvoidTestsPresent(language)
+  me.TestAllCombatEventsPresent()
+  me.TestAllCombatEventsCastPresent()
+  me.TestAllCombatEventsSelfAvoidPresent()
+  me.TestAllCombatEventsEnemyAvoidPresent()
 
   me.TestAllSoundEn()
+  me.TestAllSoundCastEn()
   me.TestAllSoundSelfAvoidEn()
   me.TestAllSoundEnemyAvoidEn()
+  me.TestAllCombatEvents()
+  me.TestAllCombatEventsCast()
+  me.TestAllCombatEventsSelfAvoid()
+  me.TestAllCombatEventsEnemyAvoid()
 
   mod.testReporter.PlayTestQueueWithDelay(function()
     mod.testReporter.StopTestGroup() -- asyncron finish of testgroup
   end)
+end
+
+function me.TestAllSoundTestsPresent(language)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  mod.testSound.ShouldHaveSoundTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MISC)
+end
+
+function me.TestAllSoundDownTestsPresent(language)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  mod.testSound.ShouldHaveSoundDownTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MISC)
+end
+
+function me.TestAllSoundCastTestsPresent(language)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  mod.testSound.ShouldHaveSoundCastTestForAllSpells(language, RGPVPW_CONSTANTS.CATEGORIES.MISC)
+end
+
+function me.TestAllSoundSelfAvoidTestsPresent(language)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.DRUID, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.HUNTER, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.MAGE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.PALADIN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.PRIEST, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.ROGUE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.RACIALS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.ITEMS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.MISC, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+end
+
+function me.TestAllSoundEnemyAvoidTestsPresent(language)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.DRUID, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.HUNTER, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.MAGE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.PALADIN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.PRIEST, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.ROGUE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.SHAMAN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.WARLOCK, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.WARRIOR, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.RACIALS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.ITEMS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testSound.ShouldHaveSoundAvoidTestForAllSpells(
+    language, RGPVPW_CONSTANTS.CATEGORIES.MISC, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+end
+
+
+function me.TestAllCombatEventsPresent()
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  mod.testCombatEvent.ShouldHaveCombatEventTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.MISC)
+end
+
+function me.TestAllCombatEventsCastPresent()
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.DRUID)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.HUNTER)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.MAGE)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.PALADIN)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.PRIEST)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.ROGUE)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.SHAMAN)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.WARLOCK)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.WARRIOR)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.RACIALS)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.ITEMS)
+  mod.testCombatEvent.ShouldHaveCombatEventCastTestForAllSpells(RGPVPW_CONSTANTS.CATEGORIES.MISC)
+end
+
+function me.TestAllCombatEventsSelfAvoidPresent()
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.DRUID, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.HUNTER, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.MAGE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.PALADIN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.PRIEST, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.ROGUE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.SHAMAN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.WARLOCK, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.WARRIOR, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.RACIALS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.ITEMS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.MISC, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.SELF_AVOID)
+end
+
+function me.TestAllCombatEventsEnemyAvoidPresent()
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.DRUID, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.HUNTER, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.MAGE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.PALADIN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.PRIEST, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.ROGUE, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.SHAMAN, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.WARLOCK, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.WARRIOR, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.RACIALS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.ITEMS, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
+  mod.testCombatEvent.ShouldHaveCombatEventAvoidTestForAllSpells(
+    RGPVPW_CONSTANTS.CATEGORIES.MISC, RGPVPW_CONSTANTS.SPELL_AVOID_TYPE.ENEMY_AVOID)
 end
 
 function me.TestAllSoundEn()
@@ -74,6 +261,21 @@ function me.TestAllSoundEn()
   mod.testSoundRacialsEn.CollectTestCases()
   mod.testSoundItemsEn.CollectTestCases()
   mod.testSoundMiscEn.CollectTestCases()
+end
+
+function me.TestAllSoundCastEn()
+  -- mod.testSoundWarriorEn.CollectTestCases()
+  -- mod.testSoundPriestEn.CollectTestCases()
+  -- mod.testSoundRogueEn.CollectTestCases()
+  -- mod.testSoundMageEn.CollectTestCases()
+  -- mod.testSoundHunterEn.CollectTestCases()
+  -- mod.testSoundWarlockEn.CollectTestCases()
+  -- mod.testSoundPaladinEn.CollectTestCases()
+  mod.testSoundCastDruidEn.CollectTestCases()
+  -- mod.testSoundShamanEn.CollectTestCases()
+  -- mod.testSoundRacialsEn.CollectTestCases()
+  -- mod.testSoundItemsEn.CollectTestCases()
+  -- mod.testSoundMiscEn.CollectTestCases()
 end
 
 function me.TestAllSoundSelfAvoidEn()
@@ -100,41 +302,56 @@ function me.TestAllSoundEnemyAvoidEn()
   mod.testSoundEnemyAvoidShamanEn.CollectTestCases()
 end
 
-function me.TestAllCombatEventsEn()
-  mod.testCombatEventsWarriorEn.CollectTestCases()
-  mod.testCombatEventsPriestEn.CollectTestCases()
-  mod.testCombatEventsRogueEn.CollectTestCases()
-  mod.testCombatEventsMageEn.CollectTestCases()
-  mod.testCombatEventsHunterEn.CollectTestCases()
-  mod.testCombatEventsWarlockEn.CollectTestCases()
-  mod.testCombatEventsPaladinEn.CollectTestCases()
-  mod.testCombatEventsDruidEn.CollectTestCases()
-  mod.testCombatEventsShamanEn.CollectTestCases()
-  mod.testCombatEventsRacialsEn.CollectTestCases()
-  mod.testCombatEventsItemsEn.CollectTestCases()
-  mod.testCombatEventsMiscEn.CollectTestCases()
+function me.TestAllCombatEvents()
+  mod.testCombatEventsWarrior.CollectTestCases()
+  mod.testCombatEventsPriest.CollectTestCases()
+  mod.testCombatEventsRogue.CollectTestCases()
+  mod.testCombatEventsMage.CollectTestCases()
+  mod.testCombatEventsHunter.CollectTestCases()
+  mod.testCombatEventsWarlock.CollectTestCases()
+  mod.testCombatEventsPaladin.CollectTestCases()
+  mod.testCombatEventsDruid.CollectTestCases()
+  mod.testCombatEventsShaman.CollectTestCases()
+  mod.testCombatEventsRacials.CollectTestCases()
+  mod.testCombatEventsItems.CollectTestCases()
+  mod.testCombatEventsMisc.CollectTestCases()
 end
 
-function me.TestAllCombatSelfAvoidEventsEn()
-  mod.testCombatEventsSelfAvoidWarriorEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidPriestEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidRogueEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidMageEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidHunterEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidWarlockEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidPaladinEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidDruidEn.CollectTestCases()
-  mod.testCombatEventsSelfAvoidShamanEn.CollectTestCases()
+function me.TestAllCombatEventsCast()
+  -- mod.testCombatEventsWarrior.CollectTestCases()
+  -- mod.testCombatEventsPriest.CollectTestCases()
+  -- mod.testCombatEventsRogue.CollectTestCases()
+  -- mod.testCombatEventsMage.CollectTestCases()
+  -- mod.testCombatEventsHunter.CollectTestCases()
+  -- mod.testCombatEventsWarlock.CollectTestCases()
+  -- mod.testCombatEventsPaladin.CollectTestCases()
+  mod.testCombatEventsCastDruid.CollectTestCases()
+  -- mod.testCombatEventsShaman.CollectTestCases()
+  -- mod.testCombatEventsRacials.CollectTestCases()
+  -- mod.testCombatEventsItems.CollectTestCases()
+  -- mod.testCombatEventsMisc.CollectTestCases()
 end
 
-function me.TestAllCombatEnemyAvoidEventsEn()
-  mod.testCombatEventsEnemyAvoidWarriorEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidPriestEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidRogueEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidMageEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidHunterEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidWarlockEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidPaladinEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidDruidEn.CollectTestCases()
-  mod.testCombatEventsEnemyAvoidShamanEn.CollectTestCases()
+function me.TestAllCombatEventsSelfAvoid()
+  mod.testCombatEventsSelfAvoidWarrior.CollectTestCases()
+  mod.testCombatEventsSelfAvoidPriest.CollectTestCases()
+  mod.testCombatEventsSelfAvoidRogue.CollectTestCases()
+  mod.testCombatEventsSelfAvoidMage.CollectTestCases()
+  mod.testCombatEventsSelfAvoidHunter.CollectTestCases()
+  mod.testCombatEventsSelfAvoidWarlock.CollectTestCases()
+  mod.testCombatEventsSelfAvoidPaladin.CollectTestCases()
+  mod.testCombatEventsSelfAvoidDruid.CollectTestCases()
+  mod.testCombatEventsSelfAvoidShaman.CollectTestCases()
+end
+
+function me.TestAllCombatEventsEnemyAvoid()
+  mod.testCombatEventsEnemyAvoidWarrior.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidPriest.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidRogue.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidMage.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidHunter.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidWarlock.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidPaladin.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidDruid.CollectTestCases()
+  mod.testCombatEventsEnemyAvoidShaman.CollectTestCases()
 end

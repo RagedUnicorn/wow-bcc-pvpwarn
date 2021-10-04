@@ -57,7 +57,6 @@ mod.testHelper.missingCombatEventAvoidTest = "Did not find a combat avoid event 
   All events that are considered basic/normal combat events
 ]]--
 local combatEvents = {
-  RGPVPW_CONSTANTS.EVENT_SPELL_CAST_START,
   RGPVPW_CONSTANTS.EVENT_SPELL_AURA_APPLIED,
   RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REMOVED,
   RGPVPW_CONSTANTS.EVENT_SPELL_AURA_REFRESH
