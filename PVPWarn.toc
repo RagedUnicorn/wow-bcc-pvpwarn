@@ -142,9 +142,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidRogue.lua
 
 # shaman
 test/sound/PVPW_TestSoundShamanEn.lua
+test/sound-cast/PVPW_TestSoundCastShamanEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidShamanEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidShamanEn.lua
 test/combat-events/PVPW_TestCombatEventsShaman.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastShaman.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidShaman.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidShaman.lua
 

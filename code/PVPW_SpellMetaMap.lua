@@ -2812,7 +2812,8 @@ local spellMetaMap = {
       ["soundFileName"] = "ancestral_spirit",
       ["spellIconId"] = 136077,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["bloodlust"] = {
@@ -2830,7 +2831,8 @@ local spellMetaMap = {
       ["soundFileName"] = "chain_heal",
       ["spellIconId"] = 136042,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["chain_lightning"] = {
@@ -2839,7 +2841,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136015,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["cure_disease"] = {
@@ -3003,7 +3006,8 @@ local spellMetaMap = {
       ["soundFileName"] = "healing_wave",
       ["spellIconId"] = 136052,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["heroism"] = {
@@ -3021,7 +3025,8 @@ local spellMetaMap = {
       ["soundFileName"] = "lesser_healing_wave",
       ["spellIconId"] = 136043,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["lightning_bolt"] = {
@@ -3030,7 +3035,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136048,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["lightning_shield"] = {
