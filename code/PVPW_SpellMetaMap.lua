@@ -2418,7 +2418,8 @@ local spellMetaMap = {
       ["soundFileName"] = "anesthetic_poison_applied",
       ["spellIconId"] = 136093,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["backstab"] = {
@@ -2471,7 +2472,8 @@ local spellMetaMap = {
       ["soundFileName"] = "crippling_poison_applied",
       ["spellIconId"] = 132274,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["deadly_poison_effect"] = {
@@ -2488,7 +2490,8 @@ local spellMetaMap = {
       ["soundFileName"] = "deadly_poison_applied",
       ["spellIconId"] = 132290,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["deadly_throw"] = {
@@ -2577,7 +2580,8 @@ local spellMetaMap = {
       ["soundFileName"] = "instant_poison_applied",
       ["spellIconId"] = 132273,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["kick"] = {
@@ -2612,7 +2616,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mind_numbing_poison_applied",
       ["spellIconId"] = 136066,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["rupture"] = {
@@ -2701,7 +2706,8 @@ local spellMetaMap = {
       ["soundFileName"] = "wound_poison_applied",
       ["spellIconId"] = 134197,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["adrenaline_rush"] = {

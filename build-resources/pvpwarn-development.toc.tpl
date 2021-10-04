@@ -132,9 +132,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidPriest.lua
 
 # rogue
 test/sound/PVPW_TestSoundRogueEn.lua
+test/sound-cast/PVPW_TestSoundCastRogueEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidRogueEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidRogueEn.lua
 test/combat-events/PVPW_TestCombatEventsRogue.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastRogue.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidRogue.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidRogue.lua
 
