@@ -218,7 +218,7 @@ end
 
 
 --[[
-  Tests whether there is an appropriate testcase for every spell found in the spellAvoidMap
+  Tests whether there is an appropriate testcase for every spell that supports SPELL_MISSED
 
   @param {table} category
     A valid category see RGPVPW_CONSTANTS.CATEGORIES

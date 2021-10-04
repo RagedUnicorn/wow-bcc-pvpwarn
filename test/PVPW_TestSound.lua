@@ -264,7 +264,7 @@ function me.SoundCastTest(category, spellMap, language)
 end
 
 --[[
-  Tests whether there is an appropriate sound testcase for every spell found in the spellAvoidMap
+  Tests whether there is an appropriate sound testcase for every spell that supports SPELL_MISSED
 
   @param {string} language
     A supported language such as en, de etc.
