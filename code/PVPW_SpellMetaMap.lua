@@ -3937,7 +3937,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132340,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["spell_reflection"] = {

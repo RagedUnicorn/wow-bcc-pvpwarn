@@ -162,9 +162,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidWarlock.lua
 
 # warrior
 test/sound/PVPW_TestSoundWarriorEn.lua
+test/sound-cast/PVPW_TestSoundCastWarriorEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidWarriorEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidWarriorEn.lua
 test/combat-events/PVPW_TestCombatEventsWarrior.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastWarrior.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidWarrior.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidWarrior.lua
 
