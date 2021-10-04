@@ -5132,6 +5132,11 @@ local spellMap = {
     ["name"] = "ambush",
     ["rank"] = 7
   },
+  [26688] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "anesthetic_poison_effect",
+    ["rank"] = 1
+  },
   [26785] = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "anesthetic_poison",
@@ -5202,6 +5207,16 @@ local spellMap = {
     ["name"] = "cloak_of_shadows",
     ["rank"] = 0
   },
+  [3409] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "crippling_poison_effect",
+    ["rank"] = 1
+  },
+  [11201] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "crippling_poison_effect",
+    ["rank"] = 2
+  },
   [3408] = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "crippling_poison",
@@ -5211,6 +5226,41 @@ local spellMap = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "crippling_poison",
     ["rank"] = 2
+  },
+  [2818] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 1
+  },
+  [2819] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 2
+  },
+  [11353] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 3
+  },
+  [11354] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 4
+  },
+  [25349] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 5
+  },
+  [26968] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 6
+  },
+  [27187] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "deadly_poison_effect",
+    ["rank"] = 7
   },
   [2823] = {
     ["category"] = categories.ROGUE.id,
@@ -5427,6 +5477,41 @@ local spellMap = {
     ["name"] = "gouge",
     ["rank"] = 6
   },
+  [8680] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 1
+  },
+  [8685] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 2
+  },
+  [8689] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 3
+  },
+  [11335] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 4
+  },
+  [11336] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 5
+  },
+  [11337] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 6
+  },
+  [26890] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "instant_poison_effect",
+    ["rank"] = 7
+  },
   [8679] = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "instant_poison",
@@ -5496,6 +5581,21 @@ local spellMap = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "kidney_shot",
     ["rank"] = 2
+  },
+  [5760] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison_effect",
+    ["rank"] = 1
+  },
+  [8692] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison_effect",
+    ["rank"] = 2
+  },
+  [11398] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "mind_numbing_poison_effect",
+    ["rank"] = 3
   },
   [5761] = {
     ["category"] = categories.ROGUE.id,
@@ -5676,6 +5776,31 @@ local spellMap = {
     ["category"] = categories.ROGUE.id,
     ["name"] = "vanish",
     ["rank"] = 3
+  },
+  [13218] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison_effect",
+    ["rank"] = 1
+  },
+  [13222] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison_effect",
+    ["rank"] = 2
+  },
+  [13223] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison_effect",
+    ["rank"] = 3
+  },
+  [13224] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison_effect",
+    ["rank"] = 4
+  },
+  [27189] = {
+    ["category"] = categories.ROGUE.id,
+    ["name"] = "wound_poison_effect",
+    ["rank"] = 5
   },
   [13219] = {
     ["category"] = categories.ROGUE.id,
@@ -8114,6 +8239,36 @@ local spellMap = {
     ["category"] = categories.WARRIOR.id,
     ["name"] = "shield_wall",
     ["rank"] = 0
+  },
+  [1464] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 1
+  },
+  [8820] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 2
+  },
+  [11604] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 3
+  },
+  [11605] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 4
+  },
+  [25241] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 5
+  },
+  [25242] = {
+    ["category"] = categories.WARRIOR.id,
+    ["name"] = "slam",
+    ["rank"] = 6
   },
   [23920] = {
     ["category"] = categories.WARRIOR.id,
