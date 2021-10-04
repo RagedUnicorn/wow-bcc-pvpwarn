@@ -102,9 +102,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidHunter.lua
 
 # mage
 test/sound/PVPW_TestSoundMageEn.lua
+test/sound-cast/PVPW_TestSoundCastMageEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidMageEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidMageEn.lua
 test/combat-events/PVPW_TestCombatEventsMage.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastMage.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidMage.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidMage.lua
 

@@ -1006,7 +1006,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135735,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["arcane_brilliance"] = {
@@ -1077,7 +1078,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_food",
       ["spellIconId"] = 133988,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_mana_agate"] = {
@@ -1085,7 +1087,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134104,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_mana_citrine"] = {
@@ -1093,7 +1096,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134116,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_mana_emerald"] = {
@@ -1101,7 +1105,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134134,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_mana_jade"] = {
@@ -1109,7 +1114,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134105,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_mana_ruby"] = {
@@ -1117,7 +1123,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_mana",
       ["spellIconId"] = 134128,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["conjure_water"] = {
@@ -1125,7 +1132,8 @@ local spellMetaMap = {
       ["soundFileName"] = "conjure_water",
       ["spellIconId"] = 132803,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["counterspell"] = {
@@ -1181,7 +1189,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135812,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["flamestrike"] = {
@@ -1189,7 +1198,8 @@ local spellMetaMap = {
       ["soundFileName"] = "flamestrike",
       ["spellIconId"] = 135826,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["frost_armor"] = {
@@ -1227,7 +1237,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135846,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["ice_armor"] = {
@@ -1302,7 +1313,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136071,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["polymorph_pig"] = {
@@ -1311,7 +1323,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135997,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["polymorph_turtle"] = {
@@ -1320,7 +1333,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132199,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["remove_lesser_curse"] = {
@@ -1337,7 +1351,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135827,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["slow_fall"] = {
@@ -1437,7 +1452,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135808,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["slow"] = {
