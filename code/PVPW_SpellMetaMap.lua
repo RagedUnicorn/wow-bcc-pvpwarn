@@ -1621,7 +1621,8 @@ local spellMetaMap = {
       ["soundFileName"] = "flash_of_light",
       ["spellIconId"] = 135907,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["frost_resistance_aura"] = {
@@ -1687,7 +1688,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132326,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["holy_light"] = {
@@ -1695,7 +1697,8 @@ local spellMetaMap = {
       ["soundFileName"] = "holy_light",
       ["spellIconId"] = 135920,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["judgement"] = {
@@ -1824,7 +1827,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135874,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["blessing_of_kings"] = {

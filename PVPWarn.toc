@@ -112,9 +112,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidMage.lua
 
 # paladin
 test/sound/PVPW_TestSoundPaladinEn.lua
+test/sound-cast/PVPW_TestSoundCastPaladinEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidPaladinEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidPaladinEn.lua
 test/combat-events/PVPW_TestCombatEventsPaladin.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastPaladin.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidPaladin.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidPaladin.lua
 
