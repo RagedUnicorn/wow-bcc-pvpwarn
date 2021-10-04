@@ -3266,7 +3266,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136135,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["corruption"] = {
@@ -3283,7 +3284,8 @@ local spellMetaMap = {
       ["soundFileName"] = "create_firestone",
       ["spellIconId"] = 134085,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["create_soulstone"] = {
@@ -3291,7 +3293,8 @@ local spellMetaMap = {
       ["soundFileName"] = "create_soulstone",
       ["spellIconId"] = 134336,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["soulstone_resurrection"] = {
@@ -3307,7 +3310,8 @@ local spellMetaMap = {
       ["soundFileName"] = "create_spellstone",
       ["spellIconId"] = 134336,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["spellstone"] = {
@@ -3434,7 +3438,8 @@ local spellMetaMap = {
       ["soundFileName"] = "eye_of_kilrogg",
       ["spellIconId"] = 136155,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["fear"] = {
@@ -3443,7 +3448,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136183,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["fel_armor"] = {
@@ -3478,7 +3484,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136147,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["immolate"] = {
@@ -3487,7 +3494,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135817,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["incinerate"] = {
@@ -3496,7 +3504,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135789,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["life_tap"] = {
@@ -3537,7 +3546,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135827,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["seed_of_corruption"] = {
@@ -3546,7 +3556,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136193,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["shadow_bolt"] = {
@@ -3555,7 +3566,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136197,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["shadow_ward"] = {
@@ -3574,7 +3586,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135808,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["summon_felhunter"] = {
@@ -3582,7 +3595,8 @@ local spellMetaMap = {
       ["soundFileName"] = "summon_felhunter",
       ["spellIconId"] = 136217,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["summon_imp"] = {
@@ -3590,7 +3604,8 @@ local spellMetaMap = {
       ["soundFileName"] = "summon_imp",
       ["spellIconId"] = 136218,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["summon_succubus"] = {
@@ -3598,7 +3613,8 @@ local spellMetaMap = {
       ["soundFileName"] = "summon_succubus",
       ["spellIconId"] = 136220,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["summon_voidwalker"] = {
@@ -3606,7 +3622,8 @@ local spellMetaMap = {
       ["soundFileName"] = "summon_voidwalker",
       ["spellIconId"] = 136221,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["unending_breath"] = {
@@ -3706,7 +3723,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136201,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["siphon_life"] = {
@@ -3732,7 +3750,8 @@ local spellMetaMap = {
       ["soundFileName"] = "summon_felguard",
       ["spellIconId"] = 136216,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["unstable_affliction"] = {
@@ -3741,7 +3760,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136228,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     }
   },

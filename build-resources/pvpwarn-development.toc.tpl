@@ -152,9 +152,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidShaman.lua
 
 # warlock
 test/sound/PVPW_TestSoundWarlockEn.lua
+test/sound-cast/PVPW_TestSoundCastWarlockEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidWarlockEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidWarlockEn.lua
 test/combat-events/PVPW_TestCombatEventsWarlock.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastWarlock.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidWarlock.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidWarlock.lua
 
