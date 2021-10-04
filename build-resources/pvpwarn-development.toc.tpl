@@ -92,9 +92,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidDruid.lua
 
 # hunter
 test/sound/PVPW_TestSoundHunterEn.lua
+test/sound-cast/PVPW_TestSoundCastHunterEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidHunterEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidHunterEn.lua
 test/combat-events/PVPW_TestCombatEventsHunter.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastHunter.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidHunter.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidHunter.lua
 

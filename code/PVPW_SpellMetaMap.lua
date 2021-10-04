@@ -769,7 +769,8 @@ local spellMetaMap = {
       ["spellIconId"] = 132118,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["scorpid_sting"] = {
@@ -894,7 +895,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135130,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["bestial_wrath"] = {
