@@ -65,6 +65,12 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidShieldBashRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSlamRank6Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSunderArmorRank3Missed)
@@ -290,6 +296,60 @@ function me.TestCombatEventSelfAvoidShieldBashRank4Missed()
     "TestCombatEventSelfAvoidShieldBashRank4Missed",
     testCategory,
     29704,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank1Missed",
+    testCategory,
+    1464,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank2Missed",
+    testCategory,
+    8820,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank3Missed",
+    testCategory,
+    11604,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank4Missed",
+    testCategory,
+    11605,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank5Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank5Missed",
+    testCategory,
+    25241,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidSlamRank6Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidSlamRank6Missed",
+    testCategory,
+    25242,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end

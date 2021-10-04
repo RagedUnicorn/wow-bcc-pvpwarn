@@ -3931,6 +3931,15 @@ local spellMetaMap = {
         "SPELL_AURA_REMOVED"
       }
     },
+    ["slam"] = {
+      ["name"] = "Slam",
+      ["soundFileName"] = "slam",
+      ["spellIconId"] = 132340,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS",
+        "SPELL_MISSED"
+      }
+    },
     ["spell_reflection"] = {
       ["name"] = "Spell Reflection",
       ["soundFileName"] = "spell_reflection",

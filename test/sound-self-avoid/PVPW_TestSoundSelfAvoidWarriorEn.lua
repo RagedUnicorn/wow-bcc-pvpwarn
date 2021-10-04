@@ -49,6 +49,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidOverpower)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidPummel)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidShieldBash)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSlam)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSunderArmor)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidWhirlwind)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidConcussionBlow)
@@ -110,6 +111,14 @@ function me.TestSoundSelfAvoidShieldBash()
     "TestSoundSelfAvoidShieldBash",
     testCategory,
     "shield_bash"
+  )
+end
+
+function me.TestSoundSelfAvoidSlam()
+  mod.testHelper.TestSoundSpellMissedSelf(
+    "TestSoundSelfAvoidSlam",
+    testCategory,
+    "slam"
   )
 end
 

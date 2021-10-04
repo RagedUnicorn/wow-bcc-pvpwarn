@@ -65,6 +65,12 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidShieldBashRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidShieldBashRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidShieldBashRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSlamRank6Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSunderArmorRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSunderArmorRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSunderArmorRank3Missed)
@@ -290,6 +296,60 @@ function me.TestCombatEventEnemyAvoidShieldBashRank4Missed()
     "TestCombatEventEnemyAvoidShieldBashRank4Missed",
     testCategory,
     29704,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank1Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank1Missed",
+    testCategory,
+    1464,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank2Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank2Missed",
+    testCategory,
+    8820,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank3Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank3Missed",
+    testCategory,
+    11604,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank4Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank4Missed",
+    testCategory,
+    11605,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank5Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank5Missed",
+    testCategory,
+    25241,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidSlamRank6Missed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidSlamRank6Missed",
+    testCategory,
+    25242,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end

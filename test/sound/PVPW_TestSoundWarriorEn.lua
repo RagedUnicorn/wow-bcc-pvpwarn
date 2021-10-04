@@ -67,6 +67,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldBlock)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShieldWall)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownShieldWall)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSlam)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSpellReflection)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSpellReflection)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSunderArmor)
@@ -284,6 +285,14 @@ function me.TestSoundDownShieldWall()
     "TestSoundDownShieldWall",
     testCategory,
     "shield_wall"
+  )
+end
+
+function me.TestSoundSlam()
+  mod.testHelper.TestSoundSuccess(
+    "TestSoundSlam",
+    testCategory,
+    "slam"
   )
 end
 

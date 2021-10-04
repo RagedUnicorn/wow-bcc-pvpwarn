@@ -89,6 +89,12 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventShieldBlockRemoved)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventShieldWallApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventShieldWallRemoved)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank3Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank4Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank5Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSlamRank6Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSpellReflectionApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSpellReflectionRemoved)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSunderArmorRank1Success)
@@ -502,6 +508,54 @@ function me.TestCombatEventShieldWallRemoved()
     "TestCombatEventShieldWallRemoved",
     testCategory,
     871
+  )
+end
+
+function me.TestCombatEventSlamRank1Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank1Success",
+    testCategory,
+    1464
+  )
+end
+
+function me.TestCombatEventSlamRank2Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank2Success",
+    testCategory,
+    8820
+  )
+end
+
+function me.TestCombatEventSlamRank3Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank3Success",
+    testCategory,
+    11604
+  )
+end
+
+function me.TestCombatEventSlamRank4Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank4Success",
+    testCategory,
+    11605
+  )
+end
+
+function me.TestCombatEventSlamRank5Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank5Success",
+    testCategory,
+    25241
+  )
+end
+
+function me.TestCombatEventSlamRank6Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventSlamRank6Success",
+    testCategory,
+    25242
   )
 end
 
