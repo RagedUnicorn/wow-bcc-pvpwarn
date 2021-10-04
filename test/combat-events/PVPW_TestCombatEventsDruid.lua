@@ -59,11 +59,6 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventClawRank4Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventClawRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventClawRank6Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCowerRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCowerRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCowerRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCowerRank4Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCowerRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCurePoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCurePoisonRemoved)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCurePoisonRefresh)
@@ -459,46 +454,6 @@ function me.TestCombatEventClawRank6Success()
     testCategory,
     27000
   )
-end
-
-function me.TestCombatEventCowerRank1Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCowerRank1Success",
-    testCategory,
-    8998
-  )
-end
-
-function me.TestCombatEventCowerRank2Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCowerRank2Success",
-    testCategory,
-    9000
-  )
-end
-
-function me.TestCombatEventCowerRank3Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCowerRank3Success",
-    testCategory,
-    9892
-  )
-end
-
-function me.TestCombatEventCowerRank4Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCowerRank4Success",
-    testCategory,
-    31709
-  )
-end
-
-function me.TestCombatEventCowerRank5Success()
-  mod.testHelper.TestCombatEventSuccess(
-  "TestCombatEventCowerRank5Success",
-  testCategory,
-  27004
-)
 end
 
 function me.TestCombatEventCurePoisonApplied()

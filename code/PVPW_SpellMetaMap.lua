@@ -114,14 +114,6 @@ local spellMetaMap = {
         "SPELL_MISSED"
       }
     },
-    ["cower"] = {
-      ["name"] = "Cower",
-      ["soundFileName"] = "cower",
-      ["spellIconId"] = 132118,
-      ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
-      }
-    },
     ["cure_poison"] = {
       ["name"] = "Cure Poison",
       ["soundFileName"] = "cure_poison",

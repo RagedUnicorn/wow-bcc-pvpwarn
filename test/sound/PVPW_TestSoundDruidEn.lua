@@ -51,7 +51,6 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBearForm)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCatForm)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundClaw)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCower)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCurePoison)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownCurePoison)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCyclone)
@@ -184,14 +183,6 @@ function me.TestSoundClaw()
     "TestSoundClaw",
     testCategory,
     "claw"
-  )
-end
-
-function me.TestSoundCower()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundCower",
-    testCategory,
-    "cower"
   )
 end
 

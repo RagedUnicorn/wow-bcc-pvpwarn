@@ -117,31 +117,6 @@ local spellMap = {
     ["name"] = "claw",
     ["rank"] = 6
   },
-  [8998] = {
-    ["category"] = categories.DRUID.id,
-    ["name"] = "cower",
-    ["rank"] = 1
-  },
-  [9000] = {
-    ["category"] = categories.DRUID.id,
-    ["name"] = "cower",
-    ["rank"] = 2
-  },
-  [9892] = {
-    ["category"] = categories.DRUID.id,
-    ["name"] = "cower",
-    ["rank"] = 3
-  },
-  [31709] = {
-    ["category"] = categories.DRUID.id,
-    ["name"] = "cower",
-    ["rank"] = 4
-  },
-  [27004] = {
-    ["category"] = categories.DRUID.id,
-    ["name"] = "cower",
-    ["rank"] = 5
-  },
   [8946] = {
     ["category"] = categories.DRUID.id,
     ["name"] = "cure_poison",
