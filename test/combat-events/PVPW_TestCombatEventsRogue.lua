@@ -49,7 +49,8 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAmbushRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAmbushRank6Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAmbushRank7Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAnestheticPoisonRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAnestheticPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAnestheticPoisonAppliedRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBackstabRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBackstabRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBackstabRank3Success)
@@ -64,15 +65,24 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCheapShotSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCloakOfShadowsApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCloakOfShadowsRemoved)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank4Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank5Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank6Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonRank7Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonEffectRank2Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonAppliedRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventCripplingPoisonAppliedRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank2Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank3Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank4Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank5Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank6Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonEffectRank7Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank3Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank4Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank5Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank6Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyPoisonAppliedRank7Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDeadlyThrowSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDistractSuccess)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnvenomRank1Success)
@@ -111,13 +121,20 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventGougeRank4Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventGougeRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventGougeRank6Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank4Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank5Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank6Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonRank7Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank2Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank3Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank4Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank5Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank6Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonEffectRank7Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank3Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank4Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank5Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank6Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventInstantPoisonAppliedRank7Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKickRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKickRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKickRank3Success)
@@ -125,9 +142,12 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKickRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKidneyShotRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventKidneyShotRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonRank3Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonEffectRank2Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonEffectRank3Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonAppliedRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonAppliedRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventMindNumbingPoisonAppliedRank3Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventRuptureRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventRuptureRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventRuptureRank3Success)
@@ -171,11 +191,16 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventVanishRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventVanishRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventVanishRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonRank4Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonRank5Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonEffectRank1Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonEffectRank2Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonEffectRank3Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonEffectRank4Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonEffectRank5Applied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonAppliedRank1Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonAppliedRank2Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonAppliedRank3Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonAppliedRank4Success)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventWoundPoisonAppliedRank5Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAdrenalineRushApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAdrenalineRushRemoved)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventBladeFlurryApplied)
@@ -257,9 +282,17 @@ function me.TestCombatEventAmbushRank7Success()
   )
 end
 
-function me.TestCombatEventAnestheticPoisonRank1Success()
+function me.TestCombatEventAnestheticPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventAnestheticPoisonEffectRank1Applied",
+    testCategory,
+    26688
+  )
+end
+
+function me.TestCombatEventAnestheticPoisonAppliedRank1Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventAnestheticPoisonRank1Success",
+    "TestCombatEventAnestheticPoisonAppliedRank1Success",
     testCategory,
     26785
   )
@@ -377,73 +410,145 @@ function me.TestCombatEventCloakOfShadowsRemoved()
   )
 end
 
-function me.TestCombatEventCripplingPoisonRank1Success()
+function me.TestCombatEventCripplingPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventCripplingPoisonEffectRank1Applied",
+    testCategory,
+    3409
+  )
+end
+
+function me.TestCombatEventCripplingPoisonEffectRank2Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventCripplingPoisonEffectRank2Applied",
+    testCategory,
+    11201
+  )
+end
+
+function me.TestCombatEventCripplingPoisonAppliedRank1Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCripplingPoisonRank1Success",
+    "TestCombatEventCripplingPoisonAppliedRank1Success",
     testCategory,
     3408
   )
 end
 
-function me.TestCombatEventCripplingPoisonRank2Success()
+function me.TestCombatEventCripplingPoisonAppliedRank2Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventCripplingPoisonRank2Success",
+    "TestCombatEventCripplingPoisonAppliedRank2Success",
     testCategory,
     11202
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank1Success()
+function me.TestCombatEventDeadlyPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank1Applied",
+    testCategory,
+    2818
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank2Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank2Applied",
+    testCategory,
+    2819
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank3Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank3Applied",
+    testCategory,
+    11353
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank4Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank4Applied",
+    testCategory,
+    11354
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank5Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank5Applied",
+    testCategory,
+    25349
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank6Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank6Applied",
+    testCategory,
+    26968
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonEffectRank7Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventDeadlyPoisonEffectRank7Applied",
+    testCategory,
+    27187
+  )
+end
+
+function me.TestCombatEventDeadlyPoisonAppliedRank1Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank1Success",
+    "TestCombatEventDeadlyPoisonAppliedRank1Success",
     testCategory,
     2823
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank2Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank2Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank2Success",
+    "TestCombatEventDeadlyPoisonAppliedRank2Success",
     testCategory,
     2824
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank3Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank3Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank3Success",
+    "TestCombatEventDeadlyPoisonAppliedRank3Success",
     testCategory,
     11355
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank4Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank4Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank4Success",
+    "TestCombatEventDeadlyPoisonAppliedRank4Success",
     testCategory,
     11356
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank5Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank5Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank5Success",
+    "TestCombatEventDeadlyPoisonAppliedRank5Success",
     testCategory,
     25351
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank6Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank6Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank6Success",
+    "TestCombatEventDeadlyPoisonAppliedRank6Success",
     testCategory,
     26967
   )
 end
 
-function me.TestCombatEventDeadlyPoisonRank7Success()
+function me.TestCombatEventDeadlyPoisonAppliedRank7Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDeadlyPoisonRank7Success",
+    "TestCombatEventDeadlyPoisonAppliedRank7Success",
     testCategory,
     27186
   )
@@ -754,57 +859,113 @@ function me.TestCombatEventGougeRank6Success()
   )
 end
 
-function me.TestCombatEventInstantPoisonRank1Success()
+function me.TestCombatEventInstantPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank1Applied",
+    testCategory,
+    8680
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank2Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank2Applied",
+    testCategory,
+    8685
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank3Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank3Applied",
+    testCategory,
+    8689
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank4Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank4Applied",
+    testCategory,
+    11335
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank5Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank5Applied",
+    testCategory,
+    11336
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank6Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank6Applied",
+    testCategory,
+    11337
+  )
+end
+
+function me.TestCombatEventInstantPoisonEffectRank7Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventInstantPoisonEffectRank7Applied",
+    testCategory,
+    26890
+  )
+end
+
+function me.TestCombatEventInstantPoisonAppliedRank1Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank1Success",
+    "TestCombatEventInstantPoisonAppliedRank1Success",
     testCategory,
     8679
   )
 end
 
-function me.TestCombatEventInstantPoisonRank2Success()
+function me.TestCombatEventInstantPoisonAppliedRank2Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank2Success",
+    "TestCombatEventInstantPoisonAppliedRank2Success",
     testCategory,
     8686
   )
 end
 
-function me.TestCombatEventInstantPoisonRank3Success()
+function me.TestCombatEventInstantPoisonAppliedRank3Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank3Success",
+    "TestCombatEventInstantPoisonAppliedRank3Success",
     testCategory,
     8688
   )
 end
 
-function me.TestCombatEventInstantPoisonRank4Success()
+function me.TestCombatEventInstantPoisonAppliedRank4Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank4Success",
+    "TestCombatEventInstantPoisonAppliedRank4Success",
     testCategory,
     11338
   )
 end
 
-function me.TestCombatEventInstantPoisonRank5Success()
+function me.TestCombatEventInstantPoisonAppliedRank5Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank5Success",
+    "TestCombatEventInstantPoisonAppliedRank5Success",
     testCategory,
     11339
   )
 end
 
-function me.TestCombatEventInstantPoisonRank6Success()
+function me.TestCombatEventInstantPoisonAppliedRank6Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank6Success",
+    "TestCombatEventInstantPoisonAppliedRank6Success",
     testCategory,
     11340
   )
 end
 
-function me.TestCombatEventInstantPoisonRank7Success()
+function me.TestCombatEventInstantPoisonAppliedRank7Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventInstantPoisonRank7Success",
+    "TestCombatEventInstantPoisonAppliedRank7Success",
     testCategory,
     26891
   )
@@ -866,25 +1027,49 @@ function me.TestCombatEventKidneyShotRank2Success()
   )
 end
 
-function me.TestCombatEventMindNumbingPoisonRank1Success()
+function me.TestCombatEventMindNumbingPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventMindNumbingPoisonEffectRank1Applied",
+    testCategory,
+    5760
+  )
+end
+
+function me.TestCombatEventMindNumbingPoisonEffectRank2Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventMindNumbingPoisonEffectRank2Applied",
+    testCategory,
+    8692
+  )
+end
+
+function me.TestCombatEventMindNumbingPoisonEffectRank3Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventMindNumbingPoisonEffectRank3Applied",
+    testCategory,
+    11398
+  )
+end
+
+function me.TestCombatEventMindNumbingPoisonAppliedRank1Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventMindNumbingPoisonRank1Success",
+    "TestCombatEventMindNumbingPoisonAppliedRank1Success",
     testCategory,
     5761
   )
 end
 
-function me.TestCombatEventMindNumbingPoisonRank2Success()
+function me.TestCombatEventMindNumbingPoisonAppliedRank2Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventMindNumbingPoisonRank2Success",
+    "TestCombatEventMindNumbingPoisonAppliedRank2Success",
     testCategory,
     8693
   )
 end
 
-function me.TestCombatEventMindNumbingPoisonRank3Success()
+function me.TestCombatEventMindNumbingPoisonAppliedRank3Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventMindNumbingPoisonRank3Success",
+    "TestCombatEventMindNumbingPoisonAppliedRank3Success",
     testCategory,
     11399
   )
@@ -1234,43 +1419,83 @@ function me.TestCombatEventVanishRank3Success()
   )
 end
 
-function me.TestCombatEventWoundPoisonRank1Success()
+function me.TestCombatEventWoundPoisonEffectRank1Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventWoundPoisonEffectRank1Applied",
+    testCategory,
+    13218
+  )
+end
+
+function me.TestCombatEventWoundPoisonEffectRank2Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventWoundPoisonEffectRank2Applied",
+    testCategory,
+    13222
+  )
+end
+
+function me.TestCombatEventWoundPoisonEffectRank3Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventWoundPoisonEffectRank3Applied",
+    testCategory,
+    13223
+  )
+end
+
+function me.TestCombatEventWoundPoisonEffectRank4Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventWoundPoisonEffectRank4Applied",
+    testCategory,
+    13224
+  )
+end
+
+function me.TestCombatEventWoundPoisonEffectRank5Applied()
+  mod.testHelper.TestCombatEventApplied(
+    "TestCombatEventWoundPoisonEffectRank5Applied",
+    testCategory,
+    27189
+  )
+end
+
+function me.TestCombatEventWoundPoisonAppliedRank5Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventWoundPoisonRank1Success",
+    "TestCombatEventWoundPoisonAppliedRank5Success",
+    testCategory,
+    27188
+  )
+end
+
+function me.TestCombatEventWoundPoisonAppliedRank1Success()
+  mod.testHelper.TestCombatEventSuccess(
+    "TestCombatEventWoundPoisonAppliedRank1Success",
     testCategory,
     13219
   )
 end
 
-function me.TestCombatEventWoundPoisonRank2Success()
+function me.TestCombatEventWoundPoisonAppliedRank2Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventWoundPoisonRank2Success",
+    "TestCombatEventWoundPoisonAppliedRank2Success",
     testCategory,
     13225
   )
 end
 
-function me.TestCombatEventWoundPoisonRank3Success()
+function me.TestCombatEventWoundPoisonAppliedRank3Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventWoundPoisonRank3Success",
+    "TestCombatEventWoundPoisonAppliedRank3Success",
     testCategory,
     13226
   )
 end
 
-function me.TestCombatEventWoundPoisonRank4Success()
+function me.TestCombatEventWoundPoisonAppliedRank4Success()
   mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventWoundPoisonRank4Success",
+    "TestCombatEventWoundPoisonAppliedRank4Success",
     testCategory,
     13227
-  )
-end
-
-function me.TestCombatEventWoundPoisonRank5Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventWoundPoisonRank5Success",
-    testCategory,
-    27188
   )
 end
 

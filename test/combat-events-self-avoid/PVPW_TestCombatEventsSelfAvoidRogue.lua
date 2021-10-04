@@ -49,7 +49,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidAmbushRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidAmbushRank6Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidAmbushRank7Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidAnestheticPoisonRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidAnestheticPoisonEffectRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidBackstabRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidBackstabRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidBackstabRank3Missed)
@@ -62,15 +62,15 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidBackstabRank10Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidBlindMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidCheapShotMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidCripplingPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidCripplingPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank5Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonRank7Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidCripplingPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidCripplingPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank7Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDeadlyThrowMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidDistractMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidEnvenomRank1Missed)
@@ -105,13 +105,13 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidGougeRank4Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidGougeRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidGougeRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank5Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonRank7Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidInstantPoisonEffectRank7Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKickRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKickRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKickRank3Missed)
@@ -119,9 +119,9 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKickRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKidneyShotRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidKidneyShotRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidRuptureRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidRuptureRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidRuptureRank3Missed)
@@ -143,11 +143,11 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSinisterStrikeRank8Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSinisterStrikeRank9Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidSinisterStrikeRank10Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank3Missed)
@@ -222,11 +222,11 @@ function me.TestCombatEventSelfAvoidAmbushRank7Missed()
   )
 end
 
-function me.TestCombatEventSelfAvoidAnestheticPoisonRank1Missed()
+function me.TestCombatEventSelfAvoidAnestheticPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidAnestheticPoisonRank1Missed",
+    "TestCombatEventSelfAvoidAnestheticPoisonEffectRank1Missed",
     testCategory,
-    26785,
+    26688,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
@@ -339,83 +339,84 @@ function me.TestCombatEventSelfAvoidCheapShotMissed()
   )
 end
 
-function me.TestCombatEventSelfAvoidCripplingPoisonRank1Missed()
+function me.TestCombatEventSelfAvoidCripplingPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidCripplingPoisonRank1Missed",
+    "TestCombatEventSelfAvoidCripplingPoisonEffectRank1Missed",
     testCategory,
-    3408,
+    3409,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidCripplingPoisonRank2Missed()
+function me.TestCombatEventSelfAvoidCripplingPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidCripplingPoisonRank2Missed",
+    "TestCombatEventSelfAvoidCripplingPoisonEffectRank2Missed",
     testCategory,
-    11202,
+    11201,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank1Missed()
+
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank1Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank1Missed",
     testCategory,
-    2823,
+    2818,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank2Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank2Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank2Missed",
     testCategory,
-    2824,
+    2819,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank3Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank3Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank3Missed",
     testCategory,
-    11355,
+    11353,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank4Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank4Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank4Missed",
     testCategory,
-    11356,
+    11354,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank5Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank5Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank5Missed",
     testCategory,
-    25351,
+    25349,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank6Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank6Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank6Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank6Missed",
     testCategory,
-    26967,
+    26968,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidDeadlyPoisonRank7Missed()
+function me.TestCombatEventSelfAvoidDeadlyPoisonEffectRank7Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidDeadlyPoisonRank7Missed",
+    "TestCombatEventSelfAvoidDeadlyPoisonEffectRank7Missed",
     testCategory,
-    27186,
+    27187,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
@@ -726,65 +727,65 @@ function me.TestCombatEventSelfAvoidGougeRank6Missed()
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank1Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank1Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank1Missed",
     testCategory,
-    8679,
+    8680,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank2Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank2Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank2Missed",
     testCategory,
-    8686,
+    8685,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank3Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank3Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank3Missed",
     testCategory,
-    8688,
+    8689,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank4Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank4Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank4Missed",
     testCategory,
-    11338,
+    11335,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank5Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank5Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank5Missed",
     testCategory,
-    11339,
+    11336,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank6Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank6Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank6Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank6Missed",
     testCategory,
-    11340,
+    11337,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidInstantPoisonRank7Missed()
+function me.TestCombatEventSelfAvoidInstantPoisonEffectRank7Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidInstantPoisonRank7Missed",
+    "TestCombatEventSelfAvoidInstantPoisonEffectRank7Missed",
     testCategory,
-    26891,
+    26890,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
@@ -852,29 +853,29 @@ function me.TestCombatEventSelfAvoidKidneyShotRank2Missed()
   )
 end
 
-function me.TestCombatEventSelfAvoidMindNumbingPoisonRank1Missed()
+function me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMindNumbingPoisonRank1Missed",
+    "TestCombatEventSelfAvoidMindNumbingPoisonEffectRank1Missed",
     testCategory,
-    5761,
+    5760,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidMindNumbingPoisonRank2Missed()
+function me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMindNumbingPoisonRank2Missed",
+    "TestCombatEventSelfAvoidMindNumbingPoisonEffectRank2Missed",
     testCategory,
-    8693,
+    8692,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidMindNumbingPoisonRank3Missed()
+function me.TestCombatEventSelfAvoidMindNumbingPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidMindNumbingPoisonRank3Missed",
+    "TestCombatEventSelfAvoidMindNumbingPoisonEffectRank3Missed",
     testCategory,
-    11399,
+    11398,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
@@ -1068,47 +1069,47 @@ function me.TestCombatEventSelfAvoidSinisterStrikeRank10Missed()
   )
 end
 
-function me.TestCombatEventSelfAvoidWoundPoisonRank1Missed()
+function me.TestCombatEventSelfAvoidWoundPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidWoundPoisonRank1Missed",
+    "TestCombatEventSelfAvoidWoundPoisonEffectRank1Missed",
     testCategory,
-    13219,
+    13218,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidWoundPoisonRank2Missed()
+function me.TestCombatEventSelfAvoidWoundPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidWoundPoisonRank2Missed",
+    "TestCombatEventSelfAvoidWoundPoisonEffectRank2Missed",
     testCategory,
-    13225,
+    13222,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidWoundPoisonRank3Missed()
+function me.TestCombatEventSelfAvoidWoundPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidWoundPoisonRank3Missed",
+    "TestCombatEventSelfAvoidWoundPoisonEffectRank3Missed",
     testCategory,
-    13226,
+    13223,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidWoundPoisonRank4Missed()
+function me.TestCombatEventSelfAvoidWoundPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidWoundPoisonRank4Missed",
+    "TestCombatEventSelfAvoidWoundPoisonEffectRank4Missed",
     testCategory,
-    13227,
+    13224,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end
 
-function me.TestCombatEventSelfAvoidWoundPoisonRank5Missed()
+function me.TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventSelfAvoidWoundPoisonRank5Missed",
+    "TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed",
     testCategory,
-    27188,
+    27189,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end

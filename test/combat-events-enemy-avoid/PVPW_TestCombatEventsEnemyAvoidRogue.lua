@@ -49,7 +49,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidAmbushRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidAmbushRank6Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidAmbushRank7Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidAnestheticPoisonRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidAnestheticPoisonEffectRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidBackstabRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidBackstabRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidBackstabRank3Missed)
@@ -62,15 +62,15 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidBackstabRank10Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidBlindMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidCheapShotMissed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidCripplingPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidCripplingPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank5Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonRank7Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidCripplingPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidCripplingPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank7Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDeadlyThrowMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidDistractMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidEnvenomRank1Missed)
@@ -105,13 +105,13 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidGougeRank4Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidGougeRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidGougeRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank5Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank6Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonRank7Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank6Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidInstantPoisonEffectRank7Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKickRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKickRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKickRank3Missed)
@@ -119,9 +119,9 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKickRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKidneyShotRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidKidneyShotRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidRuptureRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidRuptureRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidRuptureRank3Missed)
@@ -143,11 +143,11 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSinisterStrikeRank8Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSinisterStrikeRank9Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidSinisterStrikeRank10Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonRank1Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonRank2Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonRank3Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonRank4Missed)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank1Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank2Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank3Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank4Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank3Missed)
@@ -222,11 +222,11 @@ function me.TestCombatEventEnemyAvoidAmbushRank7Missed()
   )
 end
 
-function me.TestCombatEventEnemyAvoidAnestheticPoisonRank1Missed()
+function me.TestCombatEventEnemyAvoidAnestheticPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidAnestheticPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidAnestheticPoisonEffectRank1Missed",
     testCategory,
-    26785,
+    26688,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
@@ -339,83 +339,84 @@ function me.TestCombatEventEnemyAvoidCheapShotMissed()
   )
 end
 
-function me.TestCombatEventEnemyAvoidCripplingPoisonRank1Missed()
+function me.TestCombatEventEnemyAvoidCripplingPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidCripplingPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidCripplingPoisonEffectRank1Missed",
     testCategory,
-    3408,
+    3409,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidCripplingPoisonRank2Missed()
+function me.TestCombatEventEnemyAvoidCripplingPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidCripplingPoisonRank2Missed",
+    "TestCombatEventEnemyAvoidCripplingPoisonEffectRank2Missed",
     testCategory,
-    11202,
+    11201,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank1Missed()
+
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank1Missed",
     testCategory,
-    2823,
+    2818,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank2Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank2Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank2Missed",
     testCategory,
-    2824,
+    2819,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank3Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank3Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank3Missed",
     testCategory,
-    11355,
+    11353,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank4Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank4Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank4Missed",
     testCategory,
-    11356,
+    11354,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank5Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank5Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank5Missed",
     testCategory,
-    25351,
+    25349,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank6Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank6Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank6Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank6Missed",
     testCategory,
-    26967,
+    26968,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidDeadlyPoisonRank7Missed()
+function me.TestCombatEventEnemyAvoidDeadlyPoisonEffectRank7Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidDeadlyPoisonRank7Missed",
+    "TestCombatEventEnemyAvoidDeadlyPoisonEffectRank7Missed",
     testCategory,
-    27186,
+    27187,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
@@ -726,65 +727,65 @@ function me.TestCombatEventEnemyAvoidGougeRank6Missed()
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank1Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank1Missed",
     testCategory,
-    8679,
+    8680,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank2Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank2Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank2Missed",
     testCategory,
-    8686,
+    8685,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank3Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank3Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank3Missed",
     testCategory,
-    8688,
+    8689,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank4Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank4Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank4Missed",
     testCategory,
-    11338,
+    11335,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank5Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank5Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank5Missed",
     testCategory,
-    11339,
+    11336,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank6Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank6Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank6Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank6Missed",
     testCategory,
-    11340,
+    11337,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidInstantPoisonRank7Missed()
+function me.TestCombatEventEnemyAvoidInstantPoisonEffectRank7Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidInstantPoisonRank7Missed",
+    "TestCombatEventEnemyAvoidInstantPoisonEffectRank7Missed",
     testCategory,
-    26891,
+    26890,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
@@ -852,29 +853,29 @@ function me.TestCombatEventEnemyAvoidKidneyShotRank2Missed()
   )
 end
 
-function me.TestCombatEventEnemyAvoidMindNumbingPoisonRank1Missed()
+function me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidMindNumbingPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank1Missed",
     testCategory,
-    5761,
+    5760,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidMindNumbingPoisonRank2Missed()
+function me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidMindNumbingPoisonRank2Missed",
+    "TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank2Missed",
     testCategory,
-    8693,
+    8692,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidMindNumbingPoisonRank3Missed()
+function me.TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidMindNumbingPoisonRank3Missed",
+    "TestCombatEventEnemyAvoidMindNumbingPoisonEffectRank3Missed",
     testCategory,
-    11399,
+    11398,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
@@ -1068,47 +1069,47 @@ function me.TestCombatEventEnemyAvoidSinisterStrikeRank10Missed()
   )
 end
 
-function me.TestCombatEventEnemyAvoidWoundPoisonRank1Missed()
+function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank1Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidWoundPoisonRank1Missed",
+    "TestCombatEventEnemyAvoidWoundPoisonEffectRank1Missed",
     testCategory,
-    13219,
+    13218,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidWoundPoisonRank2Missed()
+function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank2Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidWoundPoisonRank2Missed",
+    "TestCombatEventEnemyAvoidWoundPoisonEffectRank2Missed",
     testCategory,
-    13225,
+    13222,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidWoundPoisonRank3Missed()
+function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank3Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidWoundPoisonRank3Missed",
+    "TestCombatEventEnemyAvoidWoundPoisonEffectRank3Missed",
     testCategory,
-    13226,
+    13223,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidWoundPoisonRank4Missed()
+function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank4Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidWoundPoisonRank4Missed",
+    "TestCombatEventEnemyAvoidWoundPoisonEffectRank4Missed",
     testCategory,
-    13227,
+    13224,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
 
-function me.TestCombatEventEnemyAvoidWoundPoisonRank5Missed()
+function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed()
   mod.testHelper.TestCombatEventSpellMissed(
-    "TestCombatEventEnemyAvoidWoundPoisonRank5Missed",
+    "TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed",
     testCategory,
-    27188,
+    27189,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end

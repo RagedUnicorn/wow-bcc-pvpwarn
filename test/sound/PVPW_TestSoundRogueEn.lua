@@ -43,14 +43,17 @@ end
 
 function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAmbush)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAnestheticPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAnestheticPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAnestheticPoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBackstab)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBlind)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCheapShot)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCloakOfShadows)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownCloakOfShadows)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCripplingPoison)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCripplingPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundCripplingPoisonApplied)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyPoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDeadlyThrow)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDistract)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnvenom)
@@ -60,10 +63,12 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundExposeArmor)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGarrote)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundGouge)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInstantPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInstantPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundInstantPoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundKick)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundKidneyShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMindNumbingPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMindNumbingPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundMindNumbingPoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundRupture)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSap)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundShiv)
@@ -74,7 +79,8 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownSprint)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundStealth)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundVanish)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWoundPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWoundPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundWoundPoisonApplied)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAdrenalineRush)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDownAdrenalineRush)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundBladeFlurry)
@@ -100,9 +106,17 @@ function me.TestSoundAmbush()
   )
 end
 
-function me.TestSoundAnestheticPoison()
+function me.TestSoundAnestheticPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundAnestheticPoisonEffect",
+    testCategory,
+    "anesthetic_poison_effect"
+  )
+end
+
+function me.TestSoundAnestheticPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundAnestheticPoison",
+    "TestSoundAnestheticPoisonApplied",
     testCategory,
     "anesthetic_poison"
   )
@@ -148,17 +162,33 @@ function me.TestSoundDownCloakOfShadows()
   )
 end
 
-function me.TestSoundCripplingPoison()
+function me.TestSoundCripplingPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundCripplingPoisonEffect",
+    testCategory,
+    "crippling_poison_effect"
+  )
+end
+
+function me.TestSoundCripplingPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundCripplingPoison",
+    "TestSoundCripplingPoisonApplied",
     testCategory,
     "crippling_poison"
   )
 end
 
-function me.TestSoundDeadlyPoison()
+function me.TestSoundDeadlyPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundDeadlyPoisonEffect",
+    testCategory,
+    "deadly_poison_effect"
+  )
+end
+
+function me.TestSoundDeadlyPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundDeadlyPoison",
+    "TestSoundDeadlyPoisonApplied",
     testCategory,
     "deadly_poison"
   )
@@ -236,9 +266,17 @@ function me.TestSoundGouge()
   )
 end
 
-function me.TestSoundInstantPoison()
+function me.TestSoundInstantPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundInstantPoisonEffect",
+    testCategory,
+    "instant_poison_effect"
+  )
+end
+
+function me.TestSoundInstantPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundInstantPoison",
+    "TestSoundInstantPoisonApplied",
     testCategory,
     "instant_poison"
   )
@@ -260,9 +298,17 @@ function me.TestSoundKidneyShot()
   )
 end
 
-function me.TestSoundMindNumbingPoison()
+function me.TestSoundMindNumbingPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundMindNumbingPoisonEffect",
+    testCategory,
+    "mind_numbing_poison_effect"
+  )
+end
+
+function me.TestSoundMindNumbingPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundMindNumbingPoison",
+    "TestSoundMindNumbingPoisonApplied",
     testCategory,
     "mind_numbing_poison"
   )
@@ -348,9 +394,17 @@ function me.TestSoundVanish()
   )
 end
 
-function me.TestSoundWoundPoison()
+function me.TestSoundWoundPoisonEffect()
+  mod.testHelper.TestSoundApplied(
+    "TestSoundWoundPoisonEffect",
+    testCategory,
+    "wound_poison_effect"
+  )
+end
+
+function me.TestSoundWoundPoisonApplied()
   mod.testHelper.TestSoundSuccess(
-    "TestSoundWoundPoison",
+    "TestSoundWoundPoisonApplied",
     testCategory,
     "wound_poison"
   )

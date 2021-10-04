@@ -2404,13 +2404,21 @@ local spellMetaMap = {
         "SPELL_MISSED"
       }
     },
-    ["anesthetic_poison"] = {
-      ["name"] = "Anesthetic Poison",
+    ["anesthetic_poison_effect"] = {
+      ["name"] = "Anesthetic Poison (Effect)",
       ["soundFileName"] = "anesthetic_poison",
       ["spellIconId"] = 136093,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
+        "SPELL_AURA_APPLIED",
         "SPELL_MISSED"
+      }
+    },
+    ["anesthetic_poison"] = {
+      ["name"] = "Anesthetic Poison (Applied)",
+      ["soundFileName"] = "anesthetic_poison_applied",
+      ["spellIconId"] = 136093,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["backstab"] = {
@@ -2449,22 +2457,38 @@ local spellMetaMap = {
         "SPELL_AURA_REMOVED"
       }
     },
-    ["crippling_poison"] = {
-      ["name"] = "Crippling Poison",
+    ["crippling_poison_effect"] = {
+      ["name"] = "Crippling Poison (Effect)",
       ["soundFileName"] = "crippling_poison",
       ["spellIconId"] = 132274,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
+        "SPELL_AURA_APPLIED",
+        "SPELL_MISSED"
+      }
+    },
+    ["crippling_poison"] = {
+      ["name"] = "Crippling Poison (Applied)",
+      ["soundFileName"] = "crippling_poison_applied",
+      ["spellIconId"] = 132274,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
+      }
+    },
+    ["deadly_poison_effect"] = {
+      ["name"] = "Deadly Poison (Effect)",
+      ["soundFileName"] = "deadly_poison",
+      ["spellIconId"] = 132290,
+      ["trackedEvents"] = {
+        "SPELL_AURA_APPLIED",
         "SPELL_MISSED"
       }
     },
     ["deadly_poison"] = {
-      ["name"] = "Deadly Poison",
-      ["soundFileName"] = "deadly_poison",
+      ["name"] = "Deadly Poison (Applied)",
+      ["soundFileName"] = "deadly_poison_applied",
       ["spellIconId"] = 132290,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["deadly_throw"] = {
@@ -2539,13 +2563,21 @@ local spellMetaMap = {
         "SPELL_MISSED"
       }
     },
-    ["instant_poison"] = {
-      ["name"] = "Instant Poison",
+    ["instant_poison_effect"] = {
+      ["name"] = "Instant Poison (Effect)",
       ["soundFileName"] = "instant_poison",
       ["spellIconId"] = 132273,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
+        "SPELL_AURA_APPLIED",
         "SPELL_MISSED"
+      }
+    },
+    ["instant_poison"] = {
+      ["name"] = "Instant Poison (Applied)",
+      ["soundFileName"] = "instant_poison_applied",
+      ["spellIconId"] = 132273,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["kick"] = {
@@ -2566,13 +2598,21 @@ local spellMetaMap = {
         "SPELL_MISSED"
       }
     },
-    ["mind_numbing_poison"] = {
-      ["name"] = "Mind-numbing Poison",
+    ["mind_numbing_poison_effect"] = {
+      ["name"] = "Mind-numbing Poison (Effect)",
       ["soundFileName"] = "mind_numbing_poison",
       ["spellIconId"] = 136066,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
+        "SPELL_AURA_APPLIED",
         "SPELL_MISSED"
+      }
+    },
+    ["mind_numbing_poison"] = {
+      ["name"] = "Mind-numbing Poison (Applied)",
+      ["soundFileName"] = "mind_numbing_poison_applied",
+      ["spellIconId"] = 136066,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["rupture"] = {
@@ -2647,13 +2687,21 @@ local spellMetaMap = {
         "SPELL_CAST_SUCCESS"
       }
     },
-    ["wound_poison"] = {
-      ["name"] = "Wound Poison",
+    ["wound_poison_effect"] = {
+      ["name"] = "Wound Poison (Effect)",
       ["soundFileName"] = "wound_poison",
       ["spellIconId"] = 134197,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS",
+        "SPELL_AURA_APPLIED",
         "SPELL_MISSED"
+      }
+    },
+    ["wound_poison"] = {
+      ["name"] = "Wound Poison (Applied)",
+      ["soundFileName"] = "wound_poison_applied",
+      ["spellIconId"] = 134197,
+      ["trackedEvents"] = {
+        "SPELL_CAST_SUCCESS"
       }
     },
     ["adrenaline_rush"] = {

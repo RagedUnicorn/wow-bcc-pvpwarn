@@ -43,12 +43,12 @@ end
 
 function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidAmbush)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidAnestheticPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidAnestheticPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidBackstab)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidBlind)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidCheapShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidCripplingPoison)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDeadlyPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidCripplingPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDeadlyPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDeadlyThrow)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidDistract)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidEnvenom)
@@ -56,15 +56,15 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidExposeArmor)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidGarrote)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidGouge)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidInstantPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidInstantPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidKick)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidKidneyShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMindNumbingPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMindNumbingPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRupture)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidSap)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidShiv)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidSinisterStrike)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidWoundPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidWoundPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidHemorrhage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMutilate)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRiposte)
@@ -78,11 +78,11 @@ function me.TestSoundEnemyAvoidAmbush()
   )
 end
 
-function me.TestSoundEnemyAvoidAnestheticPoison()
+function me.TestSoundEnemyAvoidAnestheticPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidAnestheticPoison",
+    "TestSoundEnemyAvoidAnestheticPoisonEffect",
     testCategory,
-    "anesthetic_poison"
+    "anesthetic_poison_effect"
   )
 end
 
@@ -110,19 +110,19 @@ function me.TestSoundEnemyAvoidCheapShot()
   )
 end
 
-function me.TestSoundEnemyAvoidCripplingPoison()
+function me.TestSoundEnemyAvoidCripplingPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidCripplingPoison",
+    "TestSoundEnemyAvoidCripplingPoisonEffect",
     testCategory,
-    "crippling_poison"
+    "crippling_poison_effect"
   )
 end
 
-function me.TestSoundEnemyAvoidDeadlyPoison()
+function me.TestSoundEnemyAvoidDeadlyPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidDeadlyPoison",
+    "TestSoundEnemyAvoidDeadlyPoisonEffect",
     testCategory,
-    "deadly_poison"
+    "deadly_poison_effect"
   )
 end
 
@@ -182,11 +182,11 @@ function me.TestSoundEnemyAvoidGouge()
   )
 end
 
-function me.TestSoundEnemyAvoidInstantPoison()
+function me.TestSoundEnemyAvoidInstantPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidInstantPoison",
+    "TestSoundEnemyAvoidInstantPoisonEffect",
     testCategory,
-    "instant_poison"
+    "instant_poison_effect"
   )
 end
 
@@ -206,11 +206,11 @@ function me.TestSoundEnemyAvoidKidneyShot()
   )
 end
 
-function me.TestSoundEnemyAvoidMindNumbingPoison()
+function me.TestSoundEnemyAvoidMindNumbingPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidMindNumbingPoison",
+    "TestSoundEnemyAvoidMindNumbingPoisonEffect",
     testCategory,
-    "mind_numbing_poison"
+    "mind_numbing_poison_effect"
   )
 end
 
@@ -246,11 +246,11 @@ function me.TestSoundEnemyAvoidSinisterStrike()
   )
 end
 
-function me.TestSoundEnemyAvoidWoundPoison()
+function me.TestSoundEnemyAvoidWoundPoisonEffect()
   mod.testHelper.TestSoundSpellMissedEnemy(
-    "TestSoundEnemyAvoidWoundPoison",
+    "TestSoundEnemyAvoidWoundPoisonEffect",
     testCategory,
-    "wound_poison"
+    "wound_poison_effect"
   )
 end
 

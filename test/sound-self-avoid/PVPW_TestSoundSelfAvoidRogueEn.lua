@@ -43,12 +43,12 @@ end
 
 function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidAmbush)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidAnestheticPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidAnestheticPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidBackstab)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidBlind)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCheapShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCripplingPoison)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDeadlyPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidCripplingPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDeadlyPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDeadlyThrow)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidDistract)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidEnvenom)
@@ -56,15 +56,15 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidExposeArmor)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidGarrote)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidGouge)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidInstantPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidInstantPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidKick)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidKidneyShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMindNumbingPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMindNumbingPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidRupture)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSap)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidShiv)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidSinisterStrike)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidWoundPoison)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidWoundPoisonEffect)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidHemorrhage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidMutilate)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundSelfAvoidRiposte)
@@ -78,11 +78,11 @@ function me.TestSoundSelfAvoidAmbush()
   )
 end
 
-function me.TestSoundSelfAvoidAnestheticPoison()
+function me.TestSoundSelfAvoidAnestheticPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidAnestheticPoison",
+    "TestSoundSelfAvoidAnestheticPoisonEffect",
     testCategory,
-    "anesthetic_poison"
+    "anesthetic_poison_effect"
   )
 end
 
@@ -110,19 +110,19 @@ function me.TestSoundSelfAvoidCheapShot()
   )
 end
 
-function me.TestSoundSelfAvoidCripplingPoison()
+function me.TestSoundSelfAvoidCripplingPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidCripplingPoison",
+    "TestSoundSelfAvoidCripplingPoisonEffect",
     testCategory,
-    "crippling_poison"
+    "crippling_poison_effect"
   )
 end
 
-function me.TestSoundSelfAvoidDeadlyPoison()
+function me.TestSoundSelfAvoidDeadlyPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidDeadlyPoison",
+    "TestSoundSelfAvoidDeadlyPoisonEffect",
     testCategory,
-    "deadly_poison"
+    "deadly_poison_effect"
   )
 end
 
@@ -182,11 +182,11 @@ function me.TestSoundSelfAvoidGouge()
   )
 end
 
-function me.TestSoundSelfAvoidInstantPoison()
+function me.TestSoundSelfAvoidInstantPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidInstantPoison",
+    "TestSoundSelfAvoidInstantPoisonEffect",
     testCategory,
-    "instant_poison"
+    "instant_poison_effect"
   )
 end
 
@@ -206,11 +206,11 @@ function me.TestSoundSelfAvoidKidneyShot()
   )
 end
 
-function me.TestSoundSelfAvoidMindNumbingPoison()
+function me.TestSoundSelfAvoidMindNumbingPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidMindNumbingPoison",
+    "TestSoundSelfAvoidMindNumbingPoisonEffect",
     testCategory,
-    "mind_numbing_poison"
+    "mind_numbing_poison_effect"
   )
 end
 
@@ -246,11 +246,11 @@ function me.TestSoundSelfAvoidSinisterStrike()
   )
 end
 
-function me.TestSoundSelfAvoidWoundPoison()
+function me.TestSoundSelfAvoidWoundPoisonEffect()
   mod.testHelper.TestSoundSpellMissedSelf(
-    "TestSoundSelfAvoidWoundPoison",
+    "TestSoundSelfAvoidWoundPoisonEffect",
     testCategory,
-    "wound_poison"
+    "wound_poison_effect"
   )
 end
 
