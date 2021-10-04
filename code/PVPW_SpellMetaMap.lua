@@ -1907,7 +1907,8 @@ local spellMetaMap = {
       ["soundFileName"] = "binding_heal",
       ["spellIconId"] = 135883,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["chastise"] = {
@@ -1995,7 +1996,8 @@ local spellMetaMap = {
       ["soundFileName"] = "flash_heal",
       ["spellIconId"] = 135907,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["greater_heal"] = {
@@ -2003,7 +2005,8 @@ local spellMetaMap = {
       ["soundFileName"] = "greater_heal",
       ["spellIconId"] = 135913,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["heal"] = {
@@ -2011,7 +2014,8 @@ local spellMetaMap = {
       ["soundFileName"] = "heal",
       ["spellIconId"] = 135916,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["hex_of_weakness"] = {
@@ -2029,7 +2033,8 @@ local spellMetaMap = {
       ["spellIconId"] = 135972,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["inner_fire"] = {
@@ -2047,7 +2052,8 @@ local spellMetaMap = {
       ["soundFileName"] = "lesser_heal",
       ["spellIconId"] = 135929,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["levitate"] = {
@@ -2066,7 +2072,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136170,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["mass_dispel"] = {
@@ -2074,7 +2081,8 @@ local spellMetaMap = {
       ["soundFileName"] = "mass_dispel",
       ["spellIconId"] = 135739,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["mind_blast"] = {
@@ -2083,7 +2091,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136224,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["mind_control"] = {
@@ -2092,7 +2101,8 @@ local spellMetaMap = {
       ["spellIconId"] = 136206,
       ["trackedEvents"] = {
         "SPELL_CAST_SUCCESS",
-        "SPELL_MISSED"
+        "SPELL_MISSED",
+        "SPELL_CAST_START"
       }
     },
     ["mind_vision"] = {
@@ -2138,7 +2148,8 @@ local spellMetaMap = {
       ["soundFileName"] = "prayer_of_healing",
       ["spellIconId"] = 135943,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["prayer_of_mending"] = {
@@ -2191,7 +2202,8 @@ local spellMetaMap = {
       ["soundFileName"] = "resurrection",
       ["spellIconId"] = 135955,
       ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
+        "SPELL_CAST_SUCCESS",
+        "SPELL_CAST_START"
       }
     },
     ["shadow_protection"] = {

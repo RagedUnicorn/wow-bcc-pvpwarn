@@ -122,9 +122,11 @@ test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidPaladin.lua
 
 # priest
 test/sound/PVPW_TestSoundPriestEn.lua
+test/sound-cast/PVPW_TestSoundCastPriestEn.lua
 test/sound-self-avoid/PVPW_TestSoundSelfAvoidPriestEn.lua
 test/sound-enemy-avoid/PVPW_TestSoundEnemyAvoidPriestEn.lua
 test/combat-events/PVPW_TestCombatEventsPriest.lua
+test/combat-events-cast/PVPW_TestCombatEventsCastPriest.lua
 test/combat-events-self-avoid/PVPW_TestCombatEventsSelfAvoidPriest.lua
 test/combat-events-enemy-avoid/PVPW_TestCombatEventsEnemyAvoidPriest.lua
 
