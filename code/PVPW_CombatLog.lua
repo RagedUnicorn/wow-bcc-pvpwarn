@@ -23,7 +23,7 @@
   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ]]--
 
--- luacheck: globals CombatLog_Object_IsA COMBATLOG_FILTER_HOSTILE_PLAYERS COMBATLOG_FILTER_MINE
+-- luacheck: globals CombatLog_Object_IsA COMBATLOG_FILTER_HOSTILE_PLAYERS COMBATLOG_FILTER_MINE UnitGUID
 
 local mod = rgpvpw
 local me = {}
@@ -138,6 +138,18 @@ end
 
 --[[
   Process event "SPELL_MISSED" for spell resists
+
+  How events are filtered:
+
+    You avoided events
+    - You avoided events are a bit more tricky because we need to filter events that
+      are actually relevant to us. Meaning it was actually the player himself that avoided
+      a spell and not someone else. To do that we check the target player of the event
+    Enemy avoided events
+    - For spells that where filtered through ProcessEventMine the path is clear and
+      no additional work is needed. After this filter we only get events that belong
+      to the player himself and thus we don't get avoid events from other players around us
+
   @param {string} event
   @param {function} callback
     Optional function that is invoked with status infos. Currently only used for testing
@@ -149,11 +161,18 @@ end
   @param {vararg} ...
 ]]--
 function me.ProcessMissed(event, spellMissedTarget, callback, ...)
-  local spellId, _, _, missType = select(12, ...)
+  local targetPlayerId, _, _, _, spellId, _, _, missType = select(8, ...)
   local playSound
   local playVisual
+
   if not me.IsSupportedMissType(missType) then
     mod.logger.LogDebug(me.tag, "ProcessMissed ignore unsupported missType: " .. missType)
+    return
+  end
+
+  if spellMissedTarget == RGPVPW_CONSTANTS.TARGET_SELF
+    and targetPlayerId ~= UnitGUID(RGPVPW_CONSTANTS.UNIT_ID_PLAYER) then
+    mod.logger.LogDebug(me.tag, "Ignoring foreign avoid event")
     return
   end
 
