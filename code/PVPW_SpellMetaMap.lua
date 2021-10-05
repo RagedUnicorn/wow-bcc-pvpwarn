@@ -2742,8 +2742,15 @@ local spellMetaMap = {
       ["soundFileName"] = "ghostly_strike",
       ["spellIconId"] = 136136,
       ["trackedEvents"] = {
+        --[[
+          SPELL_CAST_SUCCESS and applying the ghostly strike aura both have the same
+          spellId and thus this spell can support the SPELL_MISSED event. It is however
+          not usual for PVPWarn to combine the SPELL_AURA_APPLIED/REMOVED events with
+          the SPELL_MISSED event
+        ]]--
         "SPELL_AURA_APPLIED",
-        "SPELL_AURA_REMOVED"
+        "SPELL_AURA_REMOVED",
+        "SPELL_MISSED"
       }
     },
     ["hemorrhage"] = {

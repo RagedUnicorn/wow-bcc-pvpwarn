@@ -65,6 +65,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidShiv)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidSinisterStrike)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidWoundPoisonEffect)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidGhostlyStrike)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidHemorrhage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidMutilate)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundEnemyAvoidRiposte)
@@ -251,6 +252,14 @@ function me.TestSoundEnemyAvoidWoundPoisonEffect()
     "TestSoundEnemyAvoidWoundPoisonEffect",
     testCategory,
     "wound_poison_effect"
+  )
+end
+
+function me.TestSoundEnemyAvoidGhostlyStrike()
+  mod.testHelper.TestSoundSpellMissedEnemy(
+    "TestSoundEnemyAvoidGhostlyStrike",
+    testCategory,
+    "ghostly_strike"
   )
 end
 

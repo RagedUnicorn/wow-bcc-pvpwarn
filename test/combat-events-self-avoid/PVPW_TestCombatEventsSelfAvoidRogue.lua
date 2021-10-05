@@ -148,6 +148,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank4Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidGhostlyStrikeMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventSelfAvoidHemorrhageRank3Missed)
@@ -1110,6 +1111,15 @@ function me.TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed()
     "TestCombatEventSelfAvoidWoundPoisonEffectRank5Missed",
     testCategory,
     27189,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
+  )
+end
+
+function me.TestCombatEventSelfAvoidGhostlyStrikeMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventSelfAvoidGhostlyStrikeMissed",
+    testCategory,
+    14278,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF
   )
 end

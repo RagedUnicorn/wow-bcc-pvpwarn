@@ -148,6 +148,7 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank3Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank4Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed)
+  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidGhostlyStrikeMissed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank1Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank2Missed)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventEnemyAvoidHemorrhageRank3Missed)
@@ -1110,6 +1111,15 @@ function me.TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed()
     "TestCombatEventEnemyAvoidWoundPoisonEffectRank5Missed",
     testCategory,
     27189,
+    RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
+  )
+end
+
+function me.TestCombatEventEnemyAvoidGhostlyStrikeMissed()
+  mod.testHelper.TestCombatEventSpellMissed(
+    "TestCombatEventEnemyAvoidGhostlyStrikeMissed",
+    testCategory,
+    14278,
     RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_ENEMY
   )
 end
