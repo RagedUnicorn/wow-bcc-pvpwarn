@@ -57,11 +57,11 @@ function me.Init(frame, categoryId)
   activeCategoryData = mod.common.GetCategoryById(categoryId)
   frame.categoryName = activeCategoryData.categoryName
 
-  if spellScrollFrame ~= nil then
-    spellScrollFrame.ScrollBar:SetValue(0) -- reset scrollframe when navigating from category to category
-  end
-
   if builtMenu then
+    if spellScrollFrame ~= nil then
+      spellScrollFrame.ScrollBar:SetValue(0) -- reset scrollframe when navigating from category to category
+    end
+
     -- cleaned cached data from previous category
     cachedCategoryData = nil
     mod.logger.LogInfo(me.tag, "Wiped cached spellList after category switch")

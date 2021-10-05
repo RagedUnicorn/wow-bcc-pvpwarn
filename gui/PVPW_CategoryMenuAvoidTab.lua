@@ -57,6 +57,10 @@ function me.Init(frame, categoryId)
   frame.categoryName = activeCategoryData.categoryName
 
   if builtMenu then
+    if spellSelfAvoidScrollFrame ~= nil then
+      spellSelfAvoidScrollFrame.ScrollBar:SetValue(0) -- reset scrollframe when navigating from category to category
+    end
+
     -- cleaned cached data from previous category
     cachedCategoryData = nil
     mod.logger.LogInfo(me.tag, "Wiped cached spellAvoidList after category switch")
