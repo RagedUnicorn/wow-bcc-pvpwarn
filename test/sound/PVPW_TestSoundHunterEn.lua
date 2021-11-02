@@ -51,7 +51,6 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAspectOfTheViper)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundAspectOfTheWild)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundConcussiveShot)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestSoundDisengage)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundExplosiveTrap)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFlare)
   mod.testReporter.AddToTestQueueWithDelay(me.TestSoundFreezingTrap)
@@ -167,14 +166,6 @@ function me.TestSoundConcussiveShot()
     "TestSoundConcussiveShot",
     testCategory,
     "concussive_shot"
-  )
-end
-
-function me.TestSoundDisengage()
-  mod.testHelper.TestSoundSuccess(
-    "TestSoundDisengage",
-    testCategory,
-    "disengage"
   )
 end
 

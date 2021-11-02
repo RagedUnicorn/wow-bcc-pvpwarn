@@ -68,10 +68,6 @@ function me.CollectTestCases()
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAspectOfTheWildRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventAspectOfTheWildRank3Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventConcussiveShotSuccess)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDisengageRank1Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDisengageRank2Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDisengageRank3Success)
-  mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventDisengageRank4Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventExplosiveTrapRank1Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventExplosiveTrapRank2Success)
   mod.testReporter.AddToTestQueueWithDelay(me.TestCombatEventExplosiveTrapRank3Success)
@@ -397,38 +393,6 @@ function me.TestCombatEventConcussiveShotSuccess()
     "TestCombatEventConcussiveShotSuccess",
     testCategory,
     5116
-  )
-end
-
-function me.TestCombatEventDisengageRank1Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDisengageRank1Success",
-    testCategory,
-    781
-  )
-end
-
-function me.TestCombatEventDisengageRank2Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDisengageRank2Success",
-    testCategory,
-    14272
-  )
-end
-
-function me.TestCombatEventDisengageRank3Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDisengageRank3Success",
-    testCategory,
-    14273
-  )
-end
-
-function me.TestCombatEventDisengageRank4Success()
-  mod.testHelper.TestCombatEventSuccess(
-    "TestCombatEventDisengageRank4Success",
-    testCategory,
-    27015
   )
 end
 

@@ -641,14 +641,6 @@ local spellMetaMap = {
         "SPELL_MISSED"
       }
     },
-    ["disengage"] = {
-      ["name"] = "Disengage",
-      ["soundFileName"] = "disengage",
-      ["spellIconId"] = 132294,
-      ["trackedEvents"] = {
-        "SPELL_CAST_SUCCESS"
-      }
-    },
     ["explosive_trap"] = {
       ["name"] = "Explosive Trap",
       ["soundFileName"] = "explosive_trap",

@@ -1338,26 +1338,6 @@ local spellMap = {
     ["name"] = "concussive_shot",
     ["rank"] = 0
   },
-  [781] = {
-    ["category"] = categories.HUNTER.id,
-    ["name"] = "disengage",
-    ["rank"] = 1
-  },
-  [14272] = {
-    ["category"] = categories.HUNTER.id,
-    ["name"] = "disengage",
-    ["rank"] = 2
-  },
-  [14273] = {
-    ["category"] = categories.HUNTER.id,
-    ["name"] = "disengage",
-    ["rank"] = 3
-  },
-  [27015] = {
-    ["category"] = categories.HUNTER.id,
-    ["name"] = "disengage",
-    ["rank"] = 4
-  },
   [13813] = {
     ["category"] = categories.HUNTER.id,
     ["name"] = "explosive_trap",
