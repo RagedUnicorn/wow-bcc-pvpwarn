@@ -43,11 +43,11 @@ local spellScrollFrame
   Cached spellList for reusing while the player scrolls through the spellList. Wiped
   when the category changes
 ]]--
-local cachedCategoryData = nil
+local cachedCategoryData
 --[[
   Currently active category data
 ]]--
-local activeCategoryData = nil
+local activeCategoryData
 
 --[[
   @param {table} frame
