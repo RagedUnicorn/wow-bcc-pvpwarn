@@ -293,7 +293,7 @@ function me.SpellSoundSpecialCheckBoxOnClick(self)
         self:GetParent().normalizedSpellName
       )
     elseif self.type == RGPVPW_CONSTANTS.SPELL_TYPES.START then
-      mod.spellConfiguration.ToggleSoundStart(
+      mod.spellConfiguration.ToggleSoundStartWarning(
         RGPVPW_CONSTANTS.SPELL_TYPE.SPELL,
         activeCategoryData.id,
         self:GetParent().normalizedSpellName
