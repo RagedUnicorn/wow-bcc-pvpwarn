@@ -61,14 +61,14 @@ end
   @param {string} profileName
 ]]--
 function me.CreateProfile(profileName)
-  if table.getn(PVPWarnProfiles) >= maxProfiles then
+  if #PVPWarnProfiles >= maxProfiles then
     mod.logger.PrintUserError(
       string.format(rgpvpw.L["user_message_add_new_profile_max_reached"], maxProfiles)
     )
     return
   end
 
-  for i = 1, table.getn(PVPWarnProfiles) do
+  for i = 1, #PVPWarnProfiles do
     if PVPWarnProfiles[i].name == profileName then
       mod.logger.PrintUserError(rgpvpw.L["user_message_select_profile_already_exists"])
       return
