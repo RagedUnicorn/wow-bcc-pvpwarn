@@ -109,6 +109,11 @@ local defaultSpellProfileDruid = {
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["summon_water_elemental"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
     }
   },
   [RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id] = {
