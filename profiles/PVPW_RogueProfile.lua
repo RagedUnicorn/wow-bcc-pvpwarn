@@ -223,6 +223,11 @@ local defaultSpellProfileRogue = {
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
+    },
+    ["mana_tide_totem"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
     }
   },
   [RGPVPW_CONSTANTS.CATEGORIES.WARLOCK.id] = {
