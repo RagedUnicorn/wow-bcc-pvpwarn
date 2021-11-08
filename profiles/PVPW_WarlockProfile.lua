@@ -29,17 +29,13 @@ mod.warlockProfile = me
 me.tag = "WarlockProfile"
 
 --[[
-  ["type"] = {
-    -- e.g. paladin, racials
+  ["categoryId"] = {
+    -- RGPVPW_CONSTANTS.CATEGORIES
     ["spellName"] = {
       -- e.g. lay_on_hands as found in SpellMap
       ["spellActive"] = false,
         -- default false
       ["soundWarningActive"] = false,
-        -- default false
-      ["soundFadeWarningActive"] = false,
-        -- default false
-      ["visualWarningActive"] = false,
         -- default false
       ["visualWarningColor"] = [number] -- e.g. blue, orange see RGPVPW_CONSTANTS.TEXTURES
         -- default color in RGPVPW_CONSTANTS.DEFAULT_COLOR
@@ -47,61 +43,49 @@ me.tag = "WarlockProfile"
   }
 ]]--
 local defaultSpellProfileWarlock = {
-  ["warrior"] = {
-    ["berserker_rage"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.DRUID.id] = {
+    ["barkskin"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
     },
-    ["recklessness"] = {
+    ["bash"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
+    },
+    ["natures_swiftness"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
+    },
+    ["feral_charge"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
     }
   },
-  ["priest"] = {
-    ["psychic_scream"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.HUNTER.id] = {
+    ["viper_sting"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.green.colorValue
     },
-    ["silence"] = {
+    ["silencing_shot"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.green.colorValue
+    },
+    ["the_beast_within"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.green.colorValue
     }
   },
-  ["rogue"] = {
-    ["sprint"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
-    },
-    ["adrenaline_rush"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
-    },
-    ["blade_flurry"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
-    },
-    ["cold_blood"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
-    }
-  },
-  ["mage"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.MAGE.id] = {
     ["ice_block"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
@@ -120,42 +104,41 @@ local defaultSpellProfileWarlock = {
       ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
     },
-    ["silence"] = {
+    ["counterspell"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["evocation"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["summon_water_elemental"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["cold_snap"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["icy_veins"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
     }
   },
-  ["hunter"] = {
-    ["viper_sting"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.green.colorValue
-    },
-    ["rapid_fire"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id] = {
+    ["avenging_wrath"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.green.colorValue
-    }
-  },
-  ["warlock"] = {
-    ["shadow_ward"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.violet.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.pink.colorValue
     },
-    ["amplify_curse"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.violet.colorValue
-    }
-  },
-  ["paladin"] = {
     ["divine_shield"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
@@ -163,21 +146,85 @@ local defaultSpellProfileWarlock = {
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.pink.colorValue
     }
   },
-  ["druid"] = {
-    ["barkskin"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.PRIEST.id] = {
+    ["psychic_scream"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
     },
-    ["natures_swiftness"] = {
+    ["silence"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+    },
+    ["shadowfiend"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+    },
+    ["pain_suppression"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.orange.colorValue
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+    },
+    ["fear_ward"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
+    },
+    ["power_infusion"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.white.colorValue
     }
   },
-  ["shaman"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.ROGUE.id] = {
+    ["blind"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["kick"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["cloak_of_shadows"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["kidney_shot"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["stealth"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["vanish"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["preparation"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    },
+    ["shadowstep"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.yellow.colorValue
+    }
+  },
+  [RGPVPW_CONSTANTS.CATEGORIES.SHAMAN.id] = {
     ["elemental_mastery"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
@@ -190,64 +237,147 @@ local defaultSpellProfileWarlock = {
       ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
     },
-    ["tremor_totem"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
-    },
     ["grounding_totem"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
+    },
+    ["tremor_totem"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
+    },
+    ["mana_tide_totem"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.blue.colorValue
     }
   },
-  ["racials"] = {},
-  ["items"] = {
-    ["shadow_reflector"] = {
+  [RGPVPW_CONSTANTS.CATEGORIES.WARLOCK.id] = {
+    ["death_coil"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.violet.colorValue
+    },
+    ["howl_of_terror"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.violet.colorValue
+    },
+    ["fel_domination"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.violet.colorValue
+    }
+  },
+  [RGPVPW_CONSTANTS.CATEGORIES.WARRIOR.id] = {
+    ["recklessness"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+    },
+    ["death_wish"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+    },
+    ["intimidating_shout"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+    },
+    ["pummel"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+    },
+    ["spell_reflection"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.brown.colorValue
+    }
+  },
+  [RGPVPW_CONSTANTS.CATEGORIES.RACIALS.id] = {},
+  [RGPVPW_CONSTANTS.CATEGORIES.ITEMS.id] = {
+    ["insignia_pvp_trinket"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
+    },
+    ["nigh_invulnerability_belt"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
     },
-    ["immune_root_snare_stun"] = {
+    ["nigh_invulnerability_belt_backfire"] = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
-    },
-    ["immune_charm_fear_polymorph"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
-    },
-    ["immune_fear_polymorph_snare"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
-    },
-    ["immune_fear_polymorph_stun"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
-      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
-    },
-    ["immune_charm_fear_stun"] = {
-      ["spellActive"] = true,
-      ["soundWarningActive"] = true,
-      ["soundFadeWarningActive"] = false,
+      ["soundFadeWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.red.colorValue
     }
   },
-  ["misc"] = {}
+  [RGPVPW_CONSTANTS.CATEGORIES.MISC.id] = {}
 }
 
+--[[
+  ["categoryId"] = {
+    -- RGPVPW_CONSTANTS.CATEGORIES
+    ["spellName"] = {
+      -- e.g. lay_on_hands as found in SpellMap
+      ["spellActive"] = false,
+        -- default false
+      ["soundWarningActive"] = false,
+        -- default false
+      ["visualWarningColor"] = [number] -- e.g. blue, orange see RGPVPW_CONSTANTS.TEXTURES
+        -- default color in RGPVPW_CONSTANTS.DEFAULT_COLOR
+    }
+  }
+]]--
 local defaultSpellSelfAvoidProfileWarlock = {}
 
-local defaultSpellEnemyAvoidProfileWarlock = {}
+--[[
+  ["categoryId"] = {
+    -- RGPVPW_CONSTANTS.CATEGORIES
+    ["spellName"] = {
+      -- e.g. lay_on_hands as found in SpellMap
+      ["spellActive"] = false,
+        -- default false
+      ["soundWarningActive"] = false,
+        -- default false
+      ["visualWarningColor"] = [number] -- e.g. blue, orange see RGPVPW_CONSTANTS.TEXTURES
+        -- default color in RGPVPW_CONSTANTS.DEFAULT_COLOR
+    }
+  }
+]]--
+local defaultSpellEnemyAvoidProfileWarlock = {
+  [RGPVPW_CONSTANTS.CATEGORIES.WARLOCK.id] = {
+    ["death_coil"] = {
+      ["spellActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.DEFAULT_COLOR,
+      ["soundWarningActive"] = true
+    },
+    ["fear"] = {
+      ["spellActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.DEFAULT_COLOR,
+      ["soundWarningActive"] = true
+    },
+    ["howl_of_terror"] = {
+      ["spellActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.DEFAULT_COLOR,
+      ["soundWarningActive"] = true
+    },
+    ["shadowfury"] = {
+      ["spellActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.DEFAULT_COLOR,
+      ["soundWarningActive"] = true
+    }
+  }
+}
 
 --[[
   @param {string} spellType
