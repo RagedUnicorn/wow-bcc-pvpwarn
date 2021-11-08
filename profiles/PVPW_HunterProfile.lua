@@ -115,6 +115,17 @@ local defaultSpellProfileHunter = {
       ["spellActive"] = true,
       ["soundWarningActive"] = true,
       ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["cold_snap"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
+    },
+    ["icy_veins"] = {
+      ["spellActive"] = true,
+      ["soundWarningActive"] = true,
+      ["soundFadeWarningActive"] = true,
+      ["visualWarningColor"] = RGPVPW_CONSTANTS.TEXTURES.light_blue.colorValue
     }
   },
   [RGPVPW_CONSTANTS.CATEGORIES.PALADIN.id] = {
