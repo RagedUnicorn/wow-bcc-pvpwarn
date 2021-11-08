@@ -146,6 +146,8 @@ function me.LoadProfile(profileName)
       return
     end
   end
+
+  mod.logger.LogWarn(me.tag, "Unable to find profile with name: " .. profileName)
 end
 
 --[[
