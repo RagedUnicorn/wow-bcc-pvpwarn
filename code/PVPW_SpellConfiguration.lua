@@ -86,8 +86,6 @@ function me.IsSpellActive(spellList, categoryId, spellName)
   return false
 end
 
-
-
 --[[
   @param {string} spellList
     Decides upon which stored list should be used. Possible values:
