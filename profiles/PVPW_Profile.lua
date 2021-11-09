@@ -172,11 +172,12 @@ function me.InitializeDefaultProfile()
       {
         ["name"] = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME,
         ["version"] = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version"),
-        ["spellConfiguration"] = mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL),
+        ["spellConfiguration"] =
+          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL),
         ["spellSelfAvoidConfiguration"] =
-        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID),
+          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID),
         ["spellEnemyAvoidConfiguration"] =
-        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
+          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
       }
     }
     PVPWarnProfiles.activeProfile = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME

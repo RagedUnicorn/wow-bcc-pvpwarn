@@ -131,7 +131,7 @@ function me.BuildUi(frame)
     me.DeleteSelectedProfileButtonOnClick
   )
   -- create a button that loads the selected profile
-  local loadButton = me.CreateConfigurationButton(
+  me.CreateConfigurationButton(
     frame,
     RGPVPW_CONSTANTS.ELEMENT_LOAD_PROFILE_BUTTON,
     {"LEFT", deleteButton, "RIGHT", 0, 0},
