@@ -112,6 +112,7 @@ function me.ToggleSpell(spellList, categoryId, spellName, state)
   )
 
   PVPWarnConfiguration[spellList][categoryId][spellName].spellActive = state
+  mod.profile.SetModified()
 end
 
 --[[
@@ -201,6 +202,7 @@ function me.ToggleSound(spellList, categoryId, spellName, state)
   )
 
   PVPWarnConfiguration[spellList][categoryId][spellName].soundWarningActive = state
+  mod.profile.SetModified()
 end
 
 --[[
@@ -290,6 +292,7 @@ function me.ToggleSoundFade(spellList, categoryId, spellName, state)
   )
 
   PVPWarnConfiguration[spellList][categoryId][spellName].soundFadeWarningActive = state
+  mod.profile.SetModified()
 end
 
 --[[
@@ -379,6 +382,7 @@ function me.ToggleSoundStart(spellList, categoryId, spellName, state)
   )
 
   PVPWarnConfiguration[spellList][categoryId][spellName].soundStartWarningActive = state
+  mod.profile.SetModified()
 end
 
 --[[
@@ -437,6 +441,7 @@ function me.UpdateVisualWarningColor(spellList, categoryId, spellName, color)
   )
 
   PVPWarnConfiguration[spellList][categoryId][spellName].visualWarningColor = color
+  mod.profile.SetModified()
 end
 
 --[[

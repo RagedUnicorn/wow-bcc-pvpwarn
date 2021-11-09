@@ -323,6 +323,7 @@ RGPVPW_CONSTANTS = {
   ELEMENT_LOAD_PROFILE_BUTTON = "PVPW_LoadProfile",
   ELEMENT_LOAD_DEFAULT_PROFILE_BUTTON = "PVPW_LoadDefaultProfile",
   ELEMENT_PROFILE_LIST_ROW_HIGHLIGHT = "$parentHighlight",
+  DEFAULT_PROFILE_NAME = "Default",
   --[[
     Categorymenu
   ]]--

@@ -35,11 +35,6 @@ local maxProfiles = 10
 local maxProfileNameLength = 25
 
 --[[
-  Saved addon variable
-]]--
-PVPWarnProfiles = {}
-
---[[
   Default profiles consider the class from the player that uses the addon. As an
   example lets assume the player is a warrior. What are the spells a warrior absolutely
   needs to know of. Depending on the class a spells importance might greatly differ
@@ -105,6 +100,11 @@ function me.DeleteProfile(profileName)
     return
   end
 
+  if profileName == RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME then
+    mod.logger.PrintUserError(rgpvpw.L["user_message_default_profile_cannot_be_deleted"])
+    return
+  end
+
   for i = 1, #PVPWarnProfiles do
     if PVPWarnProfiles[i].name == profileName then
       table.remove(PVPWarnProfiles, i)
@@ -141,6 +141,9 @@ function me.LoadProfile(profileName)
       PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] = {}
       PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] =
         PVPWarnProfiles[i].spellEnemyAvoidConfiguration
+
+      PVPWarnProfiles.activeProfile = PVPWarnProfiles[i].name
+      PVPWarnProfiles.modified = false
       mod.logger.LogInfo(me.tag, "Loaded profile with name: " .. PVPWarnProfiles[i].name)
 
       return
@@ -151,27 +154,62 @@ function me.LoadProfile(profileName)
 end
 
 --[[
-  Load the default profile for the current class
-
-  Note: Overrides the current spell configuration
+  Initializes the PVPWarnProfiles addon variable for the first time by inserting the classes default profile.
+  Afterwards the profile RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME is loaded into the actual configuration
 ]]--
-function me.LoadDefaultProfile()
+function me.InitializeDefaultProfile()
   local _, englishClass = UnitClass(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
 
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] = nil
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] = {}
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] =
-    mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL)
+  --[[
+    Initialize profiles for the first time
+  ]]--
+  if PVPWarnProfiles == nil then
+    --[[
+      Saved addon variable
+    ]]--
+    PVPWarnProfiles = {
+      -- load default profile data into PVPWarnProfiles
+      {
+        ["name"] = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME,
+        ["version"] = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version"),
+        ["spellConfiguration"] = mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL),
+        ["spellSelfAvoidConfiguration"] =
+        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID),
+        ["spellEnemyAvoidConfiguration"] =
+        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
+      }
+    }
+    PVPWarnProfiles.activeProfile = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME
+    PVPWarnProfiles.modified = false
+  end
+  me.LoadProfile(RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME)
+end
 
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] = nil
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] = {}
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] =
-    mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID)
+--[[
+  Returns the name of the currently active profile. This will only return the name of the last loaded profile. The user
+  might have made changes to the loaded profile in the meantime
 
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] = nil
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] = {}
-  PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] =
-    mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
+  @return {string}
+]]--
+function me.GetActiveProfileName()
+  return PVPWarnProfiles.activeProfile
+end
 
-  mod.logger.LogInfo(me.tag, "Loaded default profile for: " .. englishClass)
+--[[
+  Returns whether the activated profile was modified in any way.
+  Note: This includes any change to the profile even if the change was reverted
+
+  @return {boolean}
+    true - if the active profile was modified
+    false - if the active profile was not modified
+]]--
+function me.IsModified()
+  return PVPWarnProfiles.modified
+end
+
+--[[
+  Marks the currently active profile as modified indicating that there was a change to it (that is not saved)
+]]--
+function me.SetModified()
+  PVPWarnProfiles.modified = true
 end

@@ -80,6 +80,7 @@ rgpvpw.L["user_message_select_profile_before_delete"] = "Select a profile to del
 rgpvpw.L["user_message_select_profile_before_load"] = "Select a profile to load"
 rgpvpw.L["user_message_select_profile_already_exists"] = "Profile already exist - choose another name"
 rgpvpw.L["user_message_add_new_profile_max_reached"] = "A maximum of %s profiles is allowed you reached the maximum"
+rgpvpw.L["user_message_default_profile_cannot_be_deleted"] = "The default profile cannot be deleted"
 
 -- categories
 rgpvpw.L["category_druid"] = "Druid"

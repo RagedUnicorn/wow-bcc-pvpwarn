@@ -74,7 +74,7 @@ function me.SetupConfiguration()
   -- initialize all spellLists for the first time with default profile
   if PVPWarnConfiguration.spellList == nil or PVPWarnConfiguration.spellSelfAvoidList == nil
       or PVPWarnConfiguration.spellEnemyAvoidList == nil then
-    mod.profile.LoadDefaultProfile()
+    mod.profile.InitializeDefaultProfile()
   end
 
   if PVPWarnConfiguration.enableCombatStateTracking == nil then

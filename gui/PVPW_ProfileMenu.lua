@@ -79,7 +79,7 @@ StaticPopupDialogs["RGPVPW_CHOOSE_PROFILE_NAME"] = {
 --[[
   Popup dialog warning before deleting a profile
 ]]--
-StaticPopupDialogs["PVPW_DELETE_PROFILE_WARNING"] = {
+StaticPopupDialogs["RGPVPW_DELETE_PROFILE_WARNING"] = {
   text = rgpvpw.L["confirm_delete_profile_dialog_text"],
   button1 = rgpvpw.L["confirm_delete_profile_yes_button"],
   button2 = rgpvpw.L["confirm_delete_profile_no_button"],
@@ -95,27 +95,13 @@ StaticPopupDialogs["PVPW_DELETE_PROFILE_WARNING"] = {
 --[[
   Popup dialog warning before loading a profile
 ]]--
-StaticPopupDialogs["PVPW_CHANGE_PROFILE_WARNING"] = {
+StaticPopupDialogs["RGPVPW_CHANGE_PROFILE_WARNING"] = {
   text = rgpvpw.L["confirm_override_profile_dialog_text"],
   button1 = rgpvpw.L["confirm_override_profile_yes_button"],
   button2 = rgpvpw.L["confirm_override_profile_no_button"],
   OnAccept = function()
     mod.profile.LoadProfile(currentSelectedProfile)
-  end,
-  timeout = 0,
-  whileDead = true,
-  preferredIndex = 4
-}
-
---[[
-  Popup dialog warning before loading the default profile
-]]--
-StaticPopupDialogs["PVPW_CHANGE_DEFAULT_PROFILE_WARNING"] = {
-  text = rgpvpw.L["confirm_override_default_profile_dialog_text"],
-  button1 = rgpvpw.L["confirm_override_default_profile_yes_button"],
-  button2 = rgpvpw.L["confirm_override_default_profile_no_button"],
-  OnAccept = function()
-    mod.profile.LoadDefaultProfile()
+    me.ProfileListUpdateOnUpdate(profileListScrollFrame)
   end,
   timeout = 0,
   whileDead = true,
@@ -151,15 +137,6 @@ function me.BuildUi(frame)
     {"LEFT", deleteButton, "RIGHT", 0, 0},
     rgpvpw.L["load_selected_profile_button"],
     me.LoadSelectedProfileButtonOnClick
-  )
-
-  -- create a button that loads the default profile
-  me.CreateConfigurationButton(
-    frame,
-    RGPVPW_CONSTANTS.ELEMENT_LOAD_DEFAULT_PROFILE_BUTTON,
-    {"LEFT", loadButton, "RIGHT", 0, 0},
-    rgpvpw.L["load_default_profile_button"],
-    me.LoadDefaultProfileButtonOnClick
   )
 
   -- init scrollFrame
@@ -320,7 +297,17 @@ function me.ProfileListUpdateOnUpdate(scrollFrame)
     local profile = profiles[offset + i]
 
     if profile ~= nil then
-      row.profileName:SetText(profiles[offset + i].name)
+      local profileName = profile.name
+
+      if mod.profile.GetActiveProfileName() == profile.name then
+        profileName = profileName .. " (active)"
+
+        if mod.profile.IsModified() then
+          profileName = profileName .. "*"
+        end
+      end
+
+      row.profileName:SetText(profileName)
     else
       row.profileName:SetText("")
     end
@@ -396,7 +383,7 @@ end
   dialog for the user to confirm the action.
 ]]--
 function me.DeleteSelectedProfileButtonOnClick()
-  StaticPopup_Show("PVPW_DELETE_PROFILE_WARNING")
+  StaticPopup_Show("RGPVPW_DELETE_PROFILE_WARNING")
 end
 
 --[[
@@ -404,13 +391,5 @@ end
   dialog for the user to confirm the action.
 ]]--
 function me.LoadSelectedProfileButtonOnClick()
-  StaticPopup_Show("PVPW_CHANGE_PROFILE_WARNING")
-end
-
---[[
-  Button callback to load the default profile configuration. This will invoke a popup
-  dialog for the user to confirm the action.
-]]--
-function me.LoadDefaultProfileButtonOnClick()
-  StaticPopup_Show("PVPW_CHANGE_DEFAULT_PROFILE_WARNING")
+  StaticPopup_Show("RGPVPW_CHANGE_PROFILE_WARNING")
 end
