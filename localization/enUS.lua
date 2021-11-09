@@ -41,7 +41,7 @@ rgpvpw.L["invalid_argument"] = "Invalid argument passed"
 rgpvpw.L["author"] = "Author: Michael Wiesendanger"
 rgpvpw.L["email"] = "E-Mail: michael.wiesendanger@gmail.com"
 rgpvpw.L["version"] = "Version: " .. GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version")
-rgpvpw.L["issues"] = "Issues: https://github.com/RagedUnicorn/wow-classic-pvpwarn/issues"
+rgpvpw.L["issues"] = "Issues: https://github.com/RagedUnicorn/wow-bcc-pvpwarn/issues"
 
 -- general
 rgpvpw.L["configuration_menu_general"] = "PVPWarn Options"
@@ -67,7 +67,7 @@ rgpvpw.L["confirm_delete_profile_dialog_text"] = "This will delete your selected
 rgpvpw.L["confirm_delete_profile_yes_button"] = "Yes"
 rgpvpw.L["confirm_delete_profile_no_button"] = "No"
 -- load profile
-rgpvpw.L["confirm_override_profile_dialog_text"] = "This will override your current profile. Do you want to continue?"
+rgpvpw.L["confirm_override_profile_dialog_text"] = "This will override your current configuration. Do you want to continue?"
 rgpvpw.L["confirm_override_profile_yes_button"] = "Yes"
 rgpvpw.L["confirm_override_profile_no_button"] = "No"
 -- load default profile
