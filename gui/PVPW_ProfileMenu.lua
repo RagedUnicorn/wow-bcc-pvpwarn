@@ -35,7 +35,7 @@ local profileRows = {}
 -- holds a reference to the profile scrollFrame
 local profileListScrollFrame
 -- the name of the currently selected profile in the profile list
-local currentSelectedProfile = nil
+local currentSelectedProfile
 
 --[[
   Popup dialog for choosing a profile name
@@ -376,7 +376,7 @@ function me.CreateConfigurationButton(parentFrame, frameName, position, text, ca
   configurationButton:SetPoint(unpack(position))
   configurationButton:SetHeight(RGPVPW_CONSTANTS.BUTTON_DEFAULT_HEIGHT)
   configurationButton:SetText(text)
-  configurationButton:SetScript('OnClick', callback)
+  configurationButton:SetScript("OnClick", callback)
 
   mod.guiHelper.ResizeButtonToText(configurationButton)
 
