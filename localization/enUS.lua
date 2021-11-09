@@ -67,7 +67,8 @@ rgpvpw.L["confirm_delete_profile_dialog_text"] = "This will delete your selected
 rgpvpw.L["confirm_delete_profile_yes_button"] = "Yes"
 rgpvpw.L["confirm_delete_profile_no_button"] = "No"
 -- load profile
-rgpvpw.L["confirm_override_profile_dialog_text"] = "This will override your current configuration. Do you want to continue?"
+rgpvpw.L["confirm_override_profile_dialog_text"] = "This will override your current configuration. "
+  .. "Do you want to continue?"
 rgpvpw.L["confirm_override_profile_yes_button"] = "Yes"
 rgpvpw.L["confirm_override_profile_no_button"] = "No"
 -- load default profile
