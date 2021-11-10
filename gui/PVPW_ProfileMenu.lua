@@ -95,12 +95,28 @@ StaticPopupDialogs["RGPVPW_DELETE_PROFILE_WARNING"] = {
 --[[
   Popup dialog warning before loading a profile
 ]]--
-StaticPopupDialogs["RGPVPW_CHANGE_PROFILE_WARNING"] = {
+StaticPopupDialogs["RGPVPW_LOAD_PROFILE_WARNING"] = {
+  text = rgpvpw.L["confirm_load_profile_dialog_text"],
+  button1 = rgpvpw.L["confirm_load_profile_yes_button"],
+  button2 = rgpvpw.L["confirm_load_profile_no_button"],
+  OnAccept = function()
+    mod.profile.LoadProfile(currentSelectedProfile)
+    me.ProfileListUpdateOnUpdate(profileListScrollFrame)
+  end,
+  timeout = 0,
+  whileDead = true,
+  preferredIndex = 4
+}
+
+--[[
+  Popup dialog warning before updating the selected profile
+]]--
+StaticPopupDialogs["RGPVPW_UPDATE_PROFILE_WARNING"] = {
   text = rgpvpw.L["confirm_override_profile_dialog_text"],
   button1 = rgpvpw.L["confirm_override_profile_yes_button"],
   button2 = rgpvpw.L["confirm_override_profile_no_button"],
   OnAccept = function()
-    mod.profile.LoadProfile(currentSelectedProfile)
+    mod.profile.UpdateProfile(currentSelectedProfile)
     me.ProfileListUpdateOnUpdate(profileListScrollFrame)
   end,
   timeout = 0,
@@ -131,12 +147,21 @@ function me.BuildUi(frame)
     me.DeleteSelectedProfileButtonOnClick
   )
   -- create a button that loads the selected profile
-  me.CreateConfigurationButton(
+  local loadButton = me.CreateConfigurationButton(
     frame,
     RGPVPW_CONSTANTS.ELEMENT_LOAD_PROFILE_BUTTON,
     {"LEFT", deleteButton, "RIGHT", 0, 0},
     rgpvpw.L["load_selected_profile_button"],
     me.LoadSelectedProfileButtonOnClick
+  )
+
+  -- create a button that updates the selected profile
+  me.CreateConfigurationButton(
+    frame,
+    RGPVPW_CONSTANTS.ELEMENT_UPDATE_PROFILE_BUTTON,
+    {"LEFT", loadButton, "RIGHT", 0, 0},
+    rgpvpw.L["update_profile_button"],
+    me.UpdateProfileButtonOnClick
   )
 
   -- init scrollFrame
@@ -306,10 +331,11 @@ function me.ProfileListUpdateOnUpdate(scrollFrame)
           profileName = profileName .. "*"
         end
       end
-
+      row.profileName.name = profile.name
       row.profileName:SetText(profileName)
     else
       row.profileName:SetText("")
+      row.profileName.name = ""
     end
 
     row:Show()
@@ -323,7 +349,7 @@ end
     A reference to the clicked row
 ]]--
 function me.ProfileListCellOnClick(self)
-  currentSelectedProfile = self.profileName:GetText()
+  currentSelectedProfile = self.profileName.name
   -- clear all current highlighting
   me.ClearCellList()
 
@@ -360,9 +386,9 @@ function me.CreateConfigurationButton(parentFrame, frameName, position, text, ca
     "UIPanelButtonTemplate"
   )
 
-  configurationButton:SetPoint(unpack(position))
   configurationButton:SetHeight(RGPVPW_CONSTANTS.BUTTON_DEFAULT_HEIGHT)
   configurationButton:SetText(text)
+  configurationButton:SetPoint(unpack(position))
   configurationButton:SetScript("OnClick", callback)
 
   mod.guiHelper.ResizeButtonToText(configurationButton)
@@ -391,5 +417,13 @@ end
   dialog for the user to confirm the action.
 ]]--
 function me.LoadSelectedProfileButtonOnClick()
-  StaticPopup_Show("RGPVPW_CHANGE_PROFILE_WARNING")
+  StaticPopup_Show("RGPVPW_LOAD_PROFILE_WARNING")
+end
+
+--[[
+  Button callback to update the selected profiles configuration with the current one. This will invoke a popup
+  dialog for the user to confirm the action.
+]]--
+function me.UpdateProfileButtonOnClick()
+  StaticPopup_Show("RGPVPW_UPDATE_PROFILE_WARNING")
 end

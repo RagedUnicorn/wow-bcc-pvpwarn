@@ -22,7 +22,7 @@
   SOFTWARE.
 ]]--
 
--- luacheck: globals UnitClass strlower GetAddOnMetadata
+-- luacheck: globals UnitClass strlower GetAddOnMetadata table.wipe
 
 local mod = rgpvpw
 local me = {}
@@ -51,7 +51,37 @@ function me.GetMaxProfileNameLength()
 end
 
 --[[
-  Create a new profile and add it to the list of profiles
+  Initializes the PVPWarnProfiles addon variable for the first time by inserting the classes default profile.
+  Afterwards the profile RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME is loaded into the actual configuration
+]]--
+function me.InitializeDefaultProfile()
+  local _, englishClass = UnitClass(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
+
+  table.wipe(PVPWarnProfiles)
+  --[[
+    Saved addon variable
+  ]]--
+  PVPWarnProfiles = {
+    -- load default profile data into PVPWarnProfiles
+    {
+      ["name"] = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME,
+      ["version"] = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version"),
+      ["spellConfiguration"] =
+        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL),
+      ["spellSelfAvoidConfiguration"] =
+        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID),
+      ["spellEnemyAvoidConfiguration"] =
+        mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
+    }
+  }
+  PVPWarnProfiles.activeProfile = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME
+  PVPWarnProfiles.modified = false
+
+  me.LoadProfile(RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME)
+end
+
+--[[
+  Create a new profile and add it to the list of profiles. This also sets the created profile as the active one
 
   @param {string} profileName
 ]]--
@@ -82,6 +112,9 @@ function me.CreateProfile(profileName)
 
   table.insert(PVPWarnProfiles, profile)
   mod.logger.LogInfo(me.tag, "Created new profile with name - " .. profileName)
+
+  PVPWarnProfiles.activeProfile = profileName
+  PVPWarnProfiles.modified = false
 end
 
 --[[
@@ -128,19 +161,17 @@ function me.LoadProfile(profileName)
 
   for i = 1, #PVPWarnProfiles do
     if PVPWarnProfiles[i].name == profileName then
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] = nil
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] = {}
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] = PVPWarnProfiles[i].spellConfiguration
+      table.wipe(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL])
+      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL] =
+        mod.common.Clone(PVPWarnProfiles[i].spellConfiguration)
 
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] = nil
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] = {}
+      table.wipe(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID])
       PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID] =
-        PVPWarnProfiles[i].spellSelfAvoidConfiguration
+        mod.common.Clone(PVPWarnProfiles[i].spellSelfAvoidConfiguration)
 
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] = nil
-      PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] = {}
+      table.wipe(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID])
       PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID] =
-        PVPWarnProfiles[i].spellEnemyAvoidConfiguration
+        mod.common.Clone(PVPWarnProfiles[i].spellEnemyAvoidConfiguration)
 
       PVPWarnProfiles.activeProfile = PVPWarnProfiles[i].name
       PVPWarnProfiles.modified = false
@@ -154,36 +185,45 @@ function me.LoadProfile(profileName)
 end
 
 --[[
-  Initializes the PVPWarnProfiles addon variable for the first time by inserting the classes default profile.
-  Afterwards the profile RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME is loaded into the actual configuration
-]]--
-function me.InitializeDefaultProfile()
-  local _, englishClass = UnitClass(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
+  Updates the selected profile with the currently active configuration
 
-  --[[
-    Initialize profiles for the first time
-  ]]--
-  if PVPWarnProfiles == nil then
-    --[[
-      Saved addon variable
-    ]]--
-    PVPWarnProfiles = {
-      -- load default profile data into PVPWarnProfiles
-      {
-        ["name"] = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME,
-        ["version"] = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version"),
-        ["spellConfiguration"] =
-          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL),
-        ["spellSelfAvoidConfiguration"] =
-          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID),
-        ["spellEnemyAvoidConfiguration"] =
-          mod[strlower(englishClass) .. "Profile"].GetSpellProfile(RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID)
-      }
-    }
-    PVPWarnProfiles.activeProfile = RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME
-    PVPWarnProfiles.modified = false
+  @param {string} profileName
+]]--
+function me.UpdateProfile(profileName)
+  if profileName == nil then
+    mod.logger.PrintUserError(rgpvpw.L["user_message_select_profile_before_update"])
+    return
   end
-  me.LoadProfile(RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME)
+
+  if profileName == RGPVPW_CONSTANTS.DEFAULT_PROFILE_NAME then
+    mod.logger.PrintUserError(rgpvpw.L["user_message_default_profile_cannot_be_modified"])
+    return
+  end
+
+  for i = 1, #PVPWarnProfiles do
+    if PVPWarnProfiles[i].name == profileName then
+      table.wipe(PVPWarnProfiles[i].spellConfiguration)
+      PVPWarnProfiles[i].spellConfiguration =
+        mod.common.Clone(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL])
+
+      table.wipe(PVPWarnProfiles[i].spellSelfAvoidConfiguration)
+      PVPWarnProfiles[i].spellSelfAvoidConfiguration =
+        mod.common.Clone(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID])
+
+      table.wipe(PVPWarnProfiles[i].spellEnemyAvoidConfiguration)
+      PVPWarnProfiles[i].spellEnemyAvoidConfiguration =
+        mod.common.Clone(PVPWarnConfiguration[RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID])
+
+      PVPWarnProfiles.modified = false
+      PVPWarnProfiles.activeProfile = PVPWarnProfiles[i].name
+
+      mod.logger.LogInfo(me.tag, "Updated profile with name: " .. PVPWarnProfiles[i].name)
+
+      return
+    end
+  end
+
+  mod.logger.LogWarn(me.tag, "Unable to find profile with name: " .. profileName)
 end
 
 --[[

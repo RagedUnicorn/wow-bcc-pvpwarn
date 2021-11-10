@@ -58,7 +58,7 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["save_current_profile_button"] = "Erstelle Profil"
   rgpvpw.L["delete_selected_profile_button"] = "Lösche Profil"
   rgpvpw.L["load_selected_profile_button"] = "Lade Profil"
-  rgpvpw.L["load_default_profile_button"] = "Lade Standard Profil"
+  rgpvpw.L["update_profile_button"] = "Aktualisiere Profil"
 
   -- create new profile
   rgpvpw.L["choose_profile_name_dialog_text"] = "Wähle einen Namen für das neue Profil"
@@ -70,22 +70,24 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["confirm_delete_profile_yes_button"] = "Ja"
   rgpvpw.L["confirm_delete_profile_no_button"] = "Nein"
   -- load profile
-  rgpvpw.L["confirm_override_profile_dialog_text"] = "Dieser Vorgang überschreibt deine jetzige Konfiguration. "
+  rgpvpw.L["confirm_load_profile_dialog_text"] = "Dieser Vorgang überschreibt deine jetzige Konfiguration. "
     .. "Willst du fortfahren?"
+  rgpvpw.L["confirm_load_profile_yes_button"] = "Ja"
+  rgpvpw.L["confirm_load_profile_no_button"] = "Nein"
+  -- update profile
+  rgpvpw.L["confirm_override_profile_dialog_text"] = "Dieser Vorgang lädt das ausgewählte Profil und "
+    .. "überschreibt deine jetzige Konfiguration. Willst du fortfahren?"
   rgpvpw.L["confirm_override_profile_yes_button"] = "Ja"
   rgpvpw.L["confirm_override_profile_no_button"] = "Nein"
-  -- load default profile
-  rgpvpw.L["confirm_override_default_profile_dialog_text"] = "Dieser Vorgang lädt das Standard Profil und "
-    .. "überschreibt  deine jetzige Konfiguration. Willst du fortfahren?"
-  rgpvpw.L["confirm_override_default_profile_yes_button"] = "Ja"
-  rgpvpw.L["confirm_override_default_profile_no_button"] = "Nein"
   -- user messages
   rgpvpw.L["user_message_select_profile_before_delete"] = "Wähle ein Profil aus um es zu löschen"
   rgpvpw.L["user_message_select_profile_before_load"] = "Wähle ein Profil aus um es zu laden"
+  rgpvpw.L["user_message_select_profile_before_update"] = "Wähle ein Profil aus um es zu aktualisieren"
   rgpvpw.L["user_message_select_profile_already_exists"] = "Das Profil existiert bereits - wähle einen anderen Name"
   rgpvpw.L["user_message_add_new_profile_max_reached"] = "Eine maximale Anzahl von %s Profilen ist erlaubt. "
     .. "Du hast das maximum erreicht"
   rgpvpw.L["user_message_default_profile_cannot_be_deleted"] = "Das Standard Profil kann nicht gelöscht werden"
+  rgpvpw.L["user_message_default_profile_cannot_be_modified"] = "Das Standard Profil kann nicht verändert werden"
 
   -- categories
   rgpvpw.L["category_druid"] = "Druide"
