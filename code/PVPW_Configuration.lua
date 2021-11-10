@@ -22,6 +22,8 @@
   SOFTWARE.
 ]]--
 
+-- luacheck: globals GetAddOnMetadata
+
 local mod = rgpvpw
 local me = {}
 mod.configuration = me
@@ -104,14 +106,17 @@ end
   to run through migration paths. As of right now there is no migration path.
 ]]--
 function me.SetAddonVersion()
+  if PVPWarnConfiguration.addonVersion == GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version") then
+    return
+  end
   -- if no version set so far make sure to set the current one
   if PVPWarnConfiguration.addonVersion == nil then
-    PVPWarnConfiguration.addonVersion = RGPVPW_ENVIRONMENT.ADDON_VERSION
+    PVPWarnConfiguration.addonVersion = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version")
   end
 
   me.MigrationPath()
   -- migration done update addon version to current
-  PVPWarnConfiguration.addonVersion = RGPVPW_ENVIRONMENT.ADDON_VERSION
+  PVPWarnConfiguration.addonVersion = GetAddOnMetadata(RGPVPW_CONSTANTS.ADDON_NAME, "Version")
 end
 
 --[[
