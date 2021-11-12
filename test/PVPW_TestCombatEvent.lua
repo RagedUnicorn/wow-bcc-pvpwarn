@@ -38,10 +38,13 @@ me.tag = "TestCombatEvent"
 local testGroupName = "ShouldHaveCombatEventTestForAllSpells"
 
 --[[
-  @param {number} category
+  @param {table} category
     A valid category see RGPVPW_CONSTANTS.CATEGORIES
 ]]--
 function me.Test(category)
+  assert(type(category) == "table",
+    string.format("bad argument #1 to `Test` (expected table got %s)", type(category)))
+
   mod.testReporter.StartTestGroup(testGroupName)
 
   me.ShouldHaveCombatEventTestForAllSpells(category)
