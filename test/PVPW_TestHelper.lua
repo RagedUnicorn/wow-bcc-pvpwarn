@@ -732,8 +732,21 @@ end
   @return {string}, {string}, {table}
 ]]--
 function me.TestCombatEventAvoid(spellId, event, sourceFlags)
-  local target = me.GetGenericEnemyId()
-  local targetName = me.GetGenericEnemyName()
+  local target
+  local targetName
+
+  --[[
+    For RGPVPW_CONSTANTS.SPELL_TYPES.MISSED_SELF the target must be the player himself.
+    Even during testing we need to get the actual name and nameId of the player otherwise the events are ignored
+  ]]--
+  if CombatLog_Object_IsA(sourceFlags, COMBATLOG_FILTER_HOSTILE_PLAYERS) then
+    target = UnitGUID(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
+    targetName = UnitName(RGPVPW_CONSTANTS.UNIT_ID_PLAYER)
+  else
+    target = me.GetGenericEnemyId()
+    targetName = me.GetGenericEnemyName()
+  end
+
   local actualCategory
   local actualSpellType
   local actualSpell
