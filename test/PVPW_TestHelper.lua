@@ -23,7 +23,7 @@
 ]]--
 
 -- luacheck: globals CombatLogGetCurrentEventInfo GetLocale COMBATLOG_FILTER_HOSTILE_PLAYERS
--- luacheck: globals COMBATLOG_FILTER_MINE
+-- luacheck: globals COMBATLOG_FILTER_MINE CombatLog_Object_IsA UnitGUID UnitName
 
 local mod = rgpvpw
 local me = {}
