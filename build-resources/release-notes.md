@@ -1,1 +1,1 @@
-* Initial release
+* Initial release Burning Crusade Classic
