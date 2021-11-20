@@ -413,3 +413,14 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
     end
   end
 end
+
+--[[
+  Entry point from external to update the spelllist
+  Note: It is important to check elements first before working with them because this function could be called
+  before the menu actually exists.
+]]--
+function me.UpdateSpellList()
+  if spellEnemyAvoidScrollFrame ~= nil then
+    me.FauxScrollFrameOnUpdate(spellEnemyAvoidScrollFrame)
+  end
+end

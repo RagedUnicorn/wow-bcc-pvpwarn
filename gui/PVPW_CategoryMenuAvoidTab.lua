@@ -42,11 +42,11 @@ local spellSelfAvoidScrollFrame
   Cached spellAvoidList for reusing while the player scrolls through the spellAvoidList. Wiped
   when the category changes
 ]]--
-local cachedCategoryData = nil
+local cachedCategoryData
 --[[
   Currently active category data
 ]]--
-local activeCategoryData = nil
+local activeCategoryData
 
 --[[
   @param {table} frame
@@ -395,5 +395,16 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         spellAvoidRows[i]:Hide()
       end
     end
+  end
+end
+
+--[[
+  Entry point from external to update the spelllist
+  Note: It is important to check elements first before working with them because this function could be called
+  before the menu actually exists.
+]]--
+function me.UpdateSpellList()
+  if spellSelfAvoidScrollFrame ~= nil then
+    me.FauxScrollFrameOnUpdate(spellSelfAvoidScrollFrame)
   end
 end

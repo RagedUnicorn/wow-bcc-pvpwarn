@@ -22,7 +22,7 @@
   SOFTWARE.
 ]]--
 
--- luacheck: globals UnitClass strlower GetAddOnMetadata table.wipe
+-- luacheck: globals UnitClass strlower GetAddOnMetadata table.wipe InterfaceOptionsFrame
 
 local mod = rgpvpw
 local me = {}
@@ -184,12 +184,29 @@ function me.LoadProfile(profileName)
       PVPWarnProfiles.activeProfile = PVPWarnProfiles[i].name
       PVPWarnProfiles.modified = false
       mod.logger.LogInfo(me.tag, "Loaded profile with name: " .. PVPWarnProfiles[i].name)
+      me.PropagateProfileSwitch()
 
       return
     end
   end
 
   mod.logger.LogWarn(me.tag, "Unable to find profile with name: " .. profileName)
+end
+
+--[[
+  Checks whether the InterfaceOptionsFrame is currently visible and decides whether an update of certain ui elements
+  might be required
+]]--
+function me.PropagateProfileSwitch()
+  if InterfaceOptionsFrame:IsVisible() then
+    mod.categoryMenuSpellsTab.UpdateSpellList()
+    mod.categoryMenuResistTab.UpdateSpellList()
+    mod.enemyAvoidMenu.UpdateSpellList()
+  else
+    mod.logger.LogDebug(
+      me.tag, "InterfaceOptionsFrame not visible currently. Did not propagate profile switch"
+    )
+  end
 end
 
 --[[
