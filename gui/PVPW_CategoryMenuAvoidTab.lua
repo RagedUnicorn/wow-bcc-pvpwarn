@@ -369,10 +369,10 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         )
         mod.spellStateHelper.UpdateSpellStateCheckBox(
           row.spellStateCheckBox,
-          row.spellStateCheckBox:GetParent().avoidSoundCheckBox,
+          row.avoidSoundCheckBox,
           nil,
-          row.spellStateCheckBox:GetParent().chooseAvoidVisual,
-          row.spellStateCheckBox:GetParent().chooseAvoidVisualLabel,
+          row.chooseAvoidVisual,
+          row.chooseAvoidVisualLabel,
           activeCategoryData.id,
           spell.normalizedSpellName,
           RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_SELF_AVOID

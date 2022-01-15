@@ -463,10 +463,10 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         )
         mod.spellStateHelper.UpdateSpellStateCheckBox(
           row.spellStateCheckBox,
-          row.spellStateCheckBox:GetParent().soundCheckBox,
-          row.spellStateCheckBox:GetParent().soundSpecialCheckBox,
-          row.spellStateCheckBox:GetParent().chooseVisual,
-          row.spellStateCheckBox:GetParent().chooseVisualLabel,
+          row.soundCheckBox,
+          row.soundSpecialCheckBox,
+          row.chooseVisual,
+          row.chooseVisualLabel,
           activeCategoryData.id,
           spell.normalizedSpellName,
           RGPVPW_CONSTANTS.SPELL_TYPE.SPELL

@@ -385,10 +385,10 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         )
         mod.spellStateHelper.UpdateSpellStateCheckBox(
           row.spellStateCheckBox,
-          row.spellStateCheckBox:GetParent().enemyAvoidSoundCheckBox,
+          row.enemyAvoidSoundCheckBox,
           nil,
-          row.spellStateCheckBox:GetParent().chooseEnemyAvoidVisual,
-          row.spellStateCheckBox:GetParent().chooseEnemyAvoidVisualLabel,
+          row.chooseEnemyAvoidVisual,
+          row.chooseEnemyAvoidVisualLabel,
           activeCategoryData.id,
           spell.normalizedSpellName,
           RGPVPW_CONSTANTS.SPELL_TYPE.SPELL_ENEMY_AVOID
