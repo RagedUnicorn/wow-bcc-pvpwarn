@@ -121,8 +121,8 @@ function me.BuildCheckButtonOption(parentFrame, optionFrameName, posX, posY, onS
 
   local checkButtonOptionFrame = CreateFrame("CheckButton", optionFrameName, parentFrame, "UICheckButtonTemplate")
   checkButtonOptionFrame:SetSize(
-    RGPVPW_CONSTANTS.GENERAL_CHECK_OPTION_SIZE,
-    RGPVPW_CONSTANTS.GENERAL_CHECK_OPTION_SIZE
+    RGPVPW_CONSTANTS.DEFAULT_CHECK_BOX_SIZE,
+    RGPVPW_CONSTANTS.DEFAULT_CHECK_BOX_SIZE
   )
   checkButtonOptionFrame:SetPoint("TOPLEFT", posX, posY)
 

@@ -174,6 +174,10 @@ RGPVPW_CONSTANTS = {
   ELEMENT_ALERT_FRAME = "PVPW_AlertFrame",
   ELEMENT_ALERT_TEXTURE = "PVPW_AlertTexture",
   --[[
+    Default element configuration
+  ]]--
+  DEFAULT_CHECK_BOX_SIZE = 32,
+  --[[
     TargetFrame combatState
   ]]--
   ELEMENT_COMBAT_STATE_FRAME = "PVPW_CombatStateFrame",
@@ -196,8 +200,7 @@ RGPVPW_CONSTANTS = {
   --[[
     Generalmenu
   ]]--
-  ELEMENT_GENERAL_SUB_OPTION_FRAME = "PVPW_GeneralMenuOptionsFrame",
-  GENERAL_CHECK_OPTION_SIZE = 32,
+  ELEMENT_GENERAL_MENU_SUB_OPTION_FRAME = "PVPW_GeneralMenuOptionsFrame",
   ELEMENT_GENERAL_OPT = "PVPW_Opt",
   ELEMENT_GENERAL_FRAME = "PVPW_GeneralFrame",
   ELEMENT_GENERAL_TITLE = "PVPW_GeneralTitle",
@@ -310,6 +313,7 @@ RGPVPW_CONSTANTS = {
   --[[
     Profilemenu
   ]]--
+  ELEMENT_PROFILE_MENU_SUB_OPTION_FRAME = "PVPW_ProfileMenuOptionsFrame",
   ELEMENT_PROFILE_LIST_SCROLL_FRAME = "PVPW_ProfileListScrollFrame",
   PROFILE_LIST_CONTENT_FRAME_WIDTH = 580,
   PROFILE_LIST_MAX_ROWS = 6,
@@ -327,7 +331,6 @@ RGPVPW_CONSTANTS = {
   --[[
     Categorymenu
   ]]--
-  ELEMENT_CATEGORY_SUB_OPTION_FRAME = "PVPW_CategoryMenuOptionsFrame",
 
   --[[
     Spellstab
@@ -343,7 +346,6 @@ RGPVPW_CONSTANTS = {
   -- spell configuration (single row)
   ELEMENT_CATEGORY_SPELL_ICON = "$parentIcon",
   CATEGORY_SPELL_ICON_SIZE = 32,
-  CATEGORY_CHECK_BOX_SIZE = 32,
   SPELL_TITLE_WIDTH = 150,
   ELEMENT_CATEGORY_SPELL_NAME = "PVPW_SpellName",
   ELEMENT_CATEGORY_ENABLE_SPELL = "$parentEnableSpell",
@@ -379,6 +381,7 @@ RGPVPW_CONSTANTS = {
   --[[
     SpellEnemyAvoid
   ]]--
+  ELEMENT_SPELL_ENEMY_AVOID_MENU_SUB_OPTION_FRAME = "PVPW_SpellEnemyAvoidMenuOptionsFrame",
   -- scroll list
   ELEMENT_SPELL_ENEMY_AVOID_LIST_CONTENT_FRAME = "PVPW_SpellEnemyAvoidListContentFrame",
   ELEMENT_SPELL_ENEMY_AVOID_LIST_SCROLL_FRAME = "PVPW_SpellEnemyAvoidListScrollFrame",

@@ -41,14 +41,14 @@ function me.SetupAddonConfiguration()
   panel.main = me.BuildCategory(RGPVPW_CONSTANTS.ELEMENT_ADDON_PANEL, nil, rgpvpw.L["addon_name"])
 
   me.BuildCategory(
-    RGPVPW_CONSTANTS.ELEMENT_GENERAL_SUB_OPTION_FRAME,
+    RGPVPW_CONSTANTS.ELEMENT_GENERAL_MENU_SUB_OPTION_FRAME,
     panel.main,
     rgpvpw.L["configuration_menu_general"],
     mod.generalMenu.BuildUi
   )
 
   me.BuildCategory(
-    RGPVPW_CONSTANTS.ELEMENT_GENERAL_SUB_OPTION_FRAME,
+    RGPVPW_CONSTANTS.ELEMENT_PROFILE_MENU_SUB_OPTION_FRAME,
     panel.main,
     rgpvpw.L["configuration_menu_profiles"],
     mod.profileMenu.Init
@@ -68,7 +68,7 @@ function me.SetupAddonConfiguration()
   me.BuildSpellCategory(panel.main, RGPVPW_CONSTANTS.CATEGORIES.MISC)
 
   me.BuildCategory(
-    RGPVPW_CONSTANTS.ELEMENT_GENERAL_SUB_OPTION_FRAME,
+    RGPVPW_CONSTANTS.ELEMENT_SPELL_ENEMY_AVOID_MENU_SUB_OPTION_FRAME,
     panel.main,
     rgpvpw.L["configuration_menu_enemy_avoid"],
     mod.enemyAvoidMenu.Init
@@ -84,7 +84,7 @@ function me.SetupAddonConfiguration()
     InterfaceOptionsFrame_OpenToCategory(generalMenu)
 
     Note: The behavior with how events fire might change quite a bit when using the above debug method.
-    Because of this it is important that the "normal" manuall way of opening the menu is tested as well.
+    Because of this it is important that the "normal" manual way of opening the menu is tested as well.
   ]]--
   -- me.OpenAddonPanel()
 

@@ -55,8 +55,8 @@ function me.CreateCheckBox(frameName, parent, position, onClickCallback, onShowC
     "UICheckButtonTemplate"
   )
   checkBoxFrame:SetSize(
-    RGPVPW_CONSTANTS.CATEGORY_CHECK_BOX_SIZE,
-    RGPVPW_CONSTANTS.CATEGORY_CHECK_BOX_SIZE
+    RGPVPW_CONSTANTS.DEFAULT_CHECK_BOX_SIZE,
+    RGPVPW_CONSTANTS.DEFAULT_CHECK_BOX_SIZE
   )
   checkBoxFrame:SetPoint(unpack(position))
 
