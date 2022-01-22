@@ -53,6 +53,22 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["lock_frame_combat_state"] = "Blockiere das Kampfstatus Fenster"
   rgpvpw.L["lock_frame_combat_state_tooltip"] = "Aktiviert oder deaktiviert das bewegen des Kampfstatus Fenster"
 
+  -- zones
+  rgpvpw.L["configuration_menu_zone"] = "Zonen"
+  rgpvpw.L["zone_title"] = "Konfiguriere Zonen"
+  rgpvpw.L["arena_nagrand_arena"] = "Arena von Nagrand"
+  rgpvpw.L["arena_ruins_of_lordaeron"] = "Ruinen von Lordaeron"
+  rgpvpw.L["arena_bladges_edge_arena"] = "Arena des Schergrats"
+  rgpvpw.L["battleground_alterac_valley"] = "Alteractal"
+  rgpvpw.L["battleground_eye_of_the_storm"] = "Auge des Sturms"
+  rgpvpw.L["battleground_arathi_basin"] = "Arathibecken"
+  rgpvpw.L["battleground_warsong_gulch"] = "Kriegshymnenschlucht"
+  rgpvpw.L["world_shattrath"] = "Shattrath"
+  -- labels
+  rgpvpw.L["label_arenas"] = "Arenas:"
+  rgpvpw.L["label_battlegrounds"] = "Schlachtfelder:"
+  rgpvpw.L["label_world"] = "Welt:"
+
   -- profiles
   rgpvpw.L["configuration_menu_profiles"] = "Profile"
   rgpvpw.L["save_current_profile_button"] = "Erstelle Profil"

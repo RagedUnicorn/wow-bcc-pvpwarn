@@ -456,6 +456,11 @@ function me.FauxScrollFrameOnUpdate(scrollFrame)
         row.playSound.soundFileName = spell.soundFileName
         row.playSoundSpecial.soundFileName = spell.soundFileName
 
+        -- initially show all checkboxes and let spellStateHelper figure out the actual state
+        row.spellStateCheckBox:Show()
+        row.soundCheckBox:Show()
+        row.soundSpecialCheckBox:Show()
+
         mod.spellStateHelper.UpdateIcon(
           row.spellIcon,
           activeCategoryData.categoryName,

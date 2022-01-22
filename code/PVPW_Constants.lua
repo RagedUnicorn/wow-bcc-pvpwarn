@@ -207,6 +207,19 @@ RGPVPW_CONSTANTS = {
   ELEMENT_GENERAL_OPT_ENABLE_COMBAT_STATE = "PVPW_OptEnableCombatStateTracking",
   ELEMENT_GENERAL_OPT_LOCK_FRAME_COMBAT_STATE = "PVPW_OptLockFrameCombatState",
   --[[
+    ZoneMenu
+  ]]--
+  ELEMENT_ZONE_MENU_SUB_OPTION_FRAME = "PVPW_ZoneMenuOptionsFrame",
+  ELEMENT_ZONE_TITLE = "PVPW_ZoneTitle",
+  ELEMENT_ZONE_NAGRAND_ARENA_CHECK_BOX = "PVPW_NagrandArenaCheckBox",
+  ELEMENT_ZONE_RUINS_OF_LORDAERON_CHECK_BOX = "PVPW_RuinsOfLordaeronCheckBox",
+  ELEMENT_ZONE_BLADES_EDGE_ARENA_CHECK_BOX = "PVPW_BladesEdgeArenaCheckBox",
+  ELEMENT_ZONE_ALTERAC_VALLEY = "PVPW_AlteracValleyCheckBox",
+  ELEMENT_ZONE_EYE_OF_THE_STORM = "PVPW_EyeOfTheStormCheckBox",
+  ELEMENT_ZONE_ARATHI_BASIN = "PVPW_ArathiBasinCheckBox",
+  ELEMENT_ZONE_WARSONG_GULCH = "PVPW_WarsongGulchCheckBox",
+  ELEMENT_ZONE_SHATTRATH = "PVPW_ShattrathCheckBox",
+  --[[
     A list of available categories consisting of all classes, racials, items and a
     misc category
 

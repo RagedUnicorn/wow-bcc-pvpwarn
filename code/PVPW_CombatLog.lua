@@ -44,6 +44,12 @@ function me.ProcessUnfilteredCombatLogEvent(callback, ...)
   if RGPVPW_ENVIRONMENT.DEBUG then
     mod.debug.TrackLogEvent(...)
   end
+
+  --[[
+    Ignore events while the player is in a zone that is not enabled
+  ]]--
+  if not mod.zone.IsZoneEnabled() then return end
+
   --[[
     Differentiate between combat logs from hostile players and entries that where caused
     by the players spellcasts

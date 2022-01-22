@@ -48,6 +48,13 @@ function me.SetupAddonConfiguration()
   )
 
   me.BuildCategory(
+    RGPVPW_CONSTANTS.ELEMENT_ZONE_SUB_OPTION_FRAME,
+    panel.main,
+    rgpvpw.L["configuration_menu_zone"],
+    mod.zoneMenu.BuildUi
+  )
+
+  me.BuildCategory(
     RGPVPW_CONSTANTS.ELEMENT_PROFILE_MENU_SUB_OPTION_FRAME,
     panel.main,
     rgpvpw.L["configuration_menu_profiles"],

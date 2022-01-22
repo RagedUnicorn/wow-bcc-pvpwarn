@@ -51,6 +51,22 @@ rgpvpw.L["enable_combat_state_tracking_tooltip"] = "Tracks the combatstate of an
 rgpvpw.L["lock_frame_combat_state"] = "Lock combatstate frame"
 rgpvpw.L["lock_frame_combat_state_tooltip"] = "Locks or unlocks the combatstate frame"
 
+-- zones
+rgpvpw.L["configuration_menu_zone"] = "Zones"
+rgpvpw.L["zone_title"] = "Configure Zones"
+rgpvpw.L["arena_nagrand_arena"] = "Nagrand Arena"
+rgpvpw.L["arena_ruins_of_lordaeron"] = "Ruins of Lordaeron"
+rgpvpw.L["arena_bladges_edge_arena"] = "Blade's Edge Arena"
+rgpvpw.L["battleground_alterac_valley"] = "Alterac Valley"
+rgpvpw.L["battleground_eye_of_the_storm"] = "Eye of the Storm"
+rgpvpw.L["battleground_arathi_basin"] = "Arathi Basin"
+rgpvpw.L["battleground_warsong_gulch"] = "Warsong Gulch"
+rgpvpw.L["world_shattrath"] = "Shattrath City"
+-- labels
+rgpvpw.L["label_arenas"] = "Arenas:"
+rgpvpw.L["label_battlegrounds"] = "Battlegrounds:"
+rgpvpw.L["label_world"] = "World:"
+
 -- profiles
 rgpvpw.L["configuration_menu_profiles"] = "Profiles"
 rgpvpw.L["save_current_profile_button"] = "Create new Profile"

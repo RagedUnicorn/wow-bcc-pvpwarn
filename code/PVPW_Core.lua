@@ -55,7 +55,8 @@ function me.RegisterEvents(self)
   self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
   -- Register to the event that fires when the players target changes
   self:RegisterEvent("PLAYER_TARGET_CHANGED")
-  -- Fires when the player leaves combat status
+  -- Fired when the user enters a new zone or city
+  self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 end
 
 --[[
@@ -71,6 +72,7 @@ function me.OnEvent(event, ...)
 
     if isInitialLogin or isReloadingUi then
       me.Initialize()
+      me.zone.UpdateZone()
     end
   elseif event == "COMBAT_LOG_EVENT_UNFILTERED" then
     me.logger.LogEvent(me.tag, "COMBAT_LOG_EVENT_UNFILTERED")
@@ -78,6 +80,9 @@ function me.OnEvent(event, ...)
   elseif event == "PLAYER_TARGET_CHANGED" then
     me.logger.LogEvent(me.tag, "PLAYER_TARGET_CHANGED")
     me.target.UpdateCurrentTarget()
+  elseif event == "ZONE_CHANGED_NEW_AREA" then
+    me.logger.LogEvent(me.tag, "ZONE_CHANGED_NEW_AREA")
+    me.zone.UpdateZone()
   end
 end
 

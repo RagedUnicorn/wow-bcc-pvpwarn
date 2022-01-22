@@ -43,8 +43,9 @@ me.tag = "GuiHelper"
       Callback that is called onShow
   @param {string} text
     Optional text that is used as label for the checkbox
+    Note: This name must be unique otherwise the text gets applied to the wrong element
 
-  @retun {table}
+  @return {table}
     The created checkbox
 ]]--
 function me.CreateCheckBox(frameName, parent, position, onClickCallback, onShowCallback, text)
@@ -59,6 +60,7 @@ function me.CreateCheckBox(frameName, parent, position, onClickCallback, onShowC
     RGPVPW_CONSTANTS.DEFAULT_CHECK_BOX_SIZE
   )
   checkBoxFrame:SetPoint(unpack(position))
+  checkBoxFrame:Hide()
 
   checkBoxFrame.text = _G[checkBoxFrame:GetName() .. "Text"]
   checkBoxFrame.text:SetFont(STANDARD_TEXT_FONT, 15)
