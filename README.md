@@ -72,6 +72,12 @@ Once a profile is created in can be loaded manually or with a macro.
 /run _G["RGPVPW_MACRO_LOADPROFILE"]("Warriorprofile")
 ```
 
+### Enable/Disable Addon in Zones
+
+The addon can be configured to automatically enable or disable in certain zones. This might be useful in Zones such as Alterac Valley where a lot of events are getting generated.
+
+![](docs/pvpwarn_configure_zones.jpg)
+
 ## FAQ
 
 #### The Addon is not showing up in WoW. What can I do?
