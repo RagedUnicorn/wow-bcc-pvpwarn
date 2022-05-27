@@ -2,7 +2,7 @@
 
 ![](docs/pvpw_ragedunicorn_love_bcc.png)
 
-> PVPWarn aims to help the player to hear and see enemy spells casted on himself and also spells that an enemy player resisted or spells that the player himself resisted
+> PVPWarn aims to help the player to hear and see enemy spells cast on himself and also spells that an enemy player resisted or spells that the player himself resisted
 
 ![](docs/wow_badge.svg)
 ![](docs/license_mit.svg)
@@ -47,7 +47,7 @@ PVPWarn can also detect when certain spells where either resisted by the player 
 
 #### Self Avoid
 
-The avoid tab allows the configuration of warnings for all spells of a certain category. If you're interested in knowing when you resist a certain spells such as the silence of a shadow priest you will configurate this in the priest category.
+The avoid tab allows the configuration of warnings for all spells of a certain category. If you're interested in knowing when you resist a certain spells such as the silence of a shadow priest you will configure this in the priest category.
 
 ![](docs/pvpwarn_configure_self_avoid.gif)
 
@@ -59,7 +59,7 @@ To configure the resist warning for your own class use the `Enemy Avoid` navigat
 
 ### Profiles
 
-PVPWarn loads a default profile based on your class when the addon loads for the first time. The default profile can be loaded again at any point. If you however start modifying what spells are tracked you can create a new profile or you can even have multiple different profiles that you can then load based on your situation.
+PVPWarn loads a default profile based on your class when the addon loads for the first time. The default profile can be loaded again at any point. If you however start modifying what spells are tracked you can create a new profile, or you can even have multiple different profiles that you can then load based on your situation.
 
 #### Loading Profiles with Macros
 
@@ -86,7 +86,7 @@ Make sure to recheck the installation part of this Readme and check that the Add
 
 #### I get a red error (Lua Error) on my screen. What is this?
 
-This is what we call a Lua error and it usually happens because of an oversight or error by the developer (in this case me). Take a screenshot off the error and create a Github Issue with it and I will see if I can resolve it. It also helps if you can add any additional information of what you we're doing at the time and what other addons you have active. Also if you are able to reproduce the error make sure to check if it still happens if you disable all others addons.
+This is what we call a Lua error, and it usually happens because of an oversight or error by the developer (in this case me). Take a screenshot off the error and create a GitHub Issue with it, and I will see if I can resolve it. It also helps if you can add any additional information of what you were doing at the time and what other addons you have active. Additionally, if you are able to reproduce the error make sure to check if it still happens if you disable all others addons.
 
 #### PVPWarn spams my chat with messages. How can I deactivate this?
 
@@ -98,7 +98,7 @@ This can have multiple errors. It might be an actual bug where the addon did not
 
 #### PVPWarn does not support my Spell. What can I do?
 
-PVPWarn is not complete and certain spells might have simply forgotten. If you have a certain spell that you would like to see supported in a future version of the addon make sure to create a ticket for it and I will have a  look at it.
+PVPWarn is not complete and certain spells might have simply forgotten. If you have a certain spell that you would like to see supported in a future version of the addon make sure to create a ticket for it, and I will have a  look at it.
 
 ## Development
 
@@ -110,7 +110,7 @@ Switching between development and release can be achieved with maven.
 mvn generate-resources -D generate.sources.overwrite=true -P development
 ```
 
-This generates and overwrites `GM_Environment.lua` and `GearMenu.toc`. You need to specifically specify that you want to overwrite to files to prevent data loss. It is also possible to omit the profile because development is the default profile that will be used.
+This generates and overwrites `GM_Environment.lua` and `GearMenu.toc`. You need to specifically specify that you want to overwrite the files to prevent data loss. It is also possible to omit the profile because development is the default profile that will be used.
 
 Switching to release can be done as such:
 
@@ -140,7 +140,7 @@ mvn package -D generate.sources.overwrite=true -P release
 
 **Note:** This packaging and switching resources can also be done one after another.
 
-**Note:** The packaging is not fit to be used for curseforge because curseforge expects a specific packaging
+**Note:** The packaging is not fit to be used for CurseForge because CurseForge expects a specific packaging
 
 ```
 # switch environment to release
@@ -175,9 +175,22 @@ mvn package -P deploy-curseforge -D curseforge.auth-token=[token]
 
 **Note:** This is only intended for manual deployment to CurseForge. With GitHub actions the token is supplied as a secret to the build process
 
+### Deploy Wago.io Release
+
+**Note:** It's best to create the release for GitHub first and only afterwards the Wago.io release. That way the tag was already created.
+
+```
+# switch environment to release
+mvn generate-resources -D generate.sources.overwrite=true -P release
+# deploy release
+mvn package -P deploy-wago -D wago.auth-token=[token]
+```
+
+**Note:** This is only intended for manual deployment to Wago.io. With GitHub actions the token is supplied as a secret to the build process
+
 ### GitHub Action Profiles
 
-Both `deploy-github-action` and `deploy-curseforge-action` should not be deployed manually. They are solely intended for being used by GitHub actions
+This project has GitHub action profiles for different Devops related work such as linting and deployments to different providers. See `.github` folder for details.
 
 ## License
 
