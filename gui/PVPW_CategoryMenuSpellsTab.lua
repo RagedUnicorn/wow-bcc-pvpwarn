@@ -323,10 +323,6 @@ function me.SpellSoundSpecialCheckBoxOnShow(self)
       activeCategoryData.id,
       self:GetParent().normalizedSpellName
     )
-  else
-    mod.logger.LogError(me.tag, "Invalid type on special checkbox")
-
-    return
   end
 
   if isActive then
