@@ -127,10 +127,10 @@ rgpvpw.L["label_play_sound"] = "Play"
 rgpvpw.L["label_enable_sound_fade"] = "Enable Sound Fade"
 rgpvpw.L["label_enable_sound_cast"] = "Enable Sound Cast"
 rgpvpw.L["label_play_sound_special"] = "Play"
-
 rgpvpw.L["label_visual_warning"] = "Visual Warning:"
 rgpvpw.L["label_play_visual"] = "Play"
 rgpvpw.L["user_message_choose_color"] = "Unable to play visual alert - No color chosen"
+
 -- spell avoid tab
 rgpvpw.L["label_enable_avoid_sound"] = "Enable Sound"
 rgpvpw.L["label_play_avoid_sound"] = "Play"
@@ -156,6 +156,3 @@ rgpvpw.L["texture_orange"] = "Orange"
 rgpvpw.L["texture_red"] = "Red"
 rgpvpw.L["texture_violet"] = "Violet"
 rgpvpw.L["texture_yellow"] = "Yellow"
-
--- combat state configuration
-rgpvpw.L["combat_state_missing_target_error"] = "Make sure to target something to see the frame"

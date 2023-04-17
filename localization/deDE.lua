@@ -131,10 +131,10 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["label_enable_sound_fade"] = "Aktiviere Ton verblassen"
   rgpvpw.L["label_enable_sound_cast"] = "Aktiviere Ton wirken"
   rgpvpw.L["label_play_sound_special"] = "Abspielen"
-
   rgpvpw.L["label_visual_warning"] = "Visuelle Warnung:"
   rgpvpw.L["label_play_visual"] = "Abspielen"
   rgpvpw.L["user_message_choose_color"] = "Kann keine visuelle Warnung anzeigen - Keine Farbe ausgewählt"
+
   -- spell avoid tab
   rgpvpw.L["label_enable_avoid_sound"] = "Aktiviere Ton"
   rgpvpw.L["label_play_avoid_sound"] = "Abspielen"
@@ -146,7 +146,7 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["label_enable_enemy_avoid_sound"] = "Aktiviere Ton"
   rgpvpw.L["label_play_enemy_avoid_sound"] = "Abspielen"
   rgpvpw.L["label_play_enemy_avoid_visual"] = "Abspielen"
-  rgpvpw.L["label_enemy_avoid_sound"] = "Optische Warnung:"
+  rgpvpw.L["label_enemy_avoid_sound"] = "Visuelle Warnung:"
 
   -- dropdown colors
   rgpvpw.L["texture_none"] = "Keine"
@@ -160,7 +160,4 @@ if (GetLocale() == "deDE") then
   rgpvpw.L["texture_red"] = "Rot"
   rgpvpw.L["texture_violet"] = "Violett"
   rgpvpw.L["texture_yellow"] = "Gelb"
-
-  -- combat state configuration
-  rgpvpw.L["combat_state_missing_target_error"] = "Stelle sicher das du jemanden auswählst um das Fenster zu sehen"
 end
