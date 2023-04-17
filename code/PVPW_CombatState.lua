@@ -37,14 +37,14 @@ me.tag = "CombatState"
 local configurationMode = false
 
 --[[
-  Invoked when a new target is aquired
+  Invoked when a new target is acquired
 ]]--
 function me.AcquiredTarget()
   if not mod.configuration.IsCombatStateTrackingEnabled() then return end
 
   if UnitIsPlayer(RGPVPW_CONSTANTS.UNIT_ID_TARGET) and UnitIsEnemy(RGPVPW_CONSTANTS.UNIT_ID_PLAYER,
     RGPVPW_CONSTANTS.UNIT_ID_TARGET) or configurationMode then
-    mod.logger.LogDebug(me.tag, "Aquired new enemy target - starting combatstate tracking")
+    mod.logger.LogDebug(me.tag, "Acquired new enemy target - starting combatstate tracking")
     -- after switching targets instantly update
     me.CombatStateUpdate()
     --[[
