@@ -1,3 +1,3 @@
-# Updates
+# Fix
 
-* Add Wago.io as new provider
+* Localization for colors
