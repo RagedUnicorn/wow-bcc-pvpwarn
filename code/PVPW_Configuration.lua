@@ -51,7 +51,7 @@ PVPWarnConfiguration = {
   ]]--
   ["enableCombatStateTracking"] = true,
   --[[
-    Whether the frame to track an enemies combatstate is locked or not
+    Whether the frame to track an enemies combat state is locked or not
   ]]--
   ["lockCombatStateFrame"] = true,
   --[[
@@ -75,8 +75,8 @@ PVPWarnConfiguration = {
 }
 
 --[[
-    Set default values if property is nil. This might happen after an addon upgrade
-  ]]--
+  Set default values if property is nil. This might happen after an addon upgrade
+]]--
 function me.SetupConfiguration()
   -- initialize all spellLists for the first time with default profile
   if PVPWarnConfiguration.spellList == nil or PVPWarnConfiguration.spellSelfAvoidList == nil
@@ -147,7 +147,7 @@ end
 ]]--
 function me.EnableCombatStateTracking()
   PVPWarnConfiguration.enableCombatStateTracking = true
-  -- no actual work needed. Combatstate tracking will start once the player acquires a target
+  -- no actual work needed. Combat state tracking will start once the player acquires a target
 end
 
 --[[
